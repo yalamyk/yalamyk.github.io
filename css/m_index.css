@@ -1,24 +1,35 @@
 /* 모바일 코딩 기준 : 360px */
 body{
 	width: 100%;
-	background-color:#232629;
-	/* position: relative; */
 	font-family: 'Roboto', sans-serif;
 }
+body.user_intro{
+	background-color:#232629;
+}
 body #header{
-	padding: 0% 8.34%;
+	/* padding: 0% 8.34%; */
 	height:60px;
 	width: 100%;
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	position: fixed;
 	top: 0px;
 	box-sizing: border-box;
 	background-color:#232629;
 	z-index: 9999;
+
 } 
+body #header .header_logo{
+	position: absolute;
+	top:20px;
+	left:8.34%;
+}
 body #contents{
-	margin: 0% 8.34%;
     display: block;
+    clear: both;
+    box-sizing: border-box;
+}
+body.user_intro #contents{
+	margin: 0% 8.34%;
     clear: both;
     height: 580px;
     padding-top: 116px;
@@ -127,8 +138,7 @@ body #contents form .search_box{
 }
 body #contents form .search_box:active,
 body #contents form .search_box:hover,
-body #contents form .search_box:focus
-{
+body #contents form .search_box:focus{
 	color:#fff;
 	border-bottom: solid 1px #ffffff !important;
 }
@@ -157,6 +167,101 @@ body #contents form #search_button{
 	display: block;
 	margin-bottom: 23px;
 }
+/*artist_list start*/
+#header .go_back{
+	width:13px;
+	height:23px;
+	background:url("../img/m_header_arrow.png") no-repeat;
+	text-indent:-9999px;
+	border: solid 0px white;
+}
+#header .go_search{
+	width:22px;
+	height:23px;
+	background:url("../img/m_search_icon.png") no-repeat;
+	text-indent:-9999px;
+	border: solid 0px white;
+}
+#header .header_default{}
+#header .header_default .header_logo{left:20.83%;}
+#header .header_default .go_back{position:absolute;top:18px;left:8.3%;}
+#header .header_default .go_search{position:absolute;top:17px;right:8.1%;}
+#header .header_search{display:none;}
+#contents .artist_main_search{
+	height:215px;
+	background-color:#232629;
+	padding:100px 8.34% 0px 8.34%;
+	box-sizing: border-box;
+}
+#contents .artist_main_search p{
+	font-size:16.67px;
+	line-height:16.67px;
+	color:#7e8a95;
+	margin-bottom: 20px;
+}
+#contents .artist_main_search input{
+	font-size:40px;
+	line-height:40px;
+	color:#fff;
+} 
+#contents .artist_list_area{}
+#contents .artist_list_area .artist_nav{
+	height: 64px;
+	display: block;
+}
+#contents .artist_list_area .artist_nav li{
+	float: left;
+	width:33.333333333333333%; 
+	height: 64px;
+	background-color:#eff3f6;
+}
+#contents .artist_list_area .artist_nav li.artist_nav_select{
+	background-color:#fff;
+}	
+#contents .artist_list_area .artist_nav li a{
+	width:100%; 
+	height: 64px;
+	display:block;
+}
+#contents .artist_list_area .artist_nav li:first-child{background:url("../img/m_artistlist_nav1.png") no-repeat;background-size:13px 17px;background-position: center center;}
+#contents .artist_list_area .artist_nav li:nth-child(2){background:url("../img/m_artistlist_nav2.png") no-repeat;background-size:16px 11px;background-position: center center;}
+#contents .artist_list_area .artist_nav li:last-child{background:url("../img/m_artistlist_nav3.png") no-repeat;background-size:15px 23px;background-position: center center;}
+#contents .artist_list_area .artist_list{
+	background-color:pink;
+	margin: 0% 8.34%;
+}
+#contents .artist_list_area{font-family: "Roboto", sans-serif;}
+#contents .artist_list_area .artist_list p{
+	font-family: inherit;
+	font-size: 14px;
+	height: 64px;
+	line-height: 64px;
+	text-align: left;
+	color: #888888;
+	font-weight:300;
+	border-bottom:solid 1px #eff5f7;
+}
+#contents .artist_list_area .artist_list p span{font-weight:500;}
+#contents .artist_list_area .artist_list ul li{
+	height: 74px;
+	border-bottom:solid 1px #eff5f7;
+}
+#contents .artist_list_area .artist_list ul li span{
+	font-family: inherit;
+	font-size: 12px;
+	text-align: left;
+	color: #999999;
+	line-height:12px;
+}
+#contents .artist_list_area .artist_list ul li p{
+	font-family: inherit;
+	font-size: 18px;
+	line-height:18px;
+	text-align: left;
+	color: #222222;
+}
+/*artist_list end*/
+
 /* end - main */
 body #footer{
 	height:60px;
