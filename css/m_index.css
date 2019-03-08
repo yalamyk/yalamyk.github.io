@@ -1,11 +1,58 @@
 /* 모바일 코딩 기준 : 360px */
-body{
+/* 반복사용 class start*/
+/* 1. 감섹 결과 레이아웃 */
+.search_main{
+	background-color:#232629;
+	padding:100px 8.34% 0px 8.34%;
+	box-sizing: border-box;
+}
+.search_main p{
+	font-size:16.67px;
+	line-height:16.67px;
+	color:#7e8a95;
+	margin-bottom: 20px;
+}
+.search_main input{
+	font-size:40px;
+	line-height:40px;
+	color:#fff;
 	width: 100%;
+} 
+.search_list .artist_list{
+	/* background-color:pink; */
+	margin: 0% 8.34%;
+}
+.search_list .search_nav{
+	height: 64px;
+	display: block;
+	width:100%;
+	background-color:#eff3f6 !important;
+}
+.search_list .search_title{
+	width: 100%;
+	height:56px;
+	font-size:20px;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 100; 
+	color:#454d54;
+	border-bottom: solid 1px #454d54;
+	background-color:transparent;
+	/* border: solid 1px red; */
 }
-#wrap{
-	position: relative;
+.list_total{
+	font-family: inherit;
+	font-size: 14px;
+	height: 64px;
+	line-height: 64px;
+	text-align: left;
+	color: #888888;
+	font-weight:300;
+	border-bottom:solid 1px #eff5f7;
 }
+.list_total span{font-weight:500;}
+/* 반복사용 class end*/
+
+
 body.user_intro{
 	background-color:#232629;
 }
@@ -191,62 +238,32 @@ body #contents form #search_button{
 #header .header_default .go_search{position:absolute;top:17px;right:8.1%;}
 #header .header_search{display:none;}
 #contents{overflow-y:scroll;}
-#contents .artist_main_search{
+
+#contents .artist_search{
 	height:215px;
-	background-color:#232629;
-	padding:100px 8.34% 0px 8.34%;
-	box-sizing: border-box;
 }
-#contents .artist_main_search p{
-	font-size:16.67px;
-	line-height:16.67px;
-	color:#7e8a95;
-	margin-bottom: 20px;
-}
-#contents .artist_main_search input{
-	font-size:40px;
-	line-height:40px;
-	color:#fff;
-	width: 100%;
-} 
-#contents .artist_list_area{}
-#contents .artist_list_area .artist_nav{
-	height: 64px;
-	display: block;
-}
+#contents .list_area{}
+
+#contents .artist_list_area .artist_nav li:first-child{background:url("../img/m_artistlist_nav1.png") no-repeat;background-size:13px 17px;background-position: center center;}
+#contents .artist_list_area .artist_nav li:nth-child(2){background:url("../img/m_artistlist_nav2.png") no-repeat;background-size:16px 11px;background-position: center center;}
+#contents .artist_list_area .artist_nav li:last-child{background:url("../img/m_artistlist_nav3.png") no-repeat;background-size:15px 23px;background-position: center center;}
+
 #contents .artist_list_area .artist_nav li{
 	float: left;
 	width:33.333333333333333%; 
 	height: 64px;
-	background-color:#eff3f6;
+	background-color:#eff3f6 !important;
 }
 #contents .artist_list_area .artist_nav li.artist_nav_select{
-	background-color:#fff;
+	background-color:#fff !important;
 }	
 #contents .artist_list_area .artist_nav li a{
 	width:100%; 
 	height: 64px;
 	display:block;
 }
-#contents .artist_list_area .artist_nav li:first-child{background:url("../img/m_artistlist_nav1.png") no-repeat;background-size:13px 17px;background-position: center center;}
-#contents .artist_list_area .artist_nav li:nth-child(2){background:url("../img/m_artistlist_nav2.png") no-repeat;background-size:16px 11px;background-position: center center;}
-#contents .artist_list_area .artist_nav li:last-child{background:url("../img/m_artistlist_nav3.png") no-repeat;background-size:15px 23px;background-position: center center;}
-#contents .artist_list_area .artist_list{
-	/* background-color:pink; */
-	margin: 0% 8.34%;
-}
 #contents .artist_list_area{font-family: "Roboto", sans-serif;}
-#contents .artist_list_area .artist_list .list_total{
-	font-family: inherit;
-	font-size: 14px;
-	height: 64px;
-	line-height: 64px;
-	text-align: left;
-	color: #888888;
-	font-weight:300;
-	border-bottom:solid 1px #eff5f7;
-}
-#contents .artist_list_area .artist_list p span{font-weight:500;}
+
 #contents .artist_list_area .artist_list ul li a{
 	height: 74px;
 	border-bottom:solid 1px #eff5f7;
@@ -270,7 +287,64 @@ body #contents form #search_button{
 	color: #222222;
 }
 /*artist_list end*/
-
+/*artwork_list start*/
+.artwork_list ul li{
+	background-color: #ffffff;
+    border-bottom: solid 11px #eff3f6;
+    clear: both;
+}
+.artwork_list ul li .img_area{
+	/* background-color:pink; */
+	width: 33.333333333333333%;
+	float: left;
+}
+.artwork_list ul li .txt_area{
+	/* background-color:hotpink; */
+	float: left;
+    width: 56%;
+    margin-left: 10%;
+}
+.artwork_list ul li a {
+    padding: 0% 8.34%;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: pink;
+    box-sizing: border-box;
+    clear: both;
+    overflow: hidden;
+}
+.artwork_list ul li .txt_area dl dt{
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color: #222222;
+	width:100%;
+	height: 20px;
+	text-overflow:ellipsis; overflow:hidden;	white-space: nowrap;
+}
+.info_art{
+	font-weight: 100 !important;
+}
+.artwork_list ul li .txt_area dl dd{
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+	color: #222222;
+	width:100%;
+	height: 14px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+  }
+.artwork_list ul li .img_area .title_img{
+	width: 100px;
+	height: 100px;
+	background-color:#f7f7f7;
+}
+/*artwork_list end*/
 /* end - main */
 body.user_intro #footer{
 	background-color:transparent !important;
