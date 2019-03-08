@@ -3,6 +3,9 @@ body{
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
 }
+#wrap{
+	position: relative;
+}
 body.user_intro{
 	background-color:#232629;
 }
@@ -187,6 +190,7 @@ body #contents form #search_button{
 #header .header_default .go_back{position:absolute;top:18px;left:8.3%;}
 #header .header_default .go_search{position:absolute;top:17px;right:8.1%;}
 #header .header_search{display:none;}
+#contents{overflow-y:scroll;}
 #contents .artist_main_search{
 	height:215px;
 	background-color:#232629;
@@ -203,6 +207,7 @@ body #contents form #search_button{
 	font-size:40px;
 	line-height:40px;
 	color:#fff;
+	width: 100%;
 } 
 #contents .artist_list_area{}
 #contents .artist_list_area .artist_nav{
@@ -227,11 +232,11 @@ body #contents form #search_button{
 #contents .artist_list_area .artist_nav li:nth-child(2){background:url("../img/m_artistlist_nav2.png") no-repeat;background-size:16px 11px;background-position: center center;}
 #contents .artist_list_area .artist_nav li:last-child{background:url("../img/m_artistlist_nav3.png") no-repeat;background-size:15px 23px;background-position: center center;}
 #contents .artist_list_area .artist_list{
-	background-color:pink;
+	/* background-color:pink; */
 	margin: 0% 8.34%;
 }
 #contents .artist_list_area{font-family: "Roboto", sans-serif;}
-#contents .artist_list_area .artist_list p{
+#contents .artist_list_area .artist_list .list_total{
 	font-family: inherit;
 	font-size: 14px;
 	height: 64px;
@@ -242,19 +247,23 @@ body #contents form #search_button{
 	border-bottom:solid 1px #eff5f7;
 }
 #contents .artist_list_area .artist_list p span{font-weight:500;}
-#contents .artist_list_area .artist_list ul li{
+#contents .artist_list_area .artist_list ul li a{
 	height: 74px;
 	border-bottom:solid 1px #eff5f7;
+	padding: 20px 0px 0px 0px;
+	box-sizing: border-box;
+	display: block;
 }
-#contents .artist_list_area .artist_list ul li span{
+#contents .artist_list_area .artist_list ul li a span{
 	font-family: inherit;
 	font-size: 12px;
 	text-align: left;
 	color: #999999;
 	line-height:12px;
 }
-#contents .artist_list_area .artist_list ul li p{
+#contents .artist_list_area .artist_list ul li a p{
 	font-family: inherit;
+	margin-bottom: 4px;
 	font-size: 18px;
 	line-height:18px;
 	text-align: left;
@@ -263,21 +272,40 @@ body #contents form #search_button{
 /*artist_list end*/
 
 /* end - main */
+body.user_intro #footer{
+	background-color:transparent !important;
+	padding-left: 0px;
+}
+body.user_intro #footer p{
+	padding-top: 18px;
+	box-sizing: border-box;
+	color:#454d54;
+	text-align: center;
+}
 body #footer{
 	height:60px;
 	display: block;
 	width: 100%;
+	margin-top:40px;
+	/* position: absolute;
+	bottom: 0px; */
+	background-color:#eef3f6;
+	padding-left: 30px;
+	box-sizing: border-box;
 } 
 body #footer p{
 	width:100%;
-	padding-top: 18px;
+	padding-top: 27px;
 	box-sizing: border-box;
 	color:#454d54;
 	font-size:12px;
 	display:block;
-	text-align: center;
+	font-family: inherit;
+	font-size: 12px;
+	text-align: left;
+	color: #a7afb7;
+	box-sizing: border-box;
 }
-
 /* 아래는 가져온 스타일 입니다. */
 /* autocomplete 스타일 시작*/
 /*the container must be positioned relative:*/
