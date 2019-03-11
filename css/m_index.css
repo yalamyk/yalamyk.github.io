@@ -555,9 +555,6 @@ body #contents form #search_button{
 	margin-left: 12.068965517241379%;
 	box-sizing: border-box;
 }
-.m_slider .category{
-	margin: 30px 0px 30px 0px;
-}
 .m_slider legend{
 	font-family: inherit;
 	font-size: 14px;
@@ -568,7 +565,7 @@ body #contents form #search_button{
 	width: 60.344827586206897%;
 	margin-bottom:20px;
 }
-.sub_legend{
+.m_slider .sub_legend{
 	font-family: inherit;
 	font-size: 11px;
 	text-align: left;
@@ -576,7 +573,10 @@ body #contents form #search_button{
 	margin-top:4px;
 	font-weight:300;
 }
-#check_all + label{
+.m_slider .category{
+	margin: 30px 0px 30px 0px;
+}
+.m_slider .category #check_all + label{
 	font-family: inherit;
 	font-size: 14px;
 	text-align: left;
@@ -672,3 +672,13 @@ body #footer p{
 	/* border-bottom: 1px solid #d4d4d4; */
 }
 /* autocomplete 스타일 끝*/
+
+.ui-datepicker-calendar {
+	display: none;
+ }
+ .ui-datepicker-month {
+	display: none;
+ }
+ .ui-datepicker-next,.ui-datepicker-prev {
+   display:none;
+ }
