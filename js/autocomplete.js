@@ -3,7 +3,6 @@
 검색 단어 추천 기능을 하는 함수입니다.
 w3schools에 정리되 있는 autocomplete 함수를 가져왔습니다.
 https://www.w3schools.com/howto/howto_js_autocomplete.asp
-마크업 확인을 위해서 사용한것이니 변경하셔도 됩니다.
 */
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,

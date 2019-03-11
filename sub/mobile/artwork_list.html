@@ -1,14 +1,87 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>index blue login</title>
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
-		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>index blue login</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+        <link rel="stylesheet" type="text/css" href="../../css/reset.css">
         <link rel="stylesheet" type="text/css" href="../../css/m_index.css">
-	</head>
-	<body>
+        <script src="../../js/jquery-3.3.1.min.js"></script>
+        <script src="../../js/ui_mobile.js"></script>
+    </head>
+    <body>
+        <div class="page_blur"></div>
+        <div class="m_slider">
+            <div class="slider_header">
+                <title>Filters</title>
+                <button>CLOSE</button>
+            </div>
+            <div class="slider_body">
+                <form action="#">
+                    <fieldset class="category">
+                        <legend>CATEGORY</legend>
+                        <input type="checkbox" id="check_all"> <label for="check_all"><span></span>All</label>
+                        <ul>
+                            <li class="sub_legend">FINE ART</li>
+                            <li>
+                                <input type="checkbox" id="custom_chk1"> <label for="custom_chk1"><span></span>Paintings</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk2"> <label for="custom_chk2"><span></span>Photograph</label>       
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk3"> <label for="custom_chk3"><span></span>Print & Multiples</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk4"> <label for="custom_chk4"><span></span>Sculptures</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk5"> <label for="custom_chk5"><span></span>Works On Paper</label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="custom_chk1"> <label for="custom_chk1"><span></span>Asian Art</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk2"> <label for="custom_chk2"><span></span>Design</label>       
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk3"> <label for="custom_chk3"><span></span>Decorative Art</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk4"> <label for="custom_chk4"><span></span>Ancient</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk5"> <label for="custom_chk5"><span></span>Others</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>YEAR</legend>
+                        <input type="date"> <span>to</span> <input type="date">
+                    </fieldset>
+                    <fieldset> 
+                        <legend>Size</legend>
+                        <ul>
+                            <li><input type="radio" id="radio_cm"> <label for="radio_cm"><span></span>cm</label></li>
+                            <li><input type="radio" id="radio_inches"> <label for="radio_inches"><span></span>inches</label></li>
+                        </ul>
+                        <ul>
+                            <li class="sub_legend">Height</li>
+                        </ul>
+                    </fieldset>
+                    <fieldset> 
+                        <legend>Price</legend>
+                    </fieldset>
+                    <fieldset> 
+                        <legend>ADVANCED SEARCH</legend>
+                    </fieldset>
+                    <input type="submit" class="" alt="Search" value="Search">
+                </form>
+            </div>            
+        </div>
         <div id="header">
             <div class="header_default">
                 <button class="go_back">뒤로가기</button>
@@ -26,15 +99,20 @@
             </div>
         </div>
         <div id="contents">
-            <div class="search_main artist_search">
+            <div class="search_main artwork_search">
                 <h2 class="search_title">Jan van deCappelle</h2>
                 <p>Spain, France, 1881-1973</p>
             </div>
             <div class="search_list artist_list_area">
                 <ul class="search_nav">
-                    <li class="list_total"><span>21 </span>Artists Results</li>
-                    <li><a href="#">sort</a></li>
-                    <li><a href="#">filter</a></li>
+                    <li class="list_total"><span>21 </span>Lots</li>
+                    <li class="list_sort">
+                        <a href="#">sort</a>
+                        <div class="list_sort_area"></div>
+                    </li>
+                    <li class="list_filter">
+                        <a href="#">filter</a>
+                    </li>
                 </ul> 
                 <div class="seach_con artwork_list">
                     <ul>
@@ -46,27 +124,75 @@
                                 </div>
                                 <div class="txt_area">
                                     <dl>
-                                        <dd>
-                                            <dd>Pablo Picasso</dd>
-                                            <dt>A javanese vil test test</dt>
-                                            <dd class="info_art">Woodcut on handmade Suz...</dd>
-                                            <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
-                                            <dd class="info_art">0.6 × 105.4 × 0.5 cm</dd>
-                                            <dd>$800,000 - $900,000</dd>
-                                            <dd>$1,670,000</dd> <dd>Premium</dd>
+                                        <dt class="title_artist">Pablo Picasso</dt>
+                                        <dd class="title_art">A javanese vil test test</dd>
+                                        <dd class="info_art">Woodcut on handmade Suz test test</dd>
+                                        <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
+                                        <dd class="info_art">0.6 × 105.4 × 0.5 cm</dd>
+                                        <dd class="info_art_price_1">$800,000 - $900,000</dd>
+                                        <dd class="info_art_price_2">$1,670,000 <span>Premium</span> </dd> 
+                                        
+                                        <dt class="art_auction_info">03 Mar 2018 <span>Premium</span> </dt>
+                                        <dd class="art_aution_place">
+                                            <b>PHILLIPS, LONDON</b>
+                                            20Century &amp; Contemporary Art Lot. 20
                                         </dd>
-                                        <dd>
-                                            <dt>03 Mar 2018</dt>
-                                            <dd>Premium</dd>
-                                            <dd>PHILLIPS, LONDON</dd>
-                                            <dd>20Century &amp; Contemporary Art Lot. 20</dd>
-                                        </dd>
+                                        <dd class="art_aution_place_2"></dd>
                                     </dl>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            test
+                            <a href="#">
+                                <div class="img_area">
+                                    <div class="title_img"></div>
+                                    <div class="title_guaranted"></div>
+                                </div>
+                                <div class="txt_area">
+                                    <dl>
+                                        <dt class="title_artist">Pablo Picasso</dt>
+                                        <dd class="title_art">A javanese vil test test</dd>
+                                        <dd class="info_art">Woodcut on handmade Suz test test</dd>
+                                        <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
+                                        <dd class="info_art">0.6 × 105.4 × 0.5 cm</dd>
+                                        <dd class="info_art_price_1">$800,000 - $900,000</dd>
+                                        <dd class="info_art_price_2">$1,670,000 <span>Premium</span> </dd> 
+                                        
+                                        <dt class="art_auction_info">03 Mar 2018 <span>Premium</span> </dt>
+                                        <dd class="art_aution_place">
+                                            <b>PHILLIPS, LONDON</b>
+                                            20Century &amp; Contemporary Art Lot. 20
+                                        </dd>
+                                        <dd class="art_aution_place_2"></dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_area">
+                                    <div class="title_img"></div>
+                                    <div class="title_guaranted"></div>
+                                </div>
+                                <div class="txt_area">
+                                    <dl>
+                                        <dt class="title_artist">Pablo Picasso</dt>
+                                        <dd class="title_art">A javanese vil test test</dd>
+                                        <dd class="info_art">Woodcut on handmade Suz test test</dd>
+                                        <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
+                                        <dd class="info_art">0.6 × 105.4 × 0.5 cm</dd>
+                                        <dd class="info_art_price_1">$800,000 - $900,000</dd>
+                                        <dd class="info_art_price_2">$1,670,000 <span>Premium</span> </dd> 
+                                        
+                                        <dt class="art_auction_info">03 Mar 2018 <span>Premium</span> </dt>
+                                        <dd class="art_aution_place">
+                                            <b>PHILLIPS, LONDON</b>
+                                            20Century &amp; Contemporary Art Lot. 20
+                                        </dd>
+                                        <dd class="art_aution_place_2"></dd>
+                                    </dl>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -75,5 +201,5 @@
         <div id="footer">
             <p>Copyright &copy 2019 BLUE INDEX</p>
         </div>
-	</body>
+    </body>
 </html>
