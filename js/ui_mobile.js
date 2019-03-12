@@ -1,15 +1,15 @@
 $(function(){
     $(".list_filter a").click(function() {
-        $(".m_slider,.page_blur,html").addClass("open");
+        $(".m_slider, .page_blur, html").addClass("open");
         window.location.hash = "#open";
-      });
-      
-      window.onhashchange = function() {
-        if (location.hash != "#open") {
-          $(".m_slider,.page_blur,html").removeClass("open");
-        }
-      };
-
+        console.log(' window.location.hash : '+window.location.hash);
+      }); 
+      // window.onhashchange = function() {
+      //   console.log('onhashchange : '+window.location.hash);
+      //   if (window.location.hash != "#open") {
+      //     $(".m_slider,.page_blur,html").removeClass("open");
+      //   }
+      // };
 
       // year picker
       $('#picker_year_start').datepicker({

@@ -24,7 +24,7 @@ input[type="radio"]{
 	display:none;
 }
 input[type="radio"] + label{
-	color:red;
+	color:#222222;
 }
 input[type="radio"] + label span{
 	display:inline-block;
@@ -47,14 +47,13 @@ input[type="radio"]:checked + label span{
 /** 1. 감섹 결과 레이아웃 **/
 .search_main{
 	background-color:#232629;
-	padding:100px 8.34% 0px 8.34%;
+	padding:36px 8.34% 0px 8.34%;
 	box-sizing: border-box;
 }
 .search_main p{
 	font-size:16.67px;
 	line-height:16.67px;
 	color:#7e8a95;
-	margin-bottom: 20px;
 }
 .search_main .search_title{
 	font-size:40px;
@@ -71,15 +70,16 @@ input[type="radio"]:checked + label span{
 	display: block;
 	width:100%;
 	background-color:#eff3f6 !important;
-	padding:0px 8.34% 0px 8.34%;
+	/* padding:0px 8.34% 0px 8.34%; */
+	/* padding-left: 29px; */
 	box-sizing:border-box;
 	position: relative;
 }
 .search_list .search_nav li{
 	float:left;
 }
-.list_sort{position: absolute;top:24px;right:20%;}
-.list_filter{position: absolute;top:22px;;right:6.388888888888889%;}
+.list_sort{position: absolute;top:24px;right:72px;}
+.list_filter{position: absolute;top:22px;;right:22px;}
 .list_sort a{
 	background: url("../img/m_sort.png") no-repeat;
 	text-indent: -9999px;
@@ -112,7 +112,7 @@ input[type="radio"]:checked + label span{
 	text-align: left;
 	color: #888888;
 	font-weight:300;
-	border-bottom:solid 1px #eff5f7;
+	margin-left:29px;
 }
 .list_total span{font-weight:500;}
 /** 2.슬라이드 m_slider **/
@@ -202,8 +202,8 @@ body #header .header_logo{
 }
 body #contents{
 	display: block;
-	clear: both;
 	box-sizing: border-box;
+	margin-top:60px;
 }
 body.user_intro #contents{
 	margin: 0% 8.34%;
@@ -362,12 +362,12 @@ body #contents form #search_button{
 	border: solid 0px white;
 }
 #header .header_default{}
-#header .header_default .header_logo{left:20.83%;}
-#header .header_default .go_back{position:absolute;top:18px;left:8.3%;}
-#header .header_default .go_search{position:absolute;top:17px;right:8.1%;}
+#header .header_default .header_logo{left:74px;}
+#header .header_default .go_back{position:absolute;top:18px;left:30px;}
+#header .header_default .go_search{position:absolute;top:17px;right:29px;}
 #header .header_search{display:none;}
 #contents .artist_search{
-	height:215px;
+	min-height:157px;
 }
 #contents .list_area{}
 #contents .artist_list_area .artist_nav li:first-child{background:url("../img/m_artistlist_nav1.png") no-repeat;background-size:13px 17px;background-position: center center;}
@@ -417,7 +417,7 @@ body #contents form #search_button{
 .artwork_list{
 }
 .artwork_search{
-	height:264px;
+	min-height:204px;
 }
 .artwork_search p{
 	margin-top: 20px;
@@ -425,21 +425,18 @@ body #contents form #search_button{
 .artwork_list ul li{
 	background-color: #ffffff;
 	border-bottom: solid 11px #eff3f6;
-	clear: both;
 }
 .artwork_list ul li .img_area{
-	/* background-color:pink; */
-	width: 33.333333333333333%;
+	width:100px;
 	float: left;
 }
 .artwork_list ul li .txt_area{
-	/* background-color:hotpink; */
 	float: left;
-	width: 56%;
-	margin-left: 10%;
+    width: 50%;
+    margin-left: 19px;
 }
 .artwork_list ul li a {
-	padding: 90px 8.34% 40px 8.34%;
+	padding: 90px 30px 40px 30px;
 	display: block;
 	width: 100%;
 	height: auto;
@@ -625,7 +622,160 @@ body #contents form #search_button{
 	height:30px;
 }
 /* artwork_list end */
+/* artwork_detail.html start */
 
+#contents .detail_info{
+	/* background-color: pink; */
+	min-height:387px;
+	border-bottom:solid 3px #eef3f6;
+}
+#contents .detail_info .d_more{
+	margin-left:30px; 
+	display: block;
+	width: 46px;
+	height: 19px;
+	line-height:19px;
+	text-align: center;
+	border-radius: 9px;
+	background-color: #a7afb7;
+	color:#fff;
+	font-family: inherit;
+	font-size: 10px;
+	font-weight: 500;
+}
+#contents .detail_slide{
+	min-height: 145px;
+	border-bottom: solid 3px #eef3f6;
+	padding: 30px;
+	box-sizing: border-box;
+}
+#contents .detail_slide .slide_wrap{
+	overflow-x: auto;
+}
+#contents .detail_slide span{
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #222222;
+	margin-bottom:11px;
+	display: block;
+}
+#contents .detail_slide ul {
+	display:flex;
+}
+#contents .detail_slide ul li{
+	min-width:56px;
+	height:57px;
+	float:left;
+	margin-right:5px;
+}
+#contents .detail_price{
+	padding:30px 30px 0px 30px;
+	box-sizing: border-box;
+	min-height:283px;
+	border-bottom:solid 3px #eef3f6;
+}
+#contents .detail_price .price_list{
+	font-weight:300;
+}
+#contents .detail_price .price_list .range{
+	font-family: inherit;
+	font-size: 16px;
+	line-height:21px;
+	color: #bbbbbb;
+}
+#contents .detail_price .price_list .price1{
+	font-family: inherit;
+	font-size: 28px;
+	line-height: 28px;
+	letter-spacing: -0.8px;
+	color: #222222;
+	margin-top: 9px;
+	font-weight: 500;
+}
+#contents .detail_price .price_list .price1 span{
+	font-family: inherit;
+	font-size: 10px;
+	line-height: 10px;
+	color: #888888;
+	font-weight:300;
+}
+#contents .detail_price .price_list .price2{
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 25px;
+	letter-spacing: -0.5px;
+	text-align: left;
+	color: #222222;
+}
+#contents .detail_price .price_info {
+	margin-top:30px;;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 20px;
+	color: #444444;
+	font-weight:300;
+}
+#contents .detail_price .price_info .date{color:#666666;font-weight:100;}
+#contents .detail_price .price_info .place{font-weight:500;}
+#contents .detail_txt{
+}
+#contents .detail_info .d_img_wrap{
+	/* background-color:lightcoral; */
+	width:100%;
+	min-height:141px;
+	position: relative;
+}
+#contents .detail_info .d_img_wrap .d_main_img{
+	/* margin-left:30px; */
+	position: absolute;
+	left:30px;
+	top:30px;
+}
+#contents .detail_info .d_img_wrap .d_sub_img{
+	position: absolute;
+	top:30px;
+	right:30px;
+}
+#contents .detail_info .detail_define {
+	margin-left:30px;
+	margin-top:14px;
+}
+#contents .detail_info .detail_define .artist{
+	font-family: inherit;
+	font-size: 20px;
+	line-height:20px;
+	color: #444;
+	margin-bottom:10px;
+}
+#contents .detail_info .detail_define .artist_ex{
+	font-family: inherit;
+	font-size: 12px;
+	line-height:12px;
+	color: #a7afb7;
+	margin-bottom:20px;
+}
+#contents .detail_info .detail_define .art_name{
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	color: #222222;
+	margin-bottom:8px;
+}
+.art_ex{
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 1.5;
+	text-align: left;
+	color: #222222;
+	width:220px;
+	margin-bottom:10px;
+}
+/* artwor_detail.html end */
 body.user_intro #footer{
 	background-color:transparent !important;
 	padding-left: 0px;
@@ -702,3 +852,98 @@ display: none;
 display:none;
 }
 /* jquery-ui : datapicker css 수정 end*/
+/* 아코디언 메뉴 */
+.accordion {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	font-size: 14px;
+	/* border: 1px solid #542437; */
+	/* border-radius: 10px; */
+	/* width: 600px; */
+	/* padding: 10px; */
+	background: #fff;
+}
+.accordion ul {
+	list-style:none;
+	margin:0;
+	padding:0;    
+}
+.accordion li {
+	margin:0;
+	padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+	display:none;
+}
+.accordion label {
+	display:block;
+	font-size:16px;
+	line-height:16px;
+	border-bottom:solid 3px #eef3f6;
+	font-weight:300;
+	cursor:pointer;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	color:#222222;
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: left;
+	color: #222222;
+}
+
+
+.accordion label{position: relative;}
+.accordion label:after{
+	content:url('../img/m_accordian_down.png');
+	position: absolute;
+	top:29px;
+	right:22px;
+}
+.accordion [type=radio]:checked ~ label:after, 
+.accordion [type=checkbox]:checked ~ label:after{
+	content:url('../img/m_accordian_up.png');
+
+}
+
+
+.accordion .content {
+	overflow:hidden;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+}
+.accordion p {
+	color:#333;
+	margin:0 0 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 1.38;
+	text-align: left;
+	color: #484848;padding: 40px 28px 40px 30px;
+}
+.accordion h3 {
+	padding:0;
+	margin:10px 0;
+}
+/* Vertical */
+.vertical ul li {
+	overflow:hidden;
+	margin:0 0 1px;
+}
+.vertical ul li label {
+	padding:30px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+	border-bottom:0;
+}
+
+.vertical ul li .content {
+	height:0px;
+	border-top:0;
+}
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+	height:auto;
+	background-color: #eef3f6;
+
+}
