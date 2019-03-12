@@ -7,8 +7,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
         <link rel="stylesheet" type="text/css" href="../../css/reset.css">
         <link rel="stylesheet" type="text/css" href="../../css/m_index.css">
+        <link rel="stylesheet" href="../../css/base/jquery-ui-1.9.2.custom.css">
+        <link rel="stylesheet" href="../../css/base/jquery-ui-1.9.2.custom.min.css">
+
         <script src="../../js/jquery-3.3.1.min.js"></script>
         <script src="../../js/ui_mobile.js"></script>
+        <script src="../../js/jquery-ui-1.9.2.custom.js"></script>
         <script src="../../js/jquery-ui-1.9.2.custom.js"></script>
         <script src="../../js/jquery-ui-1.9.2.custom.min.js"></script>
     </head>
@@ -17,7 +21,7 @@
         <div class="m_slider">
             <div class="slider_header">
                 <title>Filters</title>
-                <button>CLOSE</button>
+                <button onclick="history.back();">CLOSE</button>
             </div>
             <div class="slider_body">
                 <form action="#">
@@ -41,35 +45,40 @@
                             <li>
                                 <input type="checkbox" id="custom_chk5"> <label for="custom_chk5"><span></span>Works On Paper</label>
                             </li>
+                            <li class="slider_border"></li>
+                            <li>
+                                <input type="checkbox" id="custom_chk6"> <label for="custom_chk6"><span></span>Asian Art</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk7"> <label for="custom_chk7"><span></span>Design</label>       
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk8"> <label for="custom_chk8"><span></span>Decorative Art</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk9"> <label for="custom_chk9"><span></span>Ancient</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="custom_chk10"> <label for="custom_chk10"><span></span>Others</label>
+                            </li>
                         </ul>
                         <ul>
-                            <li>
-                                <input type="checkbox" id="custom_chk1"> <label for="custom_chk1"><span></span>Asian Art</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="custom_chk2"> <label for="custom_chk2"><span></span>Design</label>       
-                            </li>
-                            <li>
-                                <input type="checkbox" id="custom_chk3"> <label for="custom_chk3"><span></span>Decorative Art</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="custom_chk4"> <label for="custom_chk4"><span></span>Ancient</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="custom_chk5"> <label for="custom_chk5"><span></span>Others</label>
-                            </li>
+                            <li class="sub_legend">Medium</li>
+                            <input type="text" class="search_box">
+                            <input type="text" id="myInput" name="myCountry" class="search_box" placeholder="Search by Artist">
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="slider_year">
                         <legend>YEAR</legend>
-                        <input type="text" id="datepicker" /> <span>to</span>  <input type="text" id="datepicker" />
+                        <input type="text" class="picker" id="picker_year_start" />
+
+                        <span>to</span>
+                        <input type="text" class="picker" id="picker_year_end" />
                     </fieldset>
                     <fieldset> 
                         <legend>Size</legend>
-                        <ul>
-                            <li><input type="radio" id="radio_cm"> <label for="radio_cm"><span></span>cm</label></li>
-                            <li><input type="radio" id="radio_inches"> <label for="radio_inches"><span></span>inches</label></li>
-                        </ul>
+                        <input type="radio" id="radio_cm"> <label for="radio_cm"><span></span>cm</label>
+                        <input type="radio" id="radio_inches"> <label for="radio_inches"><span></span>inches</label>
                         <ul>
                             <li class="sub_legend">Height</li>
                             <li></li>
@@ -97,7 +106,7 @@
                     <div class="autocomplete" >
                         <input type="text" id="myInput" name="myCountry" class="search_box" placeholder="t">
                         </div>
-                    <input type="submit" id="search_button">
+                    <input type="submit" id="search_button" onclick="history.back();">
                 </form>
             </div>
         </div>

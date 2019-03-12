@@ -131,11 +131,24 @@ input[type="radio"]:checked + label span{
 	height: 100%;
 	position: fixed;
 	top:0px;
-	right:0px;
+	right:-9999px;
 	z-index:10000;
 	background-color: #fff;
 	font-family: "Roboto", sans-serif
 }
+/* .open{
+	right:0px;
+} */
+html.open {
+	overflow: hidden;
+}
+.m_slider.open {
+	right: 0px;
+}
+.page_blur.open {
+	display: block;
+}
+
 .m_slider .slider_header{
 	height:75px;
 	width:100%;
@@ -543,6 +556,10 @@ body #contents form #search_button{
 	font-weight: 300;
 }
 /*artwork - filter 슬라이드*/
+.slider_border{
+	border-bottom:solid 3px #eef3f6;
+	margin:20px 0px 20px 0px;
+}
 .m_slider .slider_body {
 	
 }
@@ -604,7 +621,11 @@ body #contents form #search_button{
 	color: #999999;
 	font-weight: 300;
 }
-
+.slider_year .picker{
+	background-color:#eef3f6;
+	width:100px;
+	height:30px;
+}
 /* artwork_list end */
 
 body.user_intro #footer{
@@ -672,13 +693,14 @@ body #footer p{
 	/* border-bottom: 1px solid #d4d4d4; */
 }
 /* autocomplete 스타일 끝*/
-
+/* jquery-ui : datapicker css 수정 start*/
 .ui-datepicker-calendar {
-	display: none;
- }
- .ui-datepicker-month {
-	display: none;
- }
- .ui-datepicker-next,.ui-datepicker-prev {
-   display:none;
- }
+display: none;
+}
+.ui-datepicker-month {
+display: none;
+}
+.ui-datepicker-next,.ui-datepicker-prev {
+display:none;
+}
+/* jquery-ui : datapicker css 수정 end*/
