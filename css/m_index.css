@@ -366,8 +366,6 @@ body #contents form #search_button{
 #header .header_default .go_back{position:absolute;top:18px;left:8.3%;}
 #header .header_default .go_search{position:absolute;top:17px;right:8.1%;}
 #header .header_search{display:none;}
-#contents{overflow-y:scroll;}
-
 #contents .artist_search{
 	height:215px;
 }
