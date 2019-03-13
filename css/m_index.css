@@ -181,6 +181,40 @@ html.open {
 	border-bottom:solid 3px #eef3f6;
 }
 .art_aution_place b{display:block;}
+.simple_header{
+	position: relative;
+}
+.simple_header > .btn_x{
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 18px;
+	left: 30px;
+	box-sizing: border-box;
+	border:none;
+	text-indent: -9999px;
+	background:url("../img/m_com_x.png")
+}
+.simple_header > title{
+	position: absolute;
+	left:74px;
+	top:15px;
+	font-family: inherit;
+	font-size: 16px;
+	text-align: left;
+	color: #ffffff;
+	display:inline-block;
+}
+.simple_header > p{
+	position: absolute;
+	left:74px;
+	top:37px;
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: left;
+	color: #a7afb7;
+}
 /*** 반복사용 class end ***/
 
 body.user_intro{
@@ -440,7 +474,6 @@ body #contents form #search_button{
 	display: block;
 	width: 100%;
 	height: auto;
-	/* background-color: pink; */
 	box-sizing: border-box;
 	clear: both;
 	overflow: hidden;
@@ -625,7 +658,6 @@ body #contents form #search_button{
 /* artwork_detail.html start */
 
 #contents .detail_info{
-	/* background-color: pink; */
 	min-height:387px;
 	border-bottom:solid 3px #eef3f6;
 }
@@ -776,6 +808,141 @@ body #contents form #search_button{
 	margin-bottom:10px;
 }
 /* artwor_detail.html end */
+/* comparables.html start */
+.comparables_list li{
+	min-height:198px;
+	width: 100%;
+	border-bottom: solid 11px #eff3f6;
+	padding: 20px 0px 20px 0px;
+    box-sizing: border-box;
+}
+.comparables_list li:first-child{
+	background-color: #eff3f6;
+	border-bottom: none;
+}
+.comparables_list li .com_art{
+	padding-left: 19px;
+    float: left;
+	width: 100%;
+	margin-right: -127px;
+    padding-right: 127px;
+    box-sizing: border-box;
+}
+.comparables_list li .com_art .com_imgarea{
+	height: 100px;
+	width: 95%;
+	/* position:relative; */
+	/* width: 58%; */
+}
+.comparables_list li .com_art .com_imgarea img{
+	float: left;
+	width: 71px;
+	height:71px;
+}
+.com_art_txt{
+	height: 30px;
+    margin-right: -80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    display: block;
+    float: right;
+    width: 100%;
+}
+.comparables_list li .com_art .com_imgarea .c_title{
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #444;
+	overflow: hidden;
+	text-overflow:ellipsis; overflow:hidden;white-space: nowrap;
+	width: 100%;
+
+}
+.comparables_list li .com_art .com_imgarea .c_info{
+	font-family: inherit;
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 11px;
+	color: #a7afb7;
+	width: 100%;
+	overflow: hidden;
+	line-height: 1.45;
+	margin-top: 5px;
+	/* text-overflow:ellipsis; overflow:hidden;white-space: nowrap; */
+
+}
+.comparables_list li .com_art table{
+	clear: both;
+	overflow: hidden;
+}
+.comparables_list li .com_art table tr{
+	margin-bottom: 11px;
+}
+.comparables_list li .com_art table th{
+	font-family: inherit;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    color: #a7afb7;
+    width: 80px;
+    height: 20px;
+}
+.comparables_list li .com_art table td{
+	font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: left;
+    color: #222222;
+}
+.comparables_list li .com_result{
+    width: 127px;
+    float: right;
+    box-sizing: border-box;
+    border-left: solid 1px #dae1e6;
+    min-height: 133px;
+    display: block;
+    padding: 2px 0px 2px 9px;
+}
+.com_range {
+    line-height: 1.43;
+    margin-bottom: 52px;
+}
+.comparables_list li .com_result .com_range p{
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.43;
+	text-align: left;
+	color: #a7afb7;
+}
+.comparables_list li .com_result .com_price{line-height: 16px;}
+.comparables_list li .com_result .com_price .c_p_n{
+	font-family: inherit;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 1.6;
+	color: #222222;
+}
+.comparables_list li .com_result .com_price .c_p_1{
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: left;
+	color: #222222;
+}
+.comparables_list li .com_result .com_price .c_p_2{
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.33;
+	text-align: left;
+	color: #a7afb7;
+}
+/* comparables.html end */
+
 body.user_intro #footer{
 	background-color:transparent !important;
 	padding-left: 0px;
@@ -892,7 +1059,6 @@ display:none;
 	color: #222222;
 }
 
-
 .accordion label{position: relative;}
 .accordion label:after{
 	content:url('../img/m_accordian_down.png');
@@ -905,8 +1071,6 @@ display:none;
 	content:url('../img/m_accordian_up.png');
 
 }
-
-
 .accordion .content {
 	overflow:hidden;
 	-webkit-transition: all .5s ease-out;
