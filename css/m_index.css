@@ -532,6 +532,11 @@ body #contents form #search_button{
 	background-color:#f7f7f7;
 	font-weight: 100;
 }
+.artwork_list ul li .img_area .title_guaranted img{
+	width: 64px;
+	display:block;
+	margin: 0 auto;
+}
 .info_art_price_1{
 	font-family: inherit;
 	font-size: 18px;
@@ -822,7 +827,7 @@ body #contents form #search_button{
 #contents .detail_slide span{
 	font-family: inherit;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: normal;
 	line-height: 20px;
 	color: #222222;
 	margin-bottom:11px;
@@ -1016,32 +1021,57 @@ body #contents form #search_button{
 }
 .comparables_list li .com_art table th{
 	font-family: inherit;
-    font-size: 12px;
-    font-weight: 300;
-    text-align: left;
-    color: #a7afb7;
-    width: 80px;
-    height: 20px;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: left;
+	color: #a7afb7;
+	width: 80px;
+	height: 20px;
 }
 .comparables_list li .com_art table td{
 	font-family: inherit;
-    font-weight: 300;
-    font-size: 12px;
-    text-align: left;
-    color: #222222;
+	font-weight: 300;
+	font-size: 12px;
+	text-align: left;
+	color: #222222;
+}
+.figure_table th{
+	color:#222222 !important;
+	font-weight:500 !important;
+}
+.figure_table .t_circle{
+	width:15px;
+	height:15px;
+	margin-right:11px;
+	background:url("../img/t_circle.png") no-repeat;
+	display: inline-block;
+}
+.figure_table .t_triangle{
+	width:15px;
+	height:15px;
+	margin-right:11px;
+	background:url("../img/t_triangle.png") no-repeat;
+	display: inline-block;
+}
+.figure_table .t_x{
+	width:15px;
+	height:15px;
+	margin-right:11px;
+	background:url("../img/t_x.png") no-repeat;
+	display: inline-block;
 }
 .comparables_list li .com_result{
-    width: 127px;
-    float: right;
-    box-sizing: border-box;
-    border-left: solid 1px #dae1e6;
-    min-height: 133px;
-    display: block;
-    padding: 2px 0px 2px 9px;
+	width: 127px;
+	float: right;
+	box-sizing: border-box;
+	border-left: solid 1px #dae1e6;
+	min-height: 133px;
+	display: block;
+	padding: 2px 0px 2px 9px;
 }
 .com_range {
-    line-height: 1.43;
-    margin-bottom: 52px;
+	line-height: 1.43;
+	margin-bottom: 52px;
 }
 .comparables_list li .com_result .com_range p{
 	font-family: inherit;
@@ -1092,9 +1122,6 @@ body #footer{
 	height:60px;
 	display: block;
 	width: 100%;
-	margin-top:40px;
-	/* position: absolute;
-	bottom: 0px; */
 	background-color:#eef3f6;
 	padding-left: 30px;
 	box-sizing: border-box;

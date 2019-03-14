@@ -34,6 +34,31 @@ $(function(){
       //   }
       // });
 
+
+// jQuery(function(){
+// var footerAbsoluteBottom = function(){
+// var windowHeight = $(window).outerHeight();
+// var footerHeight = $('#footer').outerHeight();
+// $('#wrapper').css(
+// {
+// 'min-height' : windowHeight,
+// 'padding-bottom' : footerHeight
+// }
+// );
+// }
+// $(window).resize(function(){
+// footerAbsoluteBottom();
+// });
+// $(document).ready(function(){
+// footerAbsoluteBottom();
+// });
+// });
+// <style>
+// #wrapper{position:relative;}
+// #footer{position:absolute;left:0;bottom:0;width:100%;}
+// </style>
+
+
       $(".date-picker-year").focus(function () {
         $(".ui-datepicker-month").hide();
       });
