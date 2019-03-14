@@ -16,8 +16,35 @@
         <script src="../../js/jquery-ui-1.9.2.custom.min.js"></script>
     </head>
     <body>
-        <div class="page_blur"></div>
-        <div class="m_slider">
+        <div class="page_blur open"></div>
+        <div class="m_slider filter_wrap">
+            <div class="slider_header">
+                <title>Sort</title>
+                <button onclick="history.back();">CLOSE</button>
+            </div>
+            <div class="slider_body">
+                <form action="#">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="chk_filter1"> <label for="chk_filter1"><span></span>Sort by Recently Updated</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk_filter2"> <label for="chk_filter2"><span></span>Sort by Most Expensive</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk_filter3"> <label for="chk_filter3"><span></span>Sort by Least Expensive</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk_filter4"> <label for="chk_filter4"><span></span>Sort by Latest Auction</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk_filter5"> <label for="chk_filter5"><span></span>Sort by Oldest Auction</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="m_slider sort_wrap open">
             <div class="slider_header">
                 <title>Filters</title>
                 <button onclick="history.back();">CLOSE</button>
@@ -26,8 +53,8 @@
                 <form action="#">
                     <fieldset class="category">
                         <legend>CATEGORY</legend>
-                        <input type="checkbox" id="check_all"> <label for="check_all"><span></span>All</label>
-                        <ul>
+                        <input type="checkbox" id="check_all"> <label for="check_all" class="chk_all"><span></span>All</label>
+                        <ul class="f_chk_list">
                             <li class="sub_legend">FINE ART</li>
                             <li>
                                 <input type="checkbox" id="custom_chk1"> <label for="custom_chk1"><span></span>Paintings</label>
@@ -62,34 +89,89 @@
                             </li>
                         </ul>
                         <ul>
-                            <li class="sub_legend">Medium</li>
-                            <input type="text" class="search_box">
-                            <input type="text" id="myInput" name="myCountry" class="search_box" placeholder="Search by Artist">
+                            <li class="sub_legend">MEDIUM</li>
+                            <li><input type="text" id="" class="filter_input filter_medium" placeholder="e.g. oil on canvas"></li>
                         </ul>
                     </fieldset>
                     <fieldset class="slider_year">
                         <legend>YEAR</legend>
-                        <input type="text" class="picker" id="picker_year_start" />
-
-                        <span>to</span>
-                        <input type="text" class="picker" id="picker_year_end" />
+                        <input type="text" class="filter_input2" id="picker_year_start" />
+                        <span class="f_i2_to">to</span>
+                        <input type="text" class="filter_input2" id="picker_year_end" />
                     </fieldset>
-                    <fieldset> 
-                        <legend>Size</legend>
-                        <input type="radio" id="radio_cm"> <label for="radio_cm"><span></span>cm</label>
-                        <input type="radio" id="radio_inches"> <label for="radio_inches"><span></span>inches</label>
-                        <ul>
-                            <li class="sub_legend">Height</li>
-                            <li></li>
+                    <fieldset class="size"> 
+                        <legend>SIZE</legend>
+                        <ul class="size_unit">
+                            <li><input type="radio" id="radio_cm"> <label for="radio_cm"><span></span>cm</label></li>
+                            <li><input type="radio" id="radio_inches"> <label for="radio_inches"><span></span>inches</label></li>    
+                        </ul>
+                        <ul class="inputarea">
+                            <li class="sub_legend">HEIGHT</li>
+                            <li>
+                                <input type="text" class="filter_input2" id="size_height_start" />
+                                <span class="f_i2_to">to</span>
+                                <input type="text" class="filter_input2" id="size_height_end" />
+                            </li>
+                        </ul>
+                        <ul class="inputarea">
+                                <li class="sub_legend">WIDTH</li>
+                                <li>
+                                    <input type="text" class="filter_input2" id="size_width_start" />
+                                    <span class="f_i2_to">to</span>
+                                    <input type="text" class="filter_input2" id="size_width_end" />
+                                </li>
+                            </ul>
+                    </fieldset>
+                    <fieldset class="price"> 
+                            <legend>PRICE <span>in USD</span></legend>
+                            <input type="checkbox" id="price_all"> <label for="price_all" class="chk_all"><span></span>All</label>
+                            <ul class="inputarea">
+                                <li class="sub_legend">HEIGHT</li>
+                                <li>
+                                    <input type="text" class="filter_input2" id="size_height_start" />
+                                    <span class="f_i2_to">to</span>
+                                    <input type="text" class="filter_input2" id="size_height_end" />
+                                </li>
+                            </ul>
+                            <ul class="inputarea">
+                                <li class="sub_legend">WIDTH</li>
+                                <li>
+                                    <input type="text" class="filter_input2" id="size_width_start" />
+                                    <span class="f_i2_to">to</span>
+                                    <input type="text" class="filter_input2" id="size_width_end" />
+                                </li>
+                            </ul>
+                        </fieldset>
+                    <fieldset class="advanced"> 
+                        <legend>ADVANCED SEARCH</legend>
+                        <input type="checkbox" id="advanced_all"> <label for="advanced_all" class="chk_all"><span></span>All</label>
+                        <ul class="inputarea">
+                            <li class="sub_legend">TITLE</li>
+                            <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. flowers"></li>
+
+                            <li class="sub_legend">AUCTION HOUSE</li>
+                            <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. Christie’s New York"></li>
+
+                            <li class="sub_legend">SALE DATE</li>
+                            <li>
+                                <input type="date" class="filter_input2" id="size_height_start" />
+                                <span class="f_i2_to">to</span>
+                                <input type="date" class="filter_input2" id="size_height_end" />
+                            </li>
+
+                            <li class="sub_legend">SALE TITLE</li>
+                            <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. Contemporary Art Eve..."></li>
+                            
+                            <li class="sub_legend">LOT NUMBER</li>
+                            <li>
+                                <input type="text" class="filter_input2" id="size_height_start" />
+                                <span class="f_i2_to">to</span>
+                                <input type="text" class="filter_input2" id="size_height_end" />
+                            </li>
                         </ul>
                     </fieldset>
-                    <fieldset> 
-                        <legend>Price</legend>
-                    </fieldset>
-                    <fieldset> 
-                        <legend>ADVANCED SEARCH</legend>
-                    </fieldset>
-                    <input type="submit" class="" alt="Search" value="Search">
+                    <a href="#" class="filter_refresh"><span></span>Reset Search</a>
+                    <input type="submit" class="filer_search" alt="Search" value="Search">
                 </form>
             </div>            
         </div>
