@@ -1,0 +1,44 @@
+/*
+20180315
+해당 파일은 mixin을 모아두었습니다. 아래와 같은 기능이 있습니다.
+- ellipsis
+- media query (애플 제품 기준)
+*/
+@mixin ellipsis($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    }
+
+
+$iphone-x-size: 375px;
+$way-point-3-size: 575px;
+$ipad-mini-size: 768px;
+
+$iphone-x-under: 'iphone-x-under';
+$iphone-x-to-way-point-3: 'iphone-x-to-way-point-3';
+$way-point-3-to-ipad-mini: 'way-point-3-to-ipad-mini';
+$ipad-mini-over: 'ipad-mini-over';
+$ipad-mini-under: 'ipad-mini-under';
+
+@mixin respond-to($media) {
+  @if $media == $iphone-x-under {
+    @media only screen and (max-width: $iphone-x-size - 1) { @content; }
+  }
+  @else if $media == $iphone-x-to-way-point-3 {
+    @media only screen and (min-width: $iphone-x-size) and (max-width: $way-point-3-size - 1) { @content; }
+  }
+  @else if $media == $way-point-3-to-ipad-mini {
+    @media only screen and (min-width: $way-point-3-size) and (max-width: $ipad-mini-size - 1) { @content; }
+  }
+  @else if $media == $ipad-mini-over {
+    @media only screen and (min-width: $ipad-mini-size) { @content; }
+  }
+  @else if $media == $ipad-mini-under {
+    @media only screen and (max-width: $ipad-mini-size - 1) { @content; }
+  }
+}
