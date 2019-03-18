@@ -26,19 +26,19 @@ $ipad-mini-over: 'ipad-mini-over';
 $ipad-mini-under: 'ipad-mini-under';
 
 @mixin respond-to($media) {
-  @if $media == $iphone-x-under {
-    @media only screen and (max-width: $iphone-x-size - 1) { @content; }
-  }
-  @else if $media == $iphone-x-to-way-point-3 {
-    @media only screen and (min-width: $iphone-x-size) and (max-width: $way-point-3-size - 1) { @content; }
-  }
-  @else if $media == $way-point-3-to-ipad-mini {
-    @media only screen and (min-width: $way-point-3-size) and (max-width: $ipad-mini-size - 1) { @content; }
-  }
-  @else if $media == $ipad-mini-over {
-    @media only screen and (min-width: $ipad-mini-size) { @content; }
-  }
-  @else if $media == $ipad-mini-under {
-    @media only screen and (max-width: $ipad-mini-size - 1) { @content; }
-  }
+    @if $media == $iphone-x-under {
+        @media only screen and (max-width: $iphone-x-size - 1) { @content; }
+    }
+    @else if $media == $iphone-x-to-way-point-3 {
+        @media only screen and (min-width: $iphone-x-size) and (max-width: $way-point-3-size - 1) { @content; }
+    }
+    @else if $media == $way-point-3-to-ipad-mini {
+        @media only screen and (min-width: $way-point-3-size) and (max-width: $ipad-mini-size - 1) { @content; }
+    }
+    @else if $media == $ipad-mini-over {
+        @media only screen and (min-width: $ipad-mini-size) { @content; }
+    }
+    @else if $media == $ipad-mini-under {
+        @media only screen and (max-width: $ipad-mini-size - 1) { @content; }
+    }
 }
