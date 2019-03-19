@@ -13,7 +13,17 @@
     -webkit-line-clamp: $line;
     -webkit-box-orient: vertical;
     }
-
+@mixin input_has_value(){
+    ::placeholder{
+        color: #454d54;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+        color: #fff;
+        border-bottom: solid 1px #ffffff !important;
+    }
+}
 
 $iphone-x-size: 375px;
 $way-point-3-size: 575px;

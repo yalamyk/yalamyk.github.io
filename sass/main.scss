@@ -173,9 +173,9 @@ input {
   font-family: "Roboto", sans-serif;
 }
 
-/* .open{
-            right:0px;
-    } */
+.open{
+  right:0px;
+}
 
 html.open {
   overflow: hidden;
@@ -317,15 +317,9 @@ body {
           font-size: 20px;
           font-family: "Roboto", sans-serif;
           font-weight: 100;
-          color: #454d54;
-          border-bottom: solid 1px #454d54;
+          color:#fff;
           background-color: transparent;
-          &:active,
-          &:hover,
-          &:focus {
-            color: #fff;
-            border-bottom: solid 1px #ffffff !important;
-          }
+          @include input-has-value();
         }
       }
       #remember_id {
@@ -404,16 +398,16 @@ body #contents {
       font-size: 20px;
       font-family: "Roboto", sans-serif;
       font-weight: 100;
-      color: #454d54;
+      color: #fff;
       border-bottom: solid 1px #454d54;
       background-color: transparent;
-      /* border: solid 1px red; */
-      &:active,
-      &:hover,
-      &:focus {
-        color: #fff;
-        border-bottom: solid 1px #ffffff !important;
-      }
+      @include input_has_value();
+      // &:active,
+      // &:hover,ㄴ
+      // &:focus {
+      //   color: #fff;
+      //   border-bottom: solid 1px #ffffff !important;
+      // }
     }
     #search_button {
       background: url("../img/m_search_icon.png");
