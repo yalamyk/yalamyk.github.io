@@ -8,13 +8,27 @@
         <link rel="stylesheet" type="text/css" href="../../css/reset.css">
         <!-- <link rel="stylesheet" type="text/css" href="../../css/m_index.css"> -->
         <link rel="stylesheet" type="text/css" href="../../css/main.css">
-        <link rel="stylesheet" href="../../css/base/jquery-ui-1.9.2.custom.css">
-        <link rel="stylesheet" href="../../css/base/jquery-ui-1.9.2.custom.min.css">
+        <link rel="stylesheet" href="../../css/daterangepicker.css">
         <script src="../../js/jquery-3.3.1.min.js"></script>
         <script src="../../js/ui_mobile.js"></script>
-        <script src="../../js/jquery-ui-1.9.2.custom.js"></script>
-        <script src="../../js/jquery-ui-1.9.2.custom.js"></script>
-        <script src="../../js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="../../js/daterangepicker.js"></script>
+        <script src="../../js/moment.min.js"></script>
+        <script>
+            $('input[name="datefilter"]').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
+
+            $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+            });
+
+            $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                $(this).val('');
+            });
+        </script>
     </head>
     <body>
         <div class="page_blur"></div>
@@ -96,9 +110,10 @@
                     </fieldset>
                     <fieldset class="slider_year">
                         <legend>YEAR</legend>
-                        <input type="text" class="filter_input2" id="picker_year_start" />
+                        <input type="text" name="datefilter" value="" />
+                        <!-- <input type="number" class="filter_input2" id="picker_year_start" />
                         <span class="f_i2_to">to</span>
-                        <input type="text" class="filter_input2" id="picker_year_end" />
+                        <input type="number" class="filter_input2" id="picker_year_end" /> -->
                     </fieldset>
                     <fieldset class="size"> 
                         <legend>SIZE</legend>
@@ -109,17 +124,17 @@
                         <ul class="inputarea">
                             <li class="sub_legend">HEIGHT</li>
                             <li>
-                                <input type="text" class="filter_input2" id="size_height_start" />
+                                <input type="number" class="filter_input2" id="size_height_start" />
                                 <span class="f_i2_to">to</span>
-                                <input type="text" class="filter_input2" id="size_height_end" />
+                                <input type="number" class="filter_input2" id="size_height_end" />
                             </li>
                         </ul>
                         <ul class="inputarea">
                                 <li class="sub_legend">WIDTH</li>
                                 <li>
-                                    <input type="text" class="filter_input2" id="size_width_start" />
+                                    <input type="number" class="filter_input2" id="size_width_start" />
                                     <span class="f_i2_to">to</span>
-                                    <input type="text" class="filter_input2" id="size_width_end" />
+                                    <input type="number" class="filter_input2" id="size_width_end" />
                                 </li>
                             </ul>
                     </fieldset>
@@ -127,19 +142,19 @@
                             <legend>PRICE <span>in USD</span></legend>
                             <input type="checkbox" id="price_all"> <label for="price_all" class="chk_all"><span></span>All</label>
                             <ul class="inputarea">
-                                <li class="sub_legend">HEIGHT</li>
+                                <li class="sub_legend">SOLD</li>
                                 <li>
-                                    <input type="text" class="filter_input2" id="size_height_start" />
+                                    <input type="number" class="filter_input2" id="size_height_start" />
                                     <span class="f_i2_to">to</span>
-                                    <input type="text" class="filter_input2" id="size_height_end" />
+                                    <input type="number" class="filter_input2" id="size_height_end" />
                                 </li>
                             </ul>
                             <ul class="inputarea">
-                                <li class="sub_legend">WIDTH</li>
+                                <li class="sub_legend">ESTIMATE</li>
                                 <li>
-                                    <input type="text" class="filter_input2" id="size_width_start" />
+                                    <input type="number" class="filter_input2" id="size_width_start" />
                                     <span class="f_i2_to">to</span>
-                                    <input type="text" class="filter_input2" id="size_width_end" />
+                                    <input type="number" class="filter_input2" id="size_width_end" />
                                 </li>
                             </ul>
                         </fieldset>
@@ -165,9 +180,9 @@
                             
                             <li class="sub_legend">LOT NUMBER</li>
                             <li>
-                                <input type="text" class="filter_input2" id="size_height_start" />
+                                <input type="number" class="filter_input2" id="size_height_start" />
                                 <span class="f_i2_to">to</span>
-                                <input type="text" class="filter_input2" id="size_height_end" />
+                                <input type="number" class="filter_input2" id="size_height_end" />
                             </li>
                         </ul>
                     </fieldset>

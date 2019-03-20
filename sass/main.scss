@@ -137,8 +137,8 @@ input {
   line-height: 64px;
   text-align: left;
   color: #888888;
+  padding-left: 30px;
   font-weight: 300;
-  margin-left: 29px;
   span {
     font-weight: 500;
   }
@@ -519,26 +519,39 @@ body #contents {
       }
     }
     font-family: "Roboto", sans-serif;
-    .artist_list ul li a {
-      height: 74px;
-      border-bottom: solid 1px #eff5f7;
-      padding: 20px 0px 0px 0px;
-      box-sizing: border-box;
-      display: block;
-      span {
-        font-family: inherit;
-        font-size: 12px;
-        text-align: left;
-        color: #999999;
-        line-height: 12px;
-      }
-      p {
-        font-family: inherit;
-        margin-bottom: 4px;
-        font-size: 18px;
-        line-height: 18px;
-        text-align: left;
-        color: #222222;
+    .artist_list {
+      li{
+        a{
+          &:after{
+            content:url("../img/artist_list_arrow1.png");
+            position: absolute;
+            top:50%;
+            margin-top:-6px;
+            right: 0px;
+          }
+          min-height: 74px;
+          border-bottom: solid 1px #eff5f7;
+          padding: 20px 40px 20px 0px;
+          box-sizing: border-box;
+          display: block;
+          position:relative;
+
+          span {
+            font-family: inherit;
+            font-size: 12px;
+            text-align: left;
+            color: #999999;
+            line-height: 12px;
+          }
+          p {
+            font-family: inherit;
+            margin-bottom: 4px;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: left;
+            color: #222222;
+          }
+        }
       }
     }
   }
@@ -552,6 +565,7 @@ body #contents {
 
 .artwork_search {
   min-height: 204px;
+  padding-bottom: 30px;
   p {
     margin-top: 20px;
   }
@@ -856,7 +870,7 @@ body #contents {
   text-align: left;
   color: #777777;
   float: right;
-  padding: 22px 34px 21px 0px;
+  padding: 22px 34px 21px 25px;
   span {
     background: url("../img/filter_refresh.png") no-repeat;
     display: inline-block;
@@ -864,7 +878,7 @@ body #contents {
     height: 14px;
     position: absolute;
     top: 22px;
-    left: -24px;
+    left: 0px;
   }
 }
 
@@ -952,6 +966,7 @@ body #contents {
     box-sizing: border-box;
     .slide_wrap {
       overflow-x: auto;
+      overflow-y:hidden;
     }
     span {
       font-family: inherit;

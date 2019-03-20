@@ -155,8 +155,8 @@ input[type="radio"]:checked + label span {
   line-height: 64px;
   text-align: left;
   color: #888888;
+  padding-left: 30px;
   font-weight: 300;
-  margin-left: 29px;
 }
 
 .list_total span {
@@ -596,16 +596,25 @@ body #contents form #search_button {
   display: block;
 }
 
-#contents .artist_list_area .artist_list ul li a {
-  height: 74px;
+#contents .artist_list_area .artist_list li a {
+  min-height: 74px;
   border-bottom: solid 1px #eff5f7;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 40px 20px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
+  position: relative;
 }
 
-#contents .artist_list_area .artist_list ul li a span {
+#contents .artist_list_area .artist_list li a:after {
+  content: url("../img/artist_list_arrow1.png");
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: 0px;
+}
+
+#contents .artist_list_area .artist_list li a span {
   font-family: inherit;
   font-size: 12px;
   text-align: left;
@@ -613,7 +622,7 @@ body #contents form #search_button {
   line-height: 12px;
 }
 
-#contents .artist_list_area .artist_list ul li a p {
+#contents .artist_list_area .artist_list li a p {
   font-family: inherit;
   margin-bottom: 4px;
   font-size: 18px;
@@ -626,6 +635,7 @@ body #contents form #search_button {
 /*artwork_list start*/
 .artwork_search {
   min-height: 204px;
+  padding-bottom: 30px;
 }
 
 .artwork_search p {
@@ -971,7 +981,7 @@ body #contents form #search_button {
   text-align: left;
   color: #777777;
   float: right;
-  padding: 22px 34px 21px 0px;
+  padding: 22px 34px 21px 25px;
 }
 
 .filter_refresh span {
@@ -981,7 +991,7 @@ body #contents form #search_button {
   height: 14px;
   position: absolute;
   top: 22px;
-  left: -24px;
+  left: 0px;
 }
 
 .filer_search {
@@ -1074,6 +1084,7 @@ body #contents form #search_button {
 
 #contents .detail_slide .slide_wrap {
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 #contents .detail_slide span {
