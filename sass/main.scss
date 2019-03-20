@@ -168,7 +168,7 @@ input {
   position: fixed;
   top: 0px;
   right: -9999px;
-  z-index: 10000;
+  z-index: 150;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -279,7 +279,7 @@ body {
     top: 0px;
     box-sizing: border-box;
     background-color: #232629;
-    z-index: 9999;
+    z-index: 100;
     a{
       width:210px;
       height:60px;

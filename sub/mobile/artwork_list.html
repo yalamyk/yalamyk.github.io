@@ -11,21 +11,15 @@
         <link rel="stylesheet" href="../../css/daterangepicker.css">
         <script src="../../js/jquery-3.3.1.min.js"></script>
         <script src="../../js/ui_mobile.js"></script>
-        <script src="../../js/daterangepicker.js"></script>
         <script src="../../js/moment.min.js"></script>
+        <script src="../../js/daterangepicker.js"></script>
         <script>
-            $('input[name="datefilter"]').daterangepicker({
-                autoUpdateInput: false,
-                locale: {
-                    cancelLabel: 'Clear'
-                }
-            });
-            $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-            });
-
-            $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-                $(this).val('');
+            $(function() {
+                $('input[name="daterange"]').daterangepicker({
+                        opens: 'left'
+                    }, function(start, end, label) {
+                        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                });
             });
         </script>
     </head>
@@ -109,7 +103,8 @@
                     </fieldset>
                     <fieldset class="slider_year">
                         <legend>YEAR</legend>
-                        <input type="text" name="datefilter" value="" />
+                        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+
                         <!-- <input type="number" class="filter_input2" id="picker_year_start" />
                         <span class="f_i2_to">to</span>
                         <input type="number" class="filter_input2" id="picker_year_end" /> -->
@@ -308,5 +303,6 @@
         <div id="footer">
             <p>Copyright &copy 2019 BLUE INDEX</p>
         </div>
+        
     </body>
 </html>
