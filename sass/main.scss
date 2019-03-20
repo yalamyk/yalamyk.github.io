@@ -580,8 +580,27 @@ body #contents {
   }
   .txt_area {
     float: left;
-    width: 50%;
-    margin-left: 19px;
+    width: 100%;
+    // margin-left: 19px;
+    margin-left: -100px;
+    padding-left:100px;
+    box-sizing:border-box;
+    dl {
+      padding-left: 20px;
+      .title_art {
+        /* text-transform: uppercase; */
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: left;
+        color: #222222;
+        width: 100%;
+        height: 20px;
+        @include ellipsis(1);
+        margin-bottom: 14px;
+      }
+    }
   }
   a {
     padding: 90px 30px 40px 30px;
@@ -602,20 +621,6 @@ body #contents {
   text-align: left;
   color: #222222;
   margin-bottom: 16px;
-}
-
-.artwork_list ul li .txt_area dl .title_art {
-  /* text-transform: uppercase; */
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: bold;
-  text-align: left;
-  color: #222222;
-  width: 100%;
-  height: 20px;
-  @include ellipsis(1);
-  margin-bottom: 14px;
 }
 
 .info_art {
