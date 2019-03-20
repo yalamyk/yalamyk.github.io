@@ -163,6 +163,21 @@ input[type="radio"]:checked + label span {
   font-weight: 500;
 }
 
+input[name=datefilter] {
+  width: 227px;
+  height: 31px;
+  border-radius: 2px;
+  background-color: #eef3f6;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.07;
+  text-align: left;
+  padding: 0px 12px 0px 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /** 2.슬라이드 m_slider **/
 .page_blur {
   width: 100%;
