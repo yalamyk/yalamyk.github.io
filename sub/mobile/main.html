@@ -8,12 +8,12 @@
         <link rel="stylesheet" type="text/css" href="../../css/reset.css">
         <link rel="stylesheet" type="text/css" href="../../css/main.css">
         <script src="../../js/jquery-3.3.1.min.js"></script>
-        <script src="../../js/ui_mobile.js"></script>
+        
     </head>
     <body class="user_intro">
         <div class="wrap">
             <div id="header">
-                <img class="header_logo" src="../../img/m_logo.png">
+                <a href="./login.html"><img class="header_logo" src="../../img/m_logo.png"></a>
             </div>
             <div id="contents"> 
                 <form method="post" action="" class="search_form" autocomplete="off" >
@@ -41,16 +41,16 @@
             <p>Copyright &copy 2019 BLUE INDEX</p>
         </div>
     </body>
+    <script type="text/javascript" src="../../js/ui_mobile.js"></script>
+        <script>
+            document.getElementById("auto_input").addEventListener("change", function(){
+                var isValue = isValueTrue('auto_input');
+                if(isValue){
+                    document.getElementById('auto_input').style.borderBottom = 'solid 1px #fff';
+                }else{
+                    document.getElementById('auto_input').style.borderBottom = 'solid 1px #454545';
+                }
+            });
+        </script>
     <script src="../../js/autocomplete.js"></script>
-    <script>
-    document.getElementById("auto_input").addEventListener("change", function(){
-
-    var isValue = isValueTrue('auto_input');
-    if(isValue){
-        document.getElementById('auto_input').style.borderBottom = 'solid 1px #fff';
-    }else{
-        document.getElementById('auto_input').style.borderBottom = 'solid 1px #454545';
-    }
-    });
-  </script>
 </html>

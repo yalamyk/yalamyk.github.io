@@ -301,10 +301,16 @@ body #header {
   z-index: 9999;
 }
 
-body #header .header_logo {
+body #header a {
+  width: 210px;
+  height: 60px;
+  display: block;
+}
+
+body #header a .header_logo {
   position: absolute;
-  top: 20px;
-  left: 30px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
 body #contents {
@@ -348,6 +354,7 @@ body #contents form fieldset ul li input {
   font-weight: 100;
   color: #fff;
   background-color: transparent;
+  border-bottom: solid 1px #454545;
 }
 
 body #contents form fieldset ul li input ::-webkit-input-placeholder {
@@ -449,6 +456,9 @@ body #contents form .search_box {
   color: #fff;
   border-bottom: solid 1px #454d54;
   background-color: transparent;
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body #contents form .search_box ::-webkit-input-placeholder {
@@ -518,17 +528,22 @@ body #contents form #search_button {
   border: solid 0px white;
 }
 
-#header .header_default .header_logo {
-  left: 74px;
+#header .header_default a {
+  width: 240px;
+  height: 60px;
 }
 
-#header .header_default .go_back {
+#header .header_default a .header_logo {
+  left: 30px;
+}
+
+#header .header_default a .go_back {
   position: absolute;
   top: 18px;
   left: 30px;
 }
 
-#header .header_default .go_search {
+#header .header_default a .go_search {
   position: absolute;
   top: 17px;
   right: 29px;
