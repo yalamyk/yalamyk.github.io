@@ -1253,11 +1253,6 @@ body #contents form #search_button {
           box-sizing: border-box;
 }
 
-.comparables_list li:first-child {
-  background-color: #eff3f6;
-  border-bottom: none;
-}
-
 .comparables_list li .com_art {
   padding-left: 19px;
   float: left;

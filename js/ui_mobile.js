@@ -1,4 +1,5 @@
 $(function(){
+  console.log('ui_mobile');
     $(".list_filter a").click(function() {
         $(".m_slider, .page_blur, html").addClass("open");
         window.location.hash = "#open";
@@ -10,19 +11,14 @@ $(function(){
         //   $(".m_slider,.page_blur,html").removeClass("open");
         // }
       };
-      console.log('ui_mobile is load');
       
-      function isValueTrue(num) {
-        console.log(num);
-        var num = document.getElementById(num).value;
-        if(num){
-          return true;
-        }else{
-          return false;
-        }
-      }      
       
 });
-$(document).ready(function(){
-  
-});
+function isValueTrue(num) {
+  var num = document.getElementById(num).value;
+  if(num){
+    return true;
+  }else{
+    return false;
+  }
+}
