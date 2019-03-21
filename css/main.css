@@ -746,7 +746,7 @@ body #contents form #search_button {
   overflow: hidden;
 }
 
-.artwork_list ul li .img_area .title_img .img {
+.artwork_list ul li .img_area .title_img img {
   width: 100px;
   display: block;
   margin: 0 auto;
