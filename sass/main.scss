@@ -658,7 +658,12 @@ body {
 					margin-bottom: 8px;
 				}
 			}
-		}
+        }
+        /* forget password page start*/
+        .forget_email{
+            @include input_txt_w100;
+        }
+        /* forget password page stop */
     } /* # content end */
     #footer {
         height: 60px;
@@ -714,7 +719,6 @@ body {
         right: 30px;
     }
 }
-
 /*artwork_list start*/
 .artwork_search {
     min-height: 204px;
@@ -723,7 +727,6 @@ body {
         margin-top: 20px;
     }
 }
-
 .artwork_list ul li {
     background-color: #ffffff;
     border-bottom: solid 11px #eff3f6;
@@ -883,7 +886,6 @@ body {
         color: #a7afb7;
     }
 }
-
 .art_aution_place {
     font-family: inherit;
     font-size: 13px;
@@ -898,29 +900,6 @@ body {
 }
 
 /*artwork - filter 슬라이드*/
-
-.slider_border {
-    border-bottom: solid 2px #eef3f6;
-    margin: 20px 0px 20px 0px;
-}
-
-.inputarea {
-    clear: both;
-    .sub_legend {
-        margin-bottom: 9px;
-    }
-}
-
-.price legend span {
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.14;
-    text-align: left;
-    color: #888888;
-    margin-left: 9px;
-}
-
 .m_slider {
     legend {
         width: auto;
@@ -967,17 +946,32 @@ body {
         /* padding: 30px 30px 30px 0px; */
         box-sizing: border-box;
     }
-}
-
-.chk_all {
-    font-family: inherit;
-    font-size: 14px;
-    text-align: left;
-    color: #000000;
-    float: right;
-}
-
-.m_slider .category {
+    .slider_border {
+        border-bottom: solid 2px #eef3f6;
+        margin: 20px 0px 20px 0px;
+    }
+    .inputarea {
+        clear: both;
+        .sub_legend {
+            margin-bottom: 9px;
+        }
+    }
+    .price legend span {
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.14;
+        text-align: left;
+        color: #888888;
+        margin-left: 9px;
+    }
+    .chk_all {
+        font-family: inherit;
+        font-size: 14px;
+        text-align: left;
+        color: #000000;
+        float: right;
+    }
     .check_all {
         display: inline-block;
         font-family: inherit;
@@ -1000,32 +994,30 @@ body {
             }
         }
     }
-}
-
-.f_chk_list {
-    margin-bottom: 20px;
-    border-top: solid 2px #eef3f6;
-}
-
-.filter_wrap {
-    .slider_body ul li {
-        border-bottom: solid 2px #eff3f6;
-        font-family: inherit;
-        font-size: 14px;
-        line-height: 1.14;
-        text-align: left;
-        color: #999999;
-        height: 65px;
-        line-height: 65px;
-        font-weight: 300;
-        padding: 0px 0px 0px 36px;
-        box-sizing: border-box;
-        input[type="checkbox"]:checked + label {
-            color: #222;
-        }
+    .f_chk_list {
+        margin-bottom: 20px;
+        border-top: solid 2px #eef3f6;
     }
-    ul {
+}
+.filter_wrap {
+    .slider_body ul{
         margin: 0px !important;
+        li {
+            border-bottom: solid 2px #eff3f6;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 1.14;
+            text-align: left;
+            color: #999999;
+            height: 65px;
+            line-height: 65px;
+            font-weight: 300;
+            padding: 0px 0px 0px 36px;
+            box-sizing: border-box;
+            input[type="checkbox"]:checked + label {
+                color: #222;
+            }
+        }
     }
 }
 
@@ -1124,8 +1116,6 @@ body {
     text-align: left;
     color: #444;
 }
-
-
 
 .art_ex {
     font-family: inherit;
@@ -1322,13 +1312,11 @@ body {
 /* 아래는 가져온 스타일 입니다. */
 /* autocomplete 스타일 시작*/
 /*the container must be positioned relative:*/
-
 .autocomplete {
     width: 100%;
     position: relative;
     display: inline-block;
 }
-
 .autocomplete-items {
     position: absolute;
     border-bottom: none;
@@ -1351,28 +1339,12 @@ body {
         /* border-bottom: 1px solid #d4d4d4; */
     }
 }
-
 /* autocomplete 스타일 끝*/
-/* jquery-ui : datapicker css 수정 start*/
-
-.ui-datepicker-calendar,
-.ui-datepicker-month,
-.ui-datepicker-next,
-.ui-datepicker-prev {
-    display: none;
-}
-
-/* jquery-ui : datapicker css 수정 end*/
 /* 아코디언 메뉴 */
-
 .accordion {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     font-size: 14px;
-    /* border: 1px solid #542437; */
-    /* border-radius: 10px; */
-    /* width: 600px; */
-    /* padding: 10px; */
     background: #fff;
     ul {
         list-style: none;
