@@ -325,6 +325,47 @@ body #header a .header_logo {
   padding-left: 30px;
 }
 
+body #header .go_back {
+  width: 13px;
+  height: 23px;
+  background: url("../img/m_header_arrow.png") no-repeat;
+  text-indent: -9999px;
+  border: solid 0px white;
+}
+
+body #header .go_search {
+  width: 22px;
+  height: 23px;
+  background: url("../img/m_search_icon.png") no-repeat;
+  text-indent: -9999px;
+  border: solid 0px white;
+}
+
+body #header .header_default a {
+  width: 240px;
+  height: 60px;
+}
+
+body #header .header_default a .header_logo {
+  left: 30px;
+}
+
+body #header .header_default a .go_back {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+}
+
+body #header .header_default a .go_search {
+  position: absolute;
+  top: 17px;
+  right: 29px;
+}
+
+body #header .header_search {
+  display: none;
+}
+
 body #contents {
   display: block;
   -webkit-box-sizing: border-box;
@@ -773,47 +814,6 @@ body.user_intro #contents {
 
 /* main end */
 /* artist_list start */
-#header .go_back {
-  width: 13px;
-  height: 23px;
-  background: url("../img/m_header_arrow.png") no-repeat;
-  text-indent: -9999px;
-  border: solid 0px white;
-}
-
-#header .go_search {
-  width: 22px;
-  height: 23px;
-  background: url("../img/m_search_icon.png") no-repeat;
-  text-indent: -9999px;
-  border: solid 0px white;
-}
-
-#header .header_default a {
-  width: 240px;
-  height: 60px;
-}
-
-#header .header_default a .header_logo {
-  left: 30px;
-}
-
-#header .header_default a .go_back {
-  position: absolute;
-  top: 18px;
-  left: 30px;
-}
-
-#header .header_default a .go_search {
-  position: absolute;
-  top: 17px;
-  right: 29px;
-}
-
-#header .header_search {
-  display: none;
-}
-
 /*artist_list end*/
 /*artwork_list start*/
 .artwork_search {

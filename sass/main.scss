@@ -287,6 +287,42 @@ body {
                 padding-left: 30px;
             }
         }
+        .go_back {
+            width: 13px;
+            height: 23px;
+            background: url("../img/m_header_arrow.png") no-repeat;
+            text-indent: -9999px;
+            border: solid 0px white;
+        }
+        .go_search {
+            width: 22px;
+            height: 23px;
+            background: url("../img/m_search_icon.png") no-repeat;
+            text-indent: -9999px;
+            border: solid 0px white;
+        }
+        .header_default {
+            a{
+                width:240px;
+                height:60px;
+                .header_logo {
+                    left: 30px;
+                }
+                .go_back {
+                    position: absolute;
+                    top: 18px;
+                    left: 30px;
+                }
+                .go_search {
+                    position: absolute;
+                    top: 17px;
+                    right: 29px;
+                }
+            }
+        }
+        .header_search {
+            display: none;
+        }
 	}
 
     #contents {
@@ -654,44 +690,7 @@ body {
 /* main end */
 /* artist_list start */
 
-#header {
-    .go_back {
-        width: 13px;
-        height: 23px;
-        background: url("../img/m_header_arrow.png") no-repeat;
-        text-indent: -9999px;
-        border: solid 0px white;
-    }
-    .go_search {
-        width: 22px;
-        height: 23px;
-        background: url("../img/m_search_icon.png") no-repeat;
-        text-indent: -9999px;
-        border: solid 0px white;
-    }
-    .header_default {
-        a{
-            width:240px;
-            height:60px;
-            .header_logo {
-                left: 30px;
-            }
-            .go_back {
-                position: absolute;
-                top: 18px;
-                left: 30px;
-            }
-            .go_search {
-                position: absolute;
-                top: 17px;
-                right: 29px;
-            }
-        }
-    }
-    .header_search {
-        display: none;
-    }
-}
+
 
 
 
