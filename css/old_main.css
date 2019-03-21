@@ -1,10 +1,15 @@
 @charset "UTF-8";
+/* 20180321 sass의 변수를 정의합니다. */
 /*
 20180315
 해당 파일은 mixin을 모아두었습니다. 아래와 같은 기능이 있습니다.
 - ellipsis
 - media query (애플 제품 기준)
+- input_has_value : input 선택시 주어지는 css
+- input_txt_w100 : width가 100% 인 input의 스타일
 */
+/* 미디어 쿼리 정의*/
+/* 미디어쿼리정의 */
 /**** 모바일 코딩 기준 : 360px ****/
 /*** 반복사용 class start ***/
 /** 0. custom checkbox & radio **/

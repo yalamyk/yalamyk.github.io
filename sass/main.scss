@@ -268,6 +268,23 @@ html.open {
 body {
     &.user_intro {
         background-color: #232629;
+        #contents {
+            margin: 0px 30px;
+            clear: both;
+            height: 580px;
+            padding-top: 116px;
+            box-sizing: border-box;
+        }
+        #footer {
+            background-color: transparent !important;
+            padding-left: 0px;
+            p {
+                padding-top: 18px;
+                box-sizing: border-box;
+                color: #454d54;
+                text-align: center;
+            }
+        }
     }
     #header {
         height: 60px;
@@ -287,70 +304,386 @@ body {
                 padding-left: 30px;
             }
         }
-    }
+        .go_back {
+            width: 13px;
+            height: 23px;
+            background: url("../img/m_header_arrow.png") no-repeat;
+            text-indent: -9999px;
+            border: solid 0px white;
+        }
+        .go_search {
+            width: 22px;
+            height: 23px;
+            background: url("../img/m_search_icon.png") no-repeat;
+            text-indent: -9999px;
+            border: solid 0px white;
+        }
+        .header_default {
+            a{
+                width:240px;
+                height:60px;
+                .header_logo {
+                    left: 30px;
+                }
+                .go_back {
+                    position: absolute;
+                    top: 18px;
+                    left: 30px;
+                }
+                .go_search {
+                    position: absolute;
+                    top: 17px;
+                    right: 29px;
+                }
+            }
+        }
+        .header_search {
+            display: none;
+        }
+	}
+
     #contents {
         display: block;
         box-sizing: border-box;
-        margin-top: 60px;
-    }
-    &.user_intro #contents {
-        margin: 0px 30px;
-        clear: both;
-        height: 580px;
-        padding-top: 116px;
-        box-sizing: border-box;
-    }
-    #contents form {
-        background-color: pimnk;
-        font-family: inherit;
-        fieldset {
-            legend {
-                width: 0px;
-                height: 0px;
-                display: none;
-            }
-            ul {
-                width: 100%;
-                margin-bottom: 28px;
-                li input {
-                    width: 100%;
-                    height: 56px;
-                    font-size: 20px;
-                    font-family: "Roboto", sans-serif;
-                    font-weight: 100;
-                    color:#fff;
-                    background-color: transparent;
-                    border-bottom: solid 1px #454545;
-                    @include input-has-value();
-                }
-            }
-            #remember_id {
-                width: 15px;
-                height: 15px;
-                margin-right: 10px;
-                border: solid 1px #7e8a95;
-            }
-            .remember_class {
-                font-size: 14px;
-                color: #7e8a95;
-                font-weight: 300;
-            }
-            .btn_login {
-                margin-top: 21px;
-                width: 100%;
-                height: 55px;
-                background-color: #fff;
-                text-align: center;
-                color: #000000;
-                font-size: 16px;
+		margin-top: 60px;
+		.search_form {
+			position: relative;
+		}
+		form {
+			font-family: inherit;
+			.search_box {
+				width: 100%;
+				height: 56px;
+				font-size: 20px;
+				font-family: "Roboto", sans-serif;
+				font-weight: 100;
+				color: #fff;
+				border-bottom: solid 1px #454d54;
+				background-color: transparent;
+				padding-right: 30px;
+				box-sizing: border-box;
+				@include input_has_value();
+			}
+			#search_button {
+				background: url("../img/m_search_icon.png");
+				position: absolute;
+				top: 15px;
+				right: 1px;
+				width: 23px;
+				height: 24px;
+				display: block;
+				text-indent: -10000px;
+			}
+			fieldset {
+				legend {
+					width: 0px;
+					height: 0px;
+					display: none;
+				}
+				ul {
+					width: 100%;
+					margin-bottom: 28px;
+					li input {
+						width: 100%;
+						height: 56px;
+						font-size: 20px;
+						font-family: "Roboto", sans-serif;
+						font-weight: 100;
+						color:#fff;
+						background-color: transparent;
+						border-bottom: solid 1px #454545;
+						@include input-has-value();
+					}
+				}
+				#remember_id {
+					width: 15px;
+					height: 15px;
+					margin-right: 10px;
+					border: solid 1px #7e8a95;
+				}
+				.remember_class {
+					font-size: 14px;
+					color: #7e8a95;
+					font-weight: 300;
+				}
+				.btn_login {
+					margin-top: 21px;
+					width: 100%;
+					height: 55px;
+					background-color: #fff;
+					text-align: center;
+					color: #000000;
+					font-size: 16px;
+					display: block;
+					appearance: none;
+					-moz-appearance: none;
+					/* Firefox */
+					-webkit-appearance: none;
+					/* Safari and Chrome */
+					font-weight: 500;
+				}
+			}
+        }
+        /* start - main*/
+        .main_txtarea {
+            color: #7e8a95;
+            font-family: inherit;
+            font-size: 13px;
+            line-height: 17px;
+            width: 100%;
+            font-weight: 300;
+            margin-top: 125px;
+            word-break: break-word;
+            p {
                 display: block;
-                appearance: none;
-                -moz-appearance: none;
-                /* Firefox */
-                -webkit-appearance: none;
-                /* Safari and Chrome */
-                font-weight: 500;
+                margin-bottom: 23px;
             }
+        }
+        /* main end */
+		.artist_search {
+			min-height: 157px;
+		}
+		.artist_list_area {
+			font-family: "Roboto", sans-serif;
+			.artist_list{
+				.list_total{
+					padding-left:0px !important;
+				}
+			}
+			.artist_nav li {
+				&:first-child {
+					background: url("../img/m_artistlist_nav1.png") no-repeat;
+					background-size: 13px 17px;
+					background-position: center center;
+				}
+				&:nth-child(2) {
+					background: url("../img/m_artistlist_nav2.png") no-repeat;
+					background-size: 16px 11px;
+					background-position: center center;
+				}
+				&:last-child {
+					background: url("../img/m_artistlist_nav3.png") no-repeat;
+					background-size: 15px 23px;
+					background-position: center center;
+				}
+				float: left;
+				width: 33.333333333333333%;
+				height: 64px;
+				background-color: #eff3f6 !important;
+				&.artist_nav_select {
+					background-color: #fff !important;
+				}
+				a {
+					width: 100%;
+					height: 64px;
+					display: block;
+				}
+			}
+			.artist_list {
+				li{
+					a{
+						&:after{
+							content:url("../img/artist_list_arrow1.png");
+							position: absolute;
+							top:50%;
+							margin-top:-6px;
+							right: 0px;
+						}
+						min-height: 74px;
+						border-bottom: solid 1px #eff5f7;
+						padding: 20px 40px 20px 0px;
+						box-sizing: border-box;
+						display: block;
+						position:relative;
+						span {
+							font-family: inherit;
+							font-size: 12px;
+							text-align: left;
+							color: #999999;
+							line-height: 12px;
+						}
+						p {
+							font-family: inherit;
+							margin-bottom: 4px;
+							font-size: 18px;
+							line-height: 18px;
+							text-align: left;
+							color: #222222;
+						}
+					}
+				}
+			}
+		}
+		.detail_info {
+			min-height: 387px;
+			border-bottom: solid 3px #eef3f6;
+			.d_more {
+				margin-left: 30px;
+				display: block;
+				width: 46px;
+				height: 19px;
+				line-height: 19px;
+				text-align: center;
+				border-radius: 9px;
+				background-color: #a7afb7;
+				color: #fff;
+				font-family: inherit;
+				font-size: 10px;
+				font-weight: 500;
+			}
+		}
+		.detail_slide {
+			min-height: 145px;
+			border-bottom: solid 3px #eef3f6;
+			padding: 30px;
+			box-sizing: border-box;
+			.slide_wrap {
+				overflow-x: auto;
+				overflow-y:hidden;
+			}
+			span {
+				font-family: inherit;
+				font-size: 20px;
+				font-weight: normal;
+				line-height: 20px;
+				color: #222222;
+				margin-bottom: 11px;
+				display: block;
+			}
+			ul {
+				display: flex;
+				li {
+					min-width: 56px;
+					height: 57px;
+					float: left;
+					margin-right: 5px;
+				}
+			}
+		}
+		.detail_price {
+			padding: 30px 30px 0px 30px;
+			box-sizing: border-box;
+			min-height: 283px;
+			border-bottom: solid 3px #eef3f6;
+			.price_list {
+				font-weight: 300;
+				.range {
+					font-family: inherit;
+					font-size: 16px;
+					line-height: 21px;
+					color: #bbbbbb;
+				}
+				.price1 {
+					font-family: inherit;
+					font-size: 28px;
+					line-height: 28px;
+					letter-spacing: -0.8px;
+					color: #222222;
+					margin-top: 9px;
+					font-weight: 500;
+					span {
+						font-family: inherit;
+						font-size: 10px;
+						line-height: 10px;
+						color: #888888;
+						font-weight: 300;
+					}
+				}
+				.price2 {
+					font-family: inherit;
+					font-size: 16px;
+					font-weight: bold;
+					line-height: 25px;
+					letter-spacing: -0.5px;
+					text-align: left;
+					color: #222222;
+				}
+			}
+			.price_info {
+				margin-top: 30px;
+				font-family: inherit;
+				font-size: 14px;
+				line-height: 20px;
+				color: #444444;
+				font-weight: 300;
+				.date {
+					color: #666666;
+					font-weight: 100;
+				}
+				.place {
+					font-weight: 500;
+				}
+			}
+		}
+		.detail_info {
+			.d_img_wrap {
+				width: 100%;
+				min-height: 141px;
+				position: relative;
+				.d_main_img {
+					/* margin-left:30px; */
+					position: absolute;
+					left: 30px;
+					top: 30px;
+				}
+				.d_sub_img {
+					position: absolute;
+					top: 30px;
+					right: 30px;
+				}
+			}
+			.detail_define {
+				margin-left: 30px;
+				margin-top: 14px;
+				.artist {
+					font-family: inherit;
+					font-size: 20px;
+					line-height: 20px;
+					color: #444;
+					margin-bottom: 10px;
+				}
+				.artist_ex {
+					font-family: inherit;
+					font-size: 12px;
+					line-height: 12px;
+					color: #a7afb7;
+					margin-bottom: 20px;
+				}
+				.art_name {
+					font-family: inherit;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 16px;
+					color: #222222;
+					margin-bottom: 8px;
+				}
+			}
+        }
+        /* forget password page start*/
+        .forget_email{
+            @include input_txt_w100;
+        }
+        /* forget password page stop */
+    } /* # content end */
+    #footer {
+        height: 60px;
+        display: block;
+        width: 100%;
+        background-color: #eef3f6;
+        padding-left: 30px;
+        box-sizing: border-box;
+        p {
+            width: 100%;
+            padding-top: 27px;
+            box-sizing: border-box;
+            color: #454d54;
+            font-size: 12px;
+            display: block;
+            font-family: inherit;
+            font-size: 12px;
+            text-align: left;
+            color: #a7afb7;
+            box-sizing: border-box;
         }
     }
 }
@@ -386,177 +719,7 @@ body {
         right: 30px;
     }
 }
-
-/* start - main*/
-
-body #contents {
-    .search_form {
-        position: relative;
-    }
-    form {
-        .search_box {
-            width: 100%;
-            height: 56px;
-            font-size: 20px;
-            font-family: "Roboto", sans-serif;
-            font-weight: 100;
-            color: #fff;
-            border-bottom: solid 1px #454d54;
-            background-color: transparent;
-            padding-right: 30px;
-            box-sizing: border-box;
-            @include input_has_value();
-        }
-        #search_button {
-            background: url("../img/m_search_icon.png");
-            position: absolute;
-            top: 15px;
-            right: 1px;
-            width: 23px;
-            height: 24px;
-            display: block;
-            text-indent: -10000px;
-        }
-    }
-}
-
-.main_txtarea {
-    color: #7e8a95;
-    font-family: inherit;
-    font-size: 13px;
-    line-height: 17px;
-    width: 100%;
-    font-weight: 300;
-    margin-top: 125px;
-    word-break: break-word;
-    p {
-        display: block;
-        margin-bottom: 23px;
-    }
-}
-
-/* main end */
-/* artist_list start */
-
-#header {
-    .go_back {
-        width: 13px;
-        height: 23px;
-        background: url("../img/m_header_arrow.png") no-repeat;
-        text-indent: -9999px;
-        border: solid 0px white;
-    }
-    .go_search {
-        width: 22px;
-        height: 23px;
-        background: url("../img/m_search_icon.png") no-repeat;
-        text-indent: -9999px;
-        border: solid 0px white;
-    }
-    .header_default {
-        a{
-            width:240px;
-            height:60px;
-            .header_logo {
-                left: 30px;
-            }
-            .go_back {
-                position: absolute;
-                top: 18px;
-                left: 30px;
-            }
-            .go_search {
-                position: absolute;
-                top: 17px;
-                right: 29px;
-            }
-        }
-    }
-    .header_search {
-        display: none;
-    }
-}
-
-#contents {
-    .artist_search {
-        min-height: 157px;
-    }
-    .artist_list_area {
-        .artist_list{
-            .list_total{
-                padding-left:0px !important;
-            }
-        }
-        .artist_nav li {
-            &:first-child {
-                background: url("../img/m_artistlist_nav1.png") no-repeat;
-                background-size: 13px 17px;
-                background-position: center center;
-            }
-            &:nth-child(2) {
-                background: url("../img/m_artistlist_nav2.png") no-repeat;
-                background-size: 16px 11px;
-                background-position: center center;
-            }
-            &:last-child {
-                background: url("../img/m_artistlist_nav3.png") no-repeat;
-                background-size: 15px 23px;
-                background-position: center center;
-            }
-            float: left;
-            width: 33.333333333333333%;
-            height: 64px;
-            background-color: #eff3f6 !important;
-            &.artist_nav_select {
-                background-color: #fff !important;
-            }
-            a {
-                width: 100%;
-                height: 64px;
-                display: block;
-            }
-        }
-        font-family: "Roboto", sans-serif;
-        .artist_list {
-            li{
-                a{
-                    &:after{
-                        content:url("../img/artist_list_arrow1.png");
-                        position: absolute;
-                        top:50%;
-                        margin-top:-6px;
-                        right: 0px;
-                    }
-                    min-height: 74px;
-                    border-bottom: solid 1px #eff5f7;
-                    padding: 20px 40px 20px 0px;
-                    box-sizing: border-box;
-                    display: block;
-                    position:relative;
-                    span {
-                        font-family: inherit;
-                        font-size: 12px;
-                        text-align: left;
-                        color: #999999;
-                        line-height: 12px;
-                    }
-                    p {
-                        font-family: inherit;
-                        margin-bottom: 4px;
-                        font-size: 18px;
-                        line-height: 18px;
-                        text-align: left;
-                        color: #222222;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/*artist_list end*/
 /*artwork_list start*/
-
 .artwork_search {
     min-height: 204px;
     padding-bottom: 30px;
@@ -564,7 +727,6 @@ body #contents {
         margin-top: 20px;
     }
 }
-
 .artwork_list ul li {
     background-color: #ffffff;
     border-bottom: solid 11px #eff3f6;
@@ -724,7 +886,6 @@ body #contents {
         color: #a7afb7;
     }
 }
-
 .art_aution_place {
     font-family: inherit;
     font-size: 13px;
@@ -739,29 +900,6 @@ body #contents {
 }
 
 /*artwork - filter 슬라이드*/
-
-.slider_border {
-    border-bottom: solid 2px #eef3f6;
-    margin: 20px 0px 20px 0px;
-}
-
-.inputarea {
-    clear: both;
-    .sub_legend {
-        margin-bottom: 9px;
-    }
-}
-
-.price legend span {
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.14;
-    text-align: left;
-    color: #888888;
-    margin-left: 9px;
-}
-
 .m_slider {
     legend {
         width: auto;
@@ -808,17 +946,32 @@ body #contents {
         /* padding: 30px 30px 30px 0px; */
         box-sizing: border-box;
     }
-}
-
-.chk_all {
-    font-family: inherit;
-    font-size: 14px;
-    text-align: left;
-    color: #000000;
-    float: right;
-}
-
-.m_slider .category {
+    .slider_border {
+        border-bottom: solid 2px #eef3f6;
+        margin: 20px 0px 20px 0px;
+    }
+    .inputarea {
+        clear: both;
+        .sub_legend {
+            margin-bottom: 9px;
+        }
+    }
+    .price legend span {
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.14;
+        text-align: left;
+        color: #888888;
+        margin-left: 9px;
+    }
+    .chk_all {
+        font-family: inherit;
+        font-size: 14px;
+        text-align: left;
+        color: #000000;
+        float: right;
+    }
     .check_all {
         display: inline-block;
         font-family: inherit;
@@ -841,32 +994,30 @@ body #contents {
             }
         }
     }
-}
-
-.f_chk_list {
-    margin-bottom: 20px;
-    border-top: solid 2px #eef3f6;
-}
-
-.filter_wrap {
-    .slider_body ul li {
-        border-bottom: solid 2px #eff3f6;
-        font-family: inherit;
-        font-size: 14px;
-        line-height: 1.14;
-        text-align: left;
-        color: #999999;
-        height: 65px;
-        line-height: 65px;
-        font-weight: 300;
-        padding: 0px 0px 0px 36px;
-        box-sizing: border-box;
-        input[type="checkbox"]:checked + label {
-            color: #222;
-        }
+    .f_chk_list {
+        margin-bottom: 20px;
+        border-top: solid 2px #eef3f6;
     }
-    ul {
+}
+.filter_wrap {
+    .slider_body ul{
         margin: 0px !important;
+        li {
+            border-bottom: solid 2px #eff3f6;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 1.14;
+            text-align: left;
+            color: #999999;
+            height: 65px;
+            line-height: 65px;
+            font-weight: 300;
+            padding: 0px 0px 0px 36px;
+            box-sizing: border-box;
+            input[type="checkbox"]:checked + label {
+                color: #222;
+            }
+        }
     }
 }
 
@@ -964,154 +1115,6 @@ body #contents {
     line-height: 1.07;
     text-align: left;
     color: #444;
-}
-
-#contents {
-    .detail_info {
-        min-height: 387px;
-        border-bottom: solid 3px #eef3f6;
-        .d_more {
-            margin-left: 30px;
-            display: block;
-            width: 46px;
-            height: 19px;
-            line-height: 19px;
-            text-align: center;
-            border-radius: 9px;
-            background-color: #a7afb7;
-            color: #fff;
-            font-family: inherit;
-            font-size: 10px;
-            font-weight: 500;
-        }
-    }
-    .detail_slide {
-        min-height: 145px;
-        border-bottom: solid 3px #eef3f6;
-        padding: 30px;
-        box-sizing: border-box;
-        .slide_wrap {
-            overflow-x: auto;
-            overflow-y:hidden;
-        }
-        span {
-            font-family: inherit;
-            font-size: 20px;
-            font-weight: normal;
-            line-height: 20px;
-            color: #222222;
-            margin-bottom: 11px;
-            display: block;
-        }
-        ul {
-            display: flex;
-            li {
-                min-width: 56px;
-                height: 57px;
-                float: left;
-                margin-right: 5px;
-            }
-        }
-    }
-    .detail_price {
-        padding: 30px 30px 0px 30px;
-        box-sizing: border-box;
-        min-height: 283px;
-        border-bottom: solid 3px #eef3f6;
-        .price_list {
-            font-weight: 300;
-            .range {
-                font-family: inherit;
-                font-size: 16px;
-                line-height: 21px;
-                color: #bbbbbb;
-            }
-            .price1 {
-                font-family: inherit;
-                font-size: 28px;
-                line-height: 28px;
-                letter-spacing: -0.8px;
-                color: #222222;
-                margin-top: 9px;
-                font-weight: 500;
-                span {
-                    font-family: inherit;
-                    font-size: 10px;
-                    line-height: 10px;
-                    color: #888888;
-                    font-weight: 300;
-                }
-            }
-            .price2 {
-                font-family: inherit;
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 25px;
-                letter-spacing: -0.5px;
-                text-align: left;
-                color: #222222;
-            }
-        }
-        .price_info {
-            margin-top: 30px;
-            font-family: inherit;
-            font-size: 14px;
-            line-height: 20px;
-            color: #444444;
-            font-weight: 300;
-            .date {
-                color: #666666;
-                font-weight: 100;
-            }
-            .place {
-                font-weight: 500;
-            }
-        }
-    }
-    .detail_info {
-        .d_img_wrap {
-            width: 100%;
-            min-height: 141px;
-            position: relative;
-            .d_main_img {
-                /* margin-left:30px; */
-                position: absolute;
-                left: 30px;
-                top: 30px;
-            }
-            .d_sub_img {
-                position: absolute;
-                top: 30px;
-                right: 30px;
-            }
-        }
-        .detail_define {
-            margin-left: 30px;
-            margin-top: 14px;
-            .artist {
-                font-family: inherit;
-                font-size: 20px;
-                line-height: 20px;
-                color: #444;
-                margin-bottom: 10px;
-            }
-            .artist_ex {
-                font-family: inherit;
-                font-size: 12px;
-                line-height: 12px;
-                color: #a7afb7;
-                margin-bottom: 20px;
-            }
-            .art_name {
-                font-family: inherit;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 16px;
-                color: #222222;
-                margin-bottom: 8px;
-            }
-        }
-    }
 }
 
 .art_ex {
@@ -1306,50 +1309,14 @@ body #contents {
 
 /* comparables.html end */
 
-body {
-    &.user_intro #footer {
-        background-color: transparent !important;
-        padding-left: 0px;
-        p {
-            padding-top: 18px;
-            box-sizing: border-box;
-            color: #454d54;
-            text-align: center;
-        }
-    }
-    #footer {
-        height: 60px;
-        display: block;
-        width: 100%;
-        background-color: #eef3f6;
-        padding-left: 30px;
-        box-sizing: border-box;
-        p {
-            width: 100%;
-            padding-top: 27px;
-            box-sizing: border-box;
-            color: #454d54;
-            font-size: 12px;
-            display: block;
-            font-family: inherit;
-            font-size: 12px;
-            text-align: left;
-            color: #a7afb7;
-            box-sizing: border-box;
-        }
-    }
-}
-
 /* 아래는 가져온 스타일 입니다. */
 /* autocomplete 스타일 시작*/
 /*the container must be positioned relative:*/
-
 .autocomplete {
     width: 100%;
     position: relative;
     display: inline-block;
 }
-
 .autocomplete-items {
     position: absolute;
     border-bottom: none;
@@ -1372,28 +1339,12 @@ body {
         /* border-bottom: 1px solid #d4d4d4; */
     }
 }
-
 /* autocomplete 스타일 끝*/
-/* jquery-ui : datapicker css 수정 start*/
-
-.ui-datepicker-calendar,
-.ui-datepicker-month,
-.ui-datepicker-next,
-.ui-datepicker-prev {
-    display: none;
-}
-
-/* jquery-ui : datapicker css 수정 end*/
 /* 아코디언 메뉴 */
-
 .accordion {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     font-size: 14px;
-    /* border: 1px solid #542437; */
-    /* border-radius: 10px; */
-    /* width: 600px; */
-    /* padding: 10px; */
     background: #fff;
     ul {
         list-style: none;
