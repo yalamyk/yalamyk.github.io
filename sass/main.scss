@@ -85,6 +85,7 @@ input {
     background-color: #eff3f6 !important;
     box-sizing: border-box;
     position: relative;
+    
     li {
       float: left;
     }
@@ -495,6 +496,11 @@ body #contents {
     min-height: 157px;
   }
   .artist_list_area {
+    .artist_list{
+      .list_total{
+        padding-left:0px !important;
+      }
+    }
     .artist_nav li {
       &:first-child {
         background: url("../img/m_artistlist_nav1.png") no-repeat;
@@ -541,7 +547,6 @@ body #contents {
           box-sizing: border-box;
           display: block;
           position:relative;
-
           span {
             font-family: inherit;
             font-size: 12px;

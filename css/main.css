@@ -576,6 +576,10 @@ body #contents form #search_button {
   font-family: "Roboto", sans-serif;
 }
 
+#contents .artist_list_area .artist_list .list_total {
+  padding-left: 0px !important;
+}
+
 #contents .artist_list_area .artist_nav li {
   float: left;
   width: 33.333333333333333%;
