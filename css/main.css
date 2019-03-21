@@ -1259,6 +1259,18 @@ body #contents form #search_button {
 
 /* artwor_detail.html end */
 /* comparables.html start */
+.scroll_area {
+  overflow-y: scroll;
+  padding-top: 198px;
+}
+
+.fixed_area {
+  background-color: #fff;
+  position: fixed;
+  background-color: #eff3f6;
+  border-bottom: none;
+}
+
 .comparables_list li {
   min-height: 198px;
   width: 100%;
