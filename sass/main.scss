@@ -268,6 +268,23 @@ html.open {
 body {
     &.user_intro {
         background-color: #232629;
+        #contents {
+            margin: 0px 30px;
+            clear: both;
+            height: 580px;
+            padding-top: 116px;
+            box-sizing: border-box;
+        }
+        #footer {
+            background-color: transparent !important;
+            padding-left: 0px;
+            p {
+                padding-top: 18px;
+                box-sizing: border-box;
+                color: #454d54;
+                text-align: center;
+            }
+        }
     }
     #header {
         height: 60px;
@@ -406,7 +423,23 @@ body {
 					font-weight: 500;
 				}
 			}
-		}
+        }
+        /* start - main*/
+        .main_txtarea {
+            color: #7e8a95;
+            font-family: inherit;
+            font-size: 13px;
+            line-height: 17px;
+            width: 100%;
+            font-weight: 300;
+            margin-top: 125px;
+            word-break: break-word;
+            p {
+                display: block;
+                margin-bottom: 23px;
+            }
+        }
+        /* main end */
 		.artist_search {
 			min-height: 157px;
 		}
@@ -626,15 +659,28 @@ body {
 				}
 			}
 		}
-    }
-    &.user_intro #contents {
-        margin: 0px 30px;
-        clear: both;
-        height: 580px;
-        padding-top: 116px;
+    } /* # content end */
+    #footer {
+        height: 60px;
+        display: block;
+        width: 100%;
+        background-color: #eef3f6;
+        padding-left: 30px;
         box-sizing: border-box;
+        p {
+            width: 100%;
+            padding-top: 27px;
+            box-sizing: border-box;
+            color: #454d54;
+            font-size: 12px;
+            display: block;
+            font-family: inherit;
+            font-size: 12px;
+            text-align: left;
+            color: #a7afb7;
+            box-sizing: border-box;
+        }
     }
-    
 }
 
 .forget_pass {
@@ -669,34 +715,7 @@ body {
     }
 }
 
-/* start - main*/
-
-
-.main_txtarea {
-    color: #7e8a95;
-    font-family: inherit;
-    font-size: 13px;
-    line-height: 17px;
-    width: 100%;
-    font-weight: 300;
-    margin-top: 125px;
-    word-break: break-word;
-    p {
-        display: block;
-        margin-bottom: 23px;
-    }
-}
-
-/* main end */
-/* artist_list start */
-
-
-
-
-
-/*artist_list end*/
 /*artwork_list start*/
-
 .artwork_search {
     min-height: 204px;
     padding-bottom: 30px;
@@ -1299,40 +1318,6 @@ body {
 }
 
 /* comparables.html end */
-
-body {
-    &.user_intro #footer {
-        background-color: transparent !important;
-        padding-left: 0px;
-        p {
-            padding-top: 18px;
-            box-sizing: border-box;
-            color: #454d54;
-            text-align: center;
-        }
-    }
-    #footer {
-        height: 60px;
-        display: block;
-        width: 100%;
-        background-color: #eef3f6;
-        padding-left: 30px;
-        box-sizing: border-box;
-        p {
-            width: 100%;
-            padding-top: 27px;
-            box-sizing: border-box;
-            color: #454d54;
-            font-size: 12px;
-            display: block;
-            font-family: inherit;
-            font-size: 12px;
-            text-align: left;
-            color: #a7afb7;
-            box-sizing: border-box;
-        }
-    }
-}
 
 /* 아래는 가져온 스타일 입니다. */
 /* autocomplete 스타일 시작*/
