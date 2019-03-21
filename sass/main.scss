@@ -96,29 +96,28 @@ input {
   position: absolute;
   top: 24px;
   right: 72px;
+  a {
+    background: url("../img/m_sort.png") no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+  }
 }
 
 .list_filter {
   position: absolute;
   top: 22px;
   right: 22px;
+  a {
+    background: url("../img/m_filter.png") no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+  }
 }
 
-.list_sort a {
-  background: url("../img/m_sort.png") no-repeat;
-  text-indent: -9999px;
-  display: inline-block;
-  width: 18px;
-  height: 14px;
-}
-
-.list_filter a {
-  background: url("../img/m_filter.png") no-repeat;
-  text-indent: -9999px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
 
 .search_list .search_title {
   width: 100%;
@@ -169,9 +168,19 @@ input[name=datefilter]{
   z-index: 5;
   display: none;
 }
+.open{
+  right:0px;
+}
+html.open {
+  overflow: hidden;
+}
+.page_blur.open {
+  display: block;
+}
 
 .m_slider {
   overflow-y: auto;
+  overflow-x:hidden;
   width: 290px;
   height: 100%;
   position: fixed;
@@ -180,25 +189,9 @@ input[name=datefilter]{
   z-index: 150;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
-}
-
-.open{
-  right:0px;
-}
-
-html.open {
-  overflow: hidden;
-}
-
-.m_slider.open {
-  right: 0px;
-}
-
-.page_blur.open {
-  display: block;
-}
-
-.m_slider {
+  &.open {
+    right: 0px !important;
+  }
   .slider_header {
     height: 75px;
     width: 100%;
@@ -211,7 +204,7 @@ html.open {
       color: #ffffff;
       display: block;
       line-height: 75px;
-      padding: 0px 12.068965517241379% 0px 12.068965517241379%;
+      padding: 0px 30px;
       box-sizing: border-box;
       display: inline-block;
     }
@@ -232,10 +225,6 @@ html.open {
     padding: 32px 30px 30px 36px;
     box-sizing: border-box;
   }
-}
-
-.art_aution_place b {
-  display: block;
 }
 
 .simple_header {
@@ -274,7 +263,6 @@ html.open {
     }
   }
 }
-
 /*** 반복사용 class end ***/
 
 body {
@@ -313,7 +301,6 @@ body {
     box-sizing: border-box;
   }
   #contents form {
-    /* margin:56px 0px 0px 0px; */
     background-color: pimnk;
     font-family: inherit;
     fieldset {
@@ -417,12 +404,11 @@ body #contents {
       border-bottom: solid 1px #454d54;
       background-color: transparent;
       padding-right: 30px;
-    box-sizing: border-box;
+      box-sizing: border-box;
       @include input_has_value();
     }
     #search_button {
       background: url("../img/m_search_icon.png");
-      /* border:solid 1px red; */
       position: absolute;
       top: 15px;
       right: 1px;
@@ -747,6 +733,9 @@ body #contents {
   line-height: 19px;
   color: #444444;
   font-weight: 300;
+  b {
+    display: block;
+  }
 }
 
 /*artwork - filter 슬라이드*/
