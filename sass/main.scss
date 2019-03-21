@@ -287,11 +287,309 @@ body {
                 padding-left: 30px;
             }
         }
-    }
+	}
+
     #contents {
         display: block;
         box-sizing: border-box;
-        margin-top: 60px;
+		margin-top: 60px;
+		.search_form {
+			position: relative;
+		}
+		form {
+			font-family: inherit;
+			.search_box {
+				width: 100%;
+				height: 56px;
+				font-size: 20px;
+				font-family: "Roboto", sans-serif;
+				font-weight: 100;
+				color: #fff;
+				border-bottom: solid 1px #454d54;
+				background-color: transparent;
+				padding-right: 30px;
+				box-sizing: border-box;
+				@include input_has_value();
+			}
+			#search_button {
+				background: url("../img/m_search_icon.png");
+				position: absolute;
+				top: 15px;
+				right: 1px;
+				width: 23px;
+				height: 24px;
+				display: block;
+				text-indent: -10000px;
+			}
+			fieldset {
+				legend {
+					width: 0px;
+					height: 0px;
+					display: none;
+				}
+				ul {
+					width: 100%;
+					margin-bottom: 28px;
+					li input {
+						width: 100%;
+						height: 56px;
+						font-size: 20px;
+						font-family: "Roboto", sans-serif;
+						font-weight: 100;
+						color:#fff;
+						background-color: transparent;
+						border-bottom: solid 1px #454545;
+						@include input-has-value();
+					}
+				}
+				#remember_id {
+					width: 15px;
+					height: 15px;
+					margin-right: 10px;
+					border: solid 1px #7e8a95;
+				}
+				.remember_class {
+					font-size: 14px;
+					color: #7e8a95;
+					font-weight: 300;
+				}
+				.btn_login {
+					margin-top: 21px;
+					width: 100%;
+					height: 55px;
+					background-color: #fff;
+					text-align: center;
+					color: #000000;
+					font-size: 16px;
+					display: block;
+					appearance: none;
+					-moz-appearance: none;
+					/* Firefox */
+					-webkit-appearance: none;
+					/* Safari and Chrome */
+					font-weight: 500;
+				}
+			}
+		}
+		.artist_search {
+			min-height: 157px;
+		}
+		.artist_list_area {
+			font-family: "Roboto", sans-serif;
+			.artist_list{
+				.list_total{
+					padding-left:0px !important;
+				}
+			}
+			.artist_nav li {
+				&:first-child {
+					background: url("../img/m_artistlist_nav1.png") no-repeat;
+					background-size: 13px 17px;
+					background-position: center center;
+				}
+				&:nth-child(2) {
+					background: url("../img/m_artistlist_nav2.png") no-repeat;
+					background-size: 16px 11px;
+					background-position: center center;
+				}
+				&:last-child {
+					background: url("../img/m_artistlist_nav3.png") no-repeat;
+					background-size: 15px 23px;
+					background-position: center center;
+				}
+				float: left;
+				width: 33.333333333333333%;
+				height: 64px;
+				background-color: #eff3f6 !important;
+				&.artist_nav_select {
+					background-color: #fff !important;
+				}
+				a {
+					width: 100%;
+					height: 64px;
+					display: block;
+				}
+			}
+			.artist_list {
+				li{
+					a{
+						&:after{
+							content:url("../img/artist_list_arrow1.png");
+							position: absolute;
+							top:50%;
+							margin-top:-6px;
+							right: 0px;
+						}
+						min-height: 74px;
+						border-bottom: solid 1px #eff5f7;
+						padding: 20px 40px 20px 0px;
+						box-sizing: border-box;
+						display: block;
+						position:relative;
+						span {
+							font-family: inherit;
+							font-size: 12px;
+							text-align: left;
+							color: #999999;
+							line-height: 12px;
+						}
+						p {
+							font-family: inherit;
+							margin-bottom: 4px;
+							font-size: 18px;
+							line-height: 18px;
+							text-align: left;
+							color: #222222;
+						}
+					}
+				}
+			}
+		}
+		.detail_info {
+			min-height: 387px;
+			border-bottom: solid 3px #eef3f6;
+			.d_more {
+				margin-left: 30px;
+				display: block;
+				width: 46px;
+				height: 19px;
+				line-height: 19px;
+				text-align: center;
+				border-radius: 9px;
+				background-color: #a7afb7;
+				color: #fff;
+				font-family: inherit;
+				font-size: 10px;
+				font-weight: 500;
+			}
+		}
+		.detail_slide {
+			min-height: 145px;
+			border-bottom: solid 3px #eef3f6;
+			padding: 30px;
+			box-sizing: border-box;
+			.slide_wrap {
+				overflow-x: auto;
+				overflow-y:hidden;
+			}
+			span {
+				font-family: inherit;
+				font-size: 20px;
+				font-weight: normal;
+				line-height: 20px;
+				color: #222222;
+				margin-bottom: 11px;
+				display: block;
+			}
+			ul {
+				display: flex;
+				li {
+					min-width: 56px;
+					height: 57px;
+					float: left;
+					margin-right: 5px;
+				}
+			}
+		}
+		.detail_price {
+			padding: 30px 30px 0px 30px;
+			box-sizing: border-box;
+			min-height: 283px;
+			border-bottom: solid 3px #eef3f6;
+			.price_list {
+				font-weight: 300;
+				.range {
+					font-family: inherit;
+					font-size: 16px;
+					line-height: 21px;
+					color: #bbbbbb;
+				}
+				.price1 {
+					font-family: inherit;
+					font-size: 28px;
+					line-height: 28px;
+					letter-spacing: -0.8px;
+					color: #222222;
+					margin-top: 9px;
+					font-weight: 500;
+					span {
+						font-family: inherit;
+						font-size: 10px;
+						line-height: 10px;
+						color: #888888;
+						font-weight: 300;
+					}
+				}
+				.price2 {
+					font-family: inherit;
+					font-size: 16px;
+					font-weight: bold;
+					line-height: 25px;
+					letter-spacing: -0.5px;
+					text-align: left;
+					color: #222222;
+				}
+			}
+			.price_info {
+				margin-top: 30px;
+				font-family: inherit;
+				font-size: 14px;
+				line-height: 20px;
+				color: #444444;
+				font-weight: 300;
+				.date {
+					color: #666666;
+					font-weight: 100;
+				}
+				.place {
+					font-weight: 500;
+				}
+			}
+		}
+		.detail_info {
+			.d_img_wrap {
+				width: 100%;
+				min-height: 141px;
+				position: relative;
+				.d_main_img {
+					/* margin-left:30px; */
+					position: absolute;
+					left: 30px;
+					top: 30px;
+				}
+				.d_sub_img {
+					position: absolute;
+					top: 30px;
+					right: 30px;
+				}
+			}
+			.detail_define {
+				margin-left: 30px;
+				margin-top: 14px;
+				.artist {
+					font-family: inherit;
+					font-size: 20px;
+					line-height: 20px;
+					color: #444;
+					margin-bottom: 10px;
+				}
+				.artist_ex {
+					font-family: inherit;
+					font-size: 12px;
+					line-height: 12px;
+					color: #a7afb7;
+					margin-bottom: 20px;
+				}
+				.art_name {
+					font-family: inherit;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 16px;
+					color: #222222;
+					margin-bottom: 8px;
+				}
+			}
+		}
     }
     &.user_intro #contents {
         margin: 0px 30px;
@@ -300,59 +598,7 @@ body {
         padding-top: 116px;
         box-sizing: border-box;
     }
-    #contents form {
-        background-color: pimnk;
-        font-family: inherit;
-        fieldset {
-            legend {
-                width: 0px;
-                height: 0px;
-                display: none;
-            }
-            ul {
-                width: 100%;
-                margin-bottom: 28px;
-                li input {
-                    width: 100%;
-                    height: 56px;
-                    font-size: 20px;
-                    font-family: "Roboto", sans-serif;
-                    font-weight: 100;
-                    color:#fff;
-                    background-color: transparent;
-                    border-bottom: solid 1px #454545;
-                    @include input-has-value();
-                }
-            }
-            #remember_id {
-                width: 15px;
-                height: 15px;
-                margin-right: 10px;
-                border: solid 1px #7e8a95;
-            }
-            .remember_class {
-                font-size: 14px;
-                color: #7e8a95;
-                font-weight: 300;
-            }
-            .btn_login {
-                margin-top: 21px;
-                width: 100%;
-                height: 55px;
-                background-color: #fff;
-                text-align: center;
-                color: #000000;
-                font-size: 16px;
-                display: block;
-                appearance: none;
-                -moz-appearance: none;
-                /* Firefox */
-                -webkit-appearance: none;
-                /* Safari and Chrome */
-                font-weight: 500;
-            }
-        }
-    }
+    
 }
 
 .forget_pass {
@@ -389,36 +635,6 @@ body {
 
 /* start - main*/
 
-body #contents {
-    .search_form {
-        position: relative;
-    }
-    form {
-        .search_box {
-            width: 100%;
-            height: 56px;
-            font-size: 20px;
-            font-family: "Roboto", sans-serif;
-            font-weight: 100;
-            color: #fff;
-            border-bottom: solid 1px #454d54;
-            background-color: transparent;
-            padding-right: 30px;
-            box-sizing: border-box;
-            @include input_has_value();
-        }
-        #search_button {
-            background: url("../img/m_search_icon.png");
-            position: absolute;
-            top: 15px;
-            right: 1px;
-            width: 23px;
-            height: 24px;
-            display: block;
-            text-indent: -10000px;
-        }
-    }
-}
 
 .main_txtarea {
     color: #7e8a95;
@@ -477,82 +693,7 @@ body #contents {
     }
 }
 
-#contents {
-    .artist_search {
-        min-height: 157px;
-    }
-    .artist_list_area {
-        .artist_list{
-            .list_total{
-                padding-left:0px !important;
-            }
-        }
-        .artist_nav li {
-            &:first-child {
-                background: url("../img/m_artistlist_nav1.png") no-repeat;
-                background-size: 13px 17px;
-                background-position: center center;
-            }
-            &:nth-child(2) {
-                background: url("../img/m_artistlist_nav2.png") no-repeat;
-                background-size: 16px 11px;
-                background-position: center center;
-            }
-            &:last-child {
-                background: url("../img/m_artistlist_nav3.png") no-repeat;
-                background-size: 15px 23px;
-                background-position: center center;
-            }
-            float: left;
-            width: 33.333333333333333%;
-            height: 64px;
-            background-color: #eff3f6 !important;
-            &.artist_nav_select {
-                background-color: #fff !important;
-            }
-            a {
-                width: 100%;
-                height: 64px;
-                display: block;
-            }
-        }
-        font-family: "Roboto", sans-serif;
-        .artist_list {
-            li{
-                a{
-                    &:after{
-                        content:url("../img/artist_list_arrow1.png");
-                        position: absolute;
-                        top:50%;
-                        margin-top:-6px;
-                        right: 0px;
-                    }
-                    min-height: 74px;
-                    border-bottom: solid 1px #eff5f7;
-                    padding: 20px 40px 20px 0px;
-                    box-sizing: border-box;
-                    display: block;
-                    position:relative;
-                    span {
-                        font-family: inherit;
-                        font-size: 12px;
-                        text-align: left;
-                        color: #999999;
-                        line-height: 12px;
-                    }
-                    p {
-                        font-family: inherit;
-                        margin-bottom: 4px;
-                        font-size: 18px;
-                        line-height: 18px;
-                        text-align: left;
-                        color: #222222;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 /*artist_list end*/
 /*artwork_list start*/
@@ -966,153 +1107,7 @@ body #contents {
     color: #444;
 }
 
-#contents {
-    .detail_info {
-        min-height: 387px;
-        border-bottom: solid 3px #eef3f6;
-        .d_more {
-            margin-left: 30px;
-            display: block;
-            width: 46px;
-            height: 19px;
-            line-height: 19px;
-            text-align: center;
-            border-radius: 9px;
-            background-color: #a7afb7;
-            color: #fff;
-            font-family: inherit;
-            font-size: 10px;
-            font-weight: 500;
-        }
-    }
-    .detail_slide {
-        min-height: 145px;
-        border-bottom: solid 3px #eef3f6;
-        padding: 30px;
-        box-sizing: border-box;
-        .slide_wrap {
-            overflow-x: auto;
-            overflow-y:hidden;
-        }
-        span {
-            font-family: inherit;
-            font-size: 20px;
-            font-weight: normal;
-            line-height: 20px;
-            color: #222222;
-            margin-bottom: 11px;
-            display: block;
-        }
-        ul {
-            display: flex;
-            li {
-                min-width: 56px;
-                height: 57px;
-                float: left;
-                margin-right: 5px;
-            }
-        }
-    }
-    .detail_price {
-        padding: 30px 30px 0px 30px;
-        box-sizing: border-box;
-        min-height: 283px;
-        border-bottom: solid 3px #eef3f6;
-        .price_list {
-            font-weight: 300;
-            .range {
-                font-family: inherit;
-                font-size: 16px;
-                line-height: 21px;
-                color: #bbbbbb;
-            }
-            .price1 {
-                font-family: inherit;
-                font-size: 28px;
-                line-height: 28px;
-                letter-spacing: -0.8px;
-                color: #222222;
-                margin-top: 9px;
-                font-weight: 500;
-                span {
-                    font-family: inherit;
-                    font-size: 10px;
-                    line-height: 10px;
-                    color: #888888;
-                    font-weight: 300;
-                }
-            }
-            .price2 {
-                font-family: inherit;
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 25px;
-                letter-spacing: -0.5px;
-                text-align: left;
-                color: #222222;
-            }
-        }
-        .price_info {
-            margin-top: 30px;
-            font-family: inherit;
-            font-size: 14px;
-            line-height: 20px;
-            color: #444444;
-            font-weight: 300;
-            .date {
-                color: #666666;
-                font-weight: 100;
-            }
-            .place {
-                font-weight: 500;
-            }
-        }
-    }
-    .detail_info {
-        .d_img_wrap {
-            width: 100%;
-            min-height: 141px;
-            position: relative;
-            .d_main_img {
-                /* margin-left:30px; */
-                position: absolute;
-                left: 30px;
-                top: 30px;
-            }
-            .d_sub_img {
-                position: absolute;
-                top: 30px;
-                right: 30px;
-            }
-        }
-        .detail_define {
-            margin-left: 30px;
-            margin-top: 14px;
-            .artist {
-                font-family: inherit;
-                font-size: 20px;
-                line-height: 20px;
-                color: #444;
-                margin-bottom: 10px;
-            }
-            .artist_ex {
-                font-family: inherit;
-                font-size: 12px;
-                line-height: 12px;
-                color: #a7afb7;
-                margin-bottom: 20px;
-            }
-            .art_name {
-                font-family: inherit;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 16px;
-                color: #222222;
-                margin-bottom: 8px;
-            }
-        }
-    }
-}
+
 
 .art_ex {
     font-family: inherit;
