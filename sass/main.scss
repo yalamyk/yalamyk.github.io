@@ -1,8 +1,10 @@
 @import "./helpers/mixin";
+@import "./helpers/variables";
 /**** 모바일 코딩 기준 : 360px ****/
 /*** 반복사용 class start ***/
 /** 0. custom checkbox & radio **/
 .footarea{height: 60px;}
+.txt_center{text-align:$text_center;}
 html,body{
     height:100%;
     .wrap{
@@ -659,12 +661,46 @@ body {
 				}
 			}
         }
-        /* forget password page start*/
-        .forget_email{
-            @include input_txt_w100;
-        }
         /* forget password page stop */
     } /* # content end */
+    /* forget password page start*/
+    &.forget_pass{
+        #contents{
+            h2{
+                @include intro_h2;
+                margin-bottom:13px;
+            }
+            p{
+                @include intro_p;
+                margin-bottom:45px;
+                word-break: break-all;
+            }
+            img{
+                margin:0 auto;
+                width: 77px;
+                height: 50px;
+                display:block;
+                margin-bottom:39px;
+    
+            }
+            .forget_email{
+                @include input_txt_w100;
+                margin-bottom:30px;
+            }
+            .submit{
+                @include input_button_w100;
+            }
+            .done{
+                @include input_button_w100;
+                width: 125px;
+                height: 44px;
+                line-height:44px;
+                color:#a3b3c2;
+                margin:$block_center;
+            }
+        }
+        
+    }
     #footer {
         height: 60px;
         display: block;
@@ -688,7 +724,7 @@ body {
     }
 }
 
-.forget_pass {
+.forget_pass_link {
     font-size: 14px;
     color: #7e8a95;
     text-align: right;
