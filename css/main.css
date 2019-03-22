@@ -614,7 +614,7 @@ body #contents .artist_list_area .artist_list li a {
 }
 
 body #contents .artist_list_area .artist_list li a:after {
-  content: url("../img/artist_list_arrow1.png");
+  content: url("../img/artist_list_arrow2.png");
   position: absolute;
   top: 50%;
   margin-top: -6px;
@@ -811,7 +811,7 @@ body #contents .detail_info .detail_define .art_name {
 body.forget_pass #contents h2 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1.25;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 13px;
@@ -824,8 +824,8 @@ body.forget_pass #contents p {
   color: #93a1ad;
   margin: 0 auto;
   display: block;
-  font-weight: 100;
-  margin-bottom: 45px;
+  font-weight: 300;
+  line-height: 1.47;
   word-break: break-all;
 }
 
@@ -900,6 +900,12 @@ body.forget_pass #contents .done {
   line-height: 44px;
   color: #a3b3c2;
   margin: 0 auto;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+body.forget_pass #contents .input_set_pass {
+  /*set_password.html*/
 }
 
 body.forget_pass #contents .input_set_pass p {

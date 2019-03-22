@@ -70,7 +70,7 @@
 @mixin intro_h2{
     font-family: $default_font;
     font-size: 24px;
-    line-height:24px;
+    line-height: 1.25;
     font-weight: 500;
     color: #ffffff;
 }
@@ -81,7 +81,8 @@
     color: #93a1ad;
     margin:$block_center;
     display: block;
-    font-weight:100;
+    font-weight:300;
+    line-height: 1.47;
 }
 @mixin padding_corner{}
 

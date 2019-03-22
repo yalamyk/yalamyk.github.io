@@ -485,7 +485,7 @@ body {
 				li{
 					a{
 						&:after{
-							content:url("../img/artist_list_arrow1.png");
+							content:url("../img/artist_list_arrow2.png");
 							position: absolute;
 							top:50%;
 							margin-top:-6px;
@@ -672,7 +672,6 @@ body {
             }
             p{
                 @include intro_p;
-                margin-bottom:45px;
                 word-break: break-all;
             }
             img{
@@ -697,8 +696,10 @@ body {
                 line-height:44px;
                 color:#a3b3c2;
                 margin:$block_center;
+                margin-top: 30px;
+                font-size:15px;
             }
-            .input_set_pass{
+            .input_set_pass{ /*set_password.html*/
                 p{
                     font-size: 12px;
                     color: #4d565e;
