@@ -902,6 +902,41 @@ body.forget_pass #contents .done {
   margin: 0 auto;
 }
 
+body.forget_pass #contents .input_set_pass p {
+  font-size: 12px;
+  color: #4d565e;
+  margin: 0 !important;
+}
+
+body.forget_pass #contents .save_password {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  border: solid 1px #454d54;
+  background-color: #ffffff;
+  color: #000;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+body.forget_pass #contents .back_sign {
+  display: block;
+  width: 93px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: solid 1px #fff;
+  font-weight: 300;
+}
+
 body #footer {
   height: 60px;
   display: block;
