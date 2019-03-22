@@ -673,6 +673,7 @@ body {
             p{
                 @include intro_p;
                 word-break: break-all;
+                margin-bottom:24px;
             }
             img{
                 margin:0 auto;
@@ -684,10 +685,10 @@ body {
             }
             .forget_email{
                 @include input_txt_w100;
-                margin-bottom:30px;
             }
             .submit{
                 @include input_button_w100;
+                margin-top:30px;
             }
             .done{
                 @include input_button_w100;
@@ -724,6 +725,20 @@ body {
                 color: #ffffff;
                 border-bottom:solid 1px #fff;
                 font-weight:300;
+            }
+            .input_err{
+                border-bottom: solid 1px #ff836a !important;
+                margin:0px;
+                padding:0px;
+            }
+            .alert_err{
+                font-family: $default_font;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.21;
+                text-align: left;
+                color: #ff836a;
+                margin-top: 7px;
             }
         }
         

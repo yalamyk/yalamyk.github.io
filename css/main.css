@@ -819,7 +819,7 @@ body.forget_pass #contents h2 {
 
 body.forget_pass #contents p {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 15px;
   color: #93a1ad;
   margin: 0 auto;
@@ -827,6 +827,7 @@ body.forget_pass #contents p {
   font-weight: 300;
   line-height: 1.47;
   word-break: break-all;
+  margin-bottom: 24px;
 }
 
 body.forget_pass #contents img {
@@ -849,7 +850,6 @@ body.forget_pass #contents .forget_email {
   padding-right: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 30px;
 }
 
 body.forget_pass #contents .forget_email ::-webkit-input-placeholder {
@@ -883,6 +883,7 @@ body.forget_pass #contents .submit {
   border: solid 1px #454d54;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
+  margin-top: 30px;
 }
 
 body.forget_pass #contents .done {
@@ -941,6 +942,22 @@ body.forget_pass #contents .back_sign {
   color: #ffffff;
   border-bottom: solid 1px #fff;
   font-weight: 300;
+}
+
+body.forget_pass #contents .input_err {
+  border-bottom: solid 1px #ff836a !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+body.forget_pass #contents .alert_err {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.21;
+  text-align: left;
+  color: #ff836a;
+  margin-top: 7px;
 }
 
 body #footer {

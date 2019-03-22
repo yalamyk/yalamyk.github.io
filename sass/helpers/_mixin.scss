@@ -51,22 +51,6 @@
         border-bottom: solid 1px #ffffff !important;
     }
 }
-@mixin input_err{
-    position: relative;
-    border-bottom: solid 1px #ff836a;
-    &:after{
-        content:'';
-        position: absolute;
-        bottom:-23px;
-        left:0px;
-        font-family: $default_font;
-        font-size: 14px;
-        line-height: 14px;
-        font-weight: 300;
-        text-align: left;
-        color: #ff836a;
-    }
-}
 @mixin intro_h2{
     font-family: $default_font;
     font-size: 24px;
@@ -76,7 +60,7 @@
 }
 @mixin intro_p{
     font-family: $default_font;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 15px;
     color: #93a1ad;
     margin:$block_center;
