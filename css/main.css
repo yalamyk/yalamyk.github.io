@@ -7,6 +7,7 @@
 - media query (애플 제품 기준)
 - input_has_value : input 선택시 주어지는 css
 - input_txt_w100 : width가 100% 인 input의 스타일
+- custtom_radio / custom_checkbox : 디자인이 적용된 radio/checkbox버튼
 */
 /* 미디어 쿼리 정의*/
 /* 미디어쿼리정의 */
@@ -42,12 +43,12 @@ input[type="checkbox"] + label span {
   height: 16px;
   margin: -2px 10px 0px 0px;
   vertical-align: middle;
-  background: url("../img/custom_input.png") left top no-repeat;
+  background: url("../img/custom_input.png") -32px top no-repeat;
   cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label span {
-  background: url("../img/custom_input.png") -16px top no-repeat;
+  background: url("../img/custom_input.png") -48px top no-repeat;
 }
 
 input[type="radio"] {
@@ -64,12 +65,12 @@ input[type="radio"] + label span {
   height: 16px;
   margin: -2px 10px 0px 0px;
   vertical-align: middle;
-  background: url("../img/custom_input.png") -32px top no-repeat;
+  background: url("../img/custom_input.png") -64px top no-repeat;
   cursor: pointer;
 }
 
 input[type="radio"]:checked + label span {
-  background: url("../img/custom_input.png") -48px top no-repeat;
+  background: url("../img/custom_input.png") -80px top no-repeat;
 }
 
 .custom_chk {
@@ -314,6 +315,7 @@ body {
 }
 
 body.user_intro {
+  /* intro 영역 */
   background-color: #232629;
 }
 
@@ -481,7 +483,7 @@ body #contents form fieldset ul {
 body #contents form fieldset ul li input {
   width: 100%;
   height: 56px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   color: #fff;
@@ -515,6 +517,21 @@ body #contents form fieldset #remember_id {
   height: 15px;
   margin-right: 10px;
   border: solid 1px #7e8a95;
+  display: none;
+}
+
+body #contents form fieldset #remember_id + label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 10px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") left top no-repeat;
+  cursor: pointer;
+}
+
+body #contents form fieldset #remember_id:checked + label span {
+  background: url("../img/custom_input.png") -16px top no-repeat;
 }
 
 body #contents form fieldset .remember_class {
@@ -989,7 +1006,7 @@ body #footer p {
   font-size: 14px;
   color: #7e8a95;
   text-align: right;
-  font-style: italic;
+  font-style: none;
   text-decoration: underline;
   margin-top: 25px;
   display: block;
@@ -1715,14 +1732,14 @@ body #footer p {
 
 .autocomplete-items div {
   padding: 0px 5.56% 0px 5.56%;
-  height: 40px;
+  height: 56px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 40px;
+  line-height: 56px;
   cursor: pointer;
   color: #fff;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 14px;
   background-color: #fff;
   background-color: #32363a;
   /* border-bottom: 1px solid #d4d4d4; */

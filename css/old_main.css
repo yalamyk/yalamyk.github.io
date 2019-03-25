@@ -7,6 +7,7 @@
 - media query (애플 제품 기준)
 - input_has_value : input 선택시 주어지는 css
 - input_txt_w100 : width가 100% 인 input의 스타일
+- custtom_radio / custom_checkbox : 디자인이 적용된 radio/checkbox버튼
 */
 /* 미디어 쿼리 정의*/
 /* 미디어쿼리정의 */

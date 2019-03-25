@@ -15,37 +15,10 @@ html,body{
 }
 input {
     &[type="checkbox"] {
-        display: none;
-        + label span {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin: -2px 10px 0px 0px;
-            vertical-align: middle;
-            background: url("../img/custom_input.png") left top no-repeat;
-            cursor: pointer;
-        }
-        &:checked + label span {
-            background: url("../img/custom_input.png") -16px top no-repeat;
-        }
+        @include custtom_check;
     }
     &[type="radio"] {
-        display: none;
-        + label {
-            color: #222222;
-            span {
-                display: inline-block;
-                width: 16px;
-                height: 16px;
-                margin: -2px 10px 0px 0px;
-                vertical-align: middle;
-                background: url("../img/custom_input.png") -32px top no-repeat;
-                cursor: pointer;
-            }
-		}
-        &:checked + label span {
-            background: url("../img/custom_input.png") -48px top no-repeat;
-        }
+        @include custtom_radio;
     }
 }
 
@@ -268,7 +241,7 @@ html.open {
 /*** 반복사용 class end ***/
 
 body {
-    &.user_intro {
+    &.user_intro { /* intro 영역 */
         background-color: #232629;
         #contents {
             margin: 0px 30px;
@@ -276,6 +249,7 @@ body {
             height: 580px;
             padding-top: 116px;
             box-sizing: border-box;
+            
         }
         #footer {
             background-color: transparent !important;
@@ -388,7 +362,7 @@ body {
 					li input {
 						width: 100%;
 						height: 56px;
-						font-size: 20px;
+						font-size: 18px;
 						font-family: "Roboto", sans-serif;
 						font-weight: 100;
 						color:#fff;
@@ -401,7 +375,8 @@ body {
 					width: 15px;
 					height: 15px;
 					margin-right: 10px;
-					border: solid 1px #7e8a95;
+                    border: solid 1px #7e8a95;
+                    @include custtom_check2;
 				}
 				.remember_class {
 					font-size: 14px;
@@ -770,7 +745,7 @@ body {
     font-size: 14px;
     color: #7e8a95;
     text-align: right;
-    font-style: italic;
+    font-style:none;
     text-decoration: underline;
     margin-top: 25px;
     display: block;
@@ -1405,13 +1380,13 @@ body {
     right: 0;
     div {
         padding: 0px 5.56% 0px 5.56%;
-        height: 40px;
+        height: 56px;
         box-sizing: border-box;
-        line-height: 40px;
+        line-height: 56px;
         cursor: pointer;
         color: #fff;
         font-weight: 100;
-        font-size: 20px;
+        font-size: 14px;
         background-color: #fff;
         background-color: #32363a;
         /* border-bottom: 1px solid #d4d4d4; */

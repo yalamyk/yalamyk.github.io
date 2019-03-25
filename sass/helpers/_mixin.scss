@@ -6,6 +6,7 @@
 - media query (애플 제품 기준)
 - input_has_value : input 선택시 주어지는 css
 - input_txt_w100 : width가 100% 인 input의 스타일
+- custtom_radio / custom_checkbox : 디자인이 적용된 radio/checkbox버튼
 */
 @mixin ellipsis($line) {
     overflow: hidden;
@@ -69,7 +70,54 @@
     line-height: 1.47;
 }
 @mixin padding_corner{}
-
+@mixin custtom_check{
+    display: none;
+    + label span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: -2px 10px 0px 0px;
+        vertical-align: middle;
+        background: url("../img/custom_input.png") -32px top no-repeat;
+        cursor: pointer;
+    }
+    &:checked + label span {
+        background: url("../img/custom_input.png") -48px top no-repeat;
+    }
+}
+@mixin custtom_check2{
+    display: none;
+    + label span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: -2px 10px 0px 0px;
+        vertical-align: middle;
+        background: url("../img/custom_input.png") left top no-repeat;
+        cursor: pointer;
+    }
+    &:checked + label span {
+        background: url("../img/custom_input.png") -16px top no-repeat;
+    }
+}
+@mixin custtom_radio{
+    display: none;
+    + label {
+        color: #222222;
+        span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin: -2px 10px 0px 0px;
+            vertical-align: middle;
+            background: url("../img/custom_input.png") -64px top no-repeat;
+            cursor: pointer;
+        }
+    }
+    &:checked + label span {
+        background: url("../img/custom_input.png") -80px top no-repeat;
+    }
+}
 /* 미디어 쿼리 정의*/
 $iphone-x-size: 375px;
 $way-point-3-size: 575px;
