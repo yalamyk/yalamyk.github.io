@@ -1008,6 +1008,10 @@ body.forget_pass #contents .input_err {
   padding: 0px;
 }
 
+body.forget_pass #contents .input_err:active, body.forget_pass #contents .input_err:hover, body.forget_pass #contents .input_err:focus {
+  border-bottom: solid 1px #ff836a !important;
+}
+
 body.forget_pass #contents .alert_err {
   font-family: "Roboto", sans-serif;
   font-size: 14px;

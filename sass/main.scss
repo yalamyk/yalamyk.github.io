@@ -735,6 +735,11 @@ body {
             }
             .input_err{
                 border-bottom: solid 1px #ff836a !important;
+                &:active,
+                &:hover,
+                &:focus {
+                    border-bottom: solid 1px #ff836a !important;
+                }
                 margin:0px;
                 padding:0px;
             }
