@@ -675,7 +675,7 @@ body {
         #contents{
             h2{
                 @include intro_h2;
-                margin-bottom:13px;
+                margin-bottom:10px !important;
             }
             p{
                 @include intro_p;
@@ -707,13 +707,7 @@ body {
                 margin-top: 30px;
                 font-size:15px;
             }
-            .input_set_pass{ /*set_password.html*/
-                p{
-                    font-size: 12px;
-                    color: #4d565e;
-                    margin: 0 !important;
-                }
-            }
+            
             .save_password{
                 @include input_button_w100;
                 border: solid 1px #454d54;
@@ -733,8 +727,37 @@ body {
                 border-bottom:solid 1px #fff;
                 font-weight:300;
             }
+            
+            .wrap_set_pass{
+                margin-top: 50px;
+                margin-bottom: 29px;
+            }
+            .input_set_pass{/*set_password.html*/
+                margin-top: 30px;
+                .set_pass{
+                    @include input_txt_w100;
+                    height:50px !important;
+                }
+                p{
+                    font-size: 12px;
+                    color: #4d565e;
+                    margin: 0 !important;
+                }
+            }
+            
             .input_err{
                 .forget_email{
+                    border-bottom: solid 1px #ff836a !important;
+                    &:active,
+                    &:hover,
+                    &:focus {
+                        border-bottom: solid 1px #ff836a !important;
+                    }
+                    margin:0px;
+                    padding:0px;
+                }
+                .set_pass{
+                    
                     border-bottom: solid 1px #ff836a !important;
                     &:active,
                     &:hover,
@@ -747,7 +770,7 @@ body {
                 .alert_err{
                     font-family: $default_font;
                     font-size: 14px;
-                    font-weight: 300;
+                    font-weight: 100;
                     line-height: 1.21;
                     text-align: left;
                     color: #ff836a;
@@ -759,7 +782,6 @@ body {
             .alert_err{
                 display: none;
             }
-            
         }
         
     }
