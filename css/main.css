@@ -1002,17 +1002,17 @@ body.forget_pass #contents .back_sign {
   font-weight: 300;
 }
 
-body.forget_pass #contents .input_err {
+body.forget_pass #contents .input_err .forget_email {
   border-bottom: solid 1px #ff836a !important;
   margin: 0px;
   padding: 0px;
 }
 
-body.forget_pass #contents .input_err:active, body.forget_pass #contents .input_err:hover, body.forget_pass #contents .input_err:focus {
+body.forget_pass #contents .input_err .forget_email:active, body.forget_pass #contents .input_err .forget_email:hover, body.forget_pass #contents .input_err .forget_email:focus {
   border-bottom: solid 1px #ff836a !important;
 }
 
-body.forget_pass #contents .alert_err {
+body.forget_pass #contents .input_err .alert_err {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1020,6 +1020,11 @@ body.forget_pass #contents .alert_err {
   text-align: left;
   color: #ff836a;
   margin-top: 7px;
+  display: block;
+}
+
+body.forget_pass #contents .alert_err {
+  display: none;
 }
 
 body #footer {

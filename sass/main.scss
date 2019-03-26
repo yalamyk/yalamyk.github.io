@@ -734,24 +734,32 @@ body {
                 font-weight:300;
             }
             .input_err{
-                border-bottom: solid 1px #ff836a !important;
-                &:active,
-                &:hover,
-                &:focus {
+                .forget_email{
                     border-bottom: solid 1px #ff836a !important;
+                    &:active,
+                    &:hover,
+                    &:focus {
+                        border-bottom: solid 1px #ff836a !important;
+                    }
+                    margin:0px;
+                    padding:0px;
                 }
-                margin:0px;
-                padding:0px;
+                .alert_err{
+                    font-family: $default_font;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1.21;
+                    text-align: left;
+                    color: #ff836a;
+                    margin-top: 7px;
+                    display: block;
+                }
+                
             }
             .alert_err{
-                font-family: $default_font;
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 1.21;
-                text-align: left;
-                color: #ff836a;
-                margin-top: 7px;
+                display: none;
             }
+            
         }
         
     }
