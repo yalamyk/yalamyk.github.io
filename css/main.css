@@ -80,6 +80,24 @@ input[type="radio"]:checked + label span {
   color: #999999;
 }
 
+.design_chk_btn {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 10px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") -32px top no-repeat;
+  cursor: pointer;
+}
+
+.design_chk_btn + p {
+  display: inline-block;
+}
+
+.design_chked {
+  background: url("../img/custom_input.png") -48px top no-repeat;
+}
+
 /** 1. 감섹 결과 레이아웃 **/
 .search_main {
   background-color: #232629;

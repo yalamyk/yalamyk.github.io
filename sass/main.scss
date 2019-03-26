@@ -21,13 +21,20 @@ input {
         @include custtom_radio;
     }
 }
-
 .custom_chk {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     text-align: left;
     color: #999999;
 }
+
+.design_chk_btn{
+    @include design_check;  
+}
+.design_chked{
+    @include design_chked;  
+}
+
 
 /** 1. 감섹 결과 레이아웃 **/
 

@@ -85,6 +85,24 @@
         background: url("../img/custom_input.png") -48px top no-repeat;
     }
 }
+@mixin design_check {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: -2px 10px 0px 0px;
+        vertical-align: middle;
+        background: url("../img/custom_input.png") -32px top no-repeat;
+        cursor: pointer;
+        & + p{
+            display:inline-block;
+        },
+        & + span{
+            display:inline-block;
+        }
+}
+@mixin design_chked{
+    background: url("../img/custom_input.png") -48px top no-repeat;
+}
 @mixin custtom_check2{
     display: none;
     + label span {
