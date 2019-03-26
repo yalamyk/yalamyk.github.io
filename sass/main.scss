@@ -424,7 +424,8 @@ body {
 			font-family: "Roboto", sans-serif;
 			.artist_list{
 				.list_total{
-					padding-left:0px !important;
+                    padding-left:0px !important;
+                    border-bottom:solid 1px #ebf0f2;
 				}
 			}
 			.artist_nav li {
@@ -457,6 +458,37 @@ body {
 				}
 			}
 			.artist_list {
+                .artist_noresult{
+                    span{
+                        font-family: $default_font;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 1.11;
+                        text-align: left;
+                        color: #222222;
+                        margin-bottom: 17px;
+                        display: block;
+                        padding-top: 20px;
+                    }
+                    p{
+                        font-family: $default_font;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        text-align: left;
+                        color: #999999;
+                        font-weight: 300;
+                        margin-bottom: 30px;
+                    }
+                    button{
+                        @include input_button_w100;
+                        border: solid 1px #c1ccd6;
+                        background-color: #ffffff;  
+                        font-family: $default_font;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #000000;
+                    }
+                }
 				li{
 					a{
 						&:after{
