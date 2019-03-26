@@ -1,25 +1,45 @@
 $(function(){
-  console.log('ui_mobile');
-  $(".list_filter a").click(function() {
-      $(".m_slider, .page_blur, html").addClass("open");
-      window.location.hash = "#open";
-      console.log(' window.location.hash : '+window.location.hash);
-    }); 
-    
-    // window.onhashchange = function() {
-    //   console.log('onhashchange : '+window.location.hash);
-    //   if (window.location.hash !== "#open") {
-    //     $(".m_slider,.page_blur,html").removeClass("open");
-    //   }
-    // };
-      
+	// console.log('ui_mobile.js load');
+	$(".list_filter a").click(function(){
+		if(!($(this).hasClass("check"))) {
+			// console.log('has');
+			$(this).addClass('check');
+			$('.filter_wrap').addClass('open');
+			$('.page_blur').addClass('open');
+		}else{
+			// console.log('not');
+			$(this).removeClass('check');
+		}
+	});
+
+	$(".list_sort a").click(function(){
+		if(!($(this).hasClass("check"))) {
+			console.log('has');
+			$(this).addClass('check');
+			$('.sort_wrap').addClass('open');
+			$('.page_blur').addClass('open');
+		}else{
+			console.log('not');
+			$(this).removeClass('check');
+		}
+	});
+
+
+	$('.close_filter').click(function(){
+		$('.filter_wrap').removeClass('open');
+		$('.page_blur').removeClass('open');
+	});
+	$('.close_sort').click(function(){
+		$('.sort_wrap').removeClass('open');
+		$('.page_blur').removeClass('open');
+	});
 });
 function isValueTrue(num) {
-  var num = document.getElementById(num).value;
-  if(num){
-    return true;
-  }else{
-    return false;
-  }
+	var num = document.getElementById(num).value;
+	if(num){
+		return true;
+	}else{
+		return false;
+	}
 }
 

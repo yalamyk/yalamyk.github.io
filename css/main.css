@@ -1461,11 +1461,11 @@ body #footer p {
   border-top: solid 2px #eef3f6;
 }
 
-.filter_wrap .slider_body ul {
+.sort_wrap .slider_body ul {
   margin: 0px !important;
 }
 
-.filter_wrap .slider_body ul li {
+.sort_wrap .slider_body ul li {
   border-bottom: solid 2px #eff3f6;
   font-family: inherit;
   font-size: 14px;
@@ -1480,7 +1480,7 @@ body #footer p {
           box-sizing: border-box;
 }
 
-.filter_wrap .slider_body ul li input[type="checkbox"]:checked + label {
+.sort_wrap .slider_body ul li input[type="checkbox"]:checked + label {
   color: #222;
 }
 
