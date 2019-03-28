@@ -1,0 +1,880 @@
+@charset "UTF-8";
+/* 20180321 sass의 변수를 정의합니다. */
+/*
+20180315
+해당 파일은 mixin을 모아두었습니다. 아래와 같은 기능이 있습니다.
+- ellipsis
+- media query (애플 제품 기준)
+- input_has_value : input 선택시 주어지는 css
+- input_txt_w100 : width가 100% 인 input의 스타일
+- custtom_radio / custom_checkbox : 디자인이 적용된 radio/checkbox버튼
+*/
+/* 미디어 쿼리 정의*/
+/* 미디어쿼리정의 */
+/* 20180321 sass의 변수를 정의합니다. */
+body {
+  /* # content end */
+  /* forget password page start*/
+}
+
+body.user_intro {
+  /* intro 영역 */
+  background-color: #232629;
+}
+
+body.user_intro #contents {
+  clear: both;
+  height: 580px;
+  padding-top: 116px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.user_intro #contents .forget_pass_link {
+  font-size: 14px;
+  color: #7e8a95;
+  text-align: right;
+  font-style: none;
+  text-decoration: underline;
+  margin-top: 25px;
+  display: block;
+  font-weight: 300;
+}
+
+body.user_intro #contents .monopoly {
+  margin-top: 123px;
+  width: 100%;
+  height: 54px;
+  border: solid 1px #454d54;
+  text-align: left;
+  line-height: 54px;
+  font-size: 16px;
+  color: #7e8a95;
+  display: block;
+  padding: 0px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+body.user_intro #contents .monopoly:after {
+  content: url("../img/00_arrow.png");
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+
+body.user_intro #footer {
+  background-color: transparent !important;
+  padding-left: 0px;
+}
+
+body.user_intro #footer p {
+  padding-top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #454d54;
+  text-align: center;
+}
+
+body #header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #232629;
+  z-index: 100;
+}
+
+body #header a {
+  width: 240px;
+  height: 60px;
+  display: block;
+}
+
+body #header a .header_logo {
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+body #header .go_back {
+  width: 13px;
+  height: 23px;
+  background: url("../img/m_header_arrow.png") no-repeat;
+  text-indent: -9999px;
+  border: solid 0px white;
+}
+
+body #header .go_search {
+  width: 22px;
+  height: 23px;
+  background: url("../img/m_search_icon.png") no-repeat;
+  text-indent: -9999px;
+  border: solid 0px white;
+}
+
+body #header .header_default a {
+  width: 240px;
+  height: 60px;
+}
+
+body #header .header_default a .header_logo {
+  left: 30px;
+}
+
+body #header .header_default a .go_back {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+}
+
+body #header .header_default a .go_search {
+  position: absolute;
+  top: 17px;
+  right: 29px;
+}
+
+body #header .header_search {
+  display: none;
+}
+
+body #contents {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 60px;
+  width: 500px;
+  margin: 0 auto;
+  /* start - main*/
+  /* main end */
+  /* forget password page stop */
+}
+
+body #contents .search_form {
+  position: relative;
+}
+
+body #contents form {
+  font-family: inherit;
+}
+
+body #contents form .search_box {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  border-bottom: solid 1px #454d54;
+  background-color: transparent;
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #contents form .search_box ::-webkit-input-placeholder {
+  color: #454d54;
+}
+
+body #contents form .search_box :-ms-input-placeholder {
+  color: #454d54;
+}
+
+body #contents form .search_box ::-ms-input-placeholder {
+  color: #454d54;
+}
+
+body #contents form .search_box ::placeholder {
+  color: #454d54;
+}
+
+body #contents form .search_box:active, body #contents form .search_box:hover, body #contents form .search_box:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+
+body #contents form #search_button {
+  background: url("../img/m_search_icon.png");
+  position: absolute;
+  top: 15px;
+  right: 1px;
+  width: 23px;
+  height: 24px;
+  display: block;
+  text-indent: -10000px;
+}
+
+body #contents form fieldset legend {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+body #contents form fieldset ul {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+body #contents form fieldset ul li input {
+  width: 100%;
+  height: 56px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: solid 1px #454545;
+}
+
+body #contents form fieldset ul li input ::-webkit-input-placeholder {
+  color: #454d54;
+}
+
+body #contents form fieldset ul li input :-ms-input-placeholder {
+  color: #454d54;
+}
+
+body #contents form fieldset ul li input ::-ms-input-placeholder {
+  color: #454d54;
+}
+
+body #contents form fieldset ul li input ::placeholder {
+  color: #454d54;
+}
+
+body #contents form fieldset ul li input:active, body #contents form fieldset ul li input:hover, body #contents form fieldset ul li input:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+
+body #contents form fieldset #remember_id {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: solid 1px #7e8a95;
+  display: none;
+}
+
+body #contents form fieldset #remember_id + label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 10px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") left top no-repeat;
+  cursor: pointer;
+}
+
+body #contents form fieldset #remember_id:checked + label span {
+  background: url("../img/custom_input.png") -16px top no-repeat;
+}
+
+body #contents form fieldset .remember_class {
+  font-size: 14px;
+  color: #7e8a95;
+  font-weight: 300;
+}
+
+body #contents form fieldset .btn_login {
+  margin-top: 21px;
+  width: 100%;
+  height: 55px;
+  background-color: #fff;
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  display: block;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  font-weight: 500;
+}
+
+body #contents .main_txtarea {
+  color: #7e8a95;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 17px;
+  width: 100%;
+  font-weight: 300;
+  margin-top: 125px;
+  word-break: break-all;
+}
+
+body #contents .main_txtarea p {
+  display: block;
+  margin-bottom: 23px;
+}
+
+body #contents .artist_search {
+  min-height: 157px;
+}
+
+body #contents .artist_list_area {
+  font-family: "Roboto", sans-serif;
+}
+
+body #contents .artist_list_area .artist_list .list_total {
+  padding-left: 0px !important;
+  border-bottom: solid 1px #ebf0f2;
+}
+
+body #contents .artist_list_area .artist_nav li {
+  float: left;
+  width: 33.333333333333333%;
+  height: 64px;
+  background-color: #eff3f6 !important;
+}
+
+body #contents .artist_list_area .artist_nav li:first-child {
+  background: url("../img/m_artistlist_nav1.png") no-repeat;
+  background-size: 13px 17px;
+  background-position: center center;
+}
+
+body #contents .artist_list_area .artist_nav li:nth-child(2) {
+  background: url("../img/m_artistlist_nav2.png") no-repeat;
+  background-size: 16px 11px;
+  background-position: center center;
+}
+
+body #contents .artist_list_area .artist_nav li:last-child {
+  background: url("../img/m_artistlist_nav3.png") no-repeat;
+  background-size: 15px 23px;
+  background-position: center center;
+}
+
+body #contents .artist_list_area .artist_nav li.artist_nav_select {
+  background-color: #fff !important;
+}
+
+body #contents .artist_list_area .artist_nav li a {
+  width: 100%;
+  height: 64px;
+  display: block;
+}
+
+body #contents .artist_list_area .artist_list .artist_noresult span {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 17px;
+  display: block;
+  padding-top: 20px;
+}
+
+body #contents .artist_list_area .artist_list .artist_noresult p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #999999;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+body #contents .artist_list_area .artist_list .artist_noresult button {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  border: solid 1px #c1ccd6;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+body #contents .artist_list_area .artist_list li a {
+  min-height: 74px;
+  border-bottom: solid 1px #eff5f7;
+  padding: 20px 40px 20px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+body #contents .artist_list_area .artist_list li a:after {
+  content: url("../img/artist_list_arrow2.png");
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: 0px;
+}
+
+body #contents .artist_list_area .artist_list li a span {
+  font-family: inherit;
+  font-size: 12px;
+  text-align: left;
+  color: #999999;
+  line-height: 12px;
+}
+
+body #contents .artist_list_area .artist_list li a p {
+  font-family: inherit;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  color: #222222;
+}
+
+body #contents .detail_info {
+  min-height: 387px;
+  border-bottom: solid 3px #eef3f6;
+}
+
+body #contents .detail_info .d_more {
+  margin-left: 30px;
+  display: block;
+  width: 46px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 9px;
+  background-color: #a7afb7;
+  color: #fff;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+body #contents .detail_slide {
+  min-height: 145px;
+  border-bottom: solid 3px #eef3f6;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #contents .detail_slide .slide_wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+body #contents .detail_slide span {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #222222;
+  margin-bottom: 11px;
+  display: block;
+}
+
+body #contents .detail_slide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #contents .detail_slide ul li {
+  min-width: 56px;
+  height: 57px;
+  float: left;
+  margin-right: 5px;
+}
+
+body #contents .detail_price {
+  padding: 30px 30px 0px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 283px;
+  border-bottom: solid 3px #eef3f6;
+}
+
+body #contents .detail_price .price_list {
+  font-weight: 300;
+}
+
+body #contents .detail_price .price_list .range {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bbbbbb;
+}
+
+body #contents .detail_price .price_list .price1 {
+  font-family: inherit;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+  color: #222222;
+  margin-top: 9px;
+  font-weight: 500;
+}
+
+body #contents .detail_price .price_list .price1 span {
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 10px;
+  color: #888888;
+  font-weight: 300;
+}
+
+body #contents .detail_price .price_list .price2 {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #222222;
+}
+
+body #contents .detail_price .price_info {
+  margin-top: 30px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  font-weight: 300;
+}
+
+body #contents .detail_price .price_info .date {
+  color: #666666;
+  font-weight: 100;
+}
+
+body #contents .detail_price .price_info .place {
+  font-weight: 500;
+}
+
+body #contents .detail_info .d_img_wrap {
+  width: 100%;
+  min-height: 141px;
+  position: relative;
+}
+
+body #contents .detail_info .d_img_wrap .d_main_img {
+  /* margin-left:30px; */
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+body #contents .detail_info .d_img_wrap .d_sub_img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+body #contents .detail_info .detail_define {
+  margin-left: 30px;
+  margin-top: 14px;
+}
+
+body #contents .detail_info .detail_define .artist {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+body #contents .detail_info .detail_define .artist_ex {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 12px;
+  color: #a7afb7;
+  margin-bottom: 20px;
+}
+
+body #contents .detail_info .detail_define .art_name {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+body.forget_pass #contents h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px !important;
+}
+
+body.forget_pass #contents p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 15px;
+  color: #93a1ad;
+  margin: 0 auto;
+  display: block;
+  font-weight: 300;
+  line-height: 1.47;
+  word-break: break-all;
+  margin-bottom: 24px;
+}
+
+body.forget_pass #contents img {
+  margin: 0 auto;
+  width: 77px;
+  height: 50px;
+  display: block;
+  margin-bottom: 39px;
+}
+
+body.forget_pass #contents .forget_email {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  border-bottom: solid 1px #454d54;
+  background-color: transparent;
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.forget_pass #contents .forget_email ::-webkit-input-placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .forget_email :-ms-input-placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .forget_email ::-ms-input-placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .forget_email ::placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .forget_email:active, body.forget_pass #contents .forget_email:hover, body.forget_pass #contents .forget_email:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+
+body.forget_pass #contents .submit {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+body.forget_pass #contents .done {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  width: 125px;
+  height: 44px;
+  line-height: 44px;
+  color: #a3b3c2;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+body.forget_pass #contents .save_password {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  border: solid 1px #454d54;
+  background-color: #ffffff;
+  color: #000;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+body.forget_pass #contents .back_sign {
+  display: block;
+  width: 93px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: solid 1px #fff;
+  font-weight: 300;
+}
+
+body.forget_pass #contents .wrap_set_pass {
+  margin-top: 50px;
+  margin-bottom: 29px;
+}
+
+body.forget_pass #contents .input_set_pass {
+  /*set_password.html*/
+  margin-top: 30px;
+}
+
+body.forget_pass #contents .input_set_pass .set_pass {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  border-bottom: solid 1px #454d54;
+  background-color: transparent;
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px !important;
+}
+
+body.forget_pass #contents .input_set_pass .set_pass ::-webkit-input-placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .input_set_pass .set_pass :-ms-input-placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .input_set_pass .set_pass ::-ms-input-placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .input_set_pass .set_pass ::placeholder {
+  color: #454d54;
+}
+
+body.forget_pass #contents .input_set_pass .set_pass:active, body.forget_pass #contents .input_set_pass .set_pass:hover, body.forget_pass #contents .input_set_pass .set_pass:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+
+body.forget_pass #contents .input_set_pass p {
+  font-size: 12px;
+  color: #4d565e;
+  margin: 0 !important;
+}
+
+body.forget_pass #contents .input_err .forget_email {
+  border-bottom: solid 1px #ff836a !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+body.forget_pass #contents .input_err .forget_email:active, body.forget_pass #contents .input_err .forget_email:hover, body.forget_pass #contents .input_err .forget_email:focus {
+  border-bottom: solid 1px #ff836a !important;
+}
+
+body.forget_pass #contents .input_err .set_pass {
+  border-bottom: solid 1px #ff836a !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+body.forget_pass #contents .input_err .set_pass:active, body.forget_pass #contents .input_err .set_pass:hover, body.forget_pass #contents .input_err .set_pass:focus {
+  border-bottom: solid 1px #ff836a !important;
+}
+
+body.forget_pass #contents .input_err .alert_err {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.21;
+  text-align: left;
+  color: #ff836a;
+  margin-top: 7px;
+  display: block;
+}
+
+body.forget_pass #contents .alert_err {
+  display: none;
+}
+
+body #footer {
+  height: 60px;
+  display: block;
+  width: 100%;
+  background-color: #eef3f6;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #footer p {
+  width: 100%;
+  padding-top: 27px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #454d54;
+  font-size: 12px;
+  display: block;
+  font-family: inherit;
+  font-size: 12px;
+  text-align: left;
+  color: #a7afb7;
+  box-sizing: border-box;
+}
+
+/* 아래는 가져온 스타일 입니다. */
+/* autocomplete 스타일 시작*/
+/*the container must be positioned relative:*/
+.autocomplete {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  height: 243px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 0px 5.56% 0px 5.56%;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 56px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 100;
+  font-size: 14px;
+  background-color: #fff;
+  background-color: #32363a;
+}
+/*# sourceMappingURL=main.css.map */
