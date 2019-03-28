@@ -9,6 +9,7 @@ body {
             height: 580px;                          
             padding-top: 116px;
             box-sizing: border-box;
+            width:500px;
             .forget_pass_link {
                 font-size: 14px;
                 color: #7e8a95;
@@ -113,7 +114,6 @@ body {
         display: block;
         box-sizing: border-box;
         margin-top: 60px;
-        width:500px;
         margin: $block_center;  
 		.search_form {
 			position: relative;

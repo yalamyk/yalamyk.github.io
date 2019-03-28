@@ -28,6 +28,7 @@ body.user_intro #contents {
   padding-top: 116px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 500px;
 }
 
 body.user_intro #contents .forget_pass_link {
@@ -146,7 +147,6 @@ body #contents {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 60px;
-  width: 500px;
   margin: 0 auto;
   /* start - main*/
   /* main end */
