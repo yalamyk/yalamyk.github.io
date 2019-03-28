@@ -553,6 +553,19 @@ body {
     #footer{
         height: 120px;
         background-color: #eef3f6;
+        img{
+            width: 128px;
+            height: 17px;
+            margin: 0px 0px 0px 40px;
+        }
+        p{
+            font-family: $default_font;
+            font-size: 12px;
+            display:inline-block;
+            line-height: 131px;
+            margin-left: 13px;
+            color: #acaeb5;
+        }
     }
 
     /* forget password page start*/
@@ -666,11 +679,8 @@ body {
             .alert_err{
                 display: none;
             }
-        }
-        
+        }   
     }
-
-    
 }
 
 /* 아래는 가져온 스타일 입니다. */

@@ -679,6 +679,21 @@ body #footer {
   background-color: #eef3f6;
 }
 
+body #footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 0px 0px 40px;
+}
+
+body #footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 131px;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+
 body.forget_pass #contents h2 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
