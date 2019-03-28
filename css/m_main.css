@@ -142,6 +142,21 @@ input[type="radio"]:checked + label span {
   float: left;
 }
 
+.search_list .list_total {
+  font-family: inherit;
+  font-size: 14px;
+  height: 64px;
+  line-height: 64px;
+  text-align: left;
+  color: #888888;
+  padding-left: 30px;
+  font-weight: 300;
+}
+
+.search_list .list_total span {
+  font-weight: 500;
+}
+
 .list_sort {
   position: absolute;
   top: 24px;
@@ -179,21 +194,6 @@ input[type="radio"]:checked + label span {
   color: #454d54;
   border-bottom: solid 1px #454d54;
   background-color: transparent;
-}
-
-.list_total {
-  font-family: inherit;
-  font-size: 14px;
-  height: 64px;
-  line-height: 64px;
-  text-align: left;
-  color: #888888;
-  padding-left: 30px;
-  font-weight: 300;
-}
-
-.list_total span {
-  font-weight: 500;
 }
 
 input[name=datefilter] {
