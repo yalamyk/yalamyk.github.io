@@ -8,14 +8,23 @@
 - input_has_value : input 선택시 주어지는 css
 - input_txt_w100 : width가 100% 인 input의 스타일
 - custtom_radio / custom_checkbox : 디자인이 적용된 radio/checkbox버튼
+- set_footer : pc에서 사용합니다. pc에서는 푸터영역 디자인이 총3개이기 묶어 놓았습니다.(footer가 하단에 고정되게 스타이을 줍니다.)
 */
 /* 미디어 쿼리 정의*/
 /* 미디어쿼리정의 */
 /* 20180321 sass의 변수를 정의합니다. */
 /* 공통영역 스타일 */
+html, body {
+  height: 100%;
+}
+
 .pc_wrap {
   width: 1190px;
   margin: 0 auto;
+}
+
+.txt_center {
+  text-align: center;
 }
 
 /*  상세페이지 틀 2개임. main-header영역/list-nav영역*/
@@ -80,6 +89,17 @@ body.user_intro {
   background-color: #232629;
 }
 
+body.user_intro .wrap {
+  min-height: 100%;
+  overflow: scroll;
+  margin: 0 auto;
+  margin-top: -60px;
+}
+
+body.user_intro .footarea {
+  height: 60px;
+}
+
 body.user_intro #contents {
   clear: both;
   height: 580px;
@@ -121,19 +141,6 @@ body.user_intro #contents .monopoly:after {
   position: absolute;
   top: 0px;
   right: 30px;
-}
-
-body.user_intro #footer {
-  background-color: transparent !important;
-  padding-left: 0px;
-}
-
-body.user_intro #footer p {
-  padding-top: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #454d54;
-  text-align: center;
 }
 
 body #header {
@@ -675,23 +682,43 @@ body #contents .detail_info .detail_define .art_name {
 }
 
 body #footer {
+  /* 디자인별 푸터 3개 */
+}
+
+body #footer.artist_footer {
   height: 120px;
   background-color: #eef3f6;
 }
 
-body #footer img {
+body #footer.artist_footer img {
   width: 128px;
   height: 17px;
   margin: 0px 0px 0px 40px;
 }
 
-body #footer p {
+body #footer.artist_footer p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   display: inline-block;
   line-height: 131px;
   margin-left: 13px;
   color: #acaeb5;
+}
+
+body #footer.intro_footer {
+  text-align: center;
+  background-color: transparent !important;
+  padding-left: 0px;
+  height: 60px;
+  width: 100%;
+}
+
+body #footer.intro_footer p {
+  padding-top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #454d54;
+  text-align: center;
 }
 
 body.forget_pass #contents h2 {

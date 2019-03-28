@@ -8,6 +8,7 @@
 - input_has_value : input 선택시 주어지는 css
 - input_txt_w100 : width가 100% 인 input의 스타일
 - custtom_radio / custom_checkbox : 디자인이 적용된 radio/checkbox버튼
+- set_footer : pc에서 사용합니다. pc에서는 푸터영역 디자인이 총3개이기 묶어 놓았습니다.(footer가 하단에 고정되게 스타이을 줍니다.)
 */
 /* 미디어 쿼리 정의*/
 /* 미디어쿼리정의 */

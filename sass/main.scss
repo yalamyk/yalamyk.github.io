@@ -2,10 +2,23 @@
 @import "./helpers/variables";
 
 /* 공통영역 스타일 */
+// html,body{
+//     height:100%;
+//     .wrap{
+//         min-height: 100%;
+//         overflow: scroll;
+//         margin: 0 auto -60px;
+//     }
+// }
+html,body{
+    height:100%;
+}
+// .footarea{height: 60px;}
 .pc_wrap{
     width: 1190px;
     margin:$block_center;
 }
+.txt_center{text-align:$text_center;}
 /*  상세페이지 틀 2개임. main-header영역/list-nav영역*/
 .search_main {
     background-color: #232629;
@@ -57,8 +70,10 @@
 }
 /* 공통영역 스타일 end */
 body {
+    
     &.user_intro { /* intro 영역 */
         background-color: #232629;
+        @include set_footer(60px);
         #contents {
             clear: both;
             height: 580px;                          
@@ -97,16 +112,7 @@ body {
                 }
             }
         }
-        #footer {
-            background-color: transparent !important;
-            padding-left: 0px;
-            p {
-                padding-top: 18px;
-                box-sizing: border-box;
-                color: #454d54;
-                text-align: center;
-            }
-        }
+        
         // #footer {
         //     height: 60px;
         //     display: block;
@@ -129,6 +135,44 @@ body {
         //     }
         // }
         
+    }
+    &.b_artist{
+        @import set_footer(120px);
+    }
+    #footer{ /* 디자인별 푸터 3개 */
+        &.artist_footer{
+            height: 120px;
+            background-color: #eef3f6;
+            img{
+                width: 128px;
+                height: 17px;
+                margin: 0px 0px 0px 40px;
+            }
+            p{
+                font-family: $default_font;
+                font-size: 12px;
+                display:inline-block;
+                line-height: 131px;
+                margin-left: 13px;
+                color: #acaeb5;
+            }
+        }
+        &.artwork_footer{
+            
+        }
+        &.intro_footer{
+            text-align: center;
+            background-color: transparent !important;
+            padding-left: 0px;
+            height: 60px;
+            width:100%;
+            p {
+                padding-top: 18px;
+                box-sizing: border-box;
+                color: #454d54;
+                text-align: center;
+            }
+        }
     }
     #header {
         height: 80px;
@@ -550,23 +594,7 @@ body {
         }
         /* forget password page stop */
     } /* # content end */
-    #footer{
-        height: 120px;
-        background-color: #eef3f6;
-        img{
-            width: 128px;
-            height: 17px;
-            margin: 0px 0px 0px 40px;
-        }
-        p{
-            font-family: $default_font;
-            font-size: 12px;
-            display:inline-block;
-            line-height: 131px;
-            margin-left: 13px;
-            color: #acaeb5;
-        }
-    }
+    
 
     /* forget password page start*/
     &.forget_pass{
