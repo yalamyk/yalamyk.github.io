@@ -72,6 +72,20 @@ input {
             float: left;
         }
     }
+
+    .list_total {
+        font-family: inherit;
+        font-size: 14px;
+        height: 64px;
+        line-height: 64px;
+        text-align: left;
+        color: #888888;
+        padding-left: 30px;
+        font-weight: 300;
+        span {
+            font-weight: 500;
+        }
+    }
 }
 
 .list_sort {
@@ -112,19 +126,6 @@ input {
     background-color: transparent;
 }
 
-.list_total {
-    font-family: inherit;
-    font-size: 14px;
-    height: 64px;
-    line-height: 64px;
-    text-align: left;
-    color: #888888;
-    padding-left: 30px;
-    font-weight: 300;
-    span {
-        font-weight: 500;
-    }
-}
 input[name=datefilter]{
     width: 227px;
     height: 31px;
