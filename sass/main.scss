@@ -73,10 +73,22 @@ html,body{
 }
 /* 공통영역 스타일 end */
 body {
-    
     &.user_intro { /* intro 영역 */
         background-color: #232629;
         @include set_footer(60px);
+        #footer{
+            text-align: center;
+            background-color: transparent !important;
+            padding-left: 0px;
+            height: 60px;
+            width:100%;
+            p {
+                padding-top: 18px;
+                box-sizing: border-box;
+                color: #454d54;
+                text-align: center;
+            }
+        }
         #contents {
             clear: both;
             height: 580px;                          
@@ -115,35 +127,10 @@ body {
                 }
             }
         }
-        
-        // #footer {
-        //     height: 60px;
-        //     display: block;
-        //     width: 100%;
-        //     background-color: #eef3f6;
-        //     padding-left: 30px;
-        //     box-sizing: border-box;
-        //     p {
-        //         width: 100%;
-        //         padding-top: 27px;
-        //         box-sizing: border-box;
-        //         color: #454d54;
-        //         font-size: 12px;
-        //         display: block;
-        //         font-family: inherit;
-        //         font-size: 12px;
-        //         text-align: left;
-        //         color: #a7afb7;
-        //         box-sizing: border-box;
-        //     }
-        // }
-        
     }
-    &.b_artist{
+    &.artist_page{
         @include set_footer(120px);
-    }
-    #footer{ /* 디자인별 푸터 3개 */
-        &.artist_footer{
+        #footer{
             height: 120px;
             background-color: #eef3f6;
             img{
@@ -160,22 +147,9 @@ body {
                 color: #acaeb5;
             }
         }
-        &.artwork_footer{
-            
-        }
-        &.intro_footer{
-            text-align: center;
-            background-color: transparent !important;
-            padding-left: 0px;
-            height: 60px;
-            width:100%;
-            p {
-                padding-top: 18px;
-                box-sizing: border-box;
-                color: #454d54;
-                text-align: center;
-            }
-        }
+    }
+    &.artwork_page{
+        #footer{}
     }
     #header {
         height: 80px;

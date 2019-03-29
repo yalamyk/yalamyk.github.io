@@ -111,6 +111,22 @@ body.user_intro .footarea {
   height: 60px;
 }
 
+body.user_intro #footer {
+  text-align: center;
+  background-color: transparent !important;
+  padding-left: 0px;
+  height: 60px;
+  width: 100%;
+}
+
+body.user_intro #footer p {
+  padding-top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #454d54;
+  text-align: center;
+}
+
 body.user_intro #contents {
   clear: both;
   height: 580px;
@@ -154,55 +170,35 @@ body.user_intro #contents .monopoly:after {
   right: 30px;
 }
 
-body.b_artist .wrap {
+body.artist_page .wrap {
   min-height: 100%;
   overflow: scroll;
   margin: 0 auto;
   margin-top: -120px;
 }
 
-body.b_artist .footarea {
+body.artist_page .footarea {
   height: 120px;
 }
 
-body #footer {
-  /* 디자인별 푸터 3개 */
-}
-
-body #footer.artist_footer {
+body.artist_page #footer {
   height: 120px;
   background-color: #eef3f6;
 }
 
-body #footer.artist_footer img {
+body.artist_page #footer img {
   width: 128px;
   height: 17px;
   margin: 0px 0px 0px 40px;
 }
 
-body #footer.artist_footer p {
+body.artist_page #footer p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   display: inline-block;
   line-height: 131px;
   margin-left: 13px;
   color: #acaeb5;
-}
-
-body #footer.intro_footer {
-  text-align: center;
-  background-color: transparent !important;
-  padding-left: 0px;
-  height: 60px;
-  width: 100%;
-}
-
-body #footer.intro_footer p {
-  padding-top: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #454d54;
-  text-align: center;
 }
 
 body #header {
