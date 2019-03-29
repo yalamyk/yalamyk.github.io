@@ -104,7 +104,6 @@ body.user_intro .wrap {
   min-height: 100%;
   overflow: scroll;
   margin: 0 auto;
-  margin-top: -60px;
 }
 
 body.user_intro .footarea {
@@ -174,7 +173,6 @@ body.artist_page .wrap {
   min-height: 100%;
   overflow: scroll;
   margin: 0 auto;
-  margin-top: -120px;
 }
 
 body.artist_page .footarea {
@@ -199,6 +197,466 @@ body.artist_page #footer p {
   line-height: 131px;
   margin-left: 13px;
   color: #acaeb5;
+}
+
+body.artwork_page {
+  /*artwork_list start*/
+  /*artwork - filter 슬라이드*/
+  /* artwork_list end */
+}
+
+body.artwork_page .wrap {
+  min-height: 100%;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+body.artwork_page .footarea {
+  height: 69px;
+}
+
+body.artwork_page #footer {
+  height: 69px;
+  background-color: #eef3f6;
+}
+
+body.artwork_page #footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 0px 0px 40px;
+}
+
+body.artwork_page #footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 69px;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+
+body.artwork_page .artwork_search {
+  height: 211px;
+  padding-bottom: 30px;
+}
+
+body.artwork_page .artwork_search p {
+  margin-top: 20px;
+}
+
+body.artwork_page .artwork_list ul li {
+  background-color: #ffffff;
+  border-bottom: solid 11px #eff3f6;
+}
+
+body.artwork_page .artwork_list ul li .img_area {
+  width: 100px;
+  float: left;
+}
+
+body.artwork_page .artwork_list ul li .txt_area {
+  float: left;
+  width: 100%;
+  margin-left: -100px;
+  padding-left: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.artwork_page .artwork_list ul li .txt_area dl {
+  padding-left: 20px;
+}
+
+body.artwork_page .artwork_list ul li .txt_area dl .title_art {
+  /* text-transform: uppercase; */
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #222222;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 14px;
+}
+
+body.artwork_page .artwork_list ul li a {
+  padding: 90px 30px 40px 30px;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  clear: both;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+body.artwork_page .title_artist {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+body.artwork_page .info_art {
+  font-weight: 100 !important;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #222222;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 20px;
+}
+
+body.artwork_page .artwork_list ul li .img_area .title_img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 39px;
+  overflow: hidden;
+}
+
+body.artwork_page .artwork_list ul li .img_area .title_img img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+body.artwork_page .artwork_list ul li .img_area .title_guaranted {
+  width: 100px;
+  width: 67;
+  height: 45px;
+  font-weight: 100;
+}
+
+body.artwork_page .artwork_list ul li .img_area .title_guaranted img {
+  width: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
+body.artwork_page .info_art_price_1 {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #c2c2c2;
+  font-weight: 300;
+  margin: 30px 0px 0px 0px;
+}
+
+body.artwork_page .info_art_price_1_1 {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.4px;
+  text-align: left;
+  font-weight: 300;
+  color: #c2c2c2;
+}
+
+body.artwork_page .info_art_price_2_1 {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #222222;
+}
+
+body.artwork_page .info_art_price_2 {
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #222222;
+}
+
+body.artwork_page .info_art_price_2 span {
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: left;
+  color: #aaaaaa;
+}
+
+body.artwork_page .art_auction_info {
+  margin-top: 33px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #666666;
+  margin-bottom: 14px;
+}
+
+body.artwork_page .art_auction_info span {
+  width: 55px;
+  height: 19px;
+  border-radius: 9px;
+  border: solid 1px #a7afb7;
+  background-color: #ffffff;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  color: #a7afb7;
+}
+
+body.artwork_page .art_aution_place {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: left;
+  line-height: 19px;
+  color: #444444;
+  font-weight: 300;
+}
+
+body.artwork_page .art_aution_place b {
+  display: block;
+}
+
+body.artwork_page .m_slider legend {
+  width: auto;
+}
+
+body.artwork_page .m_slider .slider_year legend {
+  display: block;
+  width: 100%;
+}
+
+body.artwork_page .m_slider .size .size_unit {
+  float: right;
+  /* width:170px; */
+}
+
+body.artwork_page .m_slider .size .size_unit li {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  float: left;
+  color: #000000;
+}
+
+body.artwork_page .m_slider .size .size_unit li:first-child {
+  margin-right: 30px;
+}
+
+body.artwork_page .m_slider legend {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #222222;
+  float: left;
+  margin-bottom: 30px;
+}
+
+body.artwork_page .m_slider .sub_legend {
+  font-family: inherit;
+  font-size: 11px;
+  text-align: left;
+  color: #666666;
+  margin-top: 4px;
+  font-weight: 300;
+}
+
+body.artwork_page .m_slider .category {
+  /* padding: 30px 30px 30px 0px; */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.artwork_page .m_slider .slider_border {
+  border-bottom: solid 2px #eef3f6;
+  margin: 20px 0px 20px 0px;
+}
+
+body.artwork_page .m_slider .inputarea {
+  clear: both;
+}
+
+body.artwork_page .m_slider .inputarea .sub_legend {
+  margin-bottom: 9px;
+}
+
+body.artwork_page .m_slider .price legend span {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.14;
+  text-align: left;
+  color: #888888;
+  margin-left: 9px;
+}
+
+body.artwork_page .m_slider .chk_all {
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  float: right;
+}
+
+body.artwork_page .m_slider .check_all {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+}
+
+body.artwork_page .m_slider ul {
+  clear: both;
+  overflow: hidden;
+  /* border-top:solid 2px #eef3f6; */
+}
+
+body.artwork_page .m_slider ul li {
+  line-height: 25px;
+}
+
+body.artwork_page .m_slider ul li label {
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: #999999;
+  font-weight: 300;
+}
+
+body.artwork_page .m_slider .f_chk_list {
+  margin-bottom: 20px;
+  border-top: solid 2px #eef3f6;
+}
+
+body.artwork_page .sort_wrap .slider_body ul {
+  margin: 0px !important;
+}
+
+body.artwork_page .sort_wrap .slider_body ul li {
+  border-bottom: solid 2px #eff3f6;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  color: #999999;
+  height: 65px;
+  line-height: 65px;
+  font-weight: 300;
+  padding: 0px 0px 0px 36px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.artwork_page .sort_wrap .slider_body ul li input[type="checkbox"]:checked + label {
+  color: #222;
+}
+
+body.artwork_page .filter_input {
+  width: 227px;
+  height: 31px;
+  border-radius: 2px;
+  background-color: #eef3f6;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.07;
+  text-align: left;
+  padding: 0px 12px 0px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.artwork_page .filter_input::-webkit-input-placeholder {
+  color: #bbb !important;
+}
+
+body.artwork_page .filter_input:-ms-input-placeholder {
+  color: #bbb !important;
+}
+
+body.artwork_page .filter_input::-ms-input-placeholder {
+  color: #bbb !important;
+}
+
+body.artwork_page .filter_input::placeholder {
+  color: #bbb !important;
+}
+
+body.artwork_page .filter_refresh {
+  position: relative;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-align: left;
+  color: #777777;
+  float: right;
+  padding: 22px 34px 21px 25px;
+}
+
+body.artwork_page .filter_refresh span {
+  background: url("../img/filter_refresh.png") no-repeat;
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+}
+
+body.artwork_page .filer_search {
+  width: 100%;
+  height: 53px;
+  line-height: 53px;
+  background-color: #000;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
+}
+
+body.artwork_page .accordion label {
+  position: relative;
+}
+
+body.artwork_page .accordion label:after {
+  content: url("../img/m_accordian_down.png");
+  position: absolute;
+  top: 29px;
+  right: 22px;
+}
+
+body.artwork_page .advanced .inputarea li:not(.sub_legend) {
+  margin-bottom: 16px;
 }
 
 body #header {
