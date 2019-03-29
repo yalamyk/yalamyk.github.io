@@ -3,15 +3,18 @@
 
 /* 공통영역 스타일 */
 // html,body{
-//     height:100%;
-//     .wrap{
-//         min-height: 100%;
-//         overflow: scroll;
-//         margin: 0 auto -60px;
-//     }
-// }
 html,body{
     height:100%;
+}
+.footer_watermark{
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    margin-left:-780px; 
+    z-index: -1;
+    width: 1562px;
+    height: 170px;
+    background: url(../img/pc/bg_logo.png) no-repeat;
 }
 // .footarea{height: 60px;}
 .pc_wrap{
@@ -137,7 +140,7 @@ body {
         
     }
     &.b_artist{
-        @import set_footer(120px);
+        @include set_footer(120px);
     }
     #footer{ /* 디자인별 푸터 3개 */
         &.artist_footer{

@@ -18,6 +18,17 @@ html, body {
   height: 100%;
 }
 
+.footer_watermark {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -780px;
+  z-index: -1;
+  width: 1562px;
+  height: 170px;
+  background: url(../img/pc/bg_logo.png) no-repeat;
+}
+
 .pc_wrap {
   width: 1190px;
   margin: 0 auto;
@@ -141,6 +152,57 @@ body.user_intro #contents .monopoly:after {
   position: absolute;
   top: 0px;
   right: 30px;
+}
+
+body.b_artist .wrap {
+  min-height: 100%;
+  overflow: scroll;
+  margin: 0 auto;
+  margin-top: -120px;
+}
+
+body.b_artist .footarea {
+  height: 120px;
+}
+
+body #footer {
+  /* 디자인별 푸터 3개 */
+}
+
+body #footer.artist_footer {
+  height: 120px;
+  background-color: #eef3f6;
+}
+
+body #footer.artist_footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 0px 0px 40px;
+}
+
+body #footer.artist_footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 131px;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+
+body #footer.intro_footer {
+  text-align: center;
+  background-color: transparent !important;
+  padding-left: 0px;
+  height: 60px;
+  width: 100%;
+}
+
+body #footer.intro_footer p {
+  padding-top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #454d54;
+  text-align: center;
 }
 
 body #header {
@@ -679,46 +741,6 @@ body #contents .detail_info .detail_define .art_name {
   line-height: 16px;
   color: #222222;
   margin-bottom: 8px;
-}
-
-body #footer {
-  /* 디자인별 푸터 3개 */
-}
-
-body #footer.artist_footer {
-  height: 120px;
-  background-color: #eef3f6;
-}
-
-body #footer.artist_footer img {
-  width: 128px;
-  height: 17px;
-  margin: 0px 0px 0px 40px;
-}
-
-body #footer.artist_footer p {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  display: inline-block;
-  line-height: 131px;
-  margin-left: 13px;
-  color: #acaeb5;
-}
-
-body #footer.intro_footer {
-  text-align: center;
-  background-color: transparent !important;
-  padding-left: 0px;
-  height: 60px;
-  width: 100%;
-}
-
-body #footer.intro_footer p {
-  padding-top: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #454d54;
-  text-align: center;
 }
 
 body.forget_pass #contents h2 {
