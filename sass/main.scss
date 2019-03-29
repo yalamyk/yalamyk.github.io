@@ -349,127 +349,10 @@ body {
         }
 
         /*artwork - filter 슬라이드*/
-        .m_slider {
-            legend {
-                width: auto;
-            }
-            .slider_year legend {
-                display: block;
-                width: 100%;
-            }
-            .size .size_unit {
-                float: right;
-                /* width:170px; */
-                li {
-                    font-family: inherit;
-                    font-size: 14px;
-                    font-weight: normal;
-                    line-height: 1.14;
-                    letter-spacing: normal;
-                    text-align: left;
-                    float: left;
-                    color: #000000;
-                    &:first-child {
-                        margin-right: 30px;
-                    }
-                }
-            }
-            legend {
-                font-family: inherit;
-                font-size: 14px;
-                font-weight: 500;
-                text-align: left;
-                color: #222222;
-                float: left;
-                margin-bottom: 30px;
-            }
-            .sub_legend {
-                font-family: inherit;
-                font-size: 11px;
-                text-align: left;
-                color: #666666;
-                margin-top: 4px;
-                font-weight: 300;
-            }
-            .category {
-                /* padding: 30px 30px 30px 0px; */
-                box-sizing: border-box;
-            }
-            .slider_border {
-                border-bottom: solid 2px #eef3f6;
-                margin: 20px 0px 20px 0px;
-            }
-            .inputarea {
-                clear: both;
-                .sub_legend {
-                    margin-bottom: 9px;
-                }
-            }
-            .price legend span {
-                font-family: inherit;
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 1.14;
-                text-align: left;
-                color: #888888;
-                margin-left: 9px;
-            }
-            .chk_all {
-                font-family: inherit;
-                font-size: 14px;
-                text-align: left;
-                color: #000000;
-                float: right;
-            }
-            .check_all {
-                display: inline-block;
-                font-family: inherit;
-                font-size: 14px;
-                text-align: left;
-                color: #000000;
-            }
-            ul {
-                clear: both;
-                overflow: hidden;
-                /* border-top:solid 2px #eef3f6; */
-                li {
-                    line-height: 25px;
-                    label {
-                        font-family: inherit;
-                        font-size: 14px;
-                        text-align: left;
-                        color: #999999;
-                        font-weight: 300;
-                    }
-                }
-            }
-            .f_chk_list {
-                margin-bottom: 20px;
-                border-top: solid 2px #eef3f6;
-            }
+        .filter_slider{
+            height: 335px;
+            background-color: #fff;
         }
-        .sort_wrap {
-            .slider_body ul{
-                margin: 0px !important;
-                li {
-                    border-bottom: solid 2px #eff3f6;
-                    font-family: inherit;
-                    font-size: 14px;
-                    line-height: 1.14;
-                    text-align: left;
-                    color: #999999;
-                    height: 65px;
-                    line-height: 65px;
-                    font-weight: 300;
-                    padding: 0px 0px 0px 36px;
-                    box-sizing: border-box;
-                    input[type="checkbox"]:checked + label {
-                        color: #222;
-                    }
-                }
-            }
-        }
-
         .filter_input {
             width: 227px;
             height: 31px;
@@ -486,7 +369,6 @@ body {
                 color: #bbb !important;
             }
         }
-
         .filter_refresh {
             position: relative;
             font-family: inherit;

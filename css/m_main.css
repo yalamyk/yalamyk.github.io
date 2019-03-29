@@ -1643,6 +1643,7 @@ body #footer p {
   position: fixed;
   background-color: #eff3f6;
   border-bottom: none;
+  width: 100%;
 }
 
 .comparables_list li {
