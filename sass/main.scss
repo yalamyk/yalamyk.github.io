@@ -854,7 +854,9 @@ body {
             padding-left: 136px;
         }
         .detail_info {
-			min-height: 387px;
+            padding-top: 80px;
+            box-sizing: border-box;
+			height: 333px;
 			border-bottom: solid 3px #eef3f6;
 			.d_more {
 				margin-left: 30px;
@@ -999,21 +1001,24 @@ body {
         }
 
         .detail_txt{
-            width: 1920px;
             height: 788px;
+            width:100%;
+            padding: 35px 0px;
+            box-sizing: border-box;
             background-color: #eff3f7;
-            font-family: $default_font;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 1.38;
-            text-align: left;
-            color: #484848;
             p{
+                font-family: $default_font;
+                font-size: 16px;
+                line-height:22px;
+                font-weight: 300;
+                text-align: left;
+                color: #484848;
+                margin-bottom:15px;
                 &.detail_title{
+                    line-height:80px;
                     font-family: $default_font;
                     font-size: 24px;
                     font-weight: 500;
-                    line-height: 9.58;
                     text-align: left;
                     color: #222;
                 }

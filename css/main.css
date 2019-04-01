@@ -1103,7 +1103,10 @@ body.artwork_detail .detail_wrap {
 }
 
 body.artwork_detail .detail_info {
-  min-height: 387px;
+  padding-top: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 333px;
   border-bottom: solid 3px #eef3f6;
 }
 
@@ -1273,22 +1276,29 @@ body.artwork_detail .detail_info .detail_define .art_name {
 }
 
 body.artwork_detail .detail_txt {
-  width: 1920px;
   height: 788px;
+  width: 100%;
+  padding: 35px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #eff3f7;
+}
+
+body.artwork_detail .detail_txt p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  line-height: 22px;
   font-weight: 300;
-  line-height: 1.38;
   text-align: left;
   color: #484848;
+  margin-bottom: 15px;
 }
 
 body.artwork_detail .detail_txt p.detail_title {
+  line-height: 80px;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 9.58;
   text-align: left;
   color: #222;
 }
