@@ -126,6 +126,85 @@ body {
                     right: 30px;
                 }
             }
+            .search_form {
+                position: relative;
+            }
+            form {
+                font-family: inherit;
+                .search_box {
+                    width: 100%;
+                    height: 56px;
+                    font-size: 20px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 100;
+                    color: #fff;
+                    border-bottom: solid 1px #454d54;
+                    background-color: transparent;
+                    padding-right: 30px;
+                    box-sizing: border-box;
+                    @include input_has_value();
+                }
+                #search_button {
+                    background: url("../img/m_search_icon.png");
+                    position: absolute;
+                    top: 15px;
+                    right: 1px;
+                    width: 23px;
+                    height: 24px;
+                    display: block;
+                    text-indent: -10000px;
+                }
+                fieldset {
+                    legend {
+                        width: 0px;
+                        height: 0px;
+                        display: none;
+                    }
+                    ul {
+                        width: 100%;
+                        margin-bottom: 28px;
+                        li input {
+                            width: 100%;
+                            height: 56px;
+                            font-size: 18px;
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 100;
+                            color:#fff;
+                            background-color: transparent;
+                            border-bottom: solid 1px #454545;
+                            @include input-has-value();
+                        }
+                    }
+                    #remember_id {
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 10px;
+                        border: solid 1px #7e8a95;
+                        @include custtom_check2;
+                    }
+                    .remember_class {
+                        font-size: 14px;
+                        color: #7e8a95;
+                        font-weight: 300;
+                    }
+                    .btn_login {
+                        margin-top: 21px;
+                        width: 100%;
+                        height: 55px;
+                        background-color: #fff;
+                        text-align: center;
+                        color: #000000;
+                        font-size: 16px;
+                        display: block;
+                        appearance: none;
+                        -moz-appearance: none;
+                        /* Firefox */
+                        -webkit-appearance: none;
+                        /* Safari and Chrome */
+                        font-weight: 500;
+                    }
+                }
+            }
         }
     }
     &.artist_page{
@@ -147,6 +226,120 @@ body {
                 color: #acaeb5;
             }
         }
+        .artist_list_area {
+			font-family: "Roboto", sans-serif;
+			.artist_list{
+				.list_total{
+                    padding-left:0px !important;
+                    border-bottom:solid 1px #ebf0f2;
+				}
+			}
+			.artist_nav li {
+				&:first-child {
+					background: url("../img/m_artistlist_nav1.png") no-repeat;
+					background-size: 13px 17px;
+					background-position:74px;
+				}
+				&:nth-child(2) {
+					background: url("../img/m_artistlist_nav2.png") no-repeat;
+					background-size: 16px 11px;
+					background-position:74px;
+				}
+				&:last-child {
+					background: url("../img/m_artistlist_nav3.png") no-repeat;
+					background-size: 15px 23px;
+					background-position: 74px;
+				}
+				float: left;
+				width: 220px;
+				height: 64px;
+				background-color: #eff3f6 !important;
+				&.artist_nav_select {
+                    background-color: #fff !important;
+                    a{
+                        color:#222;
+                    }
+				}
+				a {
+					width: 100%;
+					height: 64px;
+                    display: block;
+                    font-family: $default_font;
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 64px;
+                    letter-spacing: 1px;
+                    padding-left: 105px;
+                    box-sizing: border-box;
+                    color: #888;
+				}
+			}
+			.artist_list {
+                .artist_noresult{
+                    span{
+                        font-family: $default_font;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 1.11;
+                        text-align: left;
+                        color: #222222;
+                        margin-bottom: 17px;
+                        display: block;
+                        padding-top: 20px;
+                    }
+                    p{
+                        font-family: $default_font;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        text-align: left;
+                        color: #999999;
+                        font-weight: 300;
+                        margin-bottom: 30px;
+                    }
+                    button{
+                        @include input_button_w100;
+                        border: solid 1px #c1ccd6;
+                        background-color: #ffffff;  
+                        font-family: $default_font;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #000000;
+                    }
+                }
+				li{
+					a{
+						&:after{
+							content:url("../img/artist_list_arrow2.png");
+							position: absolute;
+							top:50%;
+							margin-top:-6px;
+							right: 0px;
+						}
+						min-height: 74px;
+						border-bottom: solid 1px #eff5f7;
+						padding: 20px 40px 20px 0px;
+						box-sizing: border-box;
+						display: block;
+						position:relative;
+						span {
+							font-family: inherit;
+							font-size: 12px;
+							text-align: left;
+							color: #999999;
+							line-height: 12px;
+						}
+						p {
+							font-family: inherit;
+							margin-bottom: 4px;
+							font-size: 18px;
+							line-height: 18px;
+							text-align: left;
+							color: #222222;
+						}
+					}
+				}
+			}
+		}
     }
     &.artwork_page{
         @include set_footer(69px);
@@ -347,8 +540,8 @@ body {
                 display: block;
             }
         }
-
-        /*artwork - filter 슬라이드*/
+        .slider_body {
+            /*artwork - filter 슬라이드*/
         .filter_slider{
             height: 335px;
             background-color: #fff;
@@ -369,26 +562,6 @@ body {
                 color: #bbb !important;
             }
         }
-        .filter_refresh {
-            position: relative;
-            font-family: inherit;
-            font-size: 13px;
-            font-weight: 300;
-            letter-spacing: normal;
-            text-align: left;
-            color: #777777;
-            float: right;
-            padding: 22px 34px 21px 25px;
-            span {
-                background: url("../img/filter_refresh.png") no-repeat;
-                display: inline-block;
-                width: 17px;
-                height: 14px;
-                position: absolute;
-                top: 22px;
-                left: 0px;
-            }
-        }
 
         .filer_search {
             width: 100%;
@@ -401,7 +574,6 @@ body {
             text-align: center;
             color: #ffffff;
         }
-
         .accordion label {
             position: relative;
             &:after {
@@ -415,7 +587,143 @@ body {
         .advanced .inputarea li:not(.sub_legend) {
             margin-bottom: 16px;
         }
-
+        .slider_year {
+            padding: 32px 30px 30px 36px;
+            box-sizing: border-box;
+        }
+        
+        .f_i2_to {
+            font-family: inherit;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 1.6;
+            display: inline-block;
+            padding: 0px 5px 0px 5px;
+            color: #444444;
+        }
+        
+        .filter_input2 {
+            background-color: #eef3f6;
+            height: 30px;
+            width: 98.5px;
+            padding: 0px 12px 0px 12px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.07;
+            text-align: left;
+            color: #444;
+        }
+        
+        .art_ex {
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 100;
+            line-height: 1.5;
+            text-align: left;
+            color: #222222;
+            width: 220px;
+            margin-bottom: 10px;
+        }
+            legend {
+                width: auto;
+            }
+            .slider_year legend {
+                display: block;
+                width: 100%;
+            }
+            .size .size_unit {
+                float: right;
+                /* width:170px; */
+                li {
+                    font-family: inherit;
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 1.14;
+                    letter-spacing: normal;
+                    text-align: left;
+                    float: left;
+                    color: #000000;
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+                }
+            }
+            legend {
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: left;
+                color: #222222;
+                float: left;
+                margin-bottom: 30px;
+            }
+            .sub_legend {
+                font-family: inherit;
+                font-size: 11px;
+                text-align: left;
+                color: #666666;
+                margin-top: 4px;
+                font-weight: 300;
+            }
+            .category {
+                /* padding: 30px 30px 30px 0px; */
+                box-sizing: border-box;
+            }
+            .slider_border {
+                border-bottom: solid 2px #eef3f6;
+                margin: 20px 0px 20px 0px;
+            }
+            .inputarea {
+                clear: both;
+                .sub_legend {
+                    margin-bottom: 9px;
+                }
+            }
+            .price legend span {
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.14;
+                text-align: left;
+                color: #888888;
+                margin-left: 9px;
+            }
+            .chk_all {
+                font-family: inherit;
+                font-size: 14px;
+                text-align: left;
+                color: #000000;
+                float: right;
+            }
+            .check_all {
+                display: inline-block;
+                font-family: inherit;
+                font-size: 14px;
+                text-align: left;
+                color: #000000;
+            }
+            ul {
+                clear: both;
+                overflow: hidden;
+                /* border-top:solid 2px #eef3f6; */
+                li {
+                    line-height: 25px;
+                    label {
+                        font-family: inherit;
+                        font-size: 14px;
+                        text-align: left;
+                        color: #999999;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .f_chk_list {
+                margin-bottom: 20px;
+                border-top: solid 2px #eef3f6;
+            }
+        }
         /* artwork_list end */
     }
     #header {
@@ -478,85 +786,6 @@ body {
         display: block;
         box-sizing: border-box;
         margin-top: 80px;
-		.search_form {
-			position: relative;
-		}
-		form {
-			font-family: inherit;
-			.search_box {
-				width: 100%;
-				height: 56px;
-				font-size: 20px;
-				font-family: "Roboto", sans-serif;
-				font-weight: 100;
-				color: #fff;
-				border-bottom: solid 1px #454d54;
-				background-color: transparent;
-				padding-right: 30px;
-				box-sizing: border-box;
-				@include input_has_value();
-			}
-			#search_button {
-				background: url("../img/m_search_icon.png");
-				position: absolute;
-				top: 15px;
-				right: 1px;
-				width: 23px;
-				height: 24px;
-				display: block;
-				text-indent: -10000px;
-			}
-			fieldset {
-				legend {
-					width: 0px;
-					height: 0px;
-					display: none;
-				}
-				ul {
-					width: 100%;
-					margin-bottom: 28px;
-					li input {
-						width: 100%;
-						height: 56px;
-						font-size: 18px;
-						font-family: "Roboto", sans-serif;
-						font-weight: 100;
-						color:#fff;
-						background-color: transparent;
-						border-bottom: solid 1px #454545;
-						@include input-has-value();
-					}
-				}
-				#remember_id {
-					width: 15px;
-					height: 15px;
-					margin-right: 10px;
-                    border: solid 1px #7e8a95;
-                    @include custtom_check2;
-				}
-				.remember_class {
-					font-size: 14px;
-					color: #7e8a95;
-					font-weight: 300;
-				}
-				.btn_login {
-					margin-top: 21px;
-					width: 100%;
-					height: 55px;
-					background-color: #fff;
-					text-align: center;
-					color: #000000;
-					font-size: 16px;
-					display: block;
-					appearance: none;
-					-moz-appearance: none;
-					/* Firefox */
-					-webkit-appearance: none;
-					/* Safari and Chrome */
-					font-weight: 500;
-				}
-			}
-        }
         /* start - main*/
         .main_txtarea {
             color: #7e8a95;
@@ -577,120 +806,7 @@ body {
 			min-height: 157px;
         }
         
-		.artist_list_area {
-			font-family: "Roboto", sans-serif;
-			.artist_list{
-				.list_total{
-                    padding-left:0px !important;
-                    border-bottom:solid 1px #ebf0f2;
-				}
-			}
-			.artist_nav li {
-				&:first-child {
-					background: url("../img/m_artistlist_nav1.png") no-repeat;
-					background-size: 13px 17px;
-					background-position:74px;
-				}
-				&:nth-child(2) {
-					background: url("../img/m_artistlist_nav2.png") no-repeat;
-					background-size: 16px 11px;
-					background-position:74px;
-				}
-				&:last-child {
-					background: url("../img/m_artistlist_nav3.png") no-repeat;
-					background-size: 15px 23px;
-					background-position: 74px;
-				}
-				float: left;
-				width: 220px;
-				height: 64px;
-				background-color: #eff3f6 !important;
-				&.artist_nav_select {
-                    background-color: #fff !important;
-                    a{
-                        color:#222;
-                    }
-				}
-				a {
-					width: 100%;
-					height: 64px;
-                    display: block;
-                    font-family: $default_font;
-                    font-size: 12px;
-                    font-weight: bold;
-                    line-height: 64px;
-                    letter-spacing: 1px;
-                    padding-left: 105px;
-                    box-sizing: border-box;
-                    color: #888;
-				}
-			}
-			.artist_list {
-                .artist_noresult{
-                    span{
-                        font-family: $default_font;
-                        font-size: 18px;
-                        font-weight: 500;
-                        line-height: 1.11;
-                        text-align: left;
-                        color: #222222;
-                        margin-bottom: 17px;
-                        display: block;
-                        padding-top: 20px;
-                    }
-                    p{
-                        font-family: $default_font;
-                        font-size: 14px;
-                        line-height: 1.43;
-                        text-align: left;
-                        color: #999999;
-                        font-weight: 300;
-                        margin-bottom: 30px;
-                    }
-                    button{
-                        @include input_button_w100;
-                        border: solid 1px #c1ccd6;
-                        background-color: #ffffff;  
-                        font-family: $default_font;
-                        font-size: 16px;
-                        font-weight: 500;
-                        color: #000000;
-                    }
-                }
-				li{
-					a{
-						&:after{
-							content:url("../img/artist_list_arrow2.png");
-							position: absolute;
-							top:50%;
-							margin-top:-6px;
-							right: 0px;
-						}
-						min-height: 74px;
-						border-bottom: solid 1px #eff5f7;
-						padding: 20px 40px 20px 0px;
-						box-sizing: border-box;
-						display: block;
-						position:relative;
-						span {
-							font-family: inherit;
-							font-size: 12px;
-							text-align: left;
-							color: #999999;
-							line-height: 12px;
-						}
-						p {
-							font-family: inherit;
-							margin-bottom: 4px;
-							font-size: 18px;
-							line-height: 18px;
-							text-align: left;
-							color: #222222;
-						}
-					}
-				}
-			}
-		}
+		
 		.detail_info {
 			min-height: 387px;
 			border-bottom: solid 3px #eef3f6;
