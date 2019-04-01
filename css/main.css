@@ -1629,8 +1629,8 @@ body #header a {
 
 body #header a .header_logo {
   position: absolute;
-  padding-top: 30px;
-  padding-left: 50px;
+  top: 30px;
+  left: 50px;
 }
 
 body #header .go_back {
@@ -1655,7 +1655,8 @@ body #header .header_default a {
 }
 
 body #header .header_default a .header_logo {
-  left: 30px;
+  top: 30px;
+  left: 50px;
 }
 
 body #header .header_default a .go_back {
@@ -1672,6 +1673,69 @@ body #header .header_default a .go_search {
 
 body #header .header_search {
   display: none;
+}
+
+body .detail_header {
+  height: 83px !important;
+}
+
+body .detail_header .header_default .logo {
+  float: left;
+}
+
+body .detail_header .header_default .header_step {
+  position: absolute;
+  right: 370px;
+  top: 33px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #77818a;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+body .detail_header .header_default .header_step li {
+  float: left;
+}
+
+body .detail_header .header_default .header_step li.search_name {
+  color: #ffffff;
+}
+
+body .detail_header .header_default .header_step li:first-child:after {
+  content: '>';
+  padding: 0px 10px;
+}
+
+body .detail_header .header_default form {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+body .detail_header .header_default form input[type="text"] {
+  width: 300px;
+  height: 40px;
+  border-radius: 2px;
+  padding: 13px 10px 13px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px #77818a;
+  background-color: #232629;
+  color: #fff;
+}
+
+body .detail_header .header_default form input[type="submit"] {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: url("../img/m_search_icon.png") no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  text-indent: -9999px;
 }
 
 body #contents {

@@ -1111,8 +1111,10 @@ body {
             display:block;
             .header_logo {
                 position: absolute;
-                padding-top: 30px;
-                padding-left: 50px;
+                top: 30px;
+                    left: 50px;
+                // padding-top: 30px;
+                // padding-left: 50px;
             }
         }
         .go_back {
@@ -1134,7 +1136,8 @@ body {
                 width:240px;
                 height:60px;
                 .header_logo {
-                    left: 30px;
+                    top: 30px;
+                    left: 50px;
                 }
                 .go_back {
                     position: absolute;
@@ -1151,8 +1154,68 @@ body {
         .header_search {
             display: none;
         }
-	}
+    }
+    .detail_header{
+        height:83px !important;
+        .header_default{
+            .logo{
+                float:left;
+            }
+            .header_step{
+                position: absolute;
+                right:370px;
+                top:33px;
+                // background-color: pink;
+                font-family: $default_font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+                color: #77818a;
+                text-transform: uppercase;
+                text-align: left;
+                li{
+                    float:left;
+                    &.search_name{
+                        color: #ffffff;
 
+                    }
+                    &:first-child{
+                        &:after{
+                            content: '>';
+                            padding: 0px 10px;
+                        }
+                    }
+                }
+            }
+            form{
+                position: absolute;
+                right:40px;
+                top:20px;
+                input[type="text"]{
+                    // background-color:blue;
+                    width: 300px;
+                    height: 40px;
+                    border-radius: 2px;
+                    padding:13px 10px 13px 10px;
+                    box-sizing: border-box;
+                    border: solid 1px #77818a;
+                    background-color: #232629;
+                    color:#fff;
+                }
+                input[type="submit"]{
+                    position: absolute;
+                    right:12px;
+                    top: 12px;
+                    background: url('../img/m_search_icon.png') no-repeat;
+                    background-size:cover;
+                    width:17px;
+                    height:17px;
+                    text-indent: -9999px;
+                }
+                
+            }
+        }
+    }
     #contents {
         display: block;
         box-sizing: border-box;

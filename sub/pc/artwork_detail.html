@@ -12,21 +12,16 @@
     </head>
     <body class="artwork_detail">
         <div class="wrap">
-            <div id="header">
+            <div id="header" class="detail_header">
                 <div class="header_default">
-                    <a href="./main.html">
-                        <button class="go_back">뒤로가기</button>
-                        <img class="header_logo" src="../../img/m_logo.png">
-                        <button class="go_search">검색하기</button>
-                    </a>
-                </div>
-                <!-- 검색하기를 누를 경우에 보여집니다. -->
-                <div class="header_search">
-                    <form class="search_form" autocomplete="off" >
-                        <div class="autocomplete" >
-                            <input type="text" id="myInput" name="myCountry" class="search_box" placeholder="t">
-                            </div>
-                        <input type="submit" id="search_button" >
+                    <a class="logo" href="./main.html"><img class="header_logo" src="../../img/m_logo.png"></a> 
+                    <ul class="header_step">
+                        <li>Home</li>
+                        <li class="search_name">Jan van de Cappelle</li>
+                    </ul>
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+                        <input type="submit">
                     </form>
                 </div>
             </div>
