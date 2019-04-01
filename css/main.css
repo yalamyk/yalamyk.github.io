@@ -14,9 +14,14 @@
 /* 미디어쿼리정의 */
 /* 20180321 sass의 변수를 정의합니다. */
 /* 공통영역 스타일 */
-html, body {
-  height: 100%;
-  overflow: auto;
+.sticky {
+  position: fixed;
+  top: 83px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .footer_watermark {
@@ -1351,8 +1356,19 @@ body.comparables_page #footer p {
   color: #acaeb5;
 }
 
+body.comparables_page .wrap {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body.comparables_page .search_main {
   height: 212px;
+}
+
+body.comparables_page .fixed_area {
+  width: 100%;
+  height: 172px;
+  background-color: #eff3f6;
 }
 
 body.comparables_page table .c_artwork {
@@ -1362,6 +1378,7 @@ body.comparables_page table .c_artwork {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 37px !important;
+  padding-bottom: 40px;
 }
 
 body.comparables_page table .c_artwork .img_area {
@@ -1516,6 +1533,7 @@ body.comparables_page table .c_price .info_art_price_2 span {
 }
 
 body.comparables_page table .c_saleinfo {
+  vertical-align: top;
   width: 161px;
   padding-top: 37px !important;
 }
@@ -1534,6 +1552,7 @@ body.comparables_page table .c_saleinfo p b {
 }
 
 body.comparables_page table tr {
+  padding-bottom: 40px !important;
   border-bottom: solid 1px #eef4f6;
 }
 
@@ -1549,6 +1568,7 @@ body.comparables_page table tr .c_m_txt {
 }
 
 body.comparables_page table tr .c_figure {
+  vertical-align: top;
   padding-top: 37px !important;
 }
 
@@ -1578,215 +1598,16 @@ body.comparables_page table tr .c_f_txt span {
 }
 
 body.comparables_page table tr th {
-  width: auto;
-  height: 56px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 52px;
-  text-align: center;
-  color: #888888;
-}
-
-body.comparables_page table {
-  clear: both;
-  background-color: #fff;
-  width: 100%;
-  padding: 0px 50px 0px 50px;
-  margin-top: 12px;
-}
-
-body.comparables_page table tr {
-  border-bottom: solid 1px #eef4f6;
-}
-
-body.comparables_page table tr th {
-  width: auto;
-  height: 52px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 52px;
-  text-align: center;
-  color: #888888;
-}
-
-body.comparables_page table tr td {
-  vertical-align: top;
-  padding-top: 43px;
-  padding-bottom: 43px;
-}
-
-body.comparables_page table tr td.lot_detail {
-  padding-left: 50px;
-  width: 529px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body.comparables_page table tr td.lot_detail .img_area {
-  float: left;
-  width: 110px;
-  height: 87px;
-}
-
-body.comparables_page table tr td.lot_detail .img_area img {
-  width: 110px;
-  display: block;
-  margin: 0 auto;
-}
-
-body.comparables_page table tr td.lot_detail .txt_area {
-  padding-left: 110px;
-  width: 100%;
-  margin-left: -110px;
-  float: left;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body.comparables_page table tr td.lot_detail .txt_area p {
-  padding-left: 20px;
-}
-
-body.comparables_page table tr td.lot_detail .txt_area .title_art {
-  /* text-transform: uppercase; */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: bold;
-  text-align: left;
-  color: #222222;
-  width: 100%;
-  height: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  margin-bottom: 14px;
-}
-
-body.comparables_page table tr td.lot_detail .txt_area .info_art {
-  font-weight: 100 !important;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 300;
-  text-align: left;
-  color: #222222;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  line-height: 20px;
-}
-
-body.comparables_page table tr td.sale_info {
-  width: 176px;
-}
-
-body.comparables_page table tr td.sale_info .art_auction_info {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 16px;
-  color: #666666;
-  margin-bottom: 14px;
-}
-
-body.comparables_page table tr td.sale_info .art_auction_info span {
-  width: 55px;
-  height: 19px;
-  border-radius: 9px;
-  border: solid 1px #a7afb7;
-  background-color: #ffffff;
-  display: inline-block;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 19px;
-  text-align: center;
-  color: #a7afb7;
-}
-
-body.comparables_page table tr td.sale_info .art_aution_place {
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 13px;
-  text-align: left;
-  line-height: 19px;
-  color: #444444;
-  font-weight: 300;
-}
-
-body.comparables_page table tr td.sale_info .art_aution_place b {
-  display: block;
-}
-
-body.comparables_page table tr td.est_price {
-  width: 372px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-right: 50px;
-  padding-left: 125px;
-  /*길경우 0px됨*/
-}
-
-body.comparables_page table tr td.est_price .info_art_price_1 {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: left;
-  color: #c2c2c2;
-  font-weight: 300;
-}
-
-body.comparables_page table tr td.est_price .info_art_price_1_1 {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 1.43;
-  letter-spacing: -0.4px;
-  text-align: left;
-  font-weight: 300;
-  color: #c2c2c2;
-}
-
-body.comparables_page table tr td.est_price .info_art_price_2_1 {
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.29;
-  letter-spacing: -0.4px;
-  text-align: left;
-  color: #222222;
-}
-
-body.comparables_page table tr td.est_price .info_art_price_2 {
-  margin-top: 10px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: -0.5px;
-  text-align: left;
-  color: #222222;
-}
-
-body.comparables_page table tr td.est_price .info_art_price_2 span {
-  display: inline-block;
-  margin-left: 8px;
+  width: 58px;
+  height: 62px;
+  line-height: 62px;
   font-family: "Roboto", sans-serif;
   font-size: 11px;
   font-weight: 500;
-  text-align: left;
-  color: #aaaaaa;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #9fabb3;
+  text-transform: uppercase;
 }
 
 body #header {

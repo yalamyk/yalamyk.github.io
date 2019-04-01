@@ -33,6 +33,8 @@ $(function(){
 		$('.sort_wrap').removeClass('open');
 		$('.page_blur').removeClass('open');
 	});
+
+	
 });
 function isValueTrue(num) {
 	var num = document.getElementById(num).value;
