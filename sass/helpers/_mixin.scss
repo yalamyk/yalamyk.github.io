@@ -138,6 +138,7 @@
     }
 }
 @mixin set_footer($footer_height){
+    clear: both;
         .wrap{
             min-height: 100%;
             overflow: scroll;

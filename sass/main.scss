@@ -5,6 +5,7 @@
 // html,body{
 html,body{
     height:100%;
+    overflow: auto;
 }
 .footer_watermark{
     position: absolute;
@@ -343,6 +344,7 @@ body {
         @include set_footer(69px);
         background-color: #eff3f6;
         #footer{
+            clear: both;
             height: 69px;
             background-color: #eef3f6;
             img{
@@ -370,13 +372,15 @@ body {
         }
         .search_list{
             width: 100%;
-            height: 562px;
-            background-color: #ffffff;
             
+            .filter_wrap{
+                position: relative;
+                height: 644px;; 
+            }
             .slider_body {
+                height: 562px;
+                background-color: #ffffff;
                 form{
-                    position: relative;
-                    height: 644px;;
                     .filter_search {
                         position: absolute;
                         bottom: 0px;
@@ -395,11 +399,13 @@ body {
                     .filter_refresh {
                         position: absolute;
                         bottom: 0px;
-                        right:432px;
+                        right:50%;
+                        margin-right: -200px;
                         border:solid 1px #a7afb7;
                         text-indent: -99990px;
                         width: 50px;
                         height:50px;
+                        
                         span {
                             background: url("../img/pc/filter_refresh.png") no-repeat center center;
                             display: inline-block;
@@ -636,6 +642,7 @@ body {
                     }
                 }
                 table{
+                    clear: both;
                     background-color:#fff;
                     width: 100%;
                     padding:0px 50px 0px 50px;
@@ -791,8 +798,40 @@ body {
                 
             }
         }
-        
-        /* artwork_list end */
+        /*pagenation*/
+        .pagination {
+            border:solid 1px red;
+            position: relative;
+            padding:61px 0px 68px 0px;
+            .pagination_wrap{
+                width:140px;
+                margin: 0 auto;
+                a {
+                    margin:0px 7px;
+                    color: black;
+                    float: left;
+                    text-decoration: none;
+                    font-family: $default_font;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: left;
+                    color: #888888;
+                    &.next_page{
+                        position: absolute;
+                        right:0px;
+                    }
+                    &.prev_page{
+                        position: absolute;
+                        left:0px;
+                    }
+                    &.active {
+                        border-bottom:solid 1px #000;
+                        color: #000;
+                    }
+                }
+            }
+        }
+            
     }
     #header {
         height: 80px;

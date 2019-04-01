@@ -16,6 +16,7 @@
 /* 공통영역 스타일 */
 html, body {
   height: 100%;
+  overflow: auto;
 }
 
 .footer_watermark {
@@ -98,6 +99,7 @@ body {
 body.user_intro {
   /* intro 영역 */
   background-color: #232629;
+  clear: both;
 }
 
 body.user_intro .wrap {
@@ -311,6 +313,10 @@ body.user_intro #contents form fieldset .btn_login {
   font-weight: 500;
 }
 
+body.artist_page {
+  clear: both;
+}
+
 body.artist_page .wrap {
   min-height: 100%;
   overflow: scroll;
@@ -474,9 +480,10 @@ body.artist_page .artist_list_area .artist_list li a p {
 }
 
 body.artwork_page {
+  clear: both;
   background-color: #eff3f6;
   /*artwork_list start*/
-  /* artwork_list end */
+  /*pagenation*/
 }
 
 body.artwork_page .wrap {
@@ -490,6 +497,7 @@ body.artwork_page .footarea {
 }
 
 body.artwork_page #footer {
+  clear: both;
   height: 69px;
   background-color: #eef3f6;
 }
@@ -520,17 +528,20 @@ body.artwork_page .artwork_search p {
 
 body.artwork_page .search_list {
   width: 100%;
-  height: 562px;
-  background-color: #ffffff;
+}
+
+body.artwork_page .search_list .filter_wrap {
+  position: relative;
+  height: 644px;
 }
 
 body.artwork_page .search_list .slider_body {
+  height: 562px;
+  background-color: #ffffff;
   /*form end*/
 }
 
 body.artwork_page .search_list .slider_body form {
-  position: relative;
-  height: 644px;
   /*artwork - filter 슬라이드*/
 }
 
@@ -553,7 +564,8 @@ body.artwork_page .search_list .slider_body form .filter_search {
 body.artwork_page .search_list .slider_body form .filter_refresh {
   position: absolute;
   bottom: 0px;
-  right: 432px;
+  right: 50%;
+  margin-right: -200px;
   border: solid 1px #a7afb7;
   text-indent: -99990px;
   width: 50px;
@@ -833,6 +845,7 @@ body.artwork_page .search_list .artwork_list .table_caption li.select select::-m
 }
 
 body.artwork_page .search_list .artwork_list table {
+  clear: both;
   background-color: #fff;
   width: 100%;
   padding: 0px 50px 0px 50px;
@@ -1010,6 +1023,44 @@ body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_pri
   font-weight: 300;
   text-align: left;
   color: #aaaaaa;
+}
+
+body.artwork_page .pagination {
+  border: solid 1px red;
+  position: relative;
+  padding: 61px 0px 68px 0px;
+}
+
+body.artwork_page .pagination .pagination_wrap {
+  width: 140px;
+  margin: 0 auto;
+}
+
+body.artwork_page .pagination .pagination_wrap a {
+  margin: 0px 7px;
+  color: black;
+  float: left;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #888888;
+}
+
+body.artwork_page .pagination .pagination_wrap a.next_page {
+  position: absolute;
+  right: 0px;
+}
+
+body.artwork_page .pagination .pagination_wrap a.prev_page {
+  position: absolute;
+  left: 0px;
+}
+
+body.artwork_page .pagination .pagination_wrap a.active {
+  border-bottom: solid 1px #000;
+  color: #000;
 }
 
 body #header {
