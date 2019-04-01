@@ -663,56 +663,7 @@ body {
                             padding-top: 43px;
                             padding-bottom: 43px;
                             &.lot_detail{
-                                padding-left: 50px;
-                                width:529px;
-                                box-sizing: border-box;
-                                .img_area{
-                                    float: left;
-                                    width: 110px;
-                                    height: 87px;   
-                                    img{
-                                        width:110px;
-                                        display: block;
-                                        margin:0 auto;
-                                    }
-                                }
-                                
-                                .txt_area{
-                                    padding-left: 110px;
-                                    width: 100%;
-                                    margin-left: -110px;
-                                    float: left;
-                                    -webkit-box-sizing: border-box;
-                                    box-sizing: border-box;
-                                    p{
-                                        padding-left:20px;
-                                    }
-                                    .title_art {
-                                        /* text-transform: uppercase; */
-                                        box-sizing: border-box;
-                                        font-family: inherit;
-                                        font-size: 20px;
-                                        line-height: 20px;
-                                        font-weight: bold;
-                                        text-align: left;
-                                        color: #222222;
-                                        width: 100%;
-                                        height: 20px;
-                                        @include ellipsis(1);
-                                        margin-bottom: 14px;
-                                    }
-                                    .info_art {
-                                        font-weight: 100 !important;
-                                        font-family: inherit;
-                                        font-size: 14px;
-                                        font-weight: 300;
-                                        text-align: left;
-                                        color: #222222;
-                                        width: 100%;
-                                        @include ellipsis(1);
-                                        line-height: 20px;
-                                    }
-                                }
+                                @include lot_detail;
                             }
                             &.sale_info{
                                 width:176px;
@@ -751,53 +702,7 @@ body {
                                 }
                             }
                             &.est_price{
-                                width:372px;
-                                box-sizing: border-box;
-                                padding-right: 50px;
-                                padding-left:125px; /*길경우 0px됨*/
-                                .info_art_price_1 {
-                                    font-family: inherit;
-                                    font-size: 18px;
-                                    line-height: 18px;
-                                    text-align: left;
-                                    color: #c2c2c2;
-                                    font-weight: 300;
-                                }
-                                .info_art_price_1_1{
-                                    font-family: inherit;
-                                    font-size: 14px;
-                                    line-height: 1.43;
-                                    letter-spacing: -0.4px;
-                                    text-align: left;
-                                    font-weight:300;
-                                    color: #c2c2c2;
-                                }
-                                .info_art_price_2_1{
-                                    font-family: inherit;
-                                    font-size: 14px;
-                                    font-weight: 500;
-                                    line-height: 1.29;
-                                    letter-spacing: -0.4px;
-                                    text-align: left;
-                                    color: #222222;
-                                }
-                                .info_art_price_2 {
-                                    margin-top: 10px;
-                                    font-family: inherit;
-                                    font-size: 18px;
-                                    font-weight: 500;
-                                    line-height: 18px;
-                                    letter-spacing: -0.5px;
-                                    text-align: left;
-                                    color: #222222;
-                                    span {
-                                        font-family: inherit;
-                                        font-size: 10px;
-                                        font-weight: 300;
-                                        text-align: left;
-                                        color: #aaaaaa;
-                                    }
-                                }
+                                @include info_art_price();
                             }
                         }
                     }
@@ -1033,6 +938,199 @@ body {
                     color: #222;
                 }
             }
+        }
+    }
+    &.comparables_page{
+        @include set_footer(83px);
+        #footer{
+            height: 83px;
+            background-color: #fff;
+            img{
+                width: 128px;
+                height: 17px;
+                margin: 0px 0px 0px 40px;
+            }
+            p{
+                font-family: $default_font;
+                font-size: 12px;
+                display:inline-block;
+                line-height: 95px;
+                margin-left: 13px;
+                color: #acaeb5;
+            }
+        }
+        .search_main{
+            height: 212px;
+        }
+        table{
+            .c_artwork{
+                width:322px;
+                @include lot_detail();
+                padding-top: 37px !important;
+                .title_artist{
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.33;
+                    text-align: left;
+                    color: #444444 !important;
+                    @include ellipsis(0);
+                }
+                .title_arttitle_art{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1.25;
+                    text-align: left;
+                    color: #444444 !important;
+                    @include ellipsis(0);
+                }
+            }
+            .c_medium{
+                width:123px;
+            }
+            .c_size{
+                width:123px;
+            }
+            .c_year{
+                width:123px;
+            }
+            .c_price{
+                vertical-align: top;
+                @include info_art_price();
+                width:296px;
+                padding: 37px 0px 0px 54px !important;
+            }
+            .c_saleinfo{
+                width:161px;
+                padding-top: 37px !important;
+                p{
+                    font-size: 13px;
+                    text-align: left;
+                    color: #888888;
+                    b{
+                        display: block;
+                        font-size:14px;
+                        color:#222222;
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+            tr{
+                .c_m_txt{
+                    font-family: $default_font;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #888888;
+                    text-align: center;
+                    width:35px;
+                    line-height: 17px;
+                    margin:0 auto;
+                }
+                .c_figure{
+                    padding-top: 37px !important;
+                    img{
+                        display: block;
+                        width:25px;
+                        margin: 0 auto;
+                        padding-bottom: 10px;
+                    }
+                }
+                .c_f_txt{
+                    font-family: $default_font;
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: #888888;
+                    text-align: center;
+                    line-height:18px;
+                    span{
+                        display:block;
+                        font-family: $default_font;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: center;
+                        color: #222;
+                    }
+                }
+                border-bottom:solid 1px #eef4f6;
+                th{
+                    width:auto;
+                    height: 56px;
+                    font-family: $default_font;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 52px;
+                    text-align: center;
+                    color: #888888
+                }
+                td{}
+            }
+        }
+        table{
+            clear: both;
+            background-color:#fff;
+            width: 100%;
+            padding:0px 50px 0px 50px;
+            margin-top: 12px;
+            tr{
+                border-bottom:solid 1px #eef4f6;
+                th{
+                    width:auto;
+                    height: 52px;
+                    font-family: $default_font;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 52px;
+                    text-align: center;
+                    color: #888888
+                }
+                td{
+                    vertical-align: top;
+                    padding-top: 43px;
+                    padding-bottom: 43px;
+                    &.lot_detail{
+                        @include lot_detail;
+                    }
+                    &.sale_info{
+                        width:176px;
+                        .art_auction_info {
+                            font-family: inherit;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 16px;
+                            color: #666666;
+                            margin-bottom: 14px;
+                            span {
+                                width: 55px;
+                                height: 19px;
+                                border-radius: 9px;
+                                border: solid 1px #a7afb7;
+                                background-color: #ffffff;
+                                display: inline-block;
+                                font-size: 10px;
+                                font-weight: bold;
+                                line-height: 19px;
+                                text-align: center;
+                                color: #a7afb7;
+                            }
+                        }
+                        .art_aution_place {
+                            font-family: inherit;
+                            font-size: 13px;
+                            line-height: 13px;
+                            text-align: left;
+                            line-height: 19px;
+                            color: #444444;
+                            font-weight: 300;
+                            b {
+                                display: block;
+                            }
+                        }
+                    }
+                    &.est_price{
+                        @include info_art_price();
+                    }
+                }
+            }
+            
         }
     }
     #header {
