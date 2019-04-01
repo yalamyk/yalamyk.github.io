@@ -663,7 +663,7 @@ body {
                             padding-top: 43px;
                             padding-bottom: 43px;
                             &.lot_detail{
-                                @include lot_detail;
+                                @include lot_detail(1);
                             }
                             &.sale_info{
                                 width:176px;
@@ -965,23 +965,30 @@ body {
         table{
             .c_artwork{
                 width:322px;
-                @include lot_detail();
+                @include lot_detail(0);
                 padding-top: 37px !important;
+                .img_area{
+                    img{
+                        width:90px;
+                        height:90px;
+                    }
+                }
                 .title_artist{
                     font-size: 12px;
                     font-weight: 500;
                     line-height: 1.33;
                     text-align: left;
+                    margin-bottom: 10px;
+                    margin-top: 28px;
                     color: #444444 !important;
-                    @include ellipsis(0);
                 }
-                .title_arttitle_art{
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 1.25;
-                    text-align: left;
+                .title_art{
+                    font-size: 16px !important;
+                    line-height: 20px !important;
+                    font-weight: 500 !important; 
+                    text-align: left !important;
+                    text-transform: uppercase;
                     color: #444444 !important;
-                    @include ellipsis(0);
                 }
             }
             .c_medium{
@@ -1087,7 +1094,7 @@ body {
                     padding-top: 43px;
                     padding-bottom: 43px;
                     &.lot_detail{
-                        @include lot_detail;
+                        @include lot_detail(1);
                     }
                     &.sale_info{
                         width:176px;

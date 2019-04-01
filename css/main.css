@@ -1401,13 +1401,7 @@ body.comparables_page table .c_artwork .txt_area .title_art {
   color: #222222;
   width: 100%;
   height: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  overflow: none;
   margin-bottom: 14px;
 }
 
@@ -1419,14 +1413,13 @@ body.comparables_page table .c_artwork .txt_area .info_art {
   text-align: left;
   color: #222222;
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  overflow: none;
   line-height: 20px;
+}
+
+body.comparables_page table .c_artwork .img_area img {
+  width: 90px;
+  height: 90px;
 }
 
 body.comparables_page table .c_artwork .title_artist {
@@ -1434,29 +1427,18 @@ body.comparables_page table .c_artwork .title_artist {
   font-weight: 500;
   line-height: 1.33;
   text-align: left;
+  margin-bottom: 10px;
+  margin-top: 28px;
   color: #444444 !important;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 0;
-  -webkit-box-orient: vertical;
 }
 
-body.comparables_page table .c_artwork .title_arttitle_art {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: left;
+body.comparables_page table .c_artwork .title_art {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  text-transform: uppercase;
   color: #444444 !important;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 0;
-  -webkit-box-orient: vertical;
 }
 
 body.comparables_page table .c_medium {

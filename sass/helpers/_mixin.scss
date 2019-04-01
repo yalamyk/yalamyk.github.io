@@ -10,14 +10,21 @@
 - set_footer : pc에서 사용합니다. pc에서는 푸터영역 디자인이 총3개이기 묶어 놓았습니다.(footer가 하단에 고정되게 스타이을 줍니다.)
 */
 @mixin ellipsis($line) {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-word;
-    display: block;
-    display: -webkit-box;
-    -webkit-line-clamp: $line;
-    -webkit-box-orient: vertical;
+    @if $line == 0 {
+        overflow: none;
+        // border: solid 1px red;
+        // display:block;
+    }@else{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+    }
 }
+
 @mixin input_txt_w100{
     width: 100%;
     height: 56px;
@@ -149,7 +156,7 @@
     .footarea{height: $footer_height;}
 }
 
-@mixin lot_detail(){
+@mixin lot_detail($ellip){
     padding-left: 50px;
     width:529px;
     box-sizing: border-box;
@@ -185,7 +192,7 @@
             color: #222222;
             width: 100%;
             height: 20px;
-            @include ellipsis(1);
+            @include ellipsis($ellip);
             margin-bottom: 14px;
         }
         .info_art {
@@ -196,7 +203,7 @@
             text-align: left;
             color: #222222;
             width: 100%;
-            @include ellipsis(1);
+            @include ellipsis($ellip);
             line-height: 20px;
         }
     }
