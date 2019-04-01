@@ -34,7 +34,7 @@ html,body{
         color: #7e8a95;
     }
     .search_title {
-        font-size: 40px;
+        font-size: 56px;
         line-height: 40px;
         color: #fff;
         width: 100%;
@@ -475,8 +475,7 @@ body {
                         margin-bottom: 16px;
                     }
                     .slider_year {
-                        padding: 32px 30px 30px 36px;
-                        box-sizing: border-box;
+                    
                     }
                     
                     .f_i2_to {
@@ -665,6 +664,8 @@ body {
                             padding-bottom: 43px;
                             &.lot_detail{
                                 padding-left: 50px;
+                                width:529px;
+                                box-sizing: border-box;
                                 .img_area{
                                     float: left;
                                     width: 110px;
@@ -677,12 +678,18 @@ body {
                                 }
                                 
                                 .txt_area{
-                                    width: 350px;
+                                    padding-left: 110px;
+                                    width: 100%;
+                                    margin-left: -110px;
                                     float: left;
-                                    padding-left: 20px;
+                                    -webkit-box-sizing: border-box;
                                     box-sizing: border-box;
+                                    p{
+                                        padding-left:20px;
+                                    }
                                     .title_art {
                                         /* text-transform: uppercase; */
+                                        box-sizing: border-box;
                                         font-family: inherit;
                                         font-size: 20px;
                                         line-height: 20px;
@@ -708,6 +715,7 @@ body {
                                 }
                             }
                             &.sale_info{
+                                width:176px;
                                 .art_auction_info {
                                     font-family: inherit;
                                     font-size: 16px;
@@ -743,12 +751,14 @@ body {
                                 }
                             }
                             &.est_price{
+                                width:372px;
+                                box-sizing: border-box;
                                 padding-right: 50px;
+                                padding-left:125px; /*길경우 0px됨*/
                                 .info_art_price_1 {
                                     font-family: inherit;
                                     font-size: 18px;
                                     line-height: 18px;
-                                    letter-spacing: -0.5px;
                                     text-align: left;
                                     color: #c2c2c2;
                                     font-weight: 300;

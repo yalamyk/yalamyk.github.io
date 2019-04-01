@@ -54,7 +54,7 @@ html, body {
 }
 
 .search_main .search_title {
-  font-size: 40px;
+  font-size: 56px;
   line-height: 40px;
   color: #fff;
   width: 100%;
@@ -658,12 +658,6 @@ body.artwork_page .search_list .slider_body form .advanced .inputarea li:not(.su
   margin-bottom: 16px;
 }
 
-body.artwork_page .search_list .slider_body form .slider_year {
-  padding: 32px 30px 30px 36px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body.artwork_page .search_list .slider_body form .f_i2_to {
   font-family: inherit;
   font-size: 10px;
@@ -875,6 +869,9 @@ body.artwork_page .search_list .artwork_list table tr td {
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail {
   padding-left: 50px;
+  width: 529px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .img_area {
@@ -890,15 +887,22 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .img_area im
 }
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area {
-  width: 350px;
+  padding-left: 110px;
+  width: 100%;
+  margin-left: -110px;
   float: left;
-  padding-left: 20px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area p {
+  padding-left: 20px;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .title_art {
   /* text-transform: uppercase; */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: inherit;
   font-size: 20px;
   line-height: 20px;
@@ -933,6 +937,10 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .i
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   line-height: 20px;
+}
+
+body.artwork_page .search_list .artwork_list table tr td.sale_info {
+  width: 176px;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.sale_info .art_auction_info {
@@ -973,14 +981,18 @@ body.artwork_page .search_list .artwork_list table tr td.sale_info .art_aution_p
 }
 
 body.artwork_page .search_list .artwork_list table tr td.est_price {
+  width: 372px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-right: 50px;
+  padding-left: 125px;
+  /*길경우 0px됨*/
 }
 
 body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_1 {
   font-family: inherit;
   font-size: 18px;
   line-height: 18px;
-  letter-spacing: -0.5px;
   text-align: left;
   color: #c2c2c2;
   font-weight: 300;
