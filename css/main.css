@@ -1026,7 +1026,6 @@ body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_pri
 }
 
 body.artwork_page .pagination {
-  border: solid 1px red;
   position: relative;
   padding: 61px 0px 68px 0px;
 }
@@ -1061,6 +1060,237 @@ body.artwork_page .pagination .pagination_wrap a.prev_page {
 body.artwork_page .pagination .pagination_wrap a.active {
   border-bottom: solid 1px #000;
   color: #000;
+}
+
+body.artwork_detail {
+  clear: both;
+}
+
+body.artwork_detail .wrap {
+  min-height: 100%;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+body.artwork_detail .footarea {
+  height: 83px;
+}
+
+body.artwork_detail #footer {
+  height: 83px;
+  background-color: #fff;
+}
+
+body.artwork_detail #footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 0px 0px 40px;
+}
+
+body.artwork_detail #footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 95px;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+
+body.artwork_detail .detail_wrap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 136px;
+}
+
+body.artwork_detail .detail_info {
+  min-height: 387px;
+  border-bottom: solid 3px #eef3f6;
+}
+
+body.artwork_detail .detail_info .d_more {
+  margin-left: 30px;
+  display: block;
+  width: 46px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 9px;
+  background-color: #a7afb7;
+  color: #fff;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+body.artwork_detail .detail_slide {
+  min-height: 145px;
+  border-bottom: solid 3px #eef3f6;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.artwork_detail .detail_slide .slide_wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+body.artwork_detail .detail_slide span {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #222222;
+  margin-bottom: 11px;
+  display: block;
+}
+
+body.artwork_detail .detail_slide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body.artwork_detail .detail_slide ul li {
+  min-width: 56px;
+  height: 57px;
+  float: left;
+  margin-right: 5px;
+}
+
+body.artwork_detail .detail_price {
+  padding: 30px 30px 0px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 283px;
+  border-bottom: solid 3px #eef3f6;
+}
+
+body.artwork_detail .detail_price .price_list {
+  font-weight: 300;
+}
+
+body.artwork_detail .detail_price .price_list .range {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bbbbbb;
+}
+
+body.artwork_detail .detail_price .price_list .price1 {
+  font-family: inherit;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+  color: #222222;
+  margin-top: 9px;
+  font-weight: 500;
+}
+
+body.artwork_detail .detail_price .price_list .price1 span {
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 10px;
+  color: #888888;
+  font-weight: 300;
+}
+
+body.artwork_detail .detail_price .price_list .price2 {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #222222;
+}
+
+body.artwork_detail .detail_price .price_info {
+  margin-top: 30px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  font-weight: 300;
+}
+
+body.artwork_detail .detail_price .price_info .date {
+  color: #666666;
+  font-weight: 100;
+}
+
+body.artwork_detail .detail_price .price_info .place {
+  font-weight: 500;
+}
+
+body.artwork_detail .detail_info .d_img_wrap {
+  width: 100px;
+  float: left;
+}
+
+body.artwork_detail .detail_info .d_img_wrap img {
+  width: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body.artwork_detail .detail_info .detail_define {
+  padding-left: 100px;
+  width: 100%;
+  margin-left: -100px;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.artwork_detail .detail_info .detail_define dt, body.artwork_detail .detail_info .detail_define dd {
+  padding-left: 36px;
+}
+
+body.artwork_detail .detail_info .detail_define .artist {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+body.artwork_detail .detail_info .detail_define .artist_ex {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 12px;
+  color: #a7afb7;
+  margin-bottom: 20px;
+}
+
+body.artwork_detail .detail_info .detail_define .art_name {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+body.artwork_detail .detail_txt {
+  width: 1920px;
+  height: 788px;
+  background-color: #eff3f7;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  text-align: left;
+  color: #484848;
+}
+
+body.artwork_detail .detail_txt p.detail_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 9.58;
+  text-align: left;
+  color: #222;
 }
 
 body #header {
@@ -1157,174 +1387,15 @@ body #contents .artist_search {
   min-height: 157px;
 }
 
-body #contents .detail_info {
-  min-height: 387px;
-  border-bottom: solid 3px #eef3f6;
-}
-
-body #contents .detail_info .d_more {
-  margin-left: 30px;
-  display: block;
-  width: 46px;
-  height: 19px;
-  line-height: 19px;
-  text-align: center;
-  border-radius: 9px;
-  background-color: #a7afb7;
-  color: #fff;
-  font-family: inherit;
-  font-size: 10px;
-  font-weight: 500;
-}
-
-body #contents .detail_slide {
-  min-height: 145px;
-  border-bottom: solid 3px #eef3f6;
-  padding: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body #contents .detail_slide .slide_wrap {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-body #contents .detail_slide span {
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 20px;
-  color: #222222;
-  margin-bottom: 11px;
-  display: block;
-}
-
-body #contents .detail_slide ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body #contents .detail_slide ul li {
-  min-width: 56px;
-  height: 57px;
-  float: left;
-  margin-right: 5px;
-}
-
-body #contents .detail_price {
-  padding: 30px 30px 0px 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-height: 283px;
-  border-bottom: solid 3px #eef3f6;
-}
-
-body #contents .detail_price .price_list {
-  font-weight: 300;
-}
-
-body #contents .detail_price .price_list .range {
+body #contents .art_ex {
   font-family: inherit;
   font-size: 16px;
-  line-height: 21px;
-  color: #bbbbbb;
-}
-
-body #contents .detail_price .price_list .price1 {
-  font-family: inherit;
-  font-size: 28px;
-  line-height: 28px;
-  letter-spacing: -0.8px;
-  color: #222222;
-  margin-top: 9px;
-  font-weight: 500;
-}
-
-body #contents .detail_price .price_list .price1 span {
-  font-family: inherit;
-  font-size: 10px;
-  line-height: 10px;
-  color: #888888;
-  font-weight: 300;
-}
-
-body #contents .detail_price .price_list .price2 {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 25px;
-  letter-spacing: -0.5px;
+  font-weight: 100;
+  line-height: 1.5;
   text-align: left;
   color: #222222;
-}
-
-body #contents .detail_price .price_info {
-  margin-top: 30px;
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-  font-weight: 300;
-}
-
-body #contents .detail_price .price_info .date {
-  color: #666666;
-  font-weight: 100;
-}
-
-body #contents .detail_price .price_info .place {
-  font-weight: 500;
-}
-
-body #contents .detail_info .d_img_wrap {
-  width: 100%;
-  min-height: 141px;
-  position: relative;
-}
-
-body #contents .detail_info .d_img_wrap .d_main_img {
-  /* margin-left:30px; */
-  position: absolute;
-  left: 30px;
-  top: 30px;
-}
-
-body #contents .detail_info .d_img_wrap .d_sub_img {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-body #contents .detail_info .detail_define {
-  margin-left: 30px;
-  margin-top: 14px;
-}
-
-body #contents .detail_info .detail_define .artist {
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444;
+  width: 220px;
   margin-bottom: 10px;
-}
-
-body #contents .detail_info .detail_define .artist_ex {
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 12px;
-  color: #a7afb7;
-  margin-bottom: 20px;
-}
-
-body #contents .detail_info .detail_define .art_name {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  color: #222222;
-  margin-bottom: 8px;
 }
 
 body.forget_pass #contents h2 {

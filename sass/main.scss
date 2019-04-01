@@ -794,13 +794,10 @@ body {
                     
                 }
                 
-                
-                
             }
         }
         /*pagenation*/
         .pagination {
-            border:solid 1px red;
             position: relative;
             padding:61px 0px 68px 0px;
             .pagination_wrap{
@@ -833,88 +830,30 @@ body {
         }
             
     }
-    #header {
-        height: 80px;
-        width: 100%;
-        position: fixed;
-        top: 0px;
-        box-sizing: border-box;
-        background-color: #232629;
-        z-index: 100;
-        a{
-            width:240px;
-            height:60px;
-            display:block;
-            .header_logo {
-                position: absolute;
-                padding-top: 30px;
-                padding-left: 50px;
+    &.artwork_detail{
+        @include set_footer(83px);
+        #footer{
+            height: 83px;
+            background-color: #fff;
+            img{
+                width: 128px;
+                height: 17px;
+                margin: 0px 0px 0px 40px;
+            }
+            p{
+                font-family: $default_font;
+                font-size: 12px;
+                display:inline-block;
+                line-height: 95px;
+                margin-left: 13px;
+                color: #acaeb5;
             }
         }
-        .go_back {
-            width: 13px;
-            height: 23px;
-            background: url("../img/m_header_arrow.png") no-repeat;
-            text-indent: -9999px;
-            border: solid 0px white;
+        .detail_wrap{
+            box-sizing:border-box;
+            padding-left: 136px;
         }
-        .go_search {
-            width: 22px;
-            height: 23px;
-            background: url("../img/m_search_icon.png") no-repeat;
-            text-indent: -9999px;
-            border: solid 0px white;
-        }
-        .header_default {
-            a{
-                width:240px;
-                height:60px;
-                .header_logo {
-                    left: 30px;
-                }
-                .go_back {
-                    position: absolute;
-                    top: 18px;
-                    left: 30px;
-                }
-                .go_search {
-                    position: absolute;
-                    top: 17px;
-                    right: 29px;
-                }
-            }
-        }
-        .header_search {
-            display: none;
-        }
-	}
-
-    #contents {
-        display: block;
-        box-sizing: border-box;
-        margin-top: 80px;
-        /* start - main*/
-        .main_txtarea {
-            color: #7e8a95;
-            font-family: inherit;
-            font-size: 13px;
-            line-height: 17px;
-            width: 100%;
-            font-weight: 300;
-            margin-top: 125px;
-            word-break: break-all;
-            p {
-                display: block;
-                margin-bottom: 23px;
-            }
-        }
-        /* main end */
-		.artist_search {
-			min-height: 157px;
-        }
-        
-		
-		.detail_info {
+        .detail_info {
 			min-height: 387px;
 			border-bottom: solid 3px #eef3f6;
 			.d_more {
@@ -1014,27 +953,26 @@ body {
 					font-weight: 500;
 				}
 			}
-		}
+        }
 		.detail_info {
 			.d_img_wrap {
-				width: 100%;
-				min-height: 141px;
-				position: relative;
-				.d_main_img {
-					/* margin-left:30px; */
-					position: absolute;
-					left: 30px;
-					top: 30px;
-				}
-				.d_sub_img {
-					position: absolute;
-					top: 30px;
-					right: 30px;
-				}
+                width:100px;
+                float: left;
+                img{
+                    width: 100px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                }
 			}
 			.detail_define {
-				margin-left: 30px;
-				margin-top: 14px;
+                padding-left: 100px;
+                width: 100%;
+                margin-left: -100px;
+                float: left;
+                box-sizing: border-box;
+                dt,dd{
+                    padding-left:36px;
+                }
 				.artist {
 					font-family: inherit;
 					font-size: 20px;
@@ -1059,6 +997,120 @@ body {
 				}
 			}
         }
+
+        .detail_txt{
+            width: 1920px;
+            height: 788px;
+            background-color: #eff3f7;
+            font-family: $default_font;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.38;
+            text-align: left;
+            color: #484848;
+            p{
+                &.detail_title{
+                    font-family: $default_font;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 9.58;
+                    text-align: left;
+                    color: #222;
+                }
+            }
+        }
+    }
+    #header {
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        box-sizing: border-box;
+        background-color: #232629;
+        z-index: 100;
+        a{
+            width:240px;
+            height:60px;
+            display:block;
+            .header_logo {
+                position: absolute;
+                padding-top: 30px;
+                padding-left: 50px;
+            }
+        }
+        .go_back {
+            width: 13px;
+            height: 23px;
+            background: url("../img/m_header_arrow.png") no-repeat;
+            text-indent: -9999px;
+            border: solid 0px white;
+        }
+        .go_search {
+            width: 22px;
+            height: 23px;
+            background: url("../img/m_search_icon.png") no-repeat;
+            text-indent: -9999px;
+            border: solid 0px white;
+        }
+        .header_default {
+            a{
+                width:240px;
+                height:60px;
+                .header_logo {
+                    left: 30px;
+                }
+                .go_back {
+                    position: absolute;
+                    top: 18px;
+                    left: 30px;
+                }
+                .go_search {
+                    position: absolute;
+                    top: 17px;
+                    right: 29px;
+                }
+            }
+        }
+        .header_search {
+            display: none;
+        }
+	}
+
+    #contents {
+        display: block;
+        box-sizing: border-box;
+        margin-top: 80px;
+        /* start - main*/
+        .main_txtarea {
+            color: #7e8a95;
+            font-family: inherit;
+            font-size: 13px;
+            line-height: 17px;
+            width: 100%;
+            font-weight: 300;
+            margin-top: 125px;
+            word-break: break-all;
+            p {
+                display: block;
+                margin-bottom: 23px;
+            }
+        }
+        /* main end */
+		.artist_search {
+			min-height: 157px;
+        }
+        
+		.art_ex {
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 100;
+            line-height: 1.5;
+            text-align: left;
+            color: #222222;
+            width: 220px;
+            margin-bottom: 10px;
+        }
+		
         /* forget password page stop */
     } /* # content end */
     
