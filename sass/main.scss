@@ -3,7 +3,11 @@
 
 /* 공통영역 스타일 */
 // html,body{
-html, body {
+html ,body{
+    height: 100%;
+}
+body{
+    height: 100%;
 }
 .sticky {
     position: fixed;
@@ -32,7 +36,7 @@ html, body {
 /*  상세페이지 틀 2개임. main-header영역/list-nav영역*/
 .search_main {
     background-color: #232629;
-    padding: 36px 30px 0px 30px;
+    padding: 36px 30px 78px 30px;
     box-sizing: border-box;
     p {
         font-size: 16.67px;
@@ -43,6 +47,7 @@ html, body {
         font-size: 56px;
         line-height: 40px;
         color: #fff;
+        font-weight: 500;
         width: 100%;
         line-height: 48px;
     }
@@ -217,18 +222,37 @@ body {
         #footer{
             height: 120px;
             background-color: #eef3f6;
+            line-height: 120px;
+            position: relative;
             img{
                 width: 128px;
                 height: 17px;
-                margin: 0px 0px 0px 40px;
+                margin: 0px 40px 0px 40px;
             }
             p{
                 font-family: $default_font;
                 font-size: 12px;
                 display:inline-block;
-                line-height: 131px;
+                // line-height: 131px;
                 margin-left: 13px;
                 color: #acaeb5;
+            }
+            ul{
+                position: absolute;
+                top:0px;
+                right:40px;
+                li{
+                    float: left;
+                    font-family: $default_font;
+                    font-size: 14px;
+                    color: #acaeb5;
+                    &:first-child{
+                        &:after{
+                            content:'|';
+                            padding: 0px 10px;
+                        }
+                    }
+                }
             }
         }
         .artist_list_area {
@@ -352,6 +376,8 @@ body {
         #footer{
             clear: both;
             height: 69px;
+            position: relative;
+            line-height: 69px;
             background-color: #eef3f6;
             img{
                 width: 128px;
@@ -362,9 +388,25 @@ body {
                 font-family: $default_font;
                 font-size: 12px;
                 display:inline-block;
-                line-height: 69px;
                 margin-left: 13px;
                 color: #acaeb5;
+            }
+            ul{
+                position: absolute;
+                top:0px;
+                right:40px;
+                li{
+                    float: left;
+                    font-family: $default_font;
+                    font-size: 14px;
+                    color: #acaeb5;
+                    &:first-child{
+                        &:after{
+                            content:'|';
+                            padding: 0px 10px;
+                        }
+                    }
+                }
             }
         }
 
@@ -754,6 +796,8 @@ body {
     &.artwork_detail{
         @include set_footer(83px);
         #footer{
+            position: relative;
+            line-height: 83px;
             height: 83px;
             background-color: #fff;
             img{
@@ -768,6 +812,23 @@ body {
                 line-height: 95px;
                 margin-left: 13px;
                 color: #acaeb5;
+            }
+            ul{
+                position: absolute;
+                top:0px;
+                right:40px;
+                li{
+                    float: left;
+                    font-family: $default_font;
+                    font-size: 14px;
+                    color: #acaeb5;
+                    &:first-child{
+                        &:after{
+                            content:'|';
+                            padding: 0px 10px;
+                        }
+                    }
+                }
             }
         }
         .detail_wrap{
@@ -950,6 +1011,8 @@ body {
         @include set_footer(83px);
         #footer{
             height: 83px;
+            line-height: 83px;
+            position: relative;
             background-color: #fff;
             img{
                 width: 128px;
@@ -963,6 +1026,23 @@ body {
                 line-height: 95px;
                 margin-left: 13px;
                 color: #acaeb5;
+            }
+            ul{
+                position: absolute;
+                top:0px;
+                right:40px;
+                li{
+                    float: left;
+                    font-family: $default_font;
+                    font-size: 14px;
+                    color: #acaeb5;
+                    &:first-child{
+                        &:after{
+                            content:'|';
+                            padding: 0px 10px;
+                        }
+                    }
+                }
             }
         }
         .wrap{

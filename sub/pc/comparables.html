@@ -304,13 +304,19 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
+        <div class="footarea"></div>
+        <div id="footer" class="artist_footer">
+            <img src="../../img//pc/footer_logo_detail.png" alt="">
             <p>Copyright &copy 2019 BLUE INDEX</p>
+            <ul>
+                <li>Live Auction</li>
+                <li>Art In Art Press</li>
+            </ul>
         </div>
         <script>
                 window.onscroll = function() {set_style()};
                 var header = document.getElementById("myHeader");
-                var sticky = header.offsetTop;
+                // var sticky = header.offsetTop;
                 function set_style() {
                     if (  $(window).scrollTop()	> 212) {
                         header.classList.add("sticky");

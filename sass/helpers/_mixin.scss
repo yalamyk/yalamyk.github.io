@@ -12,8 +12,6 @@
 @mixin ellipsis($line) {
     @if $line == 0 {
         overflow: none;
-        // border: solid 1px red;
-        // display:block;
     }@else{
         overflow: hidden;
         text-overflow: ellipsis;
@@ -148,9 +146,8 @@
     clear: both;
         .wrap{
             min-height: 100%;
-            overflow: scroll;
             margin: 0 auto;
-            // margin-top:-$footer_height;
+            margin-bottom:-$footer_height;
         }
     
     .footarea{height: $footer_height;}
