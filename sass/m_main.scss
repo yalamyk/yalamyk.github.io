@@ -1319,7 +1319,20 @@ body {
             @include ellipsis(1);
             width: 100%;
         }
-        .c_info {
+        .c_info1 {
+            @include ellipsis(1);
+            font-family: inherit;
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 11px;
+            color: #a7afb7;
+            width: 100%;
+            overflow: hidden;
+            line-height: 1.45;
+            margin-top: 5px;
+        }
+        .c_info2 {
+            @include ellipsis(1);
             font-family: inherit;
             font-size: 11px;
             font-weight: 300;
@@ -1358,6 +1371,8 @@ body {
 }
 
 .figure_table {
+    .txt{@include ellipsis(1);}
+    tr{clear:both;}
     th {
         color: #222222 !important;
         font-weight: 500 !important;
@@ -1365,23 +1380,28 @@ body {
     .t_circle {
         width: 15px;
         height: 15px;
-        margin-right: 11px;
+        margin-right:10px;
+        float: left;
         background: url("../img/t_circle.png") no-repeat;
-        display: inline-block;
     }
     .t_triangle {
         width: 15px;
         height: 15px;
-        margin-right: 11px;
+        margin-right:10px;
+        float: left;
         background: url("../img/t_triangle.png") no-repeat;
-        display: inline-block;
     }
     .t_x {
         width: 15px;
         height: 15px;
-        margin-right: 11px;
+        margin-right:10px;
+        float: left;
         background: url("../img/t_x.png") no-repeat;
-        display: inline-block;
+    }
+    .figure_txt{
+        width:43px;
+        @include ellipsis(1);
+        float: left;
     }
 }
 

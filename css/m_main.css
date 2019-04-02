@@ -1705,7 +1705,33 @@ body #footer p {
   width: 100%;
 }
 
-.comparables_list li .com_art .com_imgarea .c_info {
+.comparables_list li .com_art .com_imgarea .c_info1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 11px;
+  color: #a7afb7;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.45;
+  margin-top: 5px;
+}
+
+.comparables_list li .com_art .com_imgarea .c_info2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   font-family: inherit;
   font-size: 11px;
   font-weight: 300;
@@ -1751,6 +1777,20 @@ body #footer p {
   -webkit-box-orient: vertical;
 }
 
+.figure_table .txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.figure_table tr {
+  clear: both;
+}
+
 .figure_table th {
   color: #222222 !important;
   font-weight: 500 !important;
@@ -1759,25 +1799,37 @@ body #footer p {
 .figure_table .t_circle {
   width: 15px;
   height: 15px;
-  margin-right: 11px;
+  margin-right: 10px;
+  float: left;
   background: url("../img/t_circle.png") no-repeat;
-  display: inline-block;
 }
 
 .figure_table .t_triangle {
   width: 15px;
   height: 15px;
-  margin-right: 11px;
+  margin-right: 10px;
+  float: left;
   background: url("../img/t_triangle.png") no-repeat;
-  display: inline-block;
 }
 
 .figure_table .t_x {
   width: 15px;
   height: 15px;
-  margin-right: 11px;
+  margin-right: 10px;
+  float: left;
   background: url("../img/t_x.png") no-repeat;
-  display: inline-block;
+}
+
+.figure_table .figure_txt {
+  width: 43px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  float: left;
 }
 
 .comparables_list li .com_result {
