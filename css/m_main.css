@@ -30,7 +30,6 @@ html, body {
 
 html .wrap, body .wrap {
   min-height: 100%;
-  overflow: scroll;
   margin: 0 auto -60px;
 }
 
@@ -721,7 +720,10 @@ body #contents .artist_list_area .artist_list li a p {
 
 body #contents .detail_info {
   min-height: 387px;
+  padding-bottom: 29px;
   border-bottom: solid 3px #eef3f6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body #contents .detail_info .d_more {
@@ -848,9 +850,8 @@ body #contents .detail_info .d_img_wrap {
 
 body #contents .detail_info .d_img_wrap .d_main_img {
   /* margin-left:30px; */
-  position: absolute;
-  left: 30px;
-  top: 30px;
+  width: 100px;
+  margin: 30px 0px 0px 30px;
 }
 
 body #contents .detail_info .d_img_wrap .d_sub_img {
@@ -1255,7 +1256,6 @@ body #footer p {
 
 .artwork_list ul li .img_area .title_img {
   width: 100px;
-  height: 100px;
   margin-bottom: 39px;
   overflow: hidden;
 }
@@ -1608,7 +1608,7 @@ body #footer p {
 .filter_input2 {
   background-color: #eef3f6;
   height: 30px;
-  width: 98.5px;
+  width: 97px;
   padding: 0px 12px 0px 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
