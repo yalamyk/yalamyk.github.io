@@ -380,6 +380,12 @@ body.artist_page #footer ul li:first-child:after {
   padding: 0px 10px;
 }
 
+body.artist_page #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
+}
+
 body.artist_page .artist_list_area {
   font-family: "Roboto", sans-serif;
 }
@@ -534,7 +540,7 @@ body.artwork_page #footer {
   height: 69px;
   position: relative;
   line-height: 69px;
-  background-color: #eef3f6;
+  background-color: #fff;
 }
 
 body.artwork_page #footer img {
@@ -567,6 +573,12 @@ body.artwork_page #footer ul li {
 body.artwork_page #footer ul li:first-child:after {
   content: '|';
   padding: 0px 10px;
+}
+
+body.artwork_page #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
 }
 
 body.artwork_page .artwork_search {
@@ -1182,6 +1194,12 @@ body.artwork_detail #footer ul li:first-child:after {
   padding: 0px 10px;
 }
 
+body.artwork_detail #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
+}
+
 body.artwork_detail .detail_wrap {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1396,18 +1414,18 @@ body.comparables_page {
 body.comparables_page .wrap {
   min-height: 100%;
   margin: 0 auto;
-  margin-bottom: -83px;
+  margin-bottom: -80px;
 }
 
 body.comparables_page .footarea {
-  height: 83px;
+  height: 80px;
 }
 
 body.comparables_page #footer {
-  height: 83px;
-  line-height: 83px;
+  height: 80px;
+  line-height: 80px;
   position: relative;
-  background-color: #fff;
+  background-color: #eef3f6;
 }
 
 body.comparables_page #footer img {
@@ -1420,7 +1438,7 @@ body.comparables_page #footer p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   display: inline-block;
-  line-height: 95px;
+  line-height: 80px;
   margin-left: 13px;
   color: #acaeb5;
 }
@@ -1443,9 +1461,10 @@ body.comparables_page #footer ul li:first-child:after {
   padding: 0px 10px;
 }
 
-body.comparables_page .wrap {
-  height: 100%;
-  overflow-x: hidden;
+body.comparables_page #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
 }
 
 body.comparables_page .search_main {

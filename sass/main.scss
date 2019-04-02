@@ -252,6 +252,11 @@ body {
                             padding: 0px 10px;
                         }
                     }
+                    a{
+                        display: inline-block;
+                        color: inherit;
+                        font-family: inherit;
+                    }
                 }
             }
         }
@@ -378,7 +383,7 @@ body {
             height: 69px;
             position: relative;
             line-height: 69px;
-            background-color: #eef3f6;
+            background-color: #fff;
             img{
                 width: 128px;
                 height: 17px;
@@ -405,6 +410,11 @@ body {
                             content:'|';
                             padding: 0px 10px;
                         }
+                    }
+                    a{
+                        display: inline-block;
+                        color: inherit;
+                        font-family: inherit;
                     }
                 }
             }
@@ -828,6 +838,11 @@ body {
                             padding: 0px 10px;
                         }
                     }
+                    a{
+                        display: inline-block;
+                        color: inherit;
+                        font-family: inherit;
+                    }
                 }
             }
         }
@@ -1008,12 +1023,13 @@ body {
         }
     }
     &.comparables_page{
-        @include set_footer(83px);
+        @include set_footer(80px);
         #footer{
-            height: 83px;
-            line-height: 83px;
+            height: 80px;
+            line-height: 80px;
             position: relative;
-            background-color: #fff;
+            background-color: #eef3f6;
+
             img{
                 width: 128px;
                 height: 17px;
@@ -1023,7 +1039,7 @@ body {
                 font-family: $default_font;
                 font-size: 12px;
                 display:inline-block;
-                line-height: 95px;
+                line-height: 80px;
                 margin-left: 13px;
                 color: #acaeb5;
             }
@@ -1042,12 +1058,13 @@ body {
                             padding: 0px 10px;
                         }
                     }
+                    a{
+                        display: inline-block;
+                        color: inherit;
+                        font-family: inherit;
+                    }
                 }
             }
-        }
-        .wrap{
-            height:100%;
-            overflow-x:hidden;
         }
         .search_main{
             height: 212px;
