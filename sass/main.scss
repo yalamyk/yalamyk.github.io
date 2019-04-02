@@ -87,6 +87,7 @@ body {
         background-color: #232629;
         @include set_footer(60px);
         #footer{
+            position: relative;
             text-align: center;
             background-color: transparent !important;
             padding-left: 0px;

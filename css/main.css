@@ -127,6 +127,7 @@ body.user_intro .footarea {
 }
 
 body.user_intro #footer {
+  position: relative;
   text-align: center;
   background-color: transparent !important;
   padding-left: 0px;
