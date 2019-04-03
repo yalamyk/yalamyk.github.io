@@ -643,8 +643,11 @@ body {
 					// position: absolute;
 					// left: 30px;
                     // top: 30px;
-                    width:100px;
-                    margin:30px 0px 0px 30px;
+                    max-width: 100px;
+                    max-height: 200px;
+                    margin: 30px 0px 0px 30px;
+                    // width:100px;
+                    // margin:30px 0px 0px 30px;
 				}
 				.d_sub_img {
 					position: absolute;
