@@ -76,7 +76,7 @@ body{
         text-align: left;
         color: #888888;
         padding-left: 30px;
-        font-weight: 300;
+        font-weight: 400;
         span {
             font-weight: 700;
         }
@@ -99,6 +99,11 @@ body {
                 box-sizing: border-box;
                 color: #454d54;
                 text-align: center;
+                font-family: $default_font;
+                font-size: 12px;
+                font-weight: 400;
+                text-align: center;
+                color: #4d555b;
             }
         }
         #contents {
@@ -271,20 +276,47 @@ body {
 				}
 			}
 			.artist_nav li {
-				&:first-child {
-					background: url("../img/m_artistlist_nav1.png") no-repeat;
-					background-size: 13px 17px;
-					background-position:74px;
+                &:first-child {
+                    a{
+                        background: url("../img/m_artistlist_nav1.png") no-repeat;
+                        background-size: 10px 13px;
+                        background-position:74px;
+                        padding-left: 92px;
+                    }
+					
 				}
 				&:nth-child(2) {
-					background: url("../img/m_artistlist_nav2.png") no-repeat;
-					background-size: 16px 11px;
-					background-position:74px;
+                    a{
+                        background: url("../img/m_artistlist_nav2.png") no-repeat;
+                        background-size: 12px 8px;
+                        background-position:62px;
+                        padding-left: 80px;
+                    }
+					
 				}
 				&:last-child {
-					background: url("../img/m_artistlist_nav3.png") no-repeat;
-					background-size: 15px 23px;
-					background-position: 74px;
+                    a{
+                        background: url("../img/m_artistlist_nav3.png") no-repeat;
+                        background-size: 11px 18px;
+                        background-position: 70px;
+                        padding-left: 85px;
+                    }
+					
+                }
+                a {
+					width: 100%;
+					height: 64px;
+                    display: block;
+                    font-family: $default_font;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 64px;
+                    letter-spacing: 1px;
+                    box-sizing: border-box;
+                    color: #888;
+                    &:hover{
+                        background-color:#dde4e8;
+                    }
 				}
 				float: left;
 				width: 220px;
@@ -295,21 +327,12 @@ body {
                     background-color: #fff !important;
                     a{
                         color:#222;
+                        &:hover{
+                            background-color:#dde4e8;
+                        }
                     }
 				}
-				a {
-					width: 100%;
-					height: 64px;
-                    display: block;
-                    font-family: $default_font;
-                    font-size: 12px;
-                    font-weight: bold;
-                    line-height: 64px;
-                    letter-spacing: 1px;
-                    padding-left: 105px;
-                    box-sizing: border-box;
-                    color: #888;
-				}
+				
 			}
 			.artist_list {
                 .artist_noresult{
@@ -366,6 +389,7 @@ body {
 							line-height: 12px;
 						}
 						p {
+                            display: inline-block;
 							font-family: inherit;
 							margin-bottom: 4px;
 							font-size: 18px;

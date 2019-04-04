@@ -106,7 +106,7 @@ body {
   text-align: left;
   color: #888888;
   padding-left: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .search_list .list_total span {
@@ -150,6 +150,11 @@ body.user_intro #footer p {
           box-sizing: border-box;
   color: #454d54;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #4d555b;
 }
 
 body.user_intro #contents {
@@ -413,22 +418,43 @@ body.artist_page .artist_list_area .artist_nav li {
   background-color: #eff3f6 !important;
 }
 
-body.artist_page .artist_list_area .artist_nav li:first-child {
+body.artist_page .artist_list_area .artist_nav li:first-child a {
   background: url("../img/m_artistlist_nav1.png") no-repeat;
-  background-size: 13px 17px;
+  background-size: 10px 13px;
   background-position: 74px;
+  padding-left: 92px;
 }
 
-body.artist_page .artist_list_area .artist_nav li:nth-child(2) {
+body.artist_page .artist_list_area .artist_nav li:nth-child(2) a {
   background: url("../img/m_artistlist_nav2.png") no-repeat;
-  background-size: 16px 11px;
-  background-position: 74px;
+  background-size: 12px 8px;
+  background-position: 62px;
+  padding-left: 80px;
 }
 
-body.artist_page .artist_list_area .artist_nav li:last-child {
+body.artist_page .artist_list_area .artist_nav li:last-child a {
   background: url("../img/m_artistlist_nav3.png") no-repeat;
-  background-size: 15px 23px;
-  background-position: 74px;
+  background-size: 11px 18px;
+  background-position: 70px;
+  padding-left: 85px;
+}
+
+body.artist_page .artist_list_area .artist_nav li a {
+  width: 100%;
+  height: 64px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #888;
+}
+
+body.artist_page .artist_list_area .artist_nav li a:hover {
+  background-color: #dde4e8;
 }
 
 body.artist_page .artist_list_area .artist_nav li.artist_nav_select {
@@ -439,19 +465,8 @@ body.artist_page .artist_list_area .artist_nav li.artist_nav_select a {
   color: #222;
 }
 
-body.artist_page .artist_list_area .artist_nav li a {
-  width: 100%;
-  height: 64px;
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 64px;
-  letter-spacing: 1px;
-  padding-left: 105px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #888;
+body.artist_page .artist_list_area .artist_nav li.artist_nav_select a:hover {
+  background-color: #dde4e8;
 }
 
 body.artist_page .artist_list_area .artist_list .artist_noresult span {
@@ -521,6 +536,7 @@ body.artist_page .artist_list_area .artist_list li a span {
 }
 
 body.artist_page .artist_list_area .artist_list li a p {
+  display: inline-block;
   font-family: inherit;
   margin-bottom: 4px;
   font-size: 18px;
