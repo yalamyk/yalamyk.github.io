@@ -672,11 +672,13 @@ body.artwork_page .search_list {
 
 body.artwork_page .search_list .filter_wrap {
   position: relative;
-  height: 644px;
+  height: auto;
+  margin-bottom: 80px;
 }
 
 body.artwork_page .search_list .slider_body {
-  height: 562px;
+  height: auto;
+  padding-bottom: 40px;
   background-color: #ffffff;
   /*form end*/
 }
@@ -687,7 +689,7 @@ body.artwork_page .search_list .slider_body form {
 
 body.artwork_page .search_list .slider_body form .filter_search {
   position: absolute;
-  bottom: 0px;
+  bottom: -80px;
   left: 50%;
   margin-left: -100px;
   width: 200px;
@@ -701,11 +703,33 @@ body.artwork_page .search_list .slider_body form .filter_search {
   color: #ffffff;
 }
 
+body.artwork_page .search_list .slider_body form .toggle_btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  margin-right: -595px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: #666666;
+}
+
+body.artwork_page .search_list .slider_body form .toggle_btn:after {
+  content: '';
+  width: 12px;
+  height: 7px;
+  display: inline-block;
+  margin-left: 9px;
+  background-size: 12px 7px;
+  background-image: url("../img/pc/f_toggle_down.png");
+}
+
 body.artwork_page .search_list .slider_body form .filter_refresh {
   position: absolute;
-  bottom: 0px;
+  bottom: -80px;
   right: 50%;
-  margin-right: -200px;
+  margin-right: -160px;
   border: solid 1px #a7afb7;
   text-indent: -99990px;
   width: 50px;
@@ -720,6 +744,10 @@ body.artwork_page .search_list .slider_body form .filter_refresh span {
   position: absolute;
   top: 16px;
   left: 13px;
+}
+
+body.artwork_page .search_list .slider_body form .toggle_area {
+  display: none;
 }
 
 body.artwork_page .search_list .slider_body form fieldset {
@@ -994,7 +1022,7 @@ body.artwork_page .search_list .slider_body form ul.f_chk_list.fr_list {
 
 body.artwork_page .search_list .artwork_list {
   clear: both;
-  margin-top: 42px;
+  margin-top: 19px;
 }
 
 body.artwork_page .search_list .artwork_list .table_caption li {

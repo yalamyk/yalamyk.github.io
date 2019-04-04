@@ -482,15 +482,17 @@ body {
             
             .filter_wrap{
                 position: relative;
-                height: 644px;; 
+                height: auto; 
+                margin-bottom: 80px;
             }
             .slider_body {
-                height: 562px;
+                height: auto;
+                padding-bottom: 40px;
                 background-color: #ffffff;
                 form{
                     .filter_search {
                         position: absolute;
-                        bottom: 0px;
+                        bottom: -80px;
                         left: 50%;
                         margin-left: -100px;
                         width: 200px;
@@ -503,11 +505,31 @@ body {
                         text-align: center;
                         color: #ffffff;
                     }
+                    .toggle_btn{
+                        cursor: pointer;
+                        position: absolute;
+                        bottom:10px;
+                        right:50%;
+                        margin-right: -595px;
+                        font-family: $default_font;
+                        font-size: 12px;
+                        text-align: left;
+                        color: #666666;
+                        &:after{
+                            content:'';
+                            width: 12px;
+                            height: 7px;
+                            display:inline-block;
+                            margin-left:9px;
+                            background-size:12px 7px;
+                            background-image: url('../img/pc/f_toggle_down.png');
+                        }
+                    }
                     .filter_refresh {
                         position: absolute;
-                        bottom: 0px;
+                        bottom: -80px;
                         right:50%;
-                        margin-right: -200px;
+                        margin-right: -160px;
                         border:solid 1px #a7afb7;
                         text-indent: -99990px;
                         width: 50px;
@@ -523,12 +545,16 @@ body {
                             left: 13px;
                         }
                     }
+                    .toggle_area{
+                        display:none;
+                    }
                     fieldset {
                         margin-top: 20px;
                         border-top: solid 1px #77818a;
                         box-sizing: border-box;
                         display: inline-block;
                         vertical-align: top;
+                        
                         legend {
                             display: block;
                             width:100%;
@@ -747,7 +773,7 @@ body {
             }
             .artwork_list{
                 clear: both;
-                margin-top: 42px;
+                margin-top: 19px;
                 .table_caption{
                     li{
                         float: left;
