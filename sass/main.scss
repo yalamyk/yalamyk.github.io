@@ -48,7 +48,7 @@ body{
         font-size: 56px;
         line-height: 40px;
         color: #fff;
-        font-weight: 500;
+        font-weight: 700;
         width: 100%;
         line-height: 48px;
     }
@@ -78,7 +78,7 @@ body{
         padding-left: 30px;
         font-weight: 300;
         span {
-            font-weight: 500;
+            font-weight: 700;
         }
     }
 }
@@ -148,7 +148,7 @@ body {
                     height: 56px;
                     font-size: 20px;
                     font-family: "Roboto", sans-serif;
-                    font-weight: 100;
+                    font-weight: 300;
                     color: #fff;
                     border-bottom: solid 1px #454d54;
                     background-color: transparent;
@@ -180,7 +180,7 @@ body {
                             height: 56px;
                             font-size: 18px;
                             font-family: "Roboto", sans-serif;
-                            font-weight: 100;
+                            font-weight: 300;
                             color:#fff;
                             background-color: transparent;
                             border-bottom: solid 1px #454545;
@@ -213,7 +213,7 @@ body {
                         /* Firefox */
                         -webkit-appearance: none;
                         /* Safari and Chrome */
-                        font-weight: 500;
+                        font-weight: 700;
                     }
                 }
             }
@@ -288,7 +288,8 @@ body {
 				}
 				float: left;
 				width: 220px;
-				height: 64px;
+                height: 64px;
+                text-transform: uppercase;
 				background-color: #eff3f6 !important;
 				&.artist_nav_select {
                     background-color: #fff !important;
@@ -315,7 +316,7 @@ body {
                     span{
                         font-family: $default_font;
                         font-size: 18px;
-                        font-weight: 500;
+                        font-weight: 700;
                         line-height: 1.11;
                         text-align: left;
                         color: #222222;
@@ -338,7 +339,7 @@ body {
                         background-color: #ffffff;  
                         font-family: $default_font;
                         font-size: 16px;
-                        font-weight: 500;
+                        font-weight: 700;
                         color: #000000;
                     }
                 }
@@ -582,7 +583,7 @@ body {
                     .art_ex {
                         font-family: inherit;
                         font-size: 16px;
-                        font-weight: 100;
+                        font-weight: 300;
                         line-height: 1.5;
                         text-align: left;
                         color: #222222;
@@ -713,7 +714,7 @@ body {
                                 text-align: left;
                                 color: #888888;
                                 width: auto;
-                                font-weight: 500;
+                                font-weight: 700;
                                 padding-right: 25px;
                                 font-family: inherit;
                                 background: url(../img/pc/pc_more.png) no-repeat 95% 50%;
@@ -744,7 +745,7 @@ body {
                             height: 52px;
                             font-family: $default_font;
                             font-size: 12px;
-                            font-weight: 500;
+                            font-weight: 700;
                             line-height: 52px;
                             text-align: center;
                             color: #888888
@@ -900,7 +901,7 @@ body {
 				color: #fff;
 				font-family: inherit;
 				font-size: 10px;
-				font-weight: 500;
+				font-weight: 700;
 			}
 		}
 		.detail_slide {
@@ -951,7 +952,7 @@ body {
 					letter-spacing: -0.8px;
 					color: #222222;
 					margin-top: 9px;
-					font-weight: 500;
+					font-weight: 700;
 					span {
 						font-family: inherit;
 						font-size: 10px;
@@ -979,10 +980,10 @@ body {
 				font-weight: 300;
 				.date {
 					color: #666666;
-					font-weight: 100;
+					font-weight: 300;
 				}
 				.place {
-					font-weight: 500;
+					font-weight: 700;
 				}
 			}
         }
@@ -1022,7 +1023,7 @@ body {
 				.art_name {
 					font-family: inherit;
 					font-size: 16px;
-					font-weight: 500;
+					font-weight: 700;
 					line-height: 16px;
 					color: #222222;
 					margin-bottom: 8px;
@@ -1048,7 +1049,7 @@ body {
                     line-height:80px;
                     font-family: $default_font;
                     font-size: 24px;
-                    font-weight: 500;
+                    font-weight: 700;
                     text-align: left;
                     color: #222;
                 }
@@ -1125,7 +1126,7 @@ body {
                 }
                 .title_artist{
                     font-size: 12px;
-                    font-weight: 500;
+                    font-weight: 700;
                     line-height: 1.33;
                     text-align: left;
                     margin-bottom: 10px;
@@ -1205,7 +1206,7 @@ body {
                         display:block;
                         font-family: $default_font;
                         font-size: 16px;
-                        font-weight: 500;
+                        font-weight: 700;
                         text-align: center;
                         color: #222;
                     }
@@ -1217,7 +1218,7 @@ body {
                     line-height: 62px;
                     font-family: $default_font;
                     font-size: 11px;
-                    font-weight: 500;
+                    font-weight: 700;
                     letter-spacing: 1px;
                     text-align: center;
                     color: #9fabb3;
@@ -1234,7 +1235,7 @@ body {
         top: 0px;
         box-sizing: border-box;
         background-color: #232629;
-        z-index: 100;
+        z-index: 300;
         a{
             width:240px;
             height:60px;
@@ -1298,7 +1299,7 @@ body {
                 // background-color: pink;
                 font-family: $default_font;
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 700;
                 line-height: 16px;
                 color: #77818a;
                 text-transform: uppercase;
@@ -1357,7 +1358,7 @@ body {
             font-size: 13px;
             line-height: 17px;
             width: 100%;
-            font-weight: 300;
+            font-weight: 400;
             margin-top: 125px;
             word-break: break-all;
             p {
@@ -1373,7 +1374,7 @@ body {
 		.art_ex {
             font-family: inherit;
             font-size: 16px;
-            font-weight: 100;
+            font-weight: 300;
             line-height: 1.5;
             text-align: left;
             color: #222222;
@@ -1429,7 +1430,7 @@ body {
                 background-color: #ffffff;
                 color:#000;
                 margin-bottom:28px;
-                font-weight:500;
+                font-weight:700;
             }
             .back_sign{
                 display:block;
@@ -1484,7 +1485,7 @@ body {
                 .alert_err{
                     font-family: $default_font;
                     font-size: 14px;
-                    font-weight: 100;
+                    font-weight: 300;
                     line-height: 1.21;
                     text-align: left;
                     color: #ff836a;
@@ -1526,7 +1527,7 @@ body {
         line-height: 56px;
         cursor: pointer;
         color: #fff;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 14px;
         background-color: #fff;
         background-color: #32363a;

@@ -79,7 +79,7 @@ body {
   font-size: 56px;
   line-height: 40px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
   width: 100%;
   line-height: 48px;
 }
@@ -110,7 +110,7 @@ body {
 }
 
 .search_list .list_total span {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* 공통영역 스타일 end */
@@ -208,7 +208,7 @@ body.user_intro #contents form .search_box {
   height: 56px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: #fff;
   border-bottom: solid 1px #454d54;
   background-color: transparent;
@@ -265,7 +265,7 @@ body.user_intro #contents form fieldset ul li input {
   height: 56px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: #fff;
   background-color: transparent;
   border-bottom: solid 1px #454545;
@@ -334,7 +334,7 @@ body.user_intro #contents form fieldset .btn_login {
   /* Firefox */
   -webkit-appearance: none;
   /* Safari and Chrome */
-  font-weight: 500;
+  font-weight: 700;
 }
 
 body.artist_page {
@@ -409,6 +409,7 @@ body.artist_page .artist_list_area .artist_nav li {
   float: left;
   width: 220px;
   height: 64px;
+  text-transform: uppercase;
   background-color: #eff3f6 !important;
 }
 
@@ -456,7 +457,7 @@ body.artist_page .artist_list_area .artist_nav li a {
 body.artist_page .artist_list_area .artist_list .artist_noresult span {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.11;
   text-align: left;
   color: #222222;
@@ -489,7 +490,7 @@ body.artist_page .artist_list_area .artist_list .artist_noresult button {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -790,7 +791,7 @@ body.artwork_page .search_list .slider_body form .filter_input2 {
 body.artwork_page .search_list .slider_body form .art_ex {
   font-family: inherit;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   color: #222222;
@@ -942,7 +943,7 @@ body.artwork_page .search_list .artwork_list .table_caption li.select select {
   text-align: left;
   color: #888888;
   width: auto;
-  font-weight: 500;
+  font-weight: 700;
   padding-right: 25px;
   font-family: inherit;
   background: url(../img/pc/pc_more.png) no-repeat 95% 50%;
@@ -976,7 +977,7 @@ body.artwork_page .search_list .artwork_list table tr th {
   height: 52px;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 52px;
   text-align: center;
   color: #888888;
@@ -1283,7 +1284,7 @@ body.artwork_detail .detail_info .d_more {
   color: #fff;
   font-family: inherit;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 body.artwork_detail .detail_slide {
@@ -1348,7 +1349,7 @@ body.artwork_detail .detail_price .price_list .price1 {
   letter-spacing: -0.8px;
   color: #222222;
   margin-top: 9px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 body.artwork_detail .detail_price .price_list .price1 span {
@@ -1380,11 +1381,11 @@ body.artwork_detail .detail_price .price_info {
 
 body.artwork_detail .detail_price .price_info .date {
   color: #666666;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 body.artwork_detail .detail_price .price_info .place {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 body.artwork_detail .detail_info .d_img_wrap {
@@ -1430,7 +1431,7 @@ body.artwork_detail .detail_info .detail_define .artist_ex {
 body.artwork_detail .detail_info .detail_define .art_name {
   font-family: inherit;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 16px;
   color: #222222;
   margin-bottom: 8px;
@@ -1459,7 +1460,7 @@ body.artwork_detail .detail_txt p.detail_title {
   line-height: 80px;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: left;
   color: #222;
 }
@@ -1604,7 +1605,7 @@ body.comparables_page table .c_artwork .img_area img {
 
 body.comparables_page table .c_artwork .title_artist {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.33;
   text-align: left;
   margin-bottom: 10px;
@@ -1755,7 +1756,7 @@ body.comparables_page table tr .c_f_txt span {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   color: #222;
 }
@@ -1766,7 +1767,7 @@ body.comparables_page table tr th {
   line-height: 62px;
   font-family: "Roboto", sans-serif;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
   color: #9fabb3;
@@ -1781,7 +1782,7 @@ body #header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #232629;
-  z-index: 100;
+  z-index: 300;
 }
 
 body #header a {
@@ -1852,7 +1853,7 @@ body .detail_header .header_default .header_step {
   top: 33px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 16px;
   color: #77818a;
   text-transform: uppercase;
@@ -1917,7 +1918,7 @@ body #contents .main_txtarea {
   font-size: 13px;
   line-height: 17px;
   width: 100%;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 125px;
   word-break: break-all;
 }
@@ -1934,7 +1935,7 @@ body #contents .artist_search {
 body #contents .art_ex {
   font-family: inherit;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   color: #222222;
@@ -2053,7 +2054,7 @@ body.forget_pass #contents .save_password {
   background-color: #ffffff;
   color: #000;
   margin-bottom: 28px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 body.forget_pass #contents .back_sign {
@@ -2143,7 +2144,7 @@ body.forget_pass #contents .input_err .set_pass:active, body.forget_pass #conten
 body.forget_pass #contents .input_err .alert_err {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.21;
   text-align: left;
   color: #ff836a;
@@ -2185,7 +2186,7 @@ body.forget_pass #contents .alert_err {
   line-height: 56px;
   cursor: pointer;
   color: #fff;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 14px;
   background-color: #fff;
   background-color: #32363a;
