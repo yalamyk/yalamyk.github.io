@@ -10,6 +10,14 @@ html ,body{
 body{
     height: 100%;
 }
+input {
+    &[type="checkbox"] {
+        @include custtom_check;
+    }
+    &[type="radio"] {
+        @include custtom_radio;
+    }
+}
 .sticky {
     position: fixed;
     top: 83px;
@@ -338,6 +346,7 @@ body {
 			}
 			.artist_list {
                 .artist_noresult{
+                    padding-left: 52px;
                     span{
                         font-family: $default_font;
                         font-size: 18px;
@@ -345,9 +354,8 @@ body {
                         line-height: 1.11;
                         text-align: left;
                         color: #222222;
-                        margin-bottom: 17px;
+                        margin: 20px 0px 22px 0px;
                         display: block;
-                        padding-top: 20px;
                     }
                     p{
                         font-family: $default_font;
@@ -356,55 +364,62 @@ body {
                         text-align: left;
                         color: #999999;
                         font-weight: 300;
-                        margin-bottom: 30px;
+                        margin-bottom: 151px;
                     }
                     button{
-                        @include input_button_w100;
+                        width: 300px;
+                        height: 64px;
+                        margin: 0 auto;
+                        display: block;
                         border: solid 1px #c1ccd6;
                         background-color: #ffffff;  
                         font-family: $default_font;
                         font-size: 16px;
-                        font-weight: 700;
+                        font-weight: 500;
                         color: #000000;
                     }
                 }
-				li{
-					a{
-						&:after{
-                            content:'';
-                            width:11px;
-                            height:17px;
-                            background-image:url("../img/artist_list_arrow2.png");
-                            background-size: 11px 17px;
-							position: absolute;
-							top:50%;
-							margin-top:-6px;
-							right: 0px;
-						}
-						min-height: 74px;
-						border-bottom: solid 1px #eff5f7;
-						padding: 20px 40px 20px 0px;
-						box-sizing: border-box;
-						display: block;
-						position:relative;
-						span {
-							font-family: inherit;
-							font-size: 12px;
-							text-align: left;
-							color: #999999;
-							line-height: 12px;
-						}
-						p {
-                            display: inline-block;
-							font-family: inherit;
-							margin-bottom: 4px;
-							font-size: 18px;
-							line-height: 18px;
-							text-align: left;
-							color: #222222;
-						}
-					}
-				}
+                ul{
+                    padding-left: 52px;
+                    li{
+                        a{
+                            &:after{
+                                content:'';
+                                width:11px;
+                                height:17px;
+                                background-image:url("../img/artist_list_arrow2.png");
+                                background-size: 11px 17px;
+                                position: absolute;
+                                top:50%;
+                                margin-top:-6px;
+                                right: 0px;
+                            }
+                            min-height: 74px;
+                            border-bottom: solid 1px #eff5f7;
+                            padding: 20px 40px 20px 0px;
+                            box-sizing: border-box;
+                            display: block;
+                            position:relative;
+                            span {
+                                font-family: inherit;
+                                font-size: 12px;
+                                text-align: left;
+                                color: #999999;
+                                line-height: 12px;
+                            }
+                            p {
+                                display: inline-block;
+                                font-family: inherit;
+                                margin-bottom: 4px;
+                                font-size: 18px;
+                                line-height: 18px;
+                                text-align: left;
+                                color: #222222;
+                            }
+                        }
+                    }
+                }
+				
 			}
 		}
     }
@@ -510,28 +525,22 @@ body {
                     }
                     fieldset {
                         margin-top: 20px;
-                        margin-right: 20px;
-                        border-top: solid 2px #a7afb7;
-                        // padding: 32px 30px 30px 36px;
+                        border-top: solid 1px #77818a;
                         box-sizing: border-box;
-                        // float: left;
                         display: inline-block;
-                        height: 325px;
                         vertical-align: top;
                         legend {
                             display: block;
                             width:100%;
-                            line-height: 40px;
-                            height: 40px;
+                            margin: 20px 0px 20px 0px;
                             font-family: inherit;
-                            font-size: 14px;
+                            font-size: 16px;
                             font-weight: bold;
                             text-align: left;
                             color: #222222;
                             float: left;
                             select {
                                 float:right;
-                                margin-top:10px;
                                 width: 55px;
                                 @include select_ui(14px, #000, normal);
                                 background-size: 8px 4px !important;
@@ -541,11 +550,75 @@ body {
                             /* for IE 11 */
                             display: none;
                             }
-                            span{
-                                display:inline-block;
-                                margin-top: 10px;
-                                font-weight:normal;
+                        }
+                        ul{
+                            display:inline-block;
+                        }
+                        &.f_category {
+                            /* padding: 30px 30px 30px 0px; */
+                            width: 406px;
+                            margin-right: 35px;
+                            box-sizing: border-box;
+                            .more{
+                                display: inline-block;
+                                font-family: $default_font;
+                                font-weight: normal;
+                                font-size: 14px;
+                                text-align: left;
+                                color: #000000;
+                                border-bottom:solid 1px #000;
+                                float:right;
                             }
+                            .filter_medium{
+                                width:100%;
+                            }
+                            .f_chk_list_medium{
+                                clear: both;
+                                padding-top: 20px;
+                                width:100%;
+                            }
+                        }
+                        &.f_slider_year {
+                            width:222px;
+                            margin-right: 35px;
+                        }
+                        &.f_size{
+                            width:222px;
+                            margin-right: 35px;
+                        }
+                        &.f_price{
+                            width:222px;
+                            legend {
+                                span {
+                                    font-family: inherit;
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    line-height: 1.14;
+                                    text-align: left;
+                                    color: #888888;
+                                    margin-left: 9px;
+                                }
+                            }
+                        }
+                        &.f_title{
+                            width:406px;
+                            margin-right: 35px;
+                            margin-top:50px;
+                        }
+                        &.f_house_title{
+                            width:477px;
+                            margin-right: 35px;
+                            margin-top:50px;
+                            input{
+                                width:100%;
+                            }
+                        }
+                        &.f_date_number{
+                            width: 222px;
+                            margin-top:50px;
+                        }
+                        .f_second{
+                            margin-top: 18px;
                         }
                     }
                     /*artwork - filter 슬라이드*/
@@ -554,7 +627,7 @@ body {
                         background-color: #fff;
                     }
                     .filter_input {
-                        width: 227px;
+                        width: 100%;
                         height: 31px;
                         border-radius: 2px;
                         display: block;
@@ -583,20 +656,14 @@ body {
                     .advanced .inputarea li:not(.sub_legend) {
                         margin-bottom: 16px;
                     }
-                    .slider_year {
-                    
-                    }
-                    
                     .f_i2_to {
                         font-family: inherit;
                         font-size: 10px;
-                        font-weight: 300;
+                        font-weight: 400;
                         line-height: 1.6;
                         display: inline-block;
-                        padding: 0px 5px 0px 5px;
                         color: #444444;
                     }
-                    
                     .filter_input2 {
                         background-color: #eef3f6;
                         height: 30px;
@@ -625,69 +692,23 @@ body {
                         display: block;
                         width: 100%;
                     }
-                    .size .size_unit {
-                        float: right;
-                        /* width:170px; */
-                        li {
-                            font-family: inherit;
-                            font-size: 14px;
-                            font-weight: normal;
-                            line-height: 1.14;
-                            letter-spacing: normal;
-                            text-align: left;
-                            float: left;
-                            color: #000000;
-                            &:first-child {
-                                margin-right: 30px;
-                            }
-                        }
-                    }
+                    
                     
                     .sub_legend {
                         font-family: inherit;
                         font-size: 11px;
                         text-align: left;
                         color: #666666;
-                        margin-top: 4px;
+                        margin-bottom:11px;
+                        /* margin-top: 4px; */
                         font-weight: 400;
+                        line-height: 11px;
+                        // background-color: pink;
                     }
-                    .category {
-                        /* padding: 30px 30px 30px 0px; */
-                        box-sizing: border-box;
-                        .more{
-                            display: inline-block;
-                            font-family: $default_font;
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height:14px;
-                            margin-top:10px;
-                            text-align: left;
-                            color: #000000;
-                            border-bottom:solid 1px #000;
-                            float:right;
-                        }
-                        .filter_medium{
-                            width:100%;
-                        }
-                    }
+                    
                     .slider_border {
                         border-bottom: solid 2px #eef3f6;
                         margin: 20px 0px 20px 0px;
-                    }
-                    .inputarea {
-                        clear: both;
-                        .sub_legend {
-                            margin-bottom: 9px;
-                        }
-                    }
-                    .price legend span {
-                        font-family: inherit;
-                        font-size: 14px;
-                        font-weight: 300;
-                        line-height: 1.14;
-                        text-align: left;
-                        color: #888888;
-                        margin-left: 9px;
                     }
                     .chk_all {
                         font-family: inherit;
@@ -720,10 +741,7 @@ body {
                                 margin-right:70px;
                             }
                         }
-                        &.f_chk_list_medium{
-                            clear: both;
-                            padding-top: 10px;
-                        }
+                        
                     }
                 } /*form end*/
             }

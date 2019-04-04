@@ -31,6 +31,46 @@ body {
   height: 100%;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 10px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") -32px top no-repeat;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+  background: url("../img/custom_input.png") -48px top no-repeat;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  color: #222222;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 10px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") -64px top no-repeat;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+  background: url("../img/custom_input.png") -80px top no-repeat;
+}
+
 .sticky {
   position: fixed;
   top: 83px;
@@ -471,6 +511,10 @@ body.artist_page .artist_list_area .artist_nav li.artist_nav_select a:hover {
   background-color: #dde4e8;
 }
 
+body.artist_page .artist_list_area .artist_list .artist_noresult {
+  padding-left: 52px;
+}
+
 body.artist_page .artist_list_area .artist_list .artist_noresult span {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -478,9 +522,8 @@ body.artist_page .artist_list_area .artist_list .artist_noresult span {
   line-height: 1.11;
   text-align: left;
   color: #222222;
-  margin-bottom: 17px;
+  margin: 20px 0px 22px 0px;
   display: block;
-  padding-top: 20px;
 }
 
 body.artist_page .artist_list_area .artist_list .artist_noresult p {
@@ -490,28 +533,27 @@ body.artist_page .artist_list_area .artist_list .artist_noresult p {
   text-align: left;
   color: #999999;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 151px;
 }
 
 body.artist_page .artist_list_area .artist_list .artist_noresult button {
-  display: block;
-  text-decoration: none;
-  width: 100%;
+  width: 300px;
   height: 64px;
-  line-height: 64px;
-  text-align: center;
-  border: solid 1px #454d54;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  margin: 0 auto;
+  display: block;
   border: solid 1px #c1ccd6;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 
-body.artist_page .artist_list_area .artist_list li a {
+body.artist_page .artist_list_area .artist_list ul {
+  padding-left: 52px;
+}
+
+body.artist_page .artist_list_area .artist_list ul li a {
   min-height: 74px;
   border-bottom: solid 1px #eff5f7;
   padding: 20px 40px 20px 0px;
@@ -521,7 +563,7 @@ body.artist_page .artist_list_area .artist_list li a {
   position: relative;
 }
 
-body.artist_page .artist_list_area .artist_list li a:after {
+body.artist_page .artist_list_area .artist_list ul li a:after {
   content: '';
   width: 11px;
   height: 17px;
@@ -533,7 +575,7 @@ body.artist_page .artist_list_area .artist_list li a:after {
   right: 0px;
 }
 
-body.artist_page .artist_list_area .artist_list li a span {
+body.artist_page .artist_list_area .artist_list ul li a span {
   font-family: inherit;
   font-size: 12px;
   text-align: left;
@@ -541,7 +583,7 @@ body.artist_page .artist_list_area .artist_list li a span {
   line-height: 12px;
 }
 
-body.artist_page .artist_list_area .artist_list li a p {
+body.artist_page .artist_list_area .artist_list ul li a p {
   display: inline-block;
   font-family: inherit;
   margin-bottom: 4px;
@@ -682,22 +724,19 @@ body.artwork_page .search_list .slider_body form .filter_refresh span {
 
 body.artwork_page .search_list .slider_body form fieldset {
   margin-top: 20px;
-  margin-right: 20px;
-  border-top: solid 2px #a7afb7;
+  border-top: solid 1px #77818a;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
-  height: 325px;
   vertical-align: top;
 }
 
 body.artwork_page .search_list .slider_body form fieldset legend {
   display: block;
   width: 100%;
-  line-height: 40px;
-  height: 40px;
+  margin: 20px 0px 20px 0px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-align: left;
   color: #222222;
@@ -706,7 +745,6 @@ body.artwork_page .search_list .slider_body form fieldset legend {
 
 body.artwork_page .search_list .slider_body form fieldset legend select {
   float: right;
-  margin-top: 10px;
   width: 55px;
   font-size: 14px;
   text-align: left;
@@ -728,10 +766,86 @@ body.artwork_page .search_list .slider_body form fieldset legend select::-ms-exp
   display: none;
 }
 
-body.artwork_page .search_list .slider_body form fieldset legend span {
+body.artwork_page .search_list .slider_body form fieldset ul {
   display: inline-block;
-  margin-top: 10px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_category {
+  /* padding: 30px 30px 30px 0px; */
+  width: 406px;
+  margin-right: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_category .more {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  border-bottom: solid 1px #000;
+  float: right;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_category .filter_medium {
+  width: 100%;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_category .f_chk_list_medium {
+  clear: both;
+  padding-top: 20px;
+  width: 100%;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_slider_year {
+  width: 222px;
+  margin-right: 35px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_size {
+  width: 222px;
+  margin-right: 35px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_price {
+  width: 222px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_price legend span {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.14;
+  text-align: left;
+  color: #888888;
+  margin-left: 9px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_title {
+  width: 406px;
+  margin-right: 35px;
+  margin-top: 50px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_house_title {
+  width: 477px;
+  margin-right: 35px;
+  margin-top: 50px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_house_title input {
+  width: 100%;
+}
+
+body.artwork_page .search_list .slider_body form fieldset.f_date_number {
+  width: 222px;
+  margin-top: 50px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset .f_second {
+  margin-top: 18px;
 }
 
 body.artwork_page .search_list .slider_body form .filter_slider {
@@ -740,7 +854,7 @@ body.artwork_page .search_list .slider_body form .filter_slider {
 }
 
 body.artwork_page .search_list .slider_body form .filter_input {
-  width: 227px;
+  width: 100%;
   height: 31px;
   border-radius: 2px;
   display: block;
@@ -789,10 +903,9 @@ body.artwork_page .search_list .slider_body form .advanced .inputarea li:not(.su
 body.artwork_page .search_list .slider_body form .f_i2_to {
   font-family: inherit;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   display: inline-block;
-  padding: 0px 5px 0px 5px;
   color: #444444;
 }
 
@@ -827,79 +940,20 @@ body.artwork_page .search_list .slider_body form .slider_year legend {
   width: 100%;
 }
 
-body.artwork_page .search_list .slider_body form .size .size_unit {
-  float: right;
-  /* width:170px; */
-}
-
-body.artwork_page .search_list .slider_body form .size .size_unit li {
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.14;
-  letter-spacing: normal;
-  text-align: left;
-  float: left;
-  color: #000000;
-}
-
-body.artwork_page .search_list .slider_body form .size .size_unit li:first-child {
-  margin-right: 30px;
-}
-
 body.artwork_page .search_list .slider_body form .sub_legend {
   font-family: inherit;
   font-size: 11px;
   text-align: left;
   color: #666666;
-  margin-top: 4px;
+  margin-bottom: 11px;
+  /* margin-top: 4px; */
   font-weight: 400;
-}
-
-body.artwork_page .search_list .slider_body form .category {
-  /* padding: 30px 30px 30px 0px; */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body.artwork_page .search_list .slider_body form .category .more {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  margin-top: 10px;
-  text-align: left;
-  color: #000000;
-  border-bottom: solid 1px #000;
-  float: right;
-}
-
-body.artwork_page .search_list .slider_body form .category .filter_medium {
-  width: 100%;
+  line-height: 11px;
 }
 
 body.artwork_page .search_list .slider_body form .slider_border {
   border-bottom: solid 2px #eef3f6;
   margin: 20px 0px 20px 0px;
-}
-
-body.artwork_page .search_list .slider_body form .inputarea {
-  clear: both;
-}
-
-body.artwork_page .search_list .slider_body form .inputarea .sub_legend {
-  margin-bottom: 9px;
-}
-
-body.artwork_page .search_list .slider_body form .price legend span {
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.14;
-  text-align: left;
-  color: #888888;
-  margin-left: 9px;
 }
 
 body.artwork_page .search_list .slider_body form .chk_all {
@@ -936,11 +990,6 @@ body.artwork_page .search_list .slider_body form ul.f_chk_list {
 
 body.artwork_page .search_list .slider_body form ul.f_chk_list.fr_list {
   margin-right: 70px;
-}
-
-body.artwork_page .search_list .slider_body form ul.f_chk_list_medium {
-  clear: both;
-  padding-top: 10px;
 }
 
 body.artwork_page .search_list .artwork_list {
