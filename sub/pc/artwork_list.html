@@ -59,9 +59,9 @@
                             <div class="pc_wrap">
                                 <form action="#">
                                     <fieldset class="category">
-                                        <legend>CATEGORY</legend>
-                                        <a class="more" href="#">Any</a>
-                                        <ul class="f_chk_list">
+                                        <legend>CATEGORY <a class="more" href="#">Any</a></legend>
+                                        
+                                        <ul class="f_chk_list fr_list">
                                             <li class="sub_legend">FINE ART</li>
                                             <li>
                                                 <input type="checkbox" id="custom_chk1"> <label for="custom_chk1"><span></span>Paintings</label>
@@ -109,11 +109,13 @@
                                         <input type="number" class="filter_input2" id="picker_year_end" />
                                     </fieldset>
                                     <fieldset class="size"> 
-                                        <legend>SIZE</legend>
-                                        <ul class="size_unit">
-                                            <li><input type="radio" id="radio_cm"> <label for="radio_cm"><span></span>cm</label></li>
-                                            <li><input type="radio" id="radio_inches"> <label for="radio_inches"><span></span>inches</label></li>    
-                                        </ul>
+                                        <legend>
+                                            SIZE
+                                            <select>
+                                                <option value="Inches">Inches</option>
+                                                <option value="Cm">Cm</option>
+                                            </select>
+                                        </legend>
                                         <ul class="inputarea">
                                             <li class="sub_legend">HEIGHT</li>
                                             <li>
@@ -132,8 +134,10 @@
                                             </ul>
                                     </fieldset>
                                     <fieldset class="price"> 
-                                        <legend>PRICE <span>in USD</span></legend>
-                                        <input type="checkbox" id="price_all"> <label for="price_all" class="chk_all"><span></span>All</label>
+                                        <legend>
+                                            PRICE
+                                            <span>in USD</span>
+                                        </legend>
                                         <ul class="inputarea">
                                             <li class="sub_legend">SOLD</li>
                                             <li>

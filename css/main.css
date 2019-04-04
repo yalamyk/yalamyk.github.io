@@ -671,6 +671,46 @@ body.artwork_page .search_list .slider_body form fieldset legend {
   float: left;
 }
 
+body.artwork_page .search_list .slider_body form fieldset legend a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 10px;
+  text-align: left;
+  color: #000000;
+  border-bottom: solid 1px #000;
+  float: right;
+}
+
+body.artwork_page .search_list .slider_body form fieldset legend select {
+  float: right;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  color: #888888;
+  width: auto;
+  font-weight: 500;
+  padding-right: 25px;
+  font-family: inherit;
+  background: url(../img/pc/pc_more.png) no-repeat 95% 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  border-radius: 0px;
+}
+
+body.artwork_page .search_list .slider_body form fieldset legend select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
+
+body.artwork_page .search_list .slider_body form fieldset legend span {
+  float: right;
+  margin-top: 10px;
+}
+
 body.artwork_page .search_list .slider_body form .filter_slider {
   height: 335px;
   background-color: #fff;
@@ -803,6 +843,10 @@ body.artwork_page .search_list .slider_body form .category .more {
   display: inline-block;
 }
 
+body.artwork_page .search_list .slider_body form .category .filter_medium {
+  width: 100%;
+}
+
 body.artwork_page .search_list .slider_body form .slider_border {
   border-bottom: solid 2px #eef3f6;
   margin: 20px 0px 20px 0px;
@@ -856,6 +900,10 @@ body.artwork_page .search_list .slider_body form ul li label {
 
 body.artwork_page .search_list .slider_body form ul.f_chk_list {
   float: left;
+}
+
+body.artwork_page .search_list .slider_body form ul.f_chk_list.fr_list {
+  margin-right: 70px;
 }
 
 body.artwork_page .search_list .slider_body form ul.f_chk_list_medium {
