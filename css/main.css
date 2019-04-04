@@ -63,6 +63,7 @@ body {
 
 /*  상세페이지 틀 2개임. main-header영역/list-nav영역*/
 .search_main {
+  overflow: hidden;
   background-color: #232629;
   padding: 36px 30px 78px 30px;
   -webkit-box-sizing: border-box;
@@ -343,6 +344,7 @@ body.user_intro #contents form fieldset .btn_login {
 }
 
 body.artist_page {
+  min-width: 1190px;
   clear: both;
 }
 
@@ -520,7 +522,11 @@ body.artist_page .artist_list_area .artist_list li a {
 }
 
 body.artist_page .artist_list_area .artist_list li a:after {
-  content: url("../img/artist_list_arrow2.png");
+  content: '';
+  width: 11px;
+  height: 17px;
+  background-image: url("../img/artist_list_arrow2.png");
+  background-size: 11px 17px;
   position: absolute;
   top: 50%;
   margin-top: -6px;
@@ -548,6 +554,7 @@ body.artist_page .artist_list_area .artist_list li a p {
 body.artwork_page {
   clear: both;
   background-color: #eff3f6;
+  min-width: 1190px;
   /*artwork_list start*/
   /*pagenation*/
 }

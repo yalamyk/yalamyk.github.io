@@ -36,6 +36,7 @@ body{
 .txt_center{text-align:$text_center;}
 /*  상세페이지 틀 2개임. main-header영역/list-nav영역*/
 .search_main {
+    overflow:hidden;
     background-color: #232629;
     padding: 36px 30px 78px 30px;
     box-sizing: border-box;
@@ -225,6 +226,7 @@ body {
         }
     }
     &.artist_page{
+        min-width: 1190px;
         @include set_footer(120px);
         #footer{
             height: 120px;
@@ -369,7 +371,11 @@ body {
 				li{
 					a{
 						&:after{
-							content:url("../img/artist_list_arrow2.png");
+                            content:'';
+                            width:11px;
+                            height:17px;
+                            background-image:url("../img/artist_list_arrow2.png");
+                            background-size: 11px 17px;
 							position: absolute;
 							top:50%;
 							margin-top:-6px;
@@ -405,6 +411,7 @@ body {
     &.artwork_page{
         @include set_footer(69px);
         background-color: #eff3f6;
+        min-width: 1190px;
         #footer{
             clear: both;
             height: 69px;
