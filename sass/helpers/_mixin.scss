@@ -1,8 +1,9 @@
 @import "./variables.scss";
 /*
-20180315
-해당 파일은 mixin을 모아두었습니다. 아래와 같은 기능이 있습니다.
-- ellipsis
+20180315 dorothy
+해당 파일은 mobile,pc에서 공통으로 사용이 가능한 mixin을 모아두었습니다. 
+아래와 같은 기능이 있습니다.
+- ellipsis (말줄임, 있을시에는 줄여지고 없으면 안보임.)
 - media query (애플 제품 기준)
 - input_has_value : input 선택시 주어지는 css
 - input_txt_w100 : width가 100% 인 input의 스타일
@@ -142,121 +143,7 @@
         background: url("../img/custom_input.png") -80px top no-repeat;
     }
 }
-@mixin set_footer($footer_height){
-    clear: both;
-        .wrap{
-            min-height: 100%;
-            margin: 0 auto;
-            margin-bottom:-$footer_height;
-        }
-    
-    .footarea{height: $footer_height;}
-}
 
-@mixin lot_detail($ellip){
-    padding-left: 50px;
-    width:529px;
-    box-sizing: border-box;
-    .img_area{
-        float: left;
-        width: 110px;
-        height: 87px;   
-        img{
-            width:110px;
-            display: block;
-            margin:0 auto;
-        }
-    }
-    
-    .txt_area{
-        padding-left: 110px;
-        width: 100%;
-        margin-left: -110px;
-        float: left;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        p{
-            padding-left:20px;
-        }
-        .title_art {
-            /* text-transform: uppercase; */
-            box-sizing: border-box;
-            font-family: inherit;
-            font-size: 20px;
-            line-height: 20px;
-            font-weight: bold;
-            text-align: left;
-            color: #222222;
-            width: 100%;
-            height: 20px;
-            @include ellipsis($ellip);
-            margin-bottom: 14px;
-        }
-        .info_art {
-            font-weight: 100 !important;
-            font-family: inherit;
-            font-size: 14px;
-            font-weight: 300;
-            text-align: left;
-            color: #222222;
-            width: 100%;
-            @include ellipsis($ellip);
-            line-height: 20px;
-        }
-    }
-}
-@mixin info_art_price(){
-    width:372px;
-    box-sizing: border-box;
-    padding-right: 50px;
-    padding-left:125px; /*길경우 0px됨*/
-    .info_art_price_1 {
-        font-family: inherit;
-        font-size: 18px;
-        line-height: 18px;
-        text-align: left;
-        color: #c2c2c2;
-        font-weight: 300;
-    }
-    .info_art_price_1_1{
-        font-family: inherit;
-        font-size: 14px;
-        line-height: 1.43;
-        letter-spacing: -0.4px;
-        text-align: left;
-        font-weight:300;
-        color: #c2c2c2;
-    }
-    .info_art_price_2_1{
-        font-family: inherit;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.29;
-        letter-spacing: -0.4px;
-        text-align: left;
-        color: #222222;
-    }
-    .info_art_price_2 {
-        margin-top: 10px;
-        font-family: inherit;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 18px;
-        letter-spacing: -0.5px;
-        text-align: left;
-        color: #222222;
-        span {
-            display: inline-block;
-            margin-left:8px;
-            font-family: $default_font;
-            font-size: 11px;
-            font-weight: 500;
-            text-align: left;
-            color: #aaaaaa;
-        }
-    }
-                            
-}
 /* 미디어 쿼리 정의*/
 $iphone-x-size: 375px;
 $way-point-3-size: 575px;
