@@ -781,7 +781,6 @@ body.artwork_page .search_list .slider_body form fieldset legend select {
   color: #000;
   font-weight: normal;
   font-family: inherit;
-  background: url(../img/pc/pc_more.png) no-repeat 95% 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1038,28 +1037,6 @@ body.artwork_page .search_list .artwork_list .table_caption li {
 
 body.artwork_page .search_list .artwork_list .table_caption li.select {
   float: right;
-}
-
-body.artwork_page .search_list .artwork_list .table_caption li.select select {
-  font-size: 14px;
-  text-align: left;
-  color: #888888;
-  width: auto;
-  font-weight: 700;
-  padding-right: 25px;
-  font-family: inherit;
-  background: url(../img/pc/pc_more.png) no-repeat 95% 50%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  border-bottom: 1px solid #666;
-  border-radius: 0px;
-}
-
-body.artwork_page .search_list .artwork_list .table_caption li.select select::-ms-expand {
-  /* for IE 11 */
-  display: none;
 }
 
 body.artwork_page .search_list .artwork_list table {
@@ -2292,5 +2269,113 @@ body.forget_pass #contents .alert_err {
   font-size: 14px;
   background-color: #fff;
   background-color: #32363a;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: none;
+}
+
+.select-selected {
+  font-size: 14px;
+  text-align: left;
+  color: #666;
+  font-weight: 500;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  border-radius: 0px;
+}
+
+select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/pc/f_toggle_down.png");
+  background-size: cover;
+  top: 2px;
+  right: 0px;
+  width: 12px;
+  height: 7px;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/pc/f_toggle_up.png");
+  background-size: cover;
+  top: 2px;
+  right: 0px;
+  width: 12px;
+  height: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div {
+  width: 192px;
+  height: 34px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 14px;
+  border-top: 1px solid #d9e0e7;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: left;
+  color: #838383;
+}
+
+.select-items div.first-child {
+  border-top: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 125%;
+  left: -16px;
+  z-index: 99;
+  border: 1px solid #d9e0e7;
+}
+
+.select-items.first-child {
+  border-top: none;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #eff3f6;
 }
 /*# sourceMappingURL=main.css.map */

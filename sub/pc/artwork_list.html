@@ -12,6 +12,7 @@
         <script src="../../js/ui_mobile.js"></script>
         <script src="../../js/moment.min.js"></script>
         <script src="../../js/daterangepicker.js"></script>
+        
         <script type="text/javascript">
             $(function() {
                 $('input[name="datefilter"]').daterangepicker({
@@ -212,12 +213,17 @@
                         <ul class="table_caption">
                             <li>Showing <b>21</b> Results</li>
                             <li class="select">
-                                <select>
-                                    <option value="Sort by Recently Updated">Sort by Recently Updated</option>
-                                    <option value="Sort by Recently Updated">Sort by Recently Updated</option>
-                                    <option value="Sort by Recently Updated">Sort by Recently Updated</option>
-                                    <option value="Sort by Recently Updated">Sort by Recently Updated</option>
-                                </select>
+                                <div class="custom-select" style="width:176px">
+                                        <select>
+                                            <option value="0">Sort by Recently Updated</option>
+                                            <option value="1">Sort by Recently Updated</option>
+                                            <option value="2">Sort by most Expensive</option>
+                                            <option value="3">Sort by Least Expensive</option>
+                                            <option value="4">Sort by Latest Auction</option>
+                                            <option value="5">Sort by Oldest Auction</option>
+                                        </select>
+                                </div>
+                                
                             </li>
                         </ul>
                         <colgroup>
@@ -432,6 +438,6 @@
                 <li><a href="#">Art In Art Press</a> </li>
             </ul>
         </div>
-        
+        <script src="../../js/custom_selectbox.js"></script>
     </body>
 </html>
