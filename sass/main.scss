@@ -515,15 +515,26 @@ body {
                         font-size: 12px;
                         text-align: left;
                         color: #666666;
-                        &:after{
-                            content:'';
+                        // &:after{
+                        //     content:'';
+                        //     width: 12px;
+                        //     height: 7px;
+                        //     display:inline-block;
+                        //     margin-left:9px;
+                        //     background-size:12px 7px;
+                        //     background-image: url('../img/pc/f_toggle_down.png');
+                        // }
+                        img{
                             width: 12px;
                             height: 7px;
                             display:inline-block;
                             margin-left:9px;
                             background-size:12px 7px;
-                            background-image: url('../img/pc/f_toggle_down.png');
+                            // background-image: url('../img/pc/f_toggle_down.png');
                         }
+                    }
+                    .toggle_chk1{
+                        display: none;
                     }
                     .filter_refresh {
                         position: absolute;

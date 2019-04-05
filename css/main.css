@@ -715,14 +715,16 @@ body.artwork_page .search_list .slider_body form .toggle_btn {
   color: #666666;
 }
 
-body.artwork_page .search_list .slider_body form .toggle_btn:after {
-  content: '';
+body.artwork_page .search_list .slider_body form .toggle_btn img {
   width: 12px;
   height: 7px;
   display: inline-block;
   margin-left: 9px;
   background-size: 12px 7px;
-  background-image: url("../img/pc/f_toggle_down.png");
+}
+
+body.artwork_page .search_list .slider_body form .toggle_chk1 {
+  display: none;
 }
 
 body.artwork_page .search_list .slider_body form .filter_refresh {

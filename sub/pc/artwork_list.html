@@ -28,10 +28,18 @@
                 $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
                     $(this).val('');
                 });
-
+                var chk_toggle = 0;
                 $('.toggle_btn').click(function(){
-                    alert('click');
-                    $('.toggle_area').css('display','block');
+                    $('.toggle_area').slideToggle('slow',function(){
+                        $('.toggle_chk'+chk_toggle).hide();
+                        if(chk_toggle){
+                            chk_toggle--;
+                            $('.toggle_chk'+chk_toggle).show();
+                        }else{
+                            chk_toggle++;
+                            $('.toggle_chk'+chk_toggle).show();
+                        }
+                    });
                 });
             });
             </script>
@@ -192,7 +200,8 @@
                                         </fieldset> 
                                     </div>
                                     
-                                    <div class="toggle_btn">Close Filters</div>
+                                    <div class="toggle_btn toggle_chk0">More Filters <img src="../../img/pc/f_toggle_down.png" alt=""></div>
+                                    <div class="toggle_btn toggle_chk1">Close Filters <img src="../../img/pc/f_toggle_up.png" alt=""></div>
                                     <a href="#" class="filter_refresh"><span></span>Reset Search</a>
                                     <input type="submit" class="filter_search" alt="Search" value="Search">
                                 </form>
