@@ -1319,6 +1319,7 @@ body.artwork_page .pagination .pagination_wrap a.active {
 
 body.artwork_detail {
   clear: both;
+  min-width: 1190px;
 }
 
 body.artwork_detail .wrap {
@@ -1388,7 +1389,7 @@ body.artwork_detail .detail_info {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 333px;
-  border-bottom: solid 3px #eef3f6;
+  border-bottom: solid 1px #eef3f6;
 }
 
 body.artwork_detail .detail_info .d_more {
@@ -1407,11 +1408,20 @@ body.artwork_detail .detail_info .d_more {
 }
 
 body.artwork_detail .detail_slide {
+  overflow: hidden;
   min-height: 145px;
-  border-bottom: solid 3px #eef3f6;
+  border-bottom: solid 1px #eef3f6;
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body.artwork_detail .detail_slide a {
+  display: block;
+}
+
+body.artwork_detail .detail_slide a:hover span {
+  border-bottom: solid 1px #222222;
 }
 
 body.artwork_detail .detail_slide .slide_wrap {
@@ -1419,34 +1429,47 @@ body.artwork_detail .detail_slide .slide_wrap {
   overflow-y: hidden;
 }
 
-body.artwork_detail .detail_slide span {
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 20px;
-  color: #222222;
-  margin-bottom: 11px;
-  display: block;
-}
-
-body.artwork_detail .detail_slide ul {
+body.artwork_detail .detail_slide .slide_wrap ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body.artwork_detail .detail_slide ul li {
+body.artwork_detail .detail_slide .slide_wrap ul li {
   min-width: 56px;
   height: 57px;
   float: left;
   margin-right: 5px;
 }
 
+body.artwork_detail .detail_slide .slide_wrap ul li.show_num {
+  font-family: "Roboto", sans-serif;
+  line-height: 57px;
+  text-align: center !important;
+  font-size: 34px;
+  font-weight: 300;
+  text-align: left;
+  color: #dadfe1;
+}
+
+body.artwork_detail .detail_slide span {
+  width: 165px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: inline-block;
+  letter-spacing: normal;
+  text-align: left;
+  color: #222;
+  border-bottom: solid 1px #fff;
+}
+
 body.artwork_detail .detail_price {
-  padding: 30px 30px 0px 30px;
+  padding-top: 49px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 283px;
+  min-height: 341px;
   border-bottom: solid 3px #eef3f6;
 }
 
@@ -1468,6 +1491,7 @@ body.artwork_detail .detail_price .price_list .price1 {
   letter-spacing: -0.8px;
   color: #222222;
   margin-top: 9px;
+  margin-bottom: 5px;
   font-weight: 700;
 }
 
@@ -1476,7 +1500,8 @@ body.artwork_detail .detail_price .price_list .price1 span {
   font-size: 10px;
   line-height: 10px;
   color: #888888;
-  font-weight: 300;
+  font-weight: normal;
+  letter-spacing: normal;
 }
 
 body.artwork_detail .detail_price .price_list .price2 {
@@ -1513,9 +1538,19 @@ body.artwork_detail .detail_info .d_img_wrap {
 }
 
 body.artwork_detail .detail_info .d_img_wrap img {
-  width: 100px;
+  display: block;
   margin: 0 auto;
-  overflow: hidden;
+}
+
+body.artwork_detail .detail_info .d_img_wrap img.d_main_img {
+  max-width: 100px;
+  max-height: 300px;
+}
+
+body.artwork_detail .detail_info .d_img_wrap img.d_sub_img {
+  width: 67px;
+  height: 46px;
+  margin-top: 20px;
 }
 
 body.artwork_detail .detail_info .detail_define {
@@ -1557,31 +1592,35 @@ body.artwork_detail .detail_info .detail_define .art_name {
 }
 
 body.artwork_detail .detail_txt {
-  height: 788px;
+  height: 800px;
   width: 100%;
-  padding: 35px 0px;
+  padding-top: 81px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #eff3f7;
 }
 
-body.artwork_detail .detail_txt p {
+body.artwork_detail .detail_txt dl dt {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 28px;
+  text-align: left;
+  color: #222;
+}
+
+body.artwork_detail .detail_txt dl dd {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
   text-align: left;
   color: #484848;
-  margin-bottom: 15px;
+  margin-bottom: 46px;
 }
 
-body.artwork_detail .detail_txt p.detail_title {
-  line-height: 80px;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: left;
-  color: #222;
+body.artwork_detail .detail_txt dl dd p {
+  margin-bottom: 20px;
 }
 
 body.comparables_page {
@@ -2068,7 +2107,7 @@ body #contents .art_ex {
   text-align: left;
   color: #222222;
   width: 220px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 body.forget_pass #contents h2 {
