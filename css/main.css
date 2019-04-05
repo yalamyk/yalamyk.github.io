@@ -1060,6 +1060,7 @@ body.artwork_page .search_list .artwork_list table tr th {
   line-height: 52px;
   text-align: center;
   color: #888888;
+  text-transform: uppercase;
 }
 
 body.artwork_page .search_list .artwork_list table tr td {
@@ -1082,7 +1083,8 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .img_area {
 }
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .img_area img {
-  width: 110px;
+  max-height: 150px;
+  max-width: 110px;
   display: block;
   margin: 0 auto;
 }
@@ -1098,6 +1100,11 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area {
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area p {
   padding-left: 20px;
+}
+
+body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .title_artist {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .title_art {
@@ -1120,16 +1127,17 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .t
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   margin-bottom: 14px;
+  margin-top: 16px;
+  text-transform: uppercase;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .info_art {
-  font-weight: 100 !important;
   font-family: inherit;
   font-size: 14px;
   font-weight: 300;
   text-align: left;
   color: #222222;
-  width: 100%;
+  width: 380px;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
@@ -1154,17 +1162,18 @@ body.artwork_page .search_list .artwork_list table tr td.sale_info .art_auction_
 }
 
 body.artwork_page .search_list .artwork_list table tr td.sale_info .art_auction_info span {
-  width: 55px;
+  display: inline-block;
+  width: 66px;
   height: 19px;
   border-radius: 9px;
-  border: solid 1px #a7afb7;
-  background-color: #ffffff;
-  display: inline-block;
+  background-color: #a7afb7;
+  font-family: "Roboto", sans-serif;
   font-size: 10px;
   font-weight: bold;
   line-height: 19px;
   text-align: center;
-  color: #a7afb7;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.sale_info .art_aution_place {
@@ -1184,10 +1193,10 @@ body.artwork_page .search_list .artwork_list table tr td.sale_info .art_aution_p
 body.artwork_page .search_list .artwork_list table tr td.est_price {
   width: 372px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-right: 50px;
-  padding-left: 125px;
-  /*길경우 0px됨*/
+  box-sizing: border-box;
+  /* padding-right: 50px; */
+  padding-left: 15px;
+  padding-left: 15px;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_1 {
@@ -1262,14 +1271,45 @@ body.artwork_page .pagination .pagination_wrap a {
   color: #888888;
 }
 
+body.artwork_page .pagination .pagination_wrap a:hover.next_page, body.artwork_page .pagination .pagination_wrap a:hover.prev_page {
+  color: #232629;
+}
+
+body.artwork_page .pagination .pagination_wrap a:hover.next_page {
+  background-image: url("../img/pc/select_next_page.png");
+}
+
+body.artwork_page .pagination .pagination_wrap a:hover.prev_page {
+  background-image: url("../img/pc/select_prev_page.png");
+}
+
+body.artwork_page .pagination .pagination_wrap a.next_page, body.artwork_page .pagination .pagination_wrap a.prev_page {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #888888;
+  margin: 0px;
+  padding: 0px;
+}
+
 body.artwork_page .pagination .pagination_wrap a.next_page {
+  text-align: left;
   position: absolute;
   right: 0px;
+  width: 59px;
+  background-image: url("../img/pc/default_next_page.png");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 body.artwork_page .pagination .pagination_wrap a.prev_page {
+  text-align: right;
   position: absolute;
   left: 0px;
+  width: 79px;
+  background-image: url("../img/pc/default_prev_page.png");
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 body.artwork_page .pagination .pagination_wrap a.active {
@@ -1631,7 +1671,8 @@ body.comparables_page table .c_artwork .img_area {
 }
 
 body.comparables_page table .c_artwork .img_area img {
-  width: 110px;
+  max-height: 150px;
+  max-width: 110px;
   display: block;
   margin: 0 auto;
 }
@@ -1649,6 +1690,11 @@ body.comparables_page table .c_artwork .txt_area p {
   padding-left: 20px;
 }
 
+body.comparables_page table .c_artwork .txt_area .title_artist {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 body.comparables_page table .c_artwork .txt_area .title_art {
   /* text-transform: uppercase; */
   -webkit-box-sizing: border-box;
@@ -1663,16 +1709,17 @@ body.comparables_page table .c_artwork .txt_area .title_art {
   height: 20px;
   overflow: none;
   margin-bottom: 14px;
+  margin-top: 16px;
+  text-transform: uppercase;
 }
 
 body.comparables_page table .c_artwork .txt_area .info_art {
-  font-weight: 100 !important;
   font-family: inherit;
   font-size: 14px;
   font-weight: 300;
   text-align: left;
   color: #222222;
-  width: 100%;
+  width: 380px;
   overflow: none;
   line-height: 20px;
 }
@@ -1688,6 +1735,8 @@ body.comparables_page table .c_artwork .title_artist {
   line-height: 1.33;
   text-align: left;
   margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
   margin-top: 28px;
   color: #444444 !important;
 }
@@ -1717,10 +1766,10 @@ body.comparables_page table .c_price {
   vertical-align: top;
   width: 372px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-right: 50px;
-  padding-left: 125px;
-  /*길경우 0px됨*/
+  box-sizing: border-box;
+  /* padding-right: 50px; */
+  padding-left: 15px;
+  padding-left: 15px;
   width: 296px;
   padding: 37px 0px 0px 54px !important;
 }

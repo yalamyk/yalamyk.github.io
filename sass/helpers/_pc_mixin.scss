@@ -42,7 +42,8 @@
         width: 110px;
         height: 87px;   
         img{
-            width:110px;
+            max-height: 150px;
+            max-width:110px;
             display: block;
             margin:0 auto;
         }
@@ -58,6 +59,10 @@
         p{
             padding-left:20px;
         }
+        .title_artist{
+            font-size: 14px;
+            font-weight: 500;       
+        }
         .title_art {
             /* text-transform: uppercase; */
             box-sizing: border-box;
@@ -71,25 +76,28 @@
             height: 20px;
             @include ellipsis($ellip);
             margin-bottom: 14px;
+            margin-top: 16px;
+            text-transform: uppercase;
         }
         .info_art {
-            font-weight: 100 !important;
             font-family: inherit;
             font-size: 14px;
             font-weight: 300;
             text-align: left;
             color: #222222;
-            width: 100%;
+            width: 380px;
             @include ellipsis($ellip);
             line-height: 20px;
         }
     }
 }
 @mixin info_art_price(){
-    width:372px;
+    width: 372px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-right: 50px;
-    padding-left:125px; /*길경우 0px됨*/
+    /* padding-right: 50px; */
+    padding-left: 15px;
+    padding-left: 15px;
     .info_art_price_1 {
         font-family: inherit;
         font-size: 18px;

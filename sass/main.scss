@@ -835,7 +835,8 @@ body {
                             font-weight: 700;
                             line-height: 52px;
                             text-align: center;
-                            color: #888888
+                            color: #888888;
+                            text-transform: uppercase;
                         }
                         td{
                             vertical-align: top;
@@ -854,17 +855,18 @@ body {
                                     color: #666666;
                                     margin-bottom: 14px;
                                     span {
-                                        width: 55px;
+                                        display:inline-block;
+                                        width: 66px;
                                         height: 19px;
                                         border-radius: 9px;
-                                        border: solid 1px #a7afb7;
-                                        background-color: #ffffff;
-                                        display: inline-block;
+                                        background-color: #a7afb7;
+                                        font-family: $default_font;
                                         font-size: 10px;
                                         font-weight: bold;
                                         line-height: 19px;
                                         text-align: center;
-                                        color: #a7afb7;
+                                        text-transform: uppercase;
+                                        color: #ffffff;
                                     }
                                 }
                                 .art_aution_place {
@@ -907,13 +909,42 @@ body {
                     font-weight: bold;
                     text-align: left;
                     color: #888888;
+                    &:hover{
+                        &.next_page, &.prev_page{
+                            color:#232629;
+                        }
+                        &.next_page{
+                            background-image:url('../img/pc/select_next_page.png');
+                        }
+                        &.prev_page{
+                            background-image:url('../img/pc/select_prev_page.png');
+                        }
+                    }
+                    &.next_page, &.prev_page{
+                        font-family: $default_font;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: #888888;
+                        margin: 0px;
+                        padding: 0px;
+                    }
                     &.next_page{
+                        text-align: left;
                         position: absolute;
                         right:0px;
+                        width:59px;
+                        background-image:url('../img/pc/default_next_page.png');
+                        background-position:right;
+                        background-repeat: no-repeat;
                     }
                     &.prev_page{
+                        text-align: right;
                         position: absolute;
                         left:0px;
+                        width:79px;
+                        background-image:url('../img/pc/default_prev_page.png');
+                        background-position:left;
+                        background-repeat: no-repeat;
                     }
                     &.active {
                         border-bottom:solid 1px #000;
@@ -1217,6 +1248,8 @@ body {
                     line-height: 1.33;
                     text-align: left;
                     margin-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
                     margin-top: 28px;
                     color: #444444 !important;
                 }
