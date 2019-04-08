@@ -60,7 +60,11 @@ a {
     vertical-align:baseline;
     background:transparent;
 }
-
+a,
+button,
+input[type="submit"]{
+    cursor: pointer;
+}
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;

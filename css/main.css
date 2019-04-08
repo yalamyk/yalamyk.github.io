@@ -88,8 +88,13 @@ input[type="radio"]:checked + label span {
   margin-left: -780px;
   z-index: -1;
   width: 1562px;
+  z-index: 99999;
   height: 170px;
   background: url(../img/pc/bg_logo.png) no-repeat;
+}
+
+.footarea {
+  height: 170px;
 }
 
 .pc_wrap {
@@ -169,11 +174,11 @@ body.user_intro {
 body.user_intro .wrap {
   min-height: 100%;
   margin: 0 auto;
-  margin-bottom: -60px;
+  margin-bottom: -170px;
 }
 
 body.user_intro .footarea {
-  height: 60px;
+  height: 170px;
 }
 
 body.user_intro #footer {
@@ -181,8 +186,9 @@ body.user_intro #footer {
   text-align: center;
   background-color: transparent !important;
   padding-left: 0px;
-  height: 60px;
+  height: 170px;
   width: 100%;
+  display: block;
 }
 
 body.user_intro #footer p {
@@ -1098,6 +1104,10 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area {
   box-sizing: border-box;
 }
 
+body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .a_t_w {
+  margin: 0 auto;
+}
+
 body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area p {
   padding-left: 20px;
 }
@@ -1118,7 +1128,6 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .t
   text-align: left;
   color: #222222;
   width: 100%;
-  height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
@@ -1126,7 +1135,6 @@ body.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .t
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  margin-bottom: 14px;
   margin-top: 16px;
   text-transform: uppercase;
 }
@@ -1204,7 +1212,7 @@ body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_pri
   font-size: 18px;
   line-height: 18px;
   text-align: left;
-  color: #c2c2c2;
+  color: #666666;
   font-weight: 300;
 }
 
@@ -1215,17 +1223,17 @@ body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_pri
   letter-spacing: -0.4px;
   text-align: left;
   font-weight: 300;
-  color: #c2c2c2;
+  color: #666666;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_2_1 {
   font-family: inherit;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.29;
   letter-spacing: -0.4px;
   text-align: left;
-  color: #222222;
+  color: #666;
 }
 
 body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_2 {
@@ -1241,6 +1249,7 @@ body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_pri
 
 body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_2 span {
   display: inline-block;
+  letter-spacing: normal;
   margin-left: 8px;
   font-family: "Roboto", sans-serif;
   font-size: 11px;
@@ -1409,9 +1418,9 @@ body.artwork_detail .detail_info .d_more {
 
 body.artwork_detail .detail_slide {
   overflow: hidden;
-  min-height: 145px;
+  height: 172px;
   border-bottom: solid 1px #eef3f6;
-  padding: 30px;
+  padding-top: 42px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1544,7 +1553,7 @@ body.artwork_detail .detail_info .d_img_wrap img {
 
 body.artwork_detail .detail_info .d_img_wrap img.d_main_img {
   max-width: 100px;
-  max-height: 300px;
+  max-height: 110px;
 }
 
 body.artwork_detail .detail_info .d_img_wrap img.d_sub_img {
@@ -1690,11 +1699,30 @@ body.comparables_page .search_main {
 body.comparables_page .fixed_area {
   width: 100%;
   height: 172px;
+  z-index: 9999;
   background-color: #eff3f6;
 }
 
+body.comparables_page .fixed_area .c_m_txt,
+body.comparables_page .fixed_area .c_f_txt {
+  width: auto !important;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: center;
+  line-height: 100px;
+  text-align: center;
+  color: #222222;
+}
+
+body.comparables_page .fixed_area .title_artist_info {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  color: #9fabb3;
+}
+
 body.comparables_page table .c_artwork {
-  width: 322px;
+  width: 362px !important;
   padding-left: 50px;
   width: 529px;
   -webkit-box-sizing: border-box;
@@ -1725,6 +1753,10 @@ body.comparables_page table .c_artwork .txt_area {
   box-sizing: border-box;
 }
 
+body.comparables_page table .c_artwork .txt_area .a_t_w {
+  margin: 0 auto;
+}
+
 body.comparables_page table .c_artwork .txt_area p {
   padding-left: 20px;
 }
@@ -1745,9 +1777,13 @@ body.comparables_page table .c_artwork .txt_area .title_art {
   text-align: left;
   color: #222222;
   width: 100%;
-  height: 20px;
-  overflow: none;
-  margin-bottom: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   margin-top: 16px;
   text-transform: uppercase;
 }
@@ -1759,13 +1795,19 @@ body.comparables_page table .c_artwork .txt_area .info_art {
   text-align: left;
   color: #222222;
   width: 380px;
-  overflow: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   line-height: 20px;
 }
 
-body.comparables_page table .c_artwork .img_area img {
-  width: 90px;
-  height: 90px;
+body.comparables_page table .c_artwork .img_area {
+  width: 90px !important;
+  height: 90px !important;
 }
 
 body.comparables_page table .c_artwork .title_artist {
@@ -1773,10 +1815,8 @@ body.comparables_page table .c_artwork .title_artist {
   font-weight: 700;
   line-height: 1.33;
   text-align: left;
-  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 28px;
   color: #444444 !important;
 }
 
@@ -1787,6 +1827,7 @@ body.comparables_page table .c_artwork .title_art {
   text-align: left !important;
   text-transform: uppercase;
   color: #444444 !important;
+  margin-top: 14px !important;
 }
 
 body.comparables_page table .c_medium {
@@ -1818,7 +1859,7 @@ body.comparables_page table .c_price .info_art_price_1 {
   font-size: 18px;
   line-height: 18px;
   text-align: left;
-  color: #c2c2c2;
+  color: #666666;
   font-weight: 300;
 }
 
@@ -1829,17 +1870,17 @@ body.comparables_page table .c_price .info_art_price_1_1 {
   letter-spacing: -0.4px;
   text-align: left;
   font-weight: 300;
-  color: #c2c2c2;
+  color: #666666;
 }
 
 body.comparables_page table .c_price .info_art_price_2_1 {
   font-family: inherit;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.29;
   letter-spacing: -0.4px;
   text-align: left;
-  color: #222222;
+  color: #666;
 }
 
 body.comparables_page table .c_price .info_art_price_2 {
@@ -1855,6 +1896,7 @@ body.comparables_page table .c_price .info_art_price_2 {
 
 body.comparables_page table .c_price .info_art_price_2 span {
   display: inline-block;
+  letter-spacing: normal;
   margin-left: 8px;
   font-family: "Roboto", sans-serif;
   font-size: 11px;
@@ -1866,13 +1908,14 @@ body.comparables_page table .c_price .info_art_price_2 span {
 body.comparables_page table .c_saleinfo {
   vertical-align: top;
   width: 161px;
-  padding-top: 37px !important;
+  padding-top: 65px !important;
 }
 
 body.comparables_page table .c_saleinfo p {
   font-size: 13px;
   text-align: left;
   color: #888888;
+  font-weight: 500;
 }
 
 body.comparables_page table .c_saleinfo p b {
@@ -1899,8 +1942,7 @@ body.comparables_page table tr .c_m_txt {
 }
 
 body.comparables_page table tr .c_figure {
-  vertical-align: top;
-  padding-top: 37px !important;
+  vertical-align: middle;
 }
 
 body.comparables_page table tr .c_figure img {
