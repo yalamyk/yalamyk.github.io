@@ -1306,6 +1306,9 @@ body {
                 text-align: left;
                 color: #9fabb3;
             }
+            .info_art_price_2{
+                margin-top: 23px !important;
+            }
         }
         table{
             .c_artwork{
@@ -1357,14 +1360,15 @@ body {
                 vertical-align: top;
                 width:161px;
                 padding-top: 65px !important;
-                
+                font-weight: 400;
                 p{
                     font-size: 13px;
                     text-align: left;
                     color: #888888;
-                    font-weight: 500;
+                    
                     b{
                         display: block;
+                        font-weight: 400;
                         font-size:14px;
                         color:#222222;
                         margin-bottom: 7px;

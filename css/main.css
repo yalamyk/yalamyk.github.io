@@ -1237,7 +1237,7 @@ body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_pri
 }
 
 body.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_2 {
-  margin-top: 10px;
+  margin-top: 12px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 500;
@@ -1721,6 +1721,10 @@ body.comparables_page .fixed_area .title_artist_info {
   color: #9fabb3;
 }
 
+body.comparables_page .fixed_area .info_art_price_2 {
+  margin-top: 23px !important;
+}
+
 body.comparables_page table .c_artwork {
   width: 362px !important;
   padding-left: 50px;
@@ -1884,7 +1888,7 @@ body.comparables_page table .c_price .info_art_price_2_1 {
 }
 
 body.comparables_page table .c_price .info_art_price_2 {
-  margin-top: 10px;
+  margin-top: 12px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 500;
@@ -1909,17 +1913,18 @@ body.comparables_page table .c_saleinfo {
   vertical-align: top;
   width: 161px;
   padding-top: 65px !important;
+  font-weight: 400;
 }
 
 body.comparables_page table .c_saleinfo p {
   font-size: 13px;
   text-align: left;
   color: #888888;
-  font-weight: 500;
 }
 
 body.comparables_page table .c_saleinfo p b {
   display: block;
+  font-weight: 400;
   font-size: 14px;
   color: #222222;
   margin-bottom: 7px;
