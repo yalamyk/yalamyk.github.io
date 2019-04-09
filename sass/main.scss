@@ -169,17 +169,18 @@ body {
                     color: #fff;
                     border-bottom: solid 1px #454d54;
                     background-color: transparent;
-                    padding-right: 30px;
+                    padding-right: 50px;
                     box-sizing: border-box;
+                    @include ellipsis(1);
                     @include input_has_value();
                 }
                 #search_button {
-                    background: url("../img/m_search_icon.png");
+                    background: url(../img/m_search_icon.png) no-repeat center center;
                     position: absolute;
-                    top: 15px;
+                    top: 0px;
                     right: 1px;
-                    width: 23px;
-                    height: 24px;
+                    width: 50px;
+                    height: 56px;
                     display: block;
                     text-indent: -10000px;
                 }
