@@ -2189,6 +2189,20 @@ body.forget_pass #contents h2 {
   margin-bottom: 10px !important;
 }
 
+body.forget_pass #contents h2 .err_status {
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  font-weight: 100;
+  display: block;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ea7963;
+  margin-bottom: 40px;
+}
+
 body.forget_pass #contents p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -2200,6 +2214,10 @@ body.forget_pass #contents p {
   line-height: 1.47;
   word-break: break-all;
   margin-bottom: 24px;
+}
+
+body.forget_pass #contents .p_email {
+  text-decoration: underline;
 }
 
 body.forget_pass #contents img {
@@ -2269,6 +2287,25 @@ body.forget_pass #contents .done {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   width: 125px;
+  height: 44px;
+  line-height: 44px;
+  color: #a3b3c2;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+body.forget_pass #contents .long_done {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  width: 162px;
   height: 44px;
   line-height: 44px;
   color: #a3b3c2;

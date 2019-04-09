@@ -1611,11 +1611,27 @@ body {
             h2{
                 @include intro_h2;
                 margin-bottom:10px !important;
+                .err_status{
+                    font-family: $default_font;
+                    font-size: 70px;
+                    font-weight: 100;
+                    display: block;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 0.43;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #ea7963;
+                    margin-bottom: 40px;
+                }
             }
             p{
                 @include intro_p;
                 word-break: break-all;
                 margin-bottom:24px;
+            }
+            .p_email{
+                text-decoration: underline;
             }
             img{
                 margin:0 auto;
@@ -1642,7 +1658,16 @@ body {
                 margin-top: 30px;
                 font-size:15px;
             }
-            
+            .long_done{
+                @include input_button_w100;
+                width: 162px;
+                height: 44px;
+                line-height:44px;
+                color:#a3b3c2;
+                margin:$block_center;
+                margin-top: 30px;
+                font-size:15px;
+            }
             .save_password{
                 @include input_button_w100;
                 border: solid 1px #454d54;
