@@ -625,6 +625,14 @@ body {
                         &.f_size{
                             width:222px;
                             margin-right: 35px;
+                            .custom-select{
+                                float: right;
+                            }
+                            .select-items{
+                                div{
+                                    width: 75px;
+                                }
+                            }
                         }
                         &.f_price{
                             width:222px;
@@ -1280,6 +1288,13 @@ body {
         }
         .search_main{
             height: 212px;
+            p{
+                padding-left: 77px;
+                margin-bottom:19px;
+            }
+            h2{
+                padding-left: 77px;
+            }
         }
         .fixed_area{
             width:100%;
@@ -1293,15 +1308,16 @@ body {
             .c_m_txt,
             .c_f_txt{
                 width: auto !important;
-                font-size: 18px;
+                font-size: 18px !important;
                 font-weight: 300;
                 letter-spacing: center;
                 line-height: 100px;
                 text-align: center;
                 color: #222222;
             }
+            .title_artist{font-size: 14px !important;}
             .title_artist_info{
-                font-size: 14px;
+                font-size: 14px !important;
                 line-height: 1.14;
                 text-align: left;
                 color: #9fabb3;
@@ -1322,23 +1338,21 @@ body {
                     img{
                     }
                 }
-                .title_artist{
-                    font-size: 12px;
-                    font-weight: 700;
-                    line-height: 1.33;
-                    text-align: left;
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #444444 !important;
-                }
+                
                 .title_art{
-                    font-size: 16px !important;
+                    font-size: 16px;
                     line-height: 20px !important;
                     font-weight: 500 !important; 
                     text-align: left !important;                                            
                     text-transform: uppercase;
                     color: #444444 !important;
                     margin-top: 14px !important;
+                }
+                .title_artist{
+                    font-size: 12px;
+                    text-align: left;
+                    font-weight: 500;
+                    color: #444444 !important;
                 }
             }
             .c_medium{
