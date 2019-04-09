@@ -86,7 +86,7 @@ input[type="radio"]:checked + label span {
   bottom: 0px;
   left: 50%;
   margin-left: -780px;
-  z-index: -1;
+  z-index: -1 !important;
   width: 1562px;
   z-index: 99999;
   height: 170px;
@@ -194,7 +194,7 @@ body.user_intro #footer {
 body.user_intro #footer p {
   padding-top: 18px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #454d54;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -202,12 +202,15 @@ body.user_intro #footer p {
   font-weight: 400;
   text-align: center;
   color: #4d555b;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
 }
 
 body.user_intro #contents {
   clear: both;
   height: 580px;
-  padding-top: 116px;
+  padding-top: 173px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 500px;
@@ -227,10 +230,10 @@ body.user_intro #contents .forget_pass_link {
 body.user_intro #contents .monopoly {
   margin-top: 123px;
   width: 100%;
-  height: 54px;
+  height: 60px;
   border: solid 1px #454d54;
   text-align: left;
-  line-height: 54px;
+  line-height: 60px;
   font-size: 16px;
   color: #7e8a95;
   display: block;
@@ -316,7 +319,7 @@ body.user_intro #contents form fieldset legend {
 
 body.user_intro #contents form fieldset ul {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 body.user_intro #contents form fieldset ul li input {
@@ -380,9 +383,9 @@ body.user_intro #contents form fieldset .remember_class {
 }
 
 body.user_intro #contents form fieldset .btn_login {
-  margin-top: 21px;
+  margin-top: 30px;
   width: 100%;
-  height: 55px;
+  height: 64px;
   background-color: #fff;
   text-align: center;
   color: #000000;
@@ -2141,7 +2144,6 @@ body #contents {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 80px;
   /* start - main*/
   /* main end */
   /* forget password page stop */
