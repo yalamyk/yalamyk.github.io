@@ -225,6 +225,12 @@ body.user_intro #contents .forget_pass_link {
   margin-top: 25px;
   display: block;
   font-weight: 300;
+  text-decoration: none;
+  line-height: 19px;
+  border-bottom: solid 1px #7e8a95 !important;
+  width: 146px;
+  float: right;
+  display: block;
 }
 
 body.user_intro #contents .monopoly {
