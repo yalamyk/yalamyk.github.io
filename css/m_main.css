@@ -383,6 +383,7 @@ body #header a {
 
 body #header a .header_logo {
   position: absolute;
+  width: 177px;
   padding-top: 20px;
   padding-left: 30px;
 }
@@ -410,6 +411,8 @@ body #header .header_default a {
 
 body #header .header_default a .header_logo {
   left: 30px;
+  width: 153px;
+  display: block;
 }
 
 body #header .header_default a .go_back {

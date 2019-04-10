@@ -283,6 +283,7 @@ body {
             display:block;
             .header_logo {
                 position: absolute;
+                width:177px;
                 padding-top: 20px;
                 padding-left: 30px;
             }
@@ -307,6 +308,8 @@ body {
                 height:60px;
                 .header_logo {
                     left: 30px;
+                    width: 153px;
+                    display: block;
                 }
                 .go_back {
                     position: absolute;
