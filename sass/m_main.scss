@@ -48,7 +48,7 @@ input {
 
 .search_main {
     background-color: #232629;
-    padding: 34px 30px 0px 30px;
+    padding: 32px 30px 0px 30px;
     box-sizing: border-box;
     p {
         font-size: 16.67px;
@@ -880,7 +880,8 @@ body {
     min-height: 204px;
     padding-bottom: 30px;
     p {
-        margin-top: 14px;
+        margin: 18px 0 0 -1px;
+        letter-spacing: -0.3px;
     }
 }
 .artwork_list ul li {
@@ -911,6 +912,7 @@ body {
                 height: 20px;
                 @include ellipsis(1);
                 margin-bottom: 11px;
+                letter-spacing: 0.3px;
                 text-transform: uppercase;
             }
         }
@@ -934,6 +936,7 @@ body {
     text-align: left;
     color: #222222;
     margin-bottom: 11px;
+    letter-spacing: 0.1px;
 }
 
 .info_art {
@@ -989,10 +992,12 @@ body {
     font-family: inherit;
     font-size: 14px;
     line-height: 1.43;
-    letter-spacing: -0.4px;
+    /* letter-spacing: -0.4px; */
     text-align: left;
-    font-weight:300;
+    font-weight: 300;
     color: #c2c2c2;
+    letter-spacing: -0.5px;
+    margin-top: 3px;    margin-bottom: 12px;
 }
 .info_art_price_2_1{
     font-family: inherit;
@@ -1002,15 +1007,15 @@ body {
     letter-spacing: -0.4px;
     text-align: left;
     color: #222222;
-    margin-top: 7px;
+    margin-top: 5px;
 }
 .info_art_price_2 {
-    margin-top: 10px;
+    margin: 10px 0 0 -2px;
     font-family: inherit;
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.4px;
     text-align: left;
     color: #222222;
     span {
@@ -1023,7 +1028,7 @@ body {
 }
 
 .art_auction_info {
-    margin-top: 27px;
+    margin-top: 26px;
     font-family: inherit;
     font-size: 16px;
     font-weight: 300;
@@ -1032,18 +1037,16 @@ body {
     margin-bottom: 6px;
     span {
         width: 66px;
-        height: 19px;
-        border-radius: 9px;
+        height: 16px;
+        border-radius: 17px;
         border: solid 1px #a7afb7;
         background-color: #ffffff;
         display: inline-block;
         font-size: 10px;
         font-weight: bold;
-        line-height: 19px;
         text-align: center;
         color: #a7afb7;
-
-        font-family: $default_font;
+        font-family: "Roboto", sans-serif;
         font-size: 10px;
         font-weight: bold;
         letter-spacing: normal;
@@ -1057,6 +1060,8 @@ body {
     line-height: 19px;
     color: #444444;
     font-weight: 300;
+    letter-spacing: 0.1px;
+    margin: 8px 0 0 1px;
     b {
         display: block;
     }
