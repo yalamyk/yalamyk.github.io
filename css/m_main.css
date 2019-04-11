@@ -25,6 +25,17 @@
   text-align: center;
 }
 
+.test_page {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+}
+
+.test_page img {
+  opacity: 0.5;
+}
+
 html, body {
   height: 100%;
 }
@@ -42,7 +53,7 @@ input[type="checkbox"] + label span {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin: -2px 10px 0px 0px;
+  margin: -2px 13px 0px 0px;
   vertical-align: middle;
   background: url("../img/custom_input.png") -32px top no-repeat;
   cursor: pointer;
@@ -267,7 +278,7 @@ html.open {
   color: #ffffff;
   display: block;
   line-height: 75px;
-  padding: 0px 30px;
+  padding: 0px 33px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -287,7 +298,7 @@ html.open {
 
 .m_slider .slider_body fieldset {
   border-bottom: solid 2px #eef3f6;
-  padding: 32px 30px 30px 36px;
+  padding: 28px 30px 30px 34px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -410,7 +421,7 @@ body #header .header_default a {
 }
 
 body #header .header_default a .header_logo {
-  left: 30px;
+  left: 44px;
   width: 153px;
   display: block;
 }
@@ -1185,7 +1196,7 @@ body #footer p {
 }
 
 .artwork_search p {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .artwork_list ul li {
@@ -1228,11 +1239,12 @@ body #footer p {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
+  text-transform: uppercase;
 }
 
 .artwork_list ul li a {
-  padding: 90px 30px 40px 30px;
+  padding: 90px 30px 35px 30px;
   display: block;
   width: 100%;
   height: auto;
@@ -1249,7 +1261,7 @@ body #footer p {
   line-height: 14px;
   text-align: left;
   color: #222222;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .info_art {
@@ -1303,7 +1315,7 @@ body #footer p {
   text-align: left;
   color: #c2c2c2;
   font-weight: 300;
-  margin: 30px 0px 0px 0px;
+  margin: 26px 0px 0px 0px;
 }
 
 .info_art_price_1_1 {
@@ -1320,10 +1332,11 @@ body #footer p {
   font-family: inherit;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.29;
+  line-height: 14px;
   letter-spacing: -0.4px;
   text-align: left;
   color: #222222;
+  margin-top: 7px;
 }
 
 .info_art_price_2 {
@@ -1346,17 +1359,17 @@ body #footer p {
 }
 
 .art_auction_info {
-  margin-top: 33px;
+  margin-top: 27px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 18px;
   color: #666666;
-  margin-bottom: 14px;
+  margin-bottom: 6px;
 }
 
 .art_auction_info span {
-  width: 55px;
+  width: 66px;
   height: 19px;
   border-radius: 9px;
   border: solid 1px #a7afb7;
@@ -1367,6 +1380,10 @@ body #footer p {
   line-height: 19px;
   text-align: center;
   color: #a7afb7;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: normal;
 }
 
 .art_aution_place {
@@ -1393,12 +1410,23 @@ body #footer p {
   width: 100%;
 }
 
-.m_slider .size .size_unit {
+.m_slider .sub_legend2 {
+  font-family: inherit;
+  font-size: 11px;
+  text-align: left;
+  color: #666666;
+  margin-top: 10px;
+  font-weight: 300;
+  margin-top: 0px !important;
+  margin-bottom: 3px !important;
+}
+
+.m_slider .size_unit {
   float: right;
   /* width:170px; */
 }
 
-.m_slider .size .size_unit li {
+.m_slider .size_unit li {
   font-family: inherit;
   font-size: 14px;
   font-weight: normal;
@@ -1409,7 +1437,7 @@ body #footer p {
   color: #000000;
 }
 
-.m_slider .size .size_unit li:first-child {
+.m_slider .size_unit li:first-child {
   margin-right: 30px;
 }
 
@@ -1420,7 +1448,7 @@ body #footer p {
   text-align: left;
   color: #222222;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .m_slider .sub_legend {
@@ -1428,7 +1456,7 @@ body #footer p {
   font-size: 11px;
   text-align: left;
   color: #666666;
-  margin-top: 4px;
+  margin-top: 10px;
   font-weight: 300;
 }
 
@@ -1440,7 +1468,7 @@ body #footer p {
 
 .m_slider .slider_border {
   border-bottom: solid 2px #eef3f6;
-  margin: 20px 0px 20px 0px;
+  margin: 11px 0px 15px 0px;
 }
 
 .m_slider .inputarea {
@@ -1478,7 +1506,6 @@ body #footer p {
 }
 
 .m_slider ul {
-  clear: both;
   overflow: hidden;
   /* border-top:solid 2px #eef3f6; */
 }
@@ -1496,7 +1523,8 @@ body #footer p {
 }
 
 .m_slider .f_chk_list {
-  margin-bottom: 20px;
+  clear: both;
+  margin-bottom: 8px;
   border-top: solid 2px #eef3f6;
 }
 
@@ -1606,7 +1634,7 @@ body #footer p {
 /* artwork_list end */
 /* artwork_detail.html start */
 .slider_year {
-  padding: 32px 30px 30px 36px;
+  padding: 32px 30px 29px 36px !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1615,15 +1643,15 @@ body #footer p {
   font-family: inherit;
   font-size: 10px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 35px;
   display: inline-block;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 5px 0px 6px;
   color: #444444;
 }
 
 .filter_input2 {
   background-color: #eef3f6;
-  height: 30px;
+  height: 35px;
   width: 97px;
   padding: 0px 12px 0px 12px;
   -webkit-box-sizing: border-box;

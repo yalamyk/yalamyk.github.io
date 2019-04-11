@@ -32,6 +32,9 @@
         </script>
     </head>
     <body>
+        <div class="test_page">
+            <img src="../../img/lot_list.png" alt="">
+        </div>
         <div class="page_blur"></div>
         <div class="m_slider sort_wrap">
             <div class="slider_header">
@@ -121,13 +124,15 @@
                         <input type="number" class="filter_input2" id="picker_year_end" />
                     </fieldset>
                     <fieldset class="size"> 
-                        <legend>SIZE</legend>
+                        <legend>
+                            SIZE 
+                        </legend>
                         <ul class="size_unit">
                             <li><input type="radio" id="radio_cm"> <label for="radio_cm"><span></span>cm</label></li>
                             <li><input type="radio" id="radio_inches"> <label for="radio_inches"><span></span>inches</label></li>    
                         </ul>
                         <ul class="inputarea">
-                            <li class="sub_legend">HEIGHT</li>
+                            <li class="sub_legend2">HEIGHT</li>
                             <li>
                                 <input type="number" class="filter_input2" id="size_height_start" />
                                 <span class="f_i2_to">to</span>
@@ -135,7 +140,7 @@
                             </li>
                         </ul>
                         <ul class="inputarea">
-                                <li class="sub_legend">WIDTH</li>
+                                <li class="sub_legend2">WIDTH</li>
                                 <li>
                                     <input type="number" class="filter_input2" id="size_width_start" />
                                     <span class="f_i2_to">to</span>
@@ -147,7 +152,7 @@
                             <legend>PRICE <span>in USD</span></legend>
                             <input type="checkbox" id="price_all"> <label for="price_all" class="chk_all"><span></span>All</label>
                             <ul class="inputarea">
-                                <li class="sub_legend">SOLD</li>
+                                <li class="sub_legend2">SOLD</li>
                                 <li>
                                     <input type="number" class="filter_input2" id="size_height_start" />
                                     <span class="f_i2_to">to</span>
@@ -155,7 +160,7 @@
                                 </li>
                             </ul>
                             <ul class="inputarea">
-                                <li class="sub_legend">ESTIMATE</li>
+                                <li class="sub_legend2">ESTIMATE</li>
                                 <li>
                                     <input type="number" class="filter_input2" id="size_width_start" />
                                     <span class="f_i2_to">to</span>
@@ -167,13 +172,13 @@
                         <legend>ADVANCED SEARCH</legend>
                         <input type="checkbox" id="advanced_all"> <label for="advanced_all" class="chk_all"><span></span>All</label>
                         <ul class="inputarea">
-                            <li class="sub_legend">TITLE</li>
+                            <li class="sub_legend2">TITLE</li>
                             <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. flowers"></li>
 
-                            <li class="sub_legend">AUCTION HOUSE</li>
+                            <li class="sub_legend2">AUCTION HOUSE</li>
                             <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. Christie’s New York"></li>
 
-                            <li class="sub_legend">SALE DATE</li>
+                            <li class="sub_legend2">SALE DATE</li>
                             <li>
                                 <input type="text" name="datefilter" value="" />
                                 <!-- <input type="date" class="filter_input2" id="size_height_start" />
@@ -181,10 +186,10 @@
                                 <input type="date" class="filter_input2" id="size_height_end" /> -->
                             </li>
 
-                            <li class="sub_legend">SALE TITLE</li>
+                            <li class="sub_legend2">SALE TITLE</li>
                             <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. Contemporary Art Eve..."></li>
                             
-                            <li class="sub_legend">LOT NUMBER</li>
+                            <li class="sub_legend2">LOT NUMBER</li>
                             <li>
                                 <input type="number" class="filter_input2" id="size_height_start" />
                                 <span class="f_i2_to">to</span>
@@ -209,7 +214,7 @@
             </div>
             <div id="contents">
                 <div class="search_main artwork_search">
-                    <h2 class="search_title">Jan van deCappelle</h2>
+                    <h2 class="search_title">Jan van de Cappelle</h2>
                     <p>Spain, France, 1881-1973</p>
                 </div>
                 <div class="search_list artist_list_area">
@@ -237,23 +242,21 @@
                                     </div>
                                     <div class="txt_area">
                                         <dl>
-                                            <dt class="title_artist">Pablo Picasso</dt>
-                                            <dd class="title_art">A javanese vil test test</dd>
-                                            <dd class="info_art">Woodcut on handmade Suz test test</dd>
-                                            <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
-                                            <dd class="info_art">0.6 × 105.4 × 0.5 cm</dd>
-                                            <dd class="info_art_price_1">$800,000 - $900,000</dd>
-                                            <dd class="info_art_price_1_1">$800,000 - $900,000</dd>
-                                            <dd class="info_art_price_2">$1,670,000 <span>Premium</span> </dd> 
-                                            <dd class="info_art_price_2_1">₩1,670,000,000 </dd> 
+                                                <dt class="title_artist">Jan van de Cappelle</dt>
+                                                <dd class="title_art">A javanese vil test test</dd>
 
-                                            <dt class="art_auction_info">03 Mar 2018 <span>Premium</span> </dt>
-                                            <dd class="art_aution_place">
-                                                <b>PHILLIPS, LONDON</b>
-                                                20Century &amp; Contemporary Art
-                                                <br>Lot. 20
-                                            </dd>
-                                            <dd class="art_aution_place_2"></dd>
+                                                <dd class="info_art">Woodcut on handmade Suz test test</dd>
+                                                <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
+                                                <dd class="info_art">80.6 × 105.4 × 0.5 cm</dd>
+                                                <dd class="info_art_price_1">$800,000 - $900,000</dd>
+                                                <dd class="info_art_price_2">$1,670,000 <span>Premium</span> </dd> 
+                                                
+                                                <dt class="art_auction_info">03 Mar 2018 <span>UPCOMING</span> </dt>
+                                                <dd class="art_aution_place">
+                                                    <b>PHILLIPS, LONDON</b>
+                                                    20Century &amp; Contemporary Art Lot. 20
+                                                </dd>
+                                                <dd class="art_aution_place_2"></dd>
                                         </dl>
                                     </div>
                                 </a>
@@ -270,20 +273,23 @@
                                     </div>
                                     <div class="txt_area">
                                         <dl>
-                                            <dt class="title_artist">Pablo Picasso Pablo Picasso Pablo Picasso Pablo Picasso Pablo Picasso</dt>
-                                            <dd class="title_art">A javanese vil test test A javanese vil test test A javanese vil test test A javanese vil test test </dd>
-                                            <dd class="info_art">Woodcut on handmade Suz test test Woodcut on handmade Suz test test Woodcut on handmade Suz test test</dd>
-                                            <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
-                                            <dd class="info_art">0.6 × 105.4 × 0.5 cm</dd>
-                                            <dd class="info_art_price_1">$800,000,000,000 - $900,000,000,000</dd>
-                                            <dd class="info_art_price_2">$1,670,000,000,000 <span>Premium</span> </dd> 
-                                            
-                                            <dt class="art_auction_info">03 Mar 2018 <span>Premium</span> </dt>
-                                            <dd class="art_aution_place">
-                                                <b>PHILLIPS, LONDON</b>
-                                                20Century &amp; Contemporary Art Lot. 20
-                                            </dd>
-                                            <dd class="art_aution_place_2"></dd>
+                                                <dt class="title_artist">Pablo Picasso</dt>
+                                                <dd class="title_art">A javanese vil test test</dd>
+                                                <dd class="info_art">Woodcut on handmade Suz test test</dd>
+                                                <dd class="info_art">31 3/4 × 41 1/2 × 1/5 in</dd>
+                                                <dd class="info_art">0.6 × 105.4 × 0.5 cm</dd>
+                                                <dd class="info_art_price_1">$800,000 - $900,000</dd>
+                                                <dd class="info_art_price_1_1">₩800,000 - ₩900,000</dd>
+                                                <dd class="info_art_price_2">$1,670,000 <span>Premium</span> </dd> 
+                                                <dd class="info_art_price_2_1">₩1,670,000,000</dd> 
+    
+                                                <dt class="art_auction_info">03 Mar 2018 <span>UPCOMING</span> </dt>
+                                                <dd class="art_aution_place">
+                                                    <b>PHILLIPS, LONDON</b>
+                                                    20Century &amp; Contemporary Art
+                                                    <br>Lot. 20
+                                                </dd>
+                                                <dd class="art_aution_place_2"></dd>
                                         </dl>
                                     </div>
                                 </a>
