@@ -265,7 +265,7 @@ body {
             margin: 0px 30px;
             clear: both;
             height: 580px;
-            padding-top: 116px;
+            padding-top: 106px;
             box-sizing: border-box;
             
         }
@@ -379,7 +379,7 @@ body {
 				}
 				ul {
 					width: 100%;
-					margin-bottom: 28px;
+					margin-bottom: 29px;
 					li input {
 						width: 100%;
 						height: 56px;
@@ -389,15 +389,22 @@ body {
 						color:#fff;
 						background-color: transparent;
 						border-bottom: solid 1px #454545;
-						@include input-has-value();
+                        @include input_has_value();
+                        &::placeholder{
+                            line-height: 0px;
+                            padding-bottom: 0px;
+                        }
 					}
 				}
 				#remember_id {
-					width: 15px;
-					height: 15px;
 					margin-right: 10px;
                     border: solid 1px #7e8a95;
                     @include custtom_check2;
+                    + label span {
+                        width: 17px !important;
+                        height: 17px !important;
+                        margin: -2px 6px 0px 0px !important;
+                    }
 				}
 				.remember_class {
 					font-size: 14px;
@@ -405,20 +412,21 @@ body {
 					font-weight: 300;
 				}
 				.btn_login {
-					margin-top: 21px;
-					width: 100%;
-					height: 55px;
-					background-color: #fff;
-					text-align: center;
-					color: #000000;
-					font-size: 16px;
-					display: block;
-					appearance: none;
-					-moz-appearance: none;
-					/* Firefox */
-					-webkit-appearance: none;
-					/* Safari and Chrome */
-					font-weight: 500;
+                    margin-top: 29px;
+                    width: 100%;
+                    height: 64px;
+                    background-color: #fff;
+                    text-align: center;
+                    color: #000000;
+                    font-size: 16px;
+                    display: block;
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    font-weight: 500;
+                    /* margin-top: 10px; */
+                    padding-top: 6px;
+                    letter-spacing: -0.4px;
 				}
 			}
         }
@@ -841,15 +849,18 @@ body {
     text-align: right;
     font-style: none;
     text-decoration: underline;
-    margin-top: 25px;
+    margin-top: 18px;
     display: block;
     font-weight: 300;
     text-decoration: none;
-    line-height: 19px;
+    line-height: 17px;
     border-bottom: solid 1px #7e8a95 !important;
-    width: 146px;
+    width: 142px;
     float: right;
     display: block;
+    letter-spacing: -0.1px;
+    text-align: left;
+
 }
 
 .monopoly {

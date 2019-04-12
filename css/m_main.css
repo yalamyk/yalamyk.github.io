@@ -358,7 +358,7 @@ body.user_intro #contents {
   margin: 0px 30px;
   clear: both;
   height: 580px;
-  padding-top: 116px;
+  padding-top: 106px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -515,7 +515,7 @@ body #contents form fieldset legend {
 
 body #contents form fieldset ul {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 body #contents form fieldset ul li input {
@@ -550,9 +550,27 @@ body #contents form fieldset ul li input:active, body #contents form fieldset ul
   border-bottom: solid 1px #ffffff !important;
 }
 
+body #contents form fieldset ul li input::-webkit-input-placeholder {
+  line-height: 0px;
+  padding-bottom: 0px;
+}
+
+body #contents form fieldset ul li input:-ms-input-placeholder {
+  line-height: 0px;
+  padding-bottom: 0px;
+}
+
+body #contents form fieldset ul li input::-ms-input-placeholder {
+  line-height: 0px;
+  padding-bottom: 0px;
+}
+
+body #contents form fieldset ul li input::placeholder {
+  line-height: 0px;
+  padding-bottom: 0px;
+}
+
 body #contents form fieldset #remember_id {
-  width: 15px;
-  height: 15px;
   margin-right: 10px;
   border: solid 1px #7e8a95;
   display: none;
@@ -572,6 +590,12 @@ body #contents form fieldset #remember_id:checked + label span {
   background: url("../img/custom_input.png") -16px top no-repeat;
 }
 
+body #contents form fieldset #remember_id + label span {
+  width: 17px !important;
+  height: 17px !important;
+  margin: -2px 6px 0px 0px !important;
+}
+
 body #contents form fieldset .remember_class {
   font-size: 14px;
   color: #7e8a95;
@@ -579,9 +603,9 @@ body #contents form fieldset .remember_class {
 }
 
 body #contents form fieldset .btn_login {
-  margin-top: 21px;
+  margin-top: 29px;
   width: 100%;
-  height: 55px;
+  height: 64px;
   background-color: #fff;
   text-align: center;
   color: #000000;
@@ -589,10 +613,11 @@ body #contents form fieldset .btn_login {
   display: block;
   appearance: none;
   -moz-appearance: none;
-  /* Firefox */
   -webkit-appearance: none;
-  /* Safari and Chrome */
   font-weight: 500;
+  /* margin-top: 10px; */
+  padding-top: 6px;
+  letter-spacing: -0.4px;
 }
 
 body #contents .main_txtarea {
@@ -1151,15 +1176,17 @@ body #footer p {
   text-align: right;
   font-style: none;
   text-decoration: underline;
-  margin-top: 25px;
+  margin-top: 18px;
   display: block;
   font-weight: 300;
   text-decoration: none;
-  line-height: 19px;
+  line-height: 17px;
   border-bottom: solid 1px #7e8a95 !important;
-  width: 146px;
+  width: 142px;
   float: right;
   display: block;
+  letter-spacing: -0.1px;
+  text-align: left;
 }
 
 .monopoly {
