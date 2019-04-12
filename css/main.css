@@ -111,6 +111,7 @@ input[type="radio"]:checked + label span {
   overflow: hidden;
   background-color: #232629;
   padding: 36px 30px 78px 30px;
+  margin-top: 79px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
