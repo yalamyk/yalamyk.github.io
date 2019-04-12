@@ -6,7 +6,7 @@
 .footarea{height: 60px;}
 .txt_center{text-align:$text_center;}
 .test_page{
-    position: relative;;
+    position: fixed;
     z-index: 999999;
     top: 0px;
     left: 0;
