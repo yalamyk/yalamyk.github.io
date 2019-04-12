@@ -33,7 +33,7 @@
     </head>
     <body>
         <div class="test_page">
-            <img src="../../img/lot_list.png" alt="">
+            <img src="../../img/lot_list_filter.png" alt="">
         </div>
         <div class="page_blur"></div>
         <div class="m_slider sort_wrap">
@@ -68,7 +68,7 @@
                 </form>
             </div>
         </div>
-        <div class="m_slider filter_wrap">
+        <div class="m_slider filter_wrap open">
             <div class="slider_header">
                 <title>Filters</title>
                 <button class="close_filter">CLOSE</button>
@@ -96,6 +96,7 @@
                                 <input type="checkbox" id="custom_chk5"> <label for="custom_chk5"><span></span>Works On Paper</label>
                             </li>
                             <li class="slider_border"></li>
+                            <li class="sub_legend3">ETC.</li>
                             <li>
                                 <input type="checkbox" id="custom_chk6"> <label for="custom_chk6"><span></span>Asian Art</label>
                             </li>
@@ -121,7 +122,7 @@
                         <legend>YEAR</legend>
                         <input type="number" class="filter_input2" id="picker_year_start" />
                         <span class="f_i2_to">to</span>
-                        <input type="number" class="filter_input2" id="picker_year_end" />
+                        <input type="number" class="filter_input2 f_2" id="picker_year_end" />
                     </fieldset>
                     <fieldset class="size"> 
                         <legend>
@@ -136,7 +137,7 @@
                             <li>
                                 <input type="number" class="filter_input2" id="size_height_start" />
                                 <span class="f_i2_to">to</span>
-                                <input type="number" class="filter_input2" id="size_height_end" />
+                                <input type="number" class="filter_input2 f_2" id="size_height_end" />
                             </li>
                         </ul>
                         <ul class="inputarea">
@@ -144,19 +145,18 @@
                                 <li>
                                     <input type="number" class="filter_input2" id="size_width_start" />
                                     <span class="f_i2_to">to</span>
-                                    <input type="number" class="filter_input2" id="size_width_end" />
+                                    <input type="number" class="filter_input2 f_2" id="size_width_end" />
                                 </li>
                             </ul>
                     </fieldset>
                     <fieldset class="price"> 
                             <legend>PRICE <span>in USD</span></legend>
-                            <input type="checkbox" id="price_all"> <label for="price_all" class="chk_all"><span></span>All</label>
                             <ul class="inputarea">
                                 <li class="sub_legend2">SOLD</li>
                                 <li>
                                     <input type="number" class="filter_input2" id="size_height_start" />
                                     <span class="f_i2_to">to</span>
-                                    <input type="number" class="filter_input2" id="size_height_end" />
+                                    <input type="number" class="filter_input2 f_2" id="size_height_end" />
                                 </li>
                             </ul>
                             <ul class="inputarea">
@@ -164,19 +164,18 @@
                                 <li>
                                     <input type="number" class="filter_input2" id="size_width_start" />
                                     <span class="f_i2_to">to</span>
-                                    <input type="number" class="filter_input2" id="size_width_end" />
+                                    <input type="number" class="filter_input2 f_2" id="size_width_end" />
                                 </li>
                             </ul>
                         </fieldset>
                     <fieldset class="advanced"> 
                         <legend>ADVANCED SEARCH</legend>
-                        <input type="checkbox" id="advanced_all"> <label for="advanced_all" class="chk_all"><span></span>All</label>
                         <ul class="inputarea">
                             <li class="sub_legend2">TITLE</li>
                             <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. flowers"></li>
 
                             <li class="sub_legend2">AUCTION HOUSE</li>
-                            <li> <input type="text" id="" class="filter_input filter_medium" placeholder="e.g. Christie’s New York"></li>
+                            <li> <input type="text" id="" class="filter_input  filter_medium" placeholder="e.g. Christie’s New York"></li>
 
                             <li class="sub_legend2">SALE DATE</li>
                             <li>
@@ -193,7 +192,7 @@
                             <li>
                                 <input type="number" class="filter_input2" id="size_height_start" />
                                 <span class="f_i2_to">to</span>
-                                <input type="number" class="filter_input2" id="size_height_end" />
+                                <input type="number" class="filter_input2 f_2" id="size_height_end" />
                             </li>
                         </ul>
                     </fieldset>

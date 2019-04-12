@@ -26,13 +26,15 @@
 }
 
 .test_page {
-  position: fixed;
+  position: relative;
   z-index: 999999;
-  top: 0;
+  top: 0px;
   left: 0;
+  overflow-y: scroll;
 }
 
 .test_page img {
+  overflow-y: scroll;
   opacity: 0.5;
 }
 
@@ -210,7 +212,7 @@ input[type="radio"]:checked + label span {
 
 input[name=datefilter] {
   width: 227px;
-  height: 31px;
+  height: 35px;
   border-radius: 2px;
   background-color: #eef3f6;
   font-family: inherit;
@@ -251,7 +253,6 @@ html.open {
   overflow-y: auto;
   overflow-x: hidden;
   width: 290px;
-  height: 100%;
   position: fixed;
   top: 0px;
   right: -9999px;
@@ -298,7 +299,7 @@ html.open {
 
 .m_slider .slider_body fieldset {
   border-bottom: solid 2px #eef3f6;
-  padding: 28px 30px 30px 34px;
+  padding: 28px 0px 8px 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1415,6 +1416,8 @@ body #footer p {
 .m_slider .slider_year legend {
   display: block;
   width: 100%;
+  margin-bottom: 17px;
+  letter-spacing: 0.6px;
 }
 
 .m_slider .sub_legend2 {
@@ -1425,11 +1428,35 @@ body #footer p {
   margin-top: 10px;
   font-weight: 300;
   margin-top: 0px !important;
-  margin-bottom: 3px !important;
+  margin-bottom: 9px !important;
+}
+
+.m_slider .sub_legend3 {
+  font-family: inherit;
+  font-size: 11px;
+  text-align: left;
+  color: #666666;
+  margin: 18px 0 14px 0;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+
+.m_slider .size {
+  padding: 33px 0px 8px 35px !important;
+}
+
+.m_slider .size legend {
+  margin-bottom: 18px !important;
+}
+
+.m_slider .size .inputarea {
+  margin-top: -2px;
 }
 
 .m_slider .size_unit {
   float: right;
+  height: 25px;
+  padding: 0 31px 0 0;
   /* width:170px; */
 }
 
@@ -1445,7 +1472,7 @@ body #footer p {
 }
 
 .m_slider .size_unit li:first-child {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .m_slider legend {
@@ -1456,6 +1483,7 @@ body #footer p {
   color: #222222;
   float: left;
   margin-bottom: 21px;
+  letter-spacing: 0.3px;
 }
 
 .m_slider .sub_legend {
@@ -1463,7 +1491,7 @@ body #footer p {
   font-size: 11px;
   text-align: left;
   color: #666666;
-  margin-top: 10px;
+  margin: 18px 0 14px 0;
   font-weight: 300;
 }
 
@@ -1473,9 +1501,13 @@ body #footer p {
           box-sizing: border-box;
 }
 
+.m_slider .category .sub_legend {
+  letter-spacing: 0px !important;
+}
+
 .m_slider .slider_border {
   border-bottom: solid 2px #eef3f6;
-  margin: 11px 0px 15px 0px;
+  margin: 27px 0px 21px 0px;
 }
 
 .m_slider .inputarea {
@@ -1486,14 +1518,26 @@ body #footer p {
   margin-bottom: 9px;
 }
 
+.m_slider .price {
+  padding: 27px 0px 7px 35px !important;
+}
+
+.m_slider .price legend {
+  margin: 2px 0px 16px 0;
+}
+
 .m_slider .price legend span {
   font-family: inherit;
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.14;
   text-align: left;
   color: #888888;
-  margin-left: 9px;
+  margin-left: 6px;
+  letter-spacing: -0.1px;
+}
+
+.m_slider .price .inputarea {
+  margin: -3px 0 0 0;
 }
 
 .m_slider .chk_all {
@@ -1502,6 +1546,7 @@ body #footer p {
   text-align: left;
   color: #000000;
   float: right;
+  padding: 1px 34px 0 0;
 }
 
 .m_slider .check_all {
@@ -1518,7 +1563,10 @@ body #footer p {
 }
 
 .m_slider ul li {
-  line-height: 25px;
+  overflow: hidden;
+  /*line-height: 25px; */
+  margin-bottom: 19.8px;
+  letter-spacing: 0.2px;
 }
 
 .m_slider ul li label {
@@ -1531,7 +1579,7 @@ body #footer p {
 
 .m_slider .f_chk_list {
   clear: both;
-  margin-bottom: 8px;
+  margin-bottom: -7px;
   border-top: solid 2px #eef3f6;
 }
 
@@ -1560,32 +1608,36 @@ body #footer p {
 
 .filter_input {
   width: 227px;
-  height: 31px;
+  height: 35px;
   border-radius: 2px;
   background-color: #eef3f6;
   font-family: inherit;
   font-size: 15px;
   font-weight: 300;
-  line-height: 1.07;
   text-align: left;
-  padding: 0px 12px 0px 12px;
+  padding: 10px 12px 10px 12px;
+  margin: -5px 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .filter_input::-webkit-input-placeholder {
+  letter-spacing: 0.2px;
   color: #bbb !important;
 }
 
 .filter_input:-ms-input-placeholder {
+  letter-spacing: 0.2px;
   color: #bbb !important;
 }
 
 .filter_input::-ms-input-placeholder {
+  letter-spacing: 0.2px;
   color: #bbb !important;
 }
 
 .filter_input::placeholder {
+  letter-spacing: 0.2px;
   color: #bbb !important;
 }
 
@@ -1598,7 +1650,7 @@ body #footer p {
   text-align: left;
   color: #777777;
   float: right;
-  padding: 22px 34px 21px 25px;
+  padding: 25px 34px 28px 25px;
 }
 
 .filter_refresh span {
@@ -1607,14 +1659,14 @@ body #footer p {
   width: 17px;
   height: 14px;
   position: absolute;
-  top: 22px;
+  top: 25px;
   left: 0px;
 }
 
 .filer_search {
   width: 100%;
-  height: 53px;
-  line-height: 53px;
+  height: 64px;
+  font-weight: bold;
   background-color: #000;
   font-family: inherit;
   font-size: 15px;
@@ -1634,16 +1686,32 @@ body #footer p {
   right: 22px;
 }
 
-.advanced .inputarea li:not(.sub_legend) {
-  margin-bottom: 16px;
+.advanced {
+  padding: 28px 0px 9px 35px !important;
+}
+
+.advanced legend {
+  letter-spacing: 0.1px;
+  margin-bottom: 17px;
+}
+
+.advanced .sub_legend2 {
+  letter-spacing: 0.1px;
+  margin-bottom: 10px !important;
+}
+
+.advanced .inputarea li:not(.sub_legend2) {
+  height: 35px;
+  margin: 0 0 17px 0 !important;
 }
 
 /* artwork_list end */
 /* artwork_detail.html start */
 .slider_year {
-  padding: 32px 30px 29px 36px !important;
+  padding: 31px 0px 29px 34px !important;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  letter-spacing: -0.4px;
+  box-sizing: border-box;
 }
 
 .f_i2_to {
@@ -1652,14 +1720,14 @@ body #footer p {
   font-weight: 300;
   line-height: 35px;
   display: inline-block;
-  padding: 0px 5px 0px 6px;
+  padding: 0px 8px 0px 7px;
   color: #444444;
 }
 
 .filter_input2 {
   background-color: #eef3f6;
   height: 35px;
-  width: 97px;
+  width: 100px;
   padding: 0px 12px 0px 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1669,6 +1737,10 @@ body #footer p {
   line-height: 1.07;
   text-align: left;
   color: #444;
+}
+
+.f_2 {
+  width: 97px !important;
 }
 
 .art_ex {
