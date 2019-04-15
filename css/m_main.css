@@ -277,9 +277,10 @@ input[type="radio"]:checked + label span {
 /** 1. 감섹 결과 레이아웃 **/
 .search_main {
   background-color: #232629;
-  padding: 32px 30px 0px 30px;
+  padding: 38px 30px 0px 30px;
+  letter-spacing: -0.4px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .search_main p {
@@ -294,6 +295,7 @@ input[type="radio"]:checked + label span {
   color: #fff;
   width: 100%;
   line-height: 48px;
+  font-weight: bold;
 }
 
 .search_list .artist_list {
@@ -317,12 +319,13 @@ input[type="radio"]:checked + label span {
 .search_list .list_total {
   font-family: inherit;
   font-size: 14px;
-  height: 64px;
-  line-height: 64px;
+  height: 63px;
+  line-height: 69px;
   text-align: left;
   color: #888888;
   padding-left: 30px;
   font-weight: 300;
+  letter-spacing: 0.2px;
 }
 
 .search_list .list_total span {
@@ -908,7 +911,7 @@ body #contents .artist_list_area .artist_list .artist_noresult button {
 body #contents .artist_list_area .artist_list li a {
   min-height: 74px;
   border-bottom: solid 1px #eff5f7;
-  padding: 20px 40px 20px 0px;
+  padding: 18px 40px 19px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
@@ -938,6 +941,7 @@ body #contents .artist_list_area .artist_list li a p {
   line-height: 18px;
   text-align: left;
   color: #222222;
+  letter-spacing: 0.3px;
 }
 
 body #contents .detail_info {
