@@ -503,7 +503,7 @@ body.user_intro #contents {
   margin: 0px 30px;
   clear: both;
   height: 580px;
-  padding-top: 106px;
+  padding-top: 132px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -514,7 +514,7 @@ body.user_intro #footer {
 }
 
 body.user_intro #footer p {
-  padding-top: 18px;
+  padding-top: 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #454d54;
@@ -608,16 +608,18 @@ body #contents form {
 
 body #contents form .search_box {
   width: 100%;
-  height: 56px;
-  font-size: 20px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
   color: #fff;
   border-bottom: solid 1px #454d54;
   background-color: transparent;
   padding-right: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-bottom: 5px;
+  box-sizing: border-box;
 }
 
 body #contents form .search_box ::-webkit-input-placeholder {
@@ -641,11 +643,27 @@ body #contents form .search_box:active, body #contents form .search_box:hover, b
   border-bottom: solid 1px #ffffff !important;
 }
 
+body #contents form .search_box::-webkit-input-placeholder {
+  letter-spacing: 0.1px;
+}
+
+body #contents form .search_box:-ms-input-placeholder {
+  letter-spacing: 0.1px;
+}
+
+body #contents form .search_box::-ms-input-placeholder {
+  letter-spacing: 0.1px;
+}
+
+body #contents form .search_box::placeholder {
+  letter-spacing: 0.1px;
+}
+
 body #contents form #search_button {
   background: url("../img/m_search_icon.png");
   position: absolute;
-  top: 15px;
-  right: 1px;
+  top: 1px;
+  right: 2px;
   width: 23px;
   height: 24px;
   display: block;
@@ -770,15 +788,16 @@ body #contents .main_txtarea {
   font-family: inherit;
   font-size: 13px;
   line-height: 17px;
+  letter-spacing: 0.1px;
   width: 100%;
   font-weight: 300;
-  margin-top: 125px;
-  word-break: break-word;
+  margin-top: 128px;
+  word-break: break-all;
 }
 
 body #contents .main_txtarea p {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 17px;
 }
 
 body #contents .artist_search {
