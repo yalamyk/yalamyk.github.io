@@ -10,7 +10,7 @@
 .test_artwork_list{@include test_page('../img/test_artwork_list.png');}
 .test_artwork_detail{@include test_page('../img/test_artwork_details.png');}
 .test_artist_list{@include test_page('../img/test_artist_list.png');}
-.test_artist_list_noresult{@include test_page('../img/test_artist_list_noresult.png');}
+.test_artist_list_noresult{@include test_page('../img/test_artist_list_noresults.png');}
 .test_comparables{@include test_page('../img/test_comparables.png');}
 .test_forget_pass1{@include test_page('../img/test_forgot_password_1.png');}
 .test_forget_pass2{@include test_page('../img/test_forgot_password_2.png');}
@@ -69,6 +69,7 @@ input {
     .search_title {
         font-size: 40px;
         line-height: 40px;
+        font-family: "Roboto", sans-serif;
         color: #fff;
         width: 100%;
         line-height: 48px;
@@ -513,9 +514,10 @@ body {
                         line-height: 1.11;
                         text-align: left;
                         color: #222222;
-                        margin-bottom: 17px;
+                        margin-bottom: 10px;
                         display: block;
                         padding-top: 20px;
+                        letter-spacing: 0.1px;
                     }
                     p{
                         font-family: $default_font;
@@ -523,8 +525,9 @@ body {
                         line-height: 1.43;
                         text-align: left;
                         color: #999999;
-                        font-weight: 300;
-                        margin-bottom: 30px;
+                        font-weight: normal;
+                        margin-bottom: 27px;
+                        margin-left: 2px;
                     }
                     button{
                         @include input_button_w100;

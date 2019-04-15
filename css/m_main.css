@@ -92,7 +92,7 @@
   height: 100%;
   opacity: 0.5;
   overflow-y: scroll;
-  background: url("../img/test_artist_list_noresult.png") no-repeat;
+  background: url("../img/test_artist_list_noresults.png") no-repeat;
   background-size: cover;
 }
 
@@ -292,6 +292,7 @@ input[type="radio"]:checked + label span {
 .search_main .search_title {
   font-size: 40px;
   line-height: 40px;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   width: 100%;
   line-height: 48px;
@@ -875,9 +876,10 @@ body #contents .artist_list_area .artist_list .artist_noresult span {
   line-height: 1.11;
   text-align: left;
   color: #222222;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
   display: block;
   padding-top: 20px;
+  letter-spacing: 0.1px;
 }
 
 body #contents .artist_list_area .artist_list .artist_noresult p {
@@ -886,8 +888,9 @@ body #contents .artist_list_area .artist_list .artist_noresult p {
   line-height: 1.43;
   text-align: left;
   color: #999999;
-  font-weight: 300;
-  margin-bottom: 30px;
+  font-weight: normal;
+  margin-bottom: 27px;
+  margin-left: 2px;
 }
 
 body #contents .artist_list_area .artist_list .artist_noresult button {
