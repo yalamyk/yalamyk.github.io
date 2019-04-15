@@ -3,24 +3,25 @@
 /**** 모바일 코딩 기준 : 360px ****/
 /*** 반복사용 class start ***/
 /** 0. custom checkbox & radio **/
+
+/*퍼블리싱 확인용 화면 */
+.test_login{@include test_page('../img/test_login.png');}
+.test_main{@include test_page('../img/test_main.png');}
+.test_artwork_list{@include test_page('../img/test_artist_list.png');}
+.test_artwork_detail{@include test_page('../img/test_artwork_details.png');}
+.test_artist_list_noresult{@include test_page('../img/test_artist_list_noresult.png');}
+.test_comparables{@include test_page('../img/test_comparables.png');}
+.test_forget_pass1{@include test_page('../img/test_forgot_password_1.png');}
+.test_forget_pass2{@include test_page('../img/test_forgot_password_2.png');}
+.test_forget_pass3{@include test_page('../img/test_forgot_password_3.png');}
+.test_setpass1{@include test_page('../img/test_set_password_1.png');}
+.test_setpass2{@include test_page('../img/test_set_password_2.png');}
+.test_404{@include test_page('../img/test_404.png');}
+/*퍼블리싱 확인용 화면 */
+
 .footarea{height: 60px;}
 .txt_center{text-align:$text_center;}
-.test_page{
-    position: fixed;
-    z-index: 999999;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height:100%;
-    opacity: 0.5;
-    overflow-y: scroll;
-    background: url('../img/lot_list_filter.png') no-repeat;
-    background-size: cover;
-    // img{
-    //     overflow-y: scroll;
-    //     opacity: 0.5;
-    // }
-}
+
 html,body{
     height:100%;
     .wrap{
