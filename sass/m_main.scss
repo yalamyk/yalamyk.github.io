@@ -1414,7 +1414,20 @@ body {
 /* comparables.html start */
 .scroll_area{
     overflow-y:scroll;
-    padding-top:198px;
+    padding-top:172px;
+    li{
+        border-bottom: solid 11px #eff3f6;
+        padding: 28px 0px 20px 0px;
+        .com_art table td{    margin-bottom: 3px;}
+    }
+    table{
+        margin-top: 3px;
+        td{
+            p{
+                vertical-align: top;
+            }
+        }
+    }
 }
 .fixed_area{
     background-color:#fff;
@@ -1422,13 +1435,64 @@ body {
     background-color: #eff3f6;
     border-bottom: none;
     width:100%;
+    height: 172px;
+    .com_range {
+        line-height: 1.43;
+        margin: -3px 0px 44px 0px !important;
+    }
+    li{
+        padding: 20px 0px 20px 0px;
+        .com_art table td{    margin-bottom: 7px;}
+    }
 }
 .comparables_list li {
-    min-height: 198px;
+    min-height: 206px;
     width: 100%;
-    border-bottom: solid 11px #eff3f6;
-    padding: 20px 0px 20px 0px;
     box-sizing: border-box;
+    .com_result {
+        width: 127px;
+        float: right;
+        box-sizing: border-box;
+        border-left: solid 1px #dae1e6;
+        min-height: 133px;
+        display: block;
+        padding: 0px 0px 2px 9px;
+        .com_range p {
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.43;
+            text-align: left;
+            color: #a7afb7;
+        }
+        .com_price {
+            line-height: 16px;
+            .c_p_n {
+                font-family: inherit;
+                font-size: 10px;
+                font-weight: normal;
+                font-style: italic;
+                margin-bottom: 3px;
+                color: #222222;
+            }
+            .c_p_1 {
+                font-family: inherit;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 4px;
+                text-align: left;
+                color: #222222;
+            }
+            .c_p_2 {
+                font-family: inherit;
+                font-size: 12px;
+                font-weight: normal;
+                text-align: left;
+                color: #a7afb7;
+            }
+        }
+    }
+    
     .com_art {
         padding-left: 19px;
         float: left;
@@ -1436,11 +1500,68 @@ body {
         margin-right: -127px;
         padding-right: 127px;
         box-sizing: border-box;
+        table {
+            clear: both;
+            overflow: hidden;
+            margin-left: 1px;
+           
+            tr {
+            }
+            th {
+                font-family: inherit;
+                font-size: 12px;
+                font-weight: 700;
+                text-align: left;
+                color: #a7afb7;
+                width: 82px;
+                height: 0px;;
+            }
+            td {
+                font-family: inherit;
+                font-weight: 400;
+                font-size: 12px;
+                text-align: left;
+                color: #222222;
+                @include ellipsis(1);
+            }
+        }
         .com_imgarea {
-            height: 100px;
+            height: 83px;
             width: 95%;
             /* position:relative; */
             /* width: 58%; */
+            .c_title {
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 14px;
+                color: #444;
+                @include ellipsis(1);
+                width: 100%;
+            }
+            .c_info1 {
+                @include ellipsis(1);
+                font-family: inherit;
+                font-size: 11px;
+                font-weight: 300;
+                line-height: 11px;
+                color: #a7afb7;
+                width: 100%;
+                overflow: hidden;
+                margin-top: 5px;
+                letter-spacing: 0.1px;
+            }
+            .c_info2 {
+                @include ellipsis(1);
+                font-family: inherit;
+                font-size: 11px;
+                font-weight: 300;
+                line-height: 11px;
+                color: #a7afb7;
+                width: 100%;
+                overflow: hidden;
+                margin-top: 5px;
+            }
             img {
                 float: left;
                 width: 71px;
@@ -1459,69 +1580,6 @@ body {
     float: right;
     width: 100%;
 }
-
-.comparables_list li .com_art {
-    .com_imgarea {
-        .c_title {
-            font-family: inherit;
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 14px;
-            color: #444;
-            @include ellipsis(1);
-            width: 100%;
-        }
-        .c_info1 {
-            @include ellipsis(1);
-            font-family: inherit;
-            font-size: 11px;
-            font-weight: 300;
-            line-height: 11px;
-            color: #a7afb7;
-            width: 100%;
-            overflow: hidden;
-            line-height: 1.45;
-            margin-top: 5px;
-        }
-        .c_info2 {
-            @include ellipsis(1);
-            font-family: inherit;
-            font-size: 11px;
-            font-weight: 300;
-            line-height: 11px;
-            color: #a7afb7;
-            width: 100%;
-            overflow: hidden;
-            line-height: 1.45;
-            margin-top: 5px;
-        }
-    }
-    table {
-        clear: both;
-        overflow: hidden;
-        tr {
-            margin-bottom: 11px;
-        }
-        th {
-            font-family: inherit;
-            font-size: 12px;
-            font-weight: 300;
-            text-align: left;
-            color: #a7afb7;
-            width: 80px;
-            height: 20px;
-        }
-        td {
-            font-family: inherit;
-            font-weight: 300;
-            font-size: 12px;
-            text-align: left;
-            color: #222222;
-            @include ellipsis(1);
-        }
-    }
-}
-
 .figure_table {
     .txt{@include ellipsis(1);}
     tr{clear:both;}
@@ -1557,58 +1615,12 @@ body {
     }
 }
 
-.comparables_list li .com_result {
-    width: 127px;
-    float: right;
-    box-sizing: border-box;
-    border-left: solid 1px #dae1e6;
-    min-height: 133px;
-    display: block;
-    padding: 2px 0px 2px 9px;
-}
-
 .com_range {
     line-height: 1.43;
-    margin-bottom: 52px;
+    margin-bottom: 45px;
 }
 
-.comparables_list li .com_result {
-    .com_range p {
-        font-family: inherit;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 1.43;
-        text-align: left;
-        color: #a7afb7;
-    }
-    .com_price {
-        line-height: 16px;
-        .c_p_n {
-            font-family: inherit;
-            font-size: 10px;
-            font-weight: normal;
-            font-style: italic;
-            line-height: 1.6;
-            color: #222222;
-        }
-        .c_p_1 {
-            font-family: inherit;
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 1.33;
-            text-align: left;
-            color: #222222;
-        }
-        .c_p_2 {
-            font-family: inherit;
-            font-size: 12px;
-            font-weight: normal;
-            line-height: 1.33;
-            text-align: left;
-            color: #a7afb7;
-        }
-    }
-}
+
 
 /* comparables.html end */
 
