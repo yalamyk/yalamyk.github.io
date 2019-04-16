@@ -60,7 +60,7 @@
 .test_artwork_detail {
   position: fixed;
   z-index: 999999;
-  top: 0px;
+  top: 0PX;
   left: 0;
   width: 100%;
   height: 100%;
@@ -965,7 +965,7 @@ body #contents .detail_info {
 }
 
 body #contents .detail_info .d_more {
-  margin-left: 30px;
+  margin-left: 28px;
   display: block;
   width: 46px;
   height: 19px;
@@ -982,7 +982,7 @@ body #contents .detail_info .d_more {
 body #contents .detail_slide {
   min-height: 145px;
   border-bottom: solid 3px #eef3f6;
-  padding: 30px;
+  padding: 28px 0px 30px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1016,7 +1016,7 @@ body #contents .detail_slide ul li {
 }
 
 body #contents .detail_price {
-  padding: 30px 30px 0px 30px;
+  padding: 26px 30px 0px 29px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 283px;
@@ -1032,6 +1032,7 @@ body #contents .detail_price .price_list .range {
   font-size: 16px;
   line-height: 21px;
   color: #bbbbbb;
+  letter-spacing: 0.1px;
 }
 
 body #contents .detail_price .price_list .price1 {
@@ -1040,7 +1041,7 @@ body #contents .detail_price .price_list .price1 {
   line-height: 28px;
   letter-spacing: -0.8px;
   color: #222222;
-  margin-top: 9px;
+  margin-top: 10px;
   font-weight: 500;
 }
 
@@ -1050,6 +1051,7 @@ body #contents .detail_price .price_list .price1 span {
   line-height: 10px;
   color: #888888;
   font-weight: 300;
+  letter-spacing: 0.2px;
 }
 
 body #contents .detail_price .price_list .price2 {
@@ -1060,15 +1062,17 @@ body #contents .detail_price .price_list .price2 {
   letter-spacing: -0.5px;
   text-align: left;
   color: #222222;
+  margin-top: 3px;
 }
 
 body #contents .detail_price .price_info {
-  margin-top: 30px;
+  margin-top: 24px;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
   font-weight: 300;
+  letter-spacing: 0.1px;
 }
 
 body #contents .detail_price .price_info .date {
@@ -1087,8 +1091,7 @@ body #contents .detail_info .d_img_wrap {
 }
 
 body #contents .detail_info .d_img_wrap .d_main_img {
-  /* margin-left:30px; */
-  max-width: 100px;
+  max-width: 110px;
   max-height: 200px;
   margin: 30px 0px 0px 30px;
 }
@@ -1103,7 +1106,7 @@ body #contents .detail_info .d_img_wrap .d_sub_img {
 
 body #contents .detail_info .detail_define {
   margin-left: 30px;
-  margin-top: 14px;
+  margin-top: 9px;
 }
 
 body #contents .detail_info .detail_define .artist {
@@ -1111,7 +1114,7 @@ body #contents .detail_info .detail_define .artist {
   font-size: 20px;
   line-height: 20px;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 body #contents .detail_info .detail_define .artist_ex {
@@ -1128,7 +1131,8 @@ body #contents .detail_info .detail_define .art_name {
   font-weight: 500;
   line-height: 16px;
   color: #222222;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
 }
 
 body.forget_pass #contents h2 {
@@ -1905,10 +1909,10 @@ body #footer p {
 }
 
 .accordion label:after {
-  content: url("../img/m_accordian_down.png");
+  content: url(../img/m_accordian_down.png);
   position: absolute;
-  top: 29px;
-  right: 22px;
+  top: 30px;
+  right: 23px;
 }
 
 .advanced {
@@ -1976,6 +1980,7 @@ body #footer p {
   text-align: left;
   color: #222222;
   width: 220px;
+  letter-spacing: 0.15px;
   margin-bottom: 10px;
 }
 
@@ -2317,8 +2322,8 @@ body #footer p {
 .accordion label:after {
   content: url("../img/m_accordian_down.png");
   position: absolute;
-  top: 29px;
-  right: 22px;
+  top: 30px;
+  right: 23px;
 }
 
 .accordion [type="radio"]:checked ~ label:after,
@@ -2337,11 +2342,11 @@ body #footer p {
   margin: 0 0 10px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 100;
-  line-height: 1.38;
+  font-weight: 300;
+  line-height: 24px;
   text-align: left;
   color: #484848;
-  padding: 40px 28px 40px 30px;
+  padding: 36px 28px 40px 29px;
 }
 
 .accordion h3 {
@@ -2356,7 +2361,7 @@ body #footer p {
 }
 
 .vertical ul li label {
-  padding: 30px;
+  padding: 34px 30px 30px 28px;
 }
 
 .vertical [type="radio"]:checked ~ label,
