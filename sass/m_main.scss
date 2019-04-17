@@ -1423,6 +1423,7 @@ body {
     table{
         margin-top: 3px;
         td{
+            margin: 2px 0 0 -2px;
             p{
                 vertical-align: top;
             }
@@ -1514,7 +1515,8 @@ body {
                 text-align: left;
                 color: #a7afb7;
                 width: 82px;
-                height: 0px;;
+                height: 0px;
+                vertical-align: top;
             }
             td {
                 font-family: inherit;
@@ -1522,6 +1524,7 @@ body {
                 font-size: 12px;
                 text-align: left;
                 color: #222222;
+               
                 @include ellipsis(1);
             }
         }
@@ -1582,7 +1585,10 @@ body {
 }
 .figure_table {
     .txt{@include ellipsis(1);}
-    tr{clear:both;}
+    tr{    
+        clear: both;
+        height: 20px;
+    }
     th {
         color: #222222 !important;
         font-weight: 500 !important;

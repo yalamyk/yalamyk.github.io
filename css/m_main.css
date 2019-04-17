@@ -2004,6 +2004,10 @@ body #footer p {
   margin-top: 3px;
 }
 
+.scroll_area table td {
+  margin: 2px 0 0 -2px;
+}
+
 .scroll_area table td p {
   vertical-align: top;
 }
@@ -2111,6 +2115,7 @@ body #footer p {
   color: #a7afb7;
   width: 82px;
   height: 0px;
+  vertical-align: top;
 }
 
 .comparables_list li .com_art table td {
@@ -2217,6 +2222,7 @@ body #footer p {
 
 .figure_table tr {
   clear: both;
+  height: 20px;
 }
 
 .figure_table th {
