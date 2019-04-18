@@ -1232,7 +1232,7 @@ body.forget_pass #contents p {
   display: block;
   font-weight: 300;
   line-height: 1.47;
-  word-break: break-all;
+  word-break: break-word;
   margin-bottom: 24px;
   margin-left: -2px;
 }

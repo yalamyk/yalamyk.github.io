@@ -817,7 +817,7 @@ body {
             }
             p{
                 @include intro_p;
-                word-break: break-all;
+                word-break: break-word;
                 margin-bottom:24px;
                 margin-left: -2px;
                 // letter-spacing: 0.1px;
