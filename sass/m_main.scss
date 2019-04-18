@@ -31,6 +31,36 @@ html,body{
         // margin-top: -900px;
     }
 }
+.con_2{
+    padding-top: 91px !important;
+}
+.con_3{
+    padding-top: 108px !important;
+}
+.con_4{
+    padding-top:141px !important;
+    h2{
+        margin-bottom: 2px !important;
+    }
+    img{
+        margin-bottom: 31px !important;
+    }
+    p{
+        letter-spacing: -0.6px !important;
+    }
+}
+.con_5{
+    padding-top: 91px !important;
+}
+.con_6{
+    img{
+        margin-bottom:36px !important;
+    }
+    padding: 0 20px 0 20px;
+}
+.all_ch_txt{
+
+}
 input {
     &[type="checkbox"] {
         @include custtom_check;
@@ -740,14 +770,57 @@ body {
     /* forget password page start*/
     &.forget_pass{
         #contents{
+            .err_done{
+                margin-top: 29px !important;
+                width: 179px !important;
+                height: 44px !important;
+                border: solid 1px #454d54 !important;
+               
+            }
+            .set_done{
+                width: 152px !important;
+                height: 50px !important;
+                border: solid 1px #454d54 !important;
+                background-color: #232629 !important;
+                margin-top: -2px !important;
+                line-height: 50px !important;
+                font-family: $default_font !important;
+                font-size: 14px !important;
+                font-weight: 500;
+                text-align: center !important;
+                color: #a3b3c2 !important;
+            }
+            .all_ch_txt{
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                text-align: center;
+                color: #93a1ad;
+                /* margin-left: -3px; */
+                letter-spacing: -0.2px;
+                font-weight: 500;
+            }
+            .err_404{
+                font-family: $default_font;
+                font-size: 70px;
+                font-weight: 100;
+                text-align: center;
+                color:#ea7963;
+                margin-left:-5px;
+                margin-bottom:9px !important;
+                
+            }
             h2{
                 @include intro_h2;
-                margin-bottom:10px !important;
+                margin-bottom:6px !important;
+                margin-left: -2px;
+                letter-spacing: 0.1px;
             }
             p{
                 @include intro_p;
                 word-break: break-all;
                 margin-bottom:24px;
+                margin-left: -2px;
+                // letter-spacing: 0.1px;
             }
             img{
                 margin:0 auto;
@@ -762,7 +835,7 @@ body {
             }
             .submit{
                 @include input_button_w100;
-                margin-top:30px;
+                margin-top:24px;
             }
             .done{
                 @include input_button_w100;
@@ -782,6 +855,7 @@ body {
                 color:#000;
                 margin-bottom:28px;
                 font-weight:500;
+                height: 63px !important;
             }
             .back_sign{
                 display:block;
@@ -797,13 +871,13 @@ body {
             
             .wrap_set_pass{
                 margin-top: 50px;
-                margin-bottom: 29px;
+                margin-bottom: 26px;
             }
             .input_set_pass{/*set_password.html*/
                 margin-top: 30px;
                 .set_pass{
                     @include input_txt_w100;
-                    height:50px !important;
+                    height:42px !important;
                 }
                 p{
                     font-size: 12px;
@@ -842,6 +916,7 @@ body {
                     color: #ff836a;
                     margin-top: 7px;
                     display: block;
+                    letter-spacing: 0.1px;
                 }
                 
             }

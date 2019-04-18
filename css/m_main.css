@@ -205,6 +205,42 @@ html .wrap, body .wrap {
   margin: 0 auto -60px;
 }
 
+.con_2 {
+  padding-top: 91px !important;
+}
+
+.con_3 {
+  padding-top: 108px !important;
+}
+
+.con_4 {
+  padding-top: 141px !important;
+}
+
+.con_4 h2 {
+  margin-bottom: 2px !important;
+}
+
+.con_4 img {
+  margin-bottom: 31px !important;
+}
+
+.con_4 p {
+  letter-spacing: -0.6px !important;
+}
+
+.con_5 {
+  padding-top: 91px !important;
+}
+
+.con_6 {
+  padding: 0 20px 0 20px;
+}
+
+.con_6 img {
+  margin-bottom: 36px !important;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -1135,13 +1171,56 @@ body #contents .detail_info .detail_define .art_name {
   text-transform: uppercase;
 }
 
+body.forget_pass #contents .err_done {
+  margin-top: 29px !important;
+  width: 179px !important;
+  height: 44px !important;
+  border: solid 1px #454d54 !important;
+}
+
+body.forget_pass #contents .set_done {
+  width: 152px !important;
+  height: 50px !important;
+  border: solid 1px #454d54 !important;
+  background-color: #232629 !important;
+  margin-top: -2px !important;
+  line-height: 50px !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500;
+  text-align: center !important;
+  color: #a3b3c2 !important;
+}
+
+body.forget_pass #contents .all_ch_txt {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #93a1ad;
+  /* margin-left: -3px; */
+  letter-spacing: -0.2px;
+  font-weight: 500;
+}
+
+body.forget_pass #contents .err_404 {
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  font-weight: 100;
+  text-align: center;
+  color: #ea7963;
+  margin-left: -5px;
+  margin-bottom: 9px !important;
+}
+
 body.forget_pass #contents h2 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 1.25;
   font-weight: 500;
   color: #ffffff;
-  margin-bottom: 10px !important;
+  margin-bottom: 6px !important;
+  margin-left: -2px;
+  letter-spacing: 0.1px;
 }
 
 body.forget_pass #contents p {
@@ -1155,6 +1234,7 @@ body.forget_pass #contents p {
   line-height: 1.47;
   word-break: break-all;
   margin-bottom: 24px;
+  margin-left: -2px;
 }
 
 body.forget_pass #contents img {
@@ -1210,7 +1290,7 @@ body.forget_pass #contents .submit {
   border: solid 1px #454d54;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 body.forget_pass #contents .done {
@@ -1247,6 +1327,7 @@ body.forget_pass #contents .save_password {
   color: #000;
   margin-bottom: 28px;
   font-weight: 500;
+  height: 63px !important;
 }
 
 body.forget_pass #contents .back_sign {
@@ -1263,7 +1344,7 @@ body.forget_pass #contents .back_sign {
 
 body.forget_pass #contents .wrap_set_pass {
   margin-top: 50px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 
 body.forget_pass #contents .input_set_pass {
@@ -1283,7 +1364,7 @@ body.forget_pass #contents .input_set_pass .set_pass {
   padding-right: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 50px !important;
+  height: 42px !important;
 }
 
 body.forget_pass #contents .input_set_pass .set_pass ::-webkit-input-placeholder {
@@ -1342,6 +1423,7 @@ body.forget_pass #contents .input_err .alert_err {
   color: #ff836a;
   margin-top: 7px;
   display: block;
+  letter-spacing: 0.1px;
 }
 
 body.forget_pass #contents .alert_err {
