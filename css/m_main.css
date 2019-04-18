@@ -1257,6 +1257,7 @@ body.forget_pass #contents .forget_email {
   padding-right: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 52px !important;
 }
 
 body.forget_pass #contents .forget_email ::-webkit-input-placeholder {
@@ -1290,7 +1291,7 @@ body.forget_pass #contents .submit {
   border: solid 1px #454d54;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-  margin-top: 24px;
+  margin-top: 27px;
 }
 
 body.forget_pass #contents .done {
@@ -1423,7 +1424,7 @@ body.forget_pass #contents .input_err .alert_err {
   color: #ff836a;
   margin-top: 7px;
   display: block;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
 }
 
 body.forget_pass #contents .alert_err {

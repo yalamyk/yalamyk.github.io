@@ -832,10 +832,11 @@ body {
             }
             .forget_email{
                 @include input_txt_w100;
+                height: 52px !important;
             }
             .submit{
                 @include input_button_w100;
-                margin-top:24px;
+                margin-top:27px;
             }
             .done{
                 @include input_button_w100;
@@ -916,7 +917,7 @@ body {
                     color: #ff836a;
                     margin-top: 7px;
                     display: block;
-                    letter-spacing: 0.1px;
+                    letter-spacing: 0.2px;
                 }
                 
             }
